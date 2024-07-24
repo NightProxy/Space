@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <title>Space</title>
+    <link rel="icon" type="icon/x-icon" href="/favicon.ico" />
+</head>
+
+<body>
+    <ul class="navbar">
+        <li style="margin-left: -1px; margin-top: 2px;"><a href="/"><img class="logo" src="/logo.png" alt="Logo"/></a></li>
+        <hr style="margin-top: 5px;"/>
+        <li><a href="/"><span id="navactive" style="margin-top: 0px;" class="material-symbols-outlined">cottage</span></a></li>
+        <li><span class="material-symbols-outlined">joystick</span></li>
+        <li><span class="material-symbols-outlined">apps</span></li>
+        <li><a href="/&"><span class="material-symbols-outlined">public</span></a></li>
+        <li><span class="material-symbols-outlined">open_in_new</span></li>
+        <hr />
+        <li><a href="/~"><span style="margin-top: 0;" class="material-symbols-outlined">tune</span></a></li>
+        <li><a target="_blank" href="https://discord.lightgo.app"><i class="fa-brands fa-discord"></i></a></li>
+    </ul>
+
+    <div class="header" style="display: inline-flex; width: 800px;">
+    <h1 style="text-align: center;">Welcome to 
+        <span style="cursor: text;">
+            <a style="color: #a04cff; filter: drop-shadow(0 0 2px #6200ff) drop-shadow( 0 0 20px #4400ff)"
+                class="typewrite" data-period="2000"
+                data-type='[ "Space.","freedom.","the best site.","privacy.","fast speeds.",""]'>
+                <span class="wrap"></span>
+            </a>
+        </span>
+        <br />
+        <p>Start your unblocking journey today!</p>
+        <button class="btn"><p style="font-weight: 600; margin: 13px 3px; font-size: 14px; letter-spacing: 0.4%;">Get Started</p></button>
+    </h1>
+    </div>
+    <div style="z-index: -998;">
+    <div class="blob"></div> 
+    <div class="blobsmall"></div>
+    <div class="blobtop"></div>
+    <div style="z-index: -999; position: fixed;" id="particles-js">
+    </div>
+    </div>
+    </div>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 86,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 1,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 2,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 0.5,
+                    "direction": "top",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 318.0130544358847,
+                        "rotateY": 556.5228452627983
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "window",
+                "events": {
+                    "onhover": {
+                        "enable": false,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+
+</html>

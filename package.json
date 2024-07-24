@@ -1,0 +1,28 @@
+{
+  "name": "space",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Space",
+    "Proxy",
+    "Unblocker",
+    "Space",
+    "Proxy",
+    "Space",
+    "Unblocker"
+  ],
+  "author": "xnoctra",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@titaniumnetwork-dev/ultraviolet": "^2.0.0",
+    "@tomphttp/bare-server-node": "^2.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
