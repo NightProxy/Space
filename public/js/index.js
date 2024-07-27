@@ -61,9 +61,12 @@ window.onload = function () {
 	const urlParams = new URLSearchParams(window.location.search);
 	const queryParam = urlParams.get('q');
 	if (queryParam) {
-		fetch('/g.json')
-			.then(response => response.json())
-			.then(data => {
+		Promise.all([
+			fetch('/json/g.json').then(response => response.json()),
+			fetch('/json/shortcuts.json').then(response => response.json())
+		])
+			.then(([gData, shortcutsData]) => {
+				const data = [...gData, ...shortcutsData];
 				const item = data.find(
 					d => d.name.toLowerCase() === queryParam.toLowerCase()
 				);
@@ -87,7 +90,7 @@ const swConfig = {
 };
 
 const { file: swFile, config: swConfigSettings } = swConfig[proxySetting] ?? {
-	file: '/uv.js',
+	file: '/uv',
 	config: __uv$config
 };
 
@@ -125,6 +128,10 @@ function executeSearch(query) {
 	const iframe = document.getElementById('intospace');
 	iframe.src = encodedUrl;
 	iframe.style.display = 'block';
+
+	if (iframe.src && window.location.pathname === '/&') {
+		document.querySelector('.shortcuts').style.display = 'none';
+	}
 
 	// make check for uv error
 	iframe.addEventListener('load', function () {

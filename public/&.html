@@ -1,17 +1,16 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="/css/index.css" />
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 		/>
 		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 		<title>Space</title>
-		<link rel="icon" type="icon/x-icon" href="/favicon.ico" />
+		<link rel="icon" type="icon/x-icon" href="/assets/favicon.ico" />
 		<script src="/!/uv.bundle.js"></script>
 		<script src="/!/uv.config.js"></script>
-		<script src="index.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta charset="UTF-8" />
 		<meta
@@ -22,13 +21,15 @@
 			name="keywords"
 			content="Proxy, Unblocker, Space Unblocker, Space"
 		/>
-		<meta property="og:image" content="logo.png" />
+		<meta property="og:image" content="/assets/logo.png" />
 	</head>
 
 	<body>
 		<ul class="navbar">
 			<li style="margin-left: -1px; margin-top: 2px">
-				<a href="/"><img class="logo" src="/logo.png" alt="Logo" /></a>
+				<a href="/"
+					><img class="logo" src="/assets/logo.png" alt="Logo"
+				/></a>
 			</li>
 			<hr style="margin-top: 5px" />
 			<li>
@@ -72,29 +73,44 @@
 		</ul>
 
 		<div class="header">
-			<div class="search-header">
-				<form id="formintospace">
-					<input
-						id="gointospace"
-						placeholder="Search Space..."
-						class="search-header__input"
-						type="text"
-					/>
-					<button type="submit" class="search-header__button">
-						<svg
-							fill="none"
-							viewBox="0 0 18 18"
-							height="18"
-							width="18"
-							class="search-header__icon"
+			<div
+				style="
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin: 20px;
+				"
+			>
+				<div style="animation: fade-in-top 1s" class="search-header">
+					<form id="formintospace">
+						<input
+							id="gointospace"
+							placeholder="Search Space..."
+							class="search-header__input"
+							type="text"
+						/>
+						<button
+							aria-label="search"
+							style="transform: translate(-5px, 3px)"
+							type="submit"
+							class="search-header__button"
 						>
-							<path
-								fill="#3A3A3A"
-								d="M7.132 0C3.197 0 0 3.124 0 6.97c0 3.844 3.197 6.969 7.132 6.969 1.557 0 2.995-.49 4.169-1.32L16.82 18 18 16.847l-5.454-5.342a6.846 6.846 0 0 0 1.718-4.536C14.264 3.124 11.067 0 7.132 0zm0 .82c3.48 0 6.293 2.748 6.293 6.15 0 3.4-2.813 6.149-6.293 6.149S.839 10.37.839 6.969C.839 3.568 3.651.82 7.132.82z"
-							></path>
-						</svg>
-					</button>
-				</form>
+							<svg
+								fill="none"
+								viewBox="0 0 18 18"
+								height="18"
+								width="18"
+								class="search-header__icon"
+							>
+								<path
+									fill="#3A3A3A"
+									d="M7.132 0C3.197 0 0 3.124 0 6.97c0 3.844 3.197 6.969 7.132 6.969 1.557 0 2.995-.49 4.169-1.32L16.82 18 18 16.847l-5.454-5.342a6.846 6.846 0 0 0 1.718-4.536C14.264 3.124 11.067 0 7.132 0zm0 .82c3.48 0 6.293 2.748 6.293 6.15 0 3.4-2.813 6.149-6.293 6.149S.839 10.37.839 6.969C.839 3.568 3.651.82 7.132.82z"
+								></path>
+							</svg>
+						</button>
+					</form>
+				</div>
+				<div class="shortcuts"></div>
 			</div>
 		</div>
 		<iframe
@@ -107,6 +123,7 @@
 				border: none;
 				outline: 0;
 				right: 0;
+				top: 0;
 				z-index: 999999999999999999999;
 			"
 		></iframe>
@@ -205,7 +222,7 @@
 					events: {
 						onhover: {
 							enable: false,
-							mode: 'repulse'
+							mode: 'bubble'
 						},
 						onclick: {
 							enable: true,
@@ -221,8 +238,8 @@
 							}
 						},
 						bubble: {
-							distance: 400,
-							size: 40,
+							distance: 200,
+							size: 2,
 							duration: 2,
 							opacity: 8,
 							speed: 3
@@ -232,15 +249,51 @@
 							duration: 0.4
 						},
 						push: {
-							particles_nb: 4
+							particles_nb: 10
 						},
 						remove: {
-							particles_nb: 2
+							particles_nb: 10
 						}
 					}
 				},
 				retina_detect: true
 			});
 		</script>
+		<script src="/js/json-loader.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const observer = new MutationObserver(function (
+					mutationsList,
+					observer
+				) {
+					mutationsList.forEach(function (mutation) {
+						if (mutation.type === 'childList') {
+							const shortcuts =
+								document.querySelectorAll('.shortcut');
+							if (shortcuts.length > 0) {
+								shortcuts.forEach((shortcut, index) => {
+									const animationDelay = (
+										index * 0.05
+									).toFixed(2);
+									// index * 0.5 + Math.random() * 0.5, remove index to make it not staggad
+									shortcut.style.animationDelay = `${animationDelay}s`;
+									shortcut.addEventListener(
+										'animationend',
+										() => {
+											shortcut.style.opacity = '1';
+										}
+									);
+								});
+							}
+						}
+					});
+				});
+				observer.observe(document.body, {
+					childList: true,
+					subtree: true
+				});
+			});
+		</script>
+		<script src="/js/index.js"></script>
 	</body>
 </html>

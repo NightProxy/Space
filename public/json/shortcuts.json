@@ -1,0 +1,77 @@
+[
+	{
+		"name": "Spotify",
+		"url": "https://open.spotify.com/",
+		"img": "https://th.bing.com/th/id/R.c2b8e187763d3ac771c067b4e63fb5b9?rik=Jhk4Ntj5pMBn6g&riu=http%3A%2F%2Fepic45.com%2Fimg%2Flogos%2Fspotify.png&ehk=4kXW%2B48ysfOIYLzekWxtcz27CW1UjQUCe5s6INkZjuM%3D&risl=&pid=ImgRaw&r=0",
+		"bg": "#1db954"
+	},
+	{
+		"name": "Google",
+		"url": "https://google.com/",
+		"img": "https://th.bing.com/th/id/R.0fa3fe04edf6c0202970f2088edea9e7?rik=joOK76LOMJlBPw&riu=http%3A%2F%2Fpluspng.com%2Fimg-png%2Fgoogle-logo-png-open-2000.png&ehk=0PJJlqaIxYmJ9eOIp9mYVPA4KwkGo5Zob552JPltDMw%3D&risl=&pid=ImgRaw&r=0",
+		"bg": "#fff"
+	},
+	{
+		"name": "Youtube",
+		"url": "https://youtube.com",
+		"img": "https://assets-global.website-files.com/6396e07f67bb253f9a029a39/6469e8041b358211e74b57be_yt_logo_transparent.png",
+		"bg": "#ff0000"
+	},
+	{
+		"name": "Discord",
+		"url": "https://discord.com/login",
+		"img": "https://i.imgur.com/jphc5Th.png",
+		"style": "width: 50px; height: 50px; padding: 0px",
+		"bg": "#5865f2"
+	},
+	{
+		"name": "ChatGPT",
+		"url": "https://chatgpt.com/",
+		"img": "https://shipgpt.ai/images/Teck-logo/open-ai.png",
+		"bg": "#fff"
+	},
+	{
+		"name": "Settings",
+		"url": "/~/#/proxy",
+		"img": "https://assets-cdn.interactcp.com/markquartrv/images/menomonie/service/gear.png?modified=0630202319244405",
+		"bg": "#fff"
+	},
+	{
+		"name": "Tiktok",
+		"url": "https://tiktok.com/",
+		"img": "https://pngimg.com/uploads/tiktok/tiktok_PNG4.png",
+		"bg": "#fff"
+	},
+	{
+		"name": "Geforce Now",
+		"url": "https://play.geforcenow.com/mall/",
+		"img": "https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/61-nvidia-256.png",
+		"bg": "#333"
+	},
+	{
+		"name": "GitHub",
+		"url": "https://github.com/",
+		"img": "https://codecell-cmpn-vesit.ves.ac.in/assets/github-923585a2.png",
+		"bg": "#000"
+	},
+	{
+		"name": "Now.gg",
+		"url": "https://now.gg/",
+		"img": "https://miro.medium.com/v2/resize:fit:1000/1*YM7t6RluDCb0XT62yy2aqQ.png",
+		"style": "width: 45px; height: 45px; padding: 3px",
+		"bg": "#fff"
+	},
+	{
+		"name": "Twitch",
+		"url": "https://twitch.com/",
+		"img": "https://www.freeiconspng.com/uploads/free-download-twitch-logo-png-images-9.png",
+		"style": "width: 40px; height: 40px; padding: 5px",
+		"bg": "#fff"
+	},
+	{
+		"name": "ESPN",
+		"url": "https://www.espn.com/",
+		"img": "https://frontofficesports.com/wp-content/themes/fos-3.0/landing/wsc/images/justeESPN-1.png",
+		"bg": "#fff"
+	}
+]
