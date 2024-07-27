@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 	if (window.location.pathname === '/g') {
-		fetch('g.json')
+		fetch('/json/g.json')
 			.then(response => response.json())
 			.then(data => {
 				const gameContainer = document.querySelector('.gameContain');
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					gameImage.className = 'gameImage';
 
 					gameImage.onerror = () => {
-						gameImage.src = '/default.png';
+						gameImage.src = '/assets/default.png';
 					};
 
 					gameLink.appendChild(gameImage);
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	if (window.location.pathname === '/&') {
-		fetch('shortcuts.json')
+		fetch('/json/shortcuts.json')
 			.then(response => response.json())
 			.then(data => {
 				const shortcuts = document.querySelector('.shortcuts');
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					}
 
 					shortcutImage.onerror = () => {
-						shortcutImage.src = '/default.png';
+						shortcutImage.src = '/assets/default.png';
 					};
 
 					shortcutLink.appendChild(shortcutImage);

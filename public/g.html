@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="/index.css" />
+		<link rel="stylesheet" href="/css/index.css" />
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
 		/>
 		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 		<title>Space</title>
-		<link rel="icon" type="icon/x-icon" href="/favicon.ico" />
+		<link rel="icon" type="icon/x-icon" href="/assets/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="description"
@@ -18,13 +18,15 @@
 			name="keywords"
 			content="Proxy, Unblocker, Space Unblocker, Space"
 		/>
-		<meta property="og:image" content="logo.png" />
+		<meta property="og:image" content="/assets/logo.png" />
 	</head>
 
 	<body>
 		<ul class="navbar">
 			<li style="margin-left: -1px; margin-top: 2px">
-				<a href="/"><img class="logo" src="/logo.png" alt="Logo" /></a>
+				<a href="/"
+					><img class="logo" src="/assets/logo.png" alt="Logo"
+				/></a>
 			</li>
 			<hr style="margin-top: 5px" />
 			<li>
@@ -84,7 +86,10 @@
 					class="search-header__input"
 					type="text"
 				/>
-				<button class="search-header__button">
+				<button
+					class="search-header__button"
+					aria-label="Search Button"
+				>
 					<svg
 						fill="none"
 						viewBox="0 0 18 18"
@@ -222,9 +227,9 @@
 				retina_detect: true
 			});
 		</script>
-		<script src="json-loader.js"></script>
-		<script src="/~.js"></script>
-		<script src="index.js"></script>
+		<script src="/js/json-loader.js"></script>
+		<script src="/js/~.js"></script>
+		<script src="/js/index.js"></script>
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
 				const observer = new MutationObserver(function (

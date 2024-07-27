@@ -62,8 +62,8 @@ window.onload = function () {
 	const queryParam = urlParams.get('q');
 	if (queryParam) {
 		Promise.all([
-			fetch('/g.json').then(response => response.json()),
-			fetch('shortcuts.json').then(response => response.json())
+			fetch('/json/g.json').then(response => response.json()),
+			fetch('/json/shortcuts.json').then(response => response.json())
 		])
 			.then(([gData, shortcutsData]) => {
 				const data = [...gData, ...shortcutsData];
@@ -90,7 +90,7 @@ const swConfig = {
 };
 
 const { file: swFile, config: swConfigSettings } = swConfig[proxySetting] ?? {
-	file: '/uv.js',
+	file: '/uv',
 	config: __uv$config
 };
 
