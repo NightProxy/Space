@@ -490,7 +490,7 @@ span.material-symbols-outlined {
 
 .search-header__input:focus {
 	outline: none;
-	background-color: #0a0a0a70;
+	background-color: #0a0a0af0;
 }
 
 .search-header__input::-webkit-input-placeholder {
