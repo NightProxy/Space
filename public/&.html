@@ -259,25 +259,37 @@
 		</script>
 		<script src="json-loader.js"></script>
 		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-				const observer = new MutationObserver(function(mutationsList, observer) {
-					mutationsList.forEach(function(mutation) {
+			document.addEventListener('DOMContentLoaded', function () {
+				const observer = new MutationObserver(function (
+					mutationsList,
+					observer
+				) {
+					mutationsList.forEach(function (mutation) {
 						if (mutation.type === 'childList') {
-							const shortcuts = document.querySelectorAll('.shortcut');
+							const shortcuts =
+								document.querySelectorAll('.shortcut');
 							if (shortcuts.length > 0) {
 								shortcuts.forEach((shortcut, index) => {
-									const animationDelay = (index * 0.1).toFixed(2);
+									const animationDelay = (
+										index * 0.1
+									).toFixed(2);
 									// index * 0.5 + Math.random() * 0.5, remove index to make it not staggad
 									shortcut.style.animationDelay = `${animationDelay}s`;
-									shortcut.addEventListener('animationend', () => {
-										shortcut.style.opacity = '1';
-									});
+									shortcut.addEventListener(
+										'animationend',
+										() => {
+											shortcut.style.opacity = '1';
+										}
+									);
 								});
 							}
 						}
 					});
 				});
-				observer.observe(document.body, { childList: true, subtree: true });
+				observer.observe(document.body, {
+					childList: true,
+					subtree: true
+				});
 			});
 		</script>
 	</body>
