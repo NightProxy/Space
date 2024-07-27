@@ -116,8 +116,20 @@ function executeSearch(query) {
     document.querySelectorAll(".spinner")[0].style.display = "block";
     document.getElementById("gointospace").style.display = "none";
     document.querySelectorAll(".search-header__icon")[0].style.display = "none";
-    document.getElementById('intospace').src = encodedUrl;
-    document.getElementById('intospace').style.display = 'block';
+    const iframe = document.getElementById('intospace');
+    iframe.src = encodedUrl;
+    iframe.style.display = 'block';
+
+    // make check for uv error
+    iframe.addEventListener('load', function () {
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        const title = iframeDocument.title;
+        const errorHeader = iframeDocument.querySelector('h1');
+
+        if (title === 'Error' && errorHeader && errorHeader.textContent.trim() === 'This site can’t be reached') {
+            iframe.src = '/500';
+        }
+    });
 }
 
 if ('serviceWorker' in navigator) {

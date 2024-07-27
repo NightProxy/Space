@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     gameContainer.appendChild(gameLink);
                 });
             })
-            .catch(error => console.error('Error loading game data:', error));
+            .catch(error => console.error('Error loading game :( ', error));
     }
 });

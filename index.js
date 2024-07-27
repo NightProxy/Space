@@ -40,6 +40,11 @@ app.get("/a", (req, res) => {
 app.get("/err", (req, res) => {
     res.sendFile(path.join(__dirname, "public/err.html"));
 });;
+
+app.get("/500", (req, res) => {
+    res.sendFile(path.join(__dirname, "public/500.html"));
+});;
+
 app.get("/a", (req, res) => {
     res.sendFile(path.join(__dirname, "public/a.html"));
 });;
