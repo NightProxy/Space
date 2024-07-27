@@ -75,7 +75,7 @@ body {
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 26px; 
+  gap: 26px;
   justify-content: flex-start;
 }
 
@@ -113,6 +113,7 @@ body img {
 
 .sparkles {
   width: 25px;
+  height: 25px;
   position: absolute;
   right: 0.5em;
   top: 0.5em;
@@ -227,6 +228,7 @@ body img {
 
 .logo {
   width: 42px;
+  height: 42px;
   transition: 0.3s;
   user-select: none;
 }
