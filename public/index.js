@@ -1,8 +1,3 @@
-//WOW JS
-//put what?
-//this is your file
-
-
 // Typewriting effect 
 var TxtType = function (el, toRotate, period) {
     this.toRotate = toRotate;
@@ -101,7 +96,7 @@ if ('serviceWorker' in navigator) {
             document.getElementById("gointospace").addEventListener('keydown', function (event) {
                 if (event.key === 'Enter') {
                     event.preventDefault();
-                    let encodedUrl = swConfigSettings.prefix + __uv$config.encodeUrl(search( document.getElementById("gointospace").value));
+                    let encodedUrl = swConfigSettings.prefix + __uv$config.encodeUrl(search(document.getElementById("gointospace").value));
                     localStorage.setItem("input", document.getElementById("gointospace").value);
                     localStorage.setItem("output", encodedUrl);
                     document.querySelectorAll(".spinnerParent")[0].style.display = "block"

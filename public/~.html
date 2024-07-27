@@ -2,8 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <title>Space</title>
@@ -12,39 +11,289 @@
 
 <body>
     <ul class="navbar">
-        <li style="margin-left: -1px; margin-top: 2px;"><a href="/"><img class="logo" src="/logo.png" alt="Logo"/></a></li>
-        <hr style="margin-top: 5px;"/>
+        <li style="margin-left: -1px; margin-top: 2px;"><a href="/"><img class="logo" src="/logo.png" alt="Logo" /></a>
+        </li>
+        <hr style="margin-top: 5px;" />
         <li><a href="/"><span style="margin-top: 0px;" class="material-symbols-outlined">cottage</span></a></li>
-        <li><span class="material-symbols-outlined">joystick</span></li>
+        <li><a href="/g"><span class="material-symbols-outlined">joystick</span></a></li>
         <li><span class="material-symbols-outlined">apps</span></li>
         <li><a href="/&"><span class="material-symbols-outlined">public</span></a></li>
         <li><span class="material-symbols-outlined">open_in_new</span></li>
         <hr />
-   <li><a href="/~"><span id="navactive" style="margin-top: 0;" class="material-symbols-outlined">tune</span></a></li>     
-   <li><a target="_blank" href="https://discord.lightgo.app"><i class="fa-brands fa-discord"></i></a></li>
+        <li><a href="/~"><span id="navactive" style="margin-top: 0;" class="material-symbols-outlined">tune</span></a>
+        </li>
+        <li><a target="_blank" href="https://discord.lightgo.app"><i class="fa-brands fa-discord"></i></a></li>
     </ul>
 
-    <div class="header" style="display: inline-flex; width: 900px; backdrop-filter: blur(8px); background-color: transparent; z-index: -1; box-shadow: 0 0 15px -10px #fff; border-radius: 30px;">
+    <div class="header"
+        style="display: inline-flex; width: 900px; backdrop-filter: blur(8px); background-color: transparent; z-index: -1; box-shadow: 0 0 15px -10px #fff; border-radius: 27px;">
         <ul class="sideSnav">
-            <li><h1>Settings</h1></li>
-            <li><span class="material-symbols-outlined">ad_group_off</span>About:Blank</li>
-            <li><span class="material-symbols-outlined">visibility_off</span>Tab Cloaking</li>
-            <li class="sideActive"><span class="material-symbols-outlined">crossword</span>Plugins</li>
-            <li><span class="material-symbols-outlined">palette</span>Themes</li>
-            <li><span class="material-symbols-outlined">public</span>Proxy</li>
-            <li><span class="material-symbols-outlined">help</span>About & Statistics</li>
+            <li>
+                <h1>Settings</h1>
+            </li>
+            <a href="/~/#/blank">
+                <li class="settingItem" data-id="blank"><span
+                        class="material-symbols-outlined">ad_group_off</span>About:Blank & Blob</li>
+            </a>
+            <a href="/~/#/cloak">
+                <li class="settingItem" data-id="cloak"><span class="material-symbols-outlined">visibility_off</span>Tab
+                    Cloaking</li>
+            </a>
+            <a href="/~/#/plugins">
+                <li class="settingItem" data-id="plugins"><span
+                        class="material-symbols-outlined">crossword</span>Plugins</li>
+            </a>
+            <a href="/~/#/themes">
+                <li class="settingItem" data-id="themes"><span class="material-symbols-outlined">palette</span>Themes
+                </li>
+            </a>
+            <a href="/~/#/proxy">
+                <li class="settingItem" data-id="proxy"><span class="material-symbols-outlined">public</span>Proxy &
+                    Browser</li>
+            </a>
+            <hr style="margin-bottom: 20px;" />
+            <a href="/~/#/about">
+                <li class="settingItem" data-id="about"><span class="material-symbols-outlined">help</span>About &
+                    Statistics</li>
+            </a>
+            <a href="/~/#/account">
+                <li class="settingItem" data-id="account"><span
+                        class="material-symbols-outlined">account_circle</span>Account</li>
+            </a>
+            <hr style="margin-bottom: 20px;" />
+            <a href="/~/#/news">
+                <li class="settingItem" data-id="news"><span class="material-symbols-outlined">rocket_launch</span>News
+                    & Updates</li>
+            </a>
         </ul>
-        <div class="scontent">
+        <div class="scontent" id="blank">
+            <h1>About:Blank</h1>
+            <div class="settingsection">
+                <h1>About:Blank & Blob Cloaking</h1>
+                <p>About:Blank allows you to hide your tab history, and blockers such as GoGuardian by appearing that
+                    you are on a blank tab. If About:Blank doesn't work, then you can try using the blob cloaking which
+                    uses temporary data.</p>
+                <div style="width: 100%; display: flex;
+justify-content: space-between;">
+                    <button class="splitbutton">Launch About:Blank</button>
+                    <button class="splitbutton">Launch Blob</button>
+                </div>
+            </div>
+            <div class="settingsection">
+                <h1>Automatic cloaking</h1>
+                <p>This toggles automatic cloaking when the site first loads which hides the site from entering your
+                    history.</p>
+                <p><b>Note: Only one automatic cloaking toggle is allowed at a time.</b></p>
+                <hr />
+                <p>Auto-Launch About:Blank</p>
+                <label class="switch">
+                    <input class="checkbox" type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+                <p>Auto-Launch Blob</p>
+                <label class="switch">
+                    <input class="checkbox" type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="scontent" id="cloak">
+            <h1>Tab Cloaking & Panic Key</h1>
+            <div class="settingsection">
+                <h1>Tab Cloaking</h1>
+                <p>Tab Cloaking cloaks the name of the tab & icon, so your tab stays hidden from sight. Select a cloak
+                    down below to activate it.</p>
+                <div class="dropdown">
+                    <button class="dropdown-button dropdown-toggle">
+                        None (Default) <span id="arrow" class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>Google Classroom</li>
+                        <li>Schoology</li>
+                        <li>Desmos</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="z-index: 998;" class="settingsection">
+                <h1>Panic Key</h1>
+                <p>Press the selected keybind to go to another site quickly. You can set multiple keybinds by seperating
+                    them with a comma.</p>
+                <div class="pgroup">
+                    <svg stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="picon">
+                        <rect x="2" y="2" width="20" height="20" rx="3" ry="3" fill="none" stroke-linejoin="round"
+                            stroke-linecap="round"></rect>
+                        <line x1="8" y1="16" x2="16" y2="8" stroke="currentColor" stroke-width="1.5"
+                            stroke-linejoin="round" stroke-linecap="round"></line>
+                    </svg>
+                    <input class="password" placeholder="Set a keybind. Backtick by Default">
+                </div>
+                <button style="width: 300px;" class="buttonreg">Save</button>
+            </div>
+        </div>
+        <div class="scontent" id="plugins">
             <h1>Plugins</h1>
+            <div class="settingsection">
+                <h1>Coming Soon</h1>
+                <p>Plugins will be added soon to Space. While you wait, you can join our <a
+                        href="https://discord.lightgo.app">Discord</a> for updates of when it may release.</p>
+            </div>
+        </div>
+        <div class="scontent" id="themes">
+            <h1>Themes</h1>
+            <div class="settingsection">
+                <h1>Coming Soon</h1>
+                <p>Themes will be added soon to Space. While you wait, you can join our <a
+                        href="https://discord.lightgo.app">Discord</a> for updates of when it may release.</p>
+            </div>
+        </div>
+        <div class="scontent" id="proxy">
+            <h1>Proxy & Browser</h1>
+            <div class="settingsection">
+                <h1>Proxy</h1>
+                <p>Proxies are what run the unblocking backend for you to enjoy the games and apps that we display.</p>
+                <p>Changing the proxy may make some games perform better, run sites faster, and may make your overall
+                    experience better. For more information, join our <a
+                        href="https://discord.lightgo.app/">Discord</a>.</p>
+                <div class="dropdown">
+                    <button class="dropdown-button dropdown-toggle">
+                        Ultraviolet (Default) <span id="arrow" class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>Rammerhead</li>
+                        <li>Scramjet</li>
+                        <li>Meteor</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="settingsection">
+                <h1>Browser</h1>
+                <p>This allows you to change settings about the browser and the elements within it. You can change the search engine or add/remove the utility bar.</p>
+                <hr />
+                <p>Search Engine</p>
+                <div class="dropdown">
+                    <button class="dropdown-button dropdown-toggle">
+                        Google (Default) <span id="arrow" class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>Bing</li>
+                        <li>Duck Duck Go</li>
+                        <li>Yahoo!</li>
+                    </ul>
+                </div>
+                <p>Enable Utility Bar</p>
+                <label class="switch">
+                    <input class="checkbox" type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="scontent" id="about">
+            <h1>About & Statistics</h1>
+            <div class="settingsection">
+                <h1>Development Team</h1>
+                <p>Space is owned, maintained, and managed by the Dusk till Dawn Team (DTD) at Night Network. Thank you
+                    for choosing Space!</p>
+                <p>To join our Discord for updates, uptimes, and links, click <a target="_blank"
+                        href="https://discord.lightgo.app">here</a>.</p>
+            </div>
+            <div class="settingsection">
+                <h1>Version & Analytics</h1>
+                <p>You are currently on: <span
+                        style="background-color: #6b6b6b63; border-radius: 30px; padding: 1px 7px;">v1.0.3</span></p>
+                <p>Last Updated: <span style="background-color: #6b6b6b63; border-radius: 30px; padding: 1px 7px;">July
+                        26th, 2024</span></p>
+                <p>Server Status: <span
+                        style="background-color: #15ff0063; border-radius: 30px; padding: 1px 8px;">Running</span></p>
+                <p>Load Times: <span
+                        style="background-color: #c300ff63; border-radius: 30px; padding: 1px 8px;">Fast</span></p>
+            </div>
+            <div class="settingsection">
+                <h1>Contributions</h1>
+                <p>Contributions are welcome on our <a
+                        href="https://github.com">GitHub</a>. Please follow the proper format when contributing [can be found in contributing.md].</p>
+                <p>If you want to join the DTD Team, please open a ticket in our Discord.</p>
+            </div>
+            <div class="settingsection">
+                <h1>Support</h1>
+                <p>If you have any issues while using Space please report them on our <a
+                        href="https://github.com">GitHub</a>. We will try to fix them asap.</p>
+                <p>If you have any suggestions you can post them in our Discord.</p>
+                <p>If you would like to donate, please visit our <a href="https://www.patreon.com/nightNetwork">Patreon</a>.</p>
+            </div>
+        </div>
+        <div class="scontent" id="account">
+            <h1>Account Settings</h1>
+            <div class="settingsection">
+                <h1>Two-Factor Authentication</h1>
+                <p>Add another layer of security to your account.</p>
+                <label class="switch">
+                    <input class="checkbox" type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="settingsection">
+                <h1>Password Protection</h1>
+                <p>Protect your account with a password that way only you can view the site.</p>
+                <label class="switch">
+                    <input class="checkbox" type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+                <p>Please remember that when setting your password, set it to something only you can remember, that way
+                    you do not get locked out of your account.</p>
+            </div>
+            <div class="settingsection">
+                <h1>Change password</h1>
+                <p>Current Password</p>
+                <div class="pgroup">
+                    <svg stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="picon">
+                        <path
+                            d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                            stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                    <input class="password" type="password" placeholder="Password">
+                </div>
+                <p>New Password</p>
+                <div class="pgroup">
+                    <svg stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        class="picon">
+                        <path
+                            d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                            stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                    <input class="password" type="password" placeholder="New Password">
+                </div>
+                <button class="buttonreg" style="width: 300px">Save</button>
+            </div>
+        </div>
+        <div class="scontent" id="news">
+            <h1>News & Updates</h1>
+            <div class="settingsection">
+                <h1>Space has released!<span class="changelog">Version release [v.1.0.0]</span></h1>
+                <p>Enjoy using all of the fun and exciting features we have packed into this site! Join our <a
+                        href="https://discord.lightgo.app/">Discord</a> to get more updates and changes.</p>
+                <hr />
+                <h1>Features</h1>
+                <ul>
+                    <li>Out of this world UI</li>
+                    <li>Games</li>
+                    <li>Apps</li>
+                    <li>Proxy</li>
+                    <li>Settings</li>
+                    <li>Cloaking [Blob & About:Blank]</li>
+                    <li>Tab Cloaking [Presets]</li>
+                </ul>
+            </div>
         </div>
     </div>
     </div>
     <div style="z-index: -998;">
-    <div class="blob"></div> 
-    <div class="blobsmall"></div>
-    <div class="blobtop"></div>   
-    <div style="z-index: -999" id="particles-js">
-    </div>
+        <div style="z-index: -998; position: fixed;" class="blob"></div>
+        <div style="z-index: -998; position: fixed;" class="blobsmall"></div>
+        <div style="z-index: -998; position: fixed;" class="blobtop"></div>
+        <div style="z-index: -999" id="particles-js">
+        </div>
     </div>
     </div>
     <script>
@@ -159,6 +408,8 @@
             "retina_detect": true
         });
     </script>
+    <script src="/~.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

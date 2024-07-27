@@ -40,6 +40,12 @@ app.get("/a", (req, res) => {
 app.get("/err", (req, res) => {
     res.sendFile(path.join(__dirname, "public/err.html"));
 });;
+app.get("/a", (req, res) => {
+    res.sendFile(path.join(__dirname, "public/a.html"));
+});;
+app.get("/g", (req, res) => {
+    res.sendFile(path.join(__dirname, "public/g.html"));
+});;
 
 server.on("request", (req, res) => {
     if (bare.shouldRoute(req)) {

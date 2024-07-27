@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <title>Space</title>
+    <link rel="icon" type="icon/x-icon" href="/favicon.ico" />
+</head>
+
+<body>
+    <ul class="navbar">
+        <li style="margin-left: -1px; margin-top: 2px;"><a href="/"><img class="logo" src="/logo.png" alt="Logo" /></a>
+        </li>
+        <hr style="margin-top: 5px;" />
+        <li><a href="/"><span style="margin-top: 0px;" class="material-symbols-outlined">cottage</span></a></li>
+        <li><a href="/g"><span id="navactive" class="material-symbols-outlined">joystick</span></a></li>
+        <li><span class="material-symbols-outlined">apps</span></li>
+        <li><a href="/&"><span class="material-symbols-outlined">public</span></a></li>
+        <li><span class="material-symbols-outlined">open_in_new</span></li>
+        <hr />
+        <li><a href="/~"><span style="margin-top: 0;" class="material-symbols-outlined">tune</span></a>
+        </li>
+        <li><a target="_blank" href="https://discord.lightgo.app"><i class="fa-brands fa-discord"></i></a></li>
+    </ul>
+
+    <div class="header" style="display: inline-flex; width: 1100px; transform: translate(-50%, -50%); top: 4em;">
+        <div class="search-header">
+            <input style="width: 400px;" placeholder="Search Space for Games..." class="search-header__input" type="text" />
+            <button class="search-header__button">
+                <svg fill="none" viewBox="0 0 18 18" height="18" width="18" class="search-header__icon">
+                    <path fill="#3A3A3A"
+                        d="M7.132 0C3.197 0 0 3.124 0 6.97c0 3.844 3.197 6.969 7.132 6.969 1.557 0 2.995-.49 4.169-1.32L16.82 18 18 16.847l-5.454-5.342a6.846 6.846 0 0 0 1.718-4.536C14.264 3.124 11.067 0 7.132 0zm0 .82c3.48 0 6.293 2.748 6.293 6.15 0 3.4-2.813 6.149-6.293 6.149S.839 10.37.839 6.969C.839 3.568 3.651.82 7.132.82z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="gameContain">
+            <img src="https://wallpapers.com/images/featured/anthem-4k-0uqu7lgua8g8c4yx.jpg">
+            <img src="https://www.psu.com/wp/wp-content/uploads/2020/10/Ghostrunner-PS4-PS5-Wallpapers-13.png">
+            <img src="https://i.pinimg.com/600x315/61/67/3f/61673f4d7c14f70d86a1cb24514a194b.jpg">
+            <img
+                src="https://e0.pxfuel.com/wallpapers/303/871/desktop-wallpaper-edited-hitman-3-for-different-resolutions-with-and-w-o-logo-hitman-thumbnail.jpg">
+            <img src="https://wallpapers.com/images/hd/destiny-2-blazing-logo-hd-ag9ftqauht2f4ey2.jpg">
+            <img
+                src="https://gaming-cdn.com/images/news/articles/5255/cover/fortnite-s-chapter-5-season-2-comes-with-the-greek-gods-and-their-powers-cover65eaf6766698b.jpg">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1UlcaSFcHcQ6HHVTZI8WS9KooOtdVG8VNVBaAcwT0c8RIxvxRATfb4v6hQEOzc56Yt1k&usqp=CAU">
+            <img src="https://www.gamespot.com/a/uploads/original/280/2802776/2765270-crossyroad.jpg">
+            <img src="https://fnfgame.co/upload/imgs/slope.png">
+            <img
+                src="https://static.wikia.nocookie.net/tomb-of-the-mask/images/3/39/Site-community-image/revision/latest/scale-to-width-down/1200?cb=20220908153555">
+            <img src="https://img.itch.zone/aW1nLzI2OTY3MDAucG5n/original/kb8XuC.png">
+            <img
+                src="https://static.wikia.nocookie.net/half-life/images/a/ae/Portal_soundtrack_steam.jpg/revision/latest?cb=20191205133448&path-prefix=en">
+            <img src="https://media.indiedb.com/images/games/1/71/70609/happy-wheels.png">
+            <img
+                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388090/capsule_616x353.jpg?t=1579635988">
+            <img
+                src="https://static.tnn.in/thumb/msid-91536686,thumbsize-12328,width-1280,height-720,resizemode-75/91536686.jpg">
+        </div>
+    </div>
+    <div style="z-index: -998;">
+        <div style="z-index: -998; position: fixed;" class="blob"></div>
+        <div style="z-index: -998; position: fixed;" class="blobsmall"></div>
+        <div style="z-index: -998; position: fixed;" class="blobtop"></div>
+        <div style="z-index: -999; position: fixed;" id="particles-js">
+        </div>
+    </div>
+    </div>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 86,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 1,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 2,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": false,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 0.5,
+                    "direction": "top",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 318.0130544358847,
+                        "rotateY": 556.5228452627983
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "window",
+                "events": {
+                    "onhover": {
+                        "enable": false,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+    <script src="/~.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
