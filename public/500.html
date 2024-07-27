@@ -1,146 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<link rel="stylesheet" href="index.css" />
+		<script src="index.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<title>Space</title>
+		<link rel="icon" type="icon/x-icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Launch into Space, the next gen proxy."
+		/>
+		<meta
+			name="keywords"
+			content="Proxy, Unblocker, Space Unblocker, Space"
+		/>
+		<meta property="og:image" content="logo.png" />
+	</head>
 
-<head>
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <title>Space</title>
-    <link rel="icon" type="icon/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Launch into Space, the next gen proxy.">
-    <meta name="keywords" content="Proxy, Unblocker, Space Unblocker, Space">
-    <meta property="og:image" content="logo.png">
-</head>
-
-<body>
-    <div class="header" style="width: 100%; text-align: center;">
-        <img style="width: 400px;" src="500.png"/>
-        <h1 style="margin-bottom: 6px;">Houston, we have a problem</h1>
-        <p>You got stuck on the moon</p>
-    </div>
-    <div class="box_astronaut">
-        <img class="object_astronaut" src="http://salehriaz.com/404Page/img/astronaut.svg" width="140px">
-    </div>
-    <div class="blob"></div>
-    <div class="blobsmall"></div>
-    <div class="blobtop"></div>
-    <div style="z-index: -999" id="particles-js">
-    </div>
-    </div>
-    <script>
-        particlesJS("particles-js", {
-            "particles": {
-                "number": {
-                    "value": 86,
-                    "density": {
-                        "enable": true,
-                        "value_area": 800
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 5
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
-                },
-                "opacity": {
-                    "value": 1,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 2,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": false,
-                    "distance": 150,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 0.5,
-                    "direction": "top",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": {
-                        "enable": false,
-                        "rotateX": 318.0130544358847,
-                        "rotateY": 556.5228452627983
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "window",
-                "events": {
-                    "onhover": {
-                        "enable": false,
-                        "mode": "repulse"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 400,
-                        "line_linked": {
-                            "opacity": 1
-                        }
-                    },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
-                    },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
-                    },
-                    "push": {
-                        "particles_nb": 4
-                    },
-                    "remove": {
-                        "particles_nb": 2
-                    }
-                }
-            },
-            "retina_detect": true
-        });
-    </script>
-</body>
-
+	<body>
+		<div class="header" style="width: 100%; text-align: center">
+			<img style="width: 400px" src="500.png" />
+			<h1 style="margin-bottom: 6px">Houston, we have a problem</h1>
+			<p>You got stuck on the moon</p>
+		</div>
+		<div class="box_astronaut">
+			<img
+				class="object_astronaut"
+				src="http://salehriaz.com/404Page/img/astronaut.svg"
+				width="140px"
+			/>
+		</div>
+		<div class="blob"></div>
+		<div class="blobsmall"></div>
+		<div class="blobtop"></div>
+		<div style="z-index: -999" id="particles-js"></div>
+		<script>
+			particlesJS('particles-js', {
+				particles: {
+					number: {
+						value: 86,
+						density: {
+							enable: true,
+							value_area: 800
+						}
+					},
+					color: {
+						value: '#ffffff'
+					},
+					shape: {
+						type: 'circle',
+						stroke: {
+							width: 0,
+							color: '#000000'
+						},
+						polygon: {
+							nb_sides: 5
+						},
+						image: {
+							src: 'img/github.svg',
+							width: 100,
+							height: 100
+						}
+					},
+					opacity: {
+						value: 1,
+						random: true,
+						anim: {
+							enable: false,
+							speed: 1,
+							opacity_min: 0.1,
+							sync: false
+						}
+					},
+					size: {
+						value: 2,
+						random: true,
+						anim: {
+							enable: false,
+							speed: 40,
+							size_min: 0.1,
+							sync: false
+						}
+					},
+					line_linked: {
+						enable: false,
+						distance: 150,
+						color: '#ffffff',
+						opacity: 0.4,
+						width: 1
+					},
+					move: {
+						enable: true,
+						speed: 0.5,
+						direction: 'top',
+						random: false,
+						straight: false,
+						out_mode: 'out',
+						bounce: false,
+						attract: {
+							enable: false,
+							rotateX: 318.0130544358847,
+							rotateY: 556.5228452627983
+						}
+					}
+				},
+				interactivity: {
+					detect_on: 'window',
+					events: {
+						onhover: {
+							enable: false,
+							mode: 'repulse'
+						},
+						onclick: {
+							enable: true,
+							mode: 'push'
+						},
+						resize: true
+					},
+					modes: {
+						grab: {
+							distance: 400,
+							line_linked: {
+								opacity: 1
+							}
+						},
+						bubble: {
+							distance: 400,
+							size: 40,
+							duration: 2,
+							opacity: 8,
+							speed: 3
+						},
+						repulse: {
+							distance: 200,
+							duration: 0.4
+						},
+						push: {
+							particles_nb: 4
+						},
+						remove: {
+							particles_nb: 2
+						}
+					}
+				},
+				retina_detect: true
+			});
+		</script>
+	</body>
 </html>

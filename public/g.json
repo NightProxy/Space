@@ -1,14 +1,14 @@
 [
-    {
-        "name": "Opal",
-        "img": "https://opal.crllect.dev/assets/splashsmall.png",
-        "url": "https://opal.crllect.dev",
-        "cat": ["fun"]
-    },
-    {
-        "name": "name2",
-        "img": "https://opal.crllect.dev/assets/splashpfp2.png",
-        "url": "game2.com",
-        "cat": ["boring"]
-    }
+	{
+		"name": "Opal",
+		"img": "https://opal.crllect.dev/assets/splashsmall.png",
+		"url": "https://opal.crllect.dev",
+		"cat": ["fun"]
+	},
+	{
+		"name": "name2",
+		"img": "https://opal.crllect.dev/assets/splashpfp2.png",
+		"url": "game2.com",
+		"cat": ["boring"]
+	}
 ]
