@@ -72,13 +72,13 @@ body {
 	display: inline-flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	gap: 26px;
+	gap: 20px;
 	justify-content: flex-start;
 }
 
 .gameContain img {
 	width: 198px;
-	height: 108px;
+	height: 128px;
 	object-fit: cover;
 	border-radius: 14px;
 	cursor: pointer;
