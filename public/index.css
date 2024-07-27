@@ -65,6 +65,47 @@ body {
 
 /* Actual page ---------------------------------------------------- */
 
+.shortcuts {
+	width: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	gap: 29px;
+	justify-content: center;
+	margin-top: 4.5em;
+}
+
+.shortcut {
+	width: 50px;
+	height: 50px;
+	border-radius: 23%;
+	background-color: #fff;
+	align-content: center;
+	justify-content: center;
+	transition: 0.2s ease-in-out;
+	animation: fade-in-bottom 1s;
+	opacity: 0;
+}
+
+.shortcut:hover {
+	transform: scale(1.05);
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+	box-shadow: 0 0 20px 1px #fff;
+}
+
+.shortcut img {
+	width: 28px;
+	height: 28px;
+	padding: 11px;
+	object-fit: cover;
+}
+
+.gameImage {
+	opacity: 0;
+	animation: fade-in-bottom 1s;
+}
+
 .gameContain {
 	top: 65px;
 	position: absolute;
@@ -486,6 +527,8 @@ span.material-symbols-outlined {
 	box-shadow:
 		10px 5px 40px -10px #ae00ff,
 		-14px -4px 40px -10px #4400ff;
+	padding-left: calc(+50px);
+	padding-right: calc(+50px);
 }
 
 .search-header__input:focus {

@@ -77,7 +77,7 @@
 				position: fixed;
 			"
 		>
-			<div class="search-header">
+			<div style="animation: fade-in-top 1s" class="search-header">
 				<input
 					style="width: 400px; margin-left: -22px"
 					placeholder="Search Space for Games..."
@@ -102,13 +102,7 @@
 		</div>
 		<div
 			class="gameContain"
-			style="
-				display: inline-flex;
-				width: 1100px;
-				top: 8em;
-				left: 50%;
-				translate: -50%;
-			"
+			style="top: 8em; left: 50%; translate: -50%"
 		></div>
 		<div style="z-index: -998">
 			<div style="z-index: -998; position: fixed" class="blob"></div>
@@ -218,18 +212,40 @@
 							duration: 0.4
 						},
 						push: {
-							particles_nb: 4
+							particles_nb: 10
 						},
 						remove: {
-							particles_nb: 2
+							particles_nb: 10
 						}
 					}
 				},
 				retina_detect: true
 			});
 		</script>
-		<script src="g.js"></script>
+		<script src="json-loader.js"></script>
 		<script src="/~.js"></script>
 		<script src="index.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const observer = new MutationObserver(function(mutationsList, observer) {
+					mutationsList.forEach(function(mutation) {
+						if (mutation.type === 'childList') {
+							const shortcuts = document.querySelectorAll('.gameImage');
+							if (shortcuts.length > 0) {
+								shortcuts.forEach((shortcut, index) => {
+									const animationDelay = (index * 0.1).toFixed(2);
+									// index * 0.5 + Math.random() * 0.5, remove index to make it not staggad
+									shortcut.style.animationDelay = `${animationDelay}s`;
+									shortcut.addEventListener('animationend', () => {
+										shortcut.style.opacity = '1';
+									});
+								});
+							}
+						}
+					});
+				});
+				observer.observe(document.body, { childList: true, subtree: true });
+			});
+		</script>
 	</body>
 </html>
