@@ -57,9 +57,26 @@ window.onload = function () {
     css.innerHTML =
         ".typewrite > .wrap { border-right: 0.06em solid #a04cff}";
     document.body.appendChild(css);
+
+    // Handle url params, go see if q is there etc.
+    const urlParams = new URLSearchParams(window.location.search);
+    const queryParam = urlParams.get('q');
+    if (queryParam) {
+        fetch('/g.json')
+            .then(response => response.json())
+            .then(data => {
+                const item = data.find(d => d.name.toLowerCase() === queryParam.toLowerCase());
+                if (item) {
+                    executeSearch(item.url);
+                } else {
+                    console.error('No matching name found in JSON data.');
+                }
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+    }
 };
 
-// UV INPUT FORM 
+// UV INPUT FORM
 const address = document.getElementById("gointospace");
 
 const proxySetting = localStorage.getItem("proxy") ?? 'uv'; // Using nullish coalescing operator for default value
@@ -89,6 +106,20 @@ function search(input) {
         }
     }
 }
+
+// Make it so that if the user goes to /&?q= it searches it, I think it works
+function executeSearch(query) {
+    const encodedUrl = swConfigSettings.prefix + __uv$config.encodeUrl(search(query));
+    localStorage.setItem("input", query);
+    localStorage.setItem("output", encodedUrl);
+    document.querySelectorAll(".spinnerParent")[0].style.display = "block";
+    document.querySelectorAll(".spinner")[0].style.display = "block";
+    document.getElementById("gointospace").style.display = "none";
+    document.querySelectorAll(".search-header__icon")[0].style.display = "none";
+    document.getElementById('intospace').src = encodedUrl;
+    document.getElementById('intospace').style.display = 'block';
+}
+
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register(swFile, { scope: swConfigSettings.prefix })
         .then(async (registration) => {
@@ -96,16 +127,8 @@ if ('serviceWorker' in navigator) {
             document.getElementById("gointospace").addEventListener('keydown', function (event) {
                 if (event.key === 'Enter') {
                     event.preventDefault();
-                    let encodedUrl = swConfigSettings.prefix + __uv$config.encodeUrl(search(document.getElementById("gointospace").value));
-                    localStorage.setItem("input", document.getElementById("gointospace").value);
-                    localStorage.setItem("output", encodedUrl);
-                    document.querySelectorAll(".spinnerParent")[0].style.display = "block"
-                    document.querySelectorAll(".spinner")[0].style.display = "block"
-                    document.getElementById("gointospace").style.display = "none"
-                    document.querySelectorAll(".search-header__icon")[0].style.display = "none"
-                    document.getElementById('intospace').src = encodedUrl;
-                    document.getElementById('intospace').style.display = 'block';
-
+                    let query = document.getElementById("gointospace").value;
+                    executeSearch(query);
                 }
             });
         })

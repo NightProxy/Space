@@ -36,29 +36,26 @@
         <div class="search-header">
             <form id="formintospace">
                 <input id="gointospace" placeholder="Search Space..." class="search-header__input" type="text" />
-            </form>
-                <button class="search-header__button">
+                <button type="submit" class="search-header__button">
                     <svg fill="none" viewBox="0 0 18 18" height="18" width="18" class="search-header__icon">
                         <path fill="#3A3A3A"
                             d="M7.132 0C3.197 0 0 3.124 0 6.97c0 3.844 3.197 6.969 7.132 6.969 1.557 0 2.995-.49 4.169-1.32L16.82 18 18 16.847l-5.454-5.342a6.846 6.846 0 0 0 1.718-4.536C14.264 3.124 11.067 0 7.132 0zm0 .82c3.48 0 6.293 2.748 6.293 6.15 0 3.4-2.813 6.149-6.293 6.149S.839 10.37.839 6.969C.839 3.568 3.651.82 7.132.82z">
                         </path>
                     </svg>
                 </button>
+            </form>
         </div>
     </div>
     <iframe id="intospace" style="display: none; width: calc(100vw - 50px); height: 100%; position: absolute; border: none; outline: 0; right: 0; z-index:999999999999999999999;"></iframe>
     <div class="spinnerParent" style="z-index: 2147483646; display: none;top:50%;left:50%;transform:translate(-50%,-50%);position:fixed;" id="spinnerParent">
-
-    <div class="spinner" style="z-index: 92147483646; display: none;">
-        <div class="spinner1"></div>
-    </div>
+        <div class="spinner" style="z-index: 92147483646; display: none;">
+            <div class="spinner1"></div>
+        </div>
     </div>
     <div class="blob"></div>
     <div class="blobsmall"></div>
     <div class="blobtop"></div>
-    <div style="z-index: -999" id="particles-js">
-    </div>
-    </div>
+    <div style="z-index: -999" id="particles-js"></div>
     <script>
         particlesJS("particles-js", {
             "particles": {
