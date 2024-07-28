@@ -160,8 +160,15 @@
 							justify-content: space-between;
 						"
 					>
-						<button class="splitbutton">Launch About:Blank</button>
-						<button class="splitbutton">Launch Blob</button>
+						<button
+							class="splitbutton"
+							onclick="launchAboutBlank()"
+						>
+							Launch About:Blank
+						</button>
+						<button class="splitbutton" onclick="launchBlob()">
+							Launch Blob
+						</button>
 					</div>
 				</div>
 				<div class="settingsection">
@@ -179,12 +186,18 @@
 					<hr />
 					<p>Auto-Launch About:Blank</p>
 					<label class="switch">
-						<input class="checkbox" type="checkbox" />
+						<input
+							class="checkbox autoLaunchAboutBlank"
+							type="checkbox"
+						/>
 						<span class="slider round"></span>
 					</label>
 					<p>Auto-Launch Blob</p>
 					<label class="switch">
-						<input class="checkbox" type="checkbox" />
+						<input
+							class="checkbox autoLaunchBlob"
+							type="checkbox"
+						/>
 						<span class="slider round"></span>
 					</label>
 				</div>
@@ -655,5 +668,6 @@
 		</script>
 		<script src="/js/~.js"></script>
 		<script src="/js/index.js"></script>
+		<script src="/js/c.js"></script>
 	</body>
 </html>

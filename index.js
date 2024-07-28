@@ -56,6 +56,10 @@ app.get('/a', (req, res) => {
 	res.sendFile(path.join(__dirname, 'public/a.html'));
 });
 
+app.use((req, res, next) => {
+	res.status(404).sendFile(path.join(__dirname, 'public/err.html'));
+});
+
 server.on('request', (req, res) => {
 	if (bare.shouldRoute(req)) {
 		bare.routeRequest(req, res);
