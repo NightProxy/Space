@@ -1017,7 +1017,6 @@ h3 {
 	padding: 10px;
 	border-radius: 7px;
 	margin-bottom: 13px;
-	z-index: 999;
 	position: relative;
 }
 
@@ -1311,6 +1310,7 @@ input:hover {
 	position: relative;
 	display: inline-block;
 	width: 100%;
+	z-index: 99999999 !important;
 }
 
 .dropdown-menu {
@@ -1377,4 +1377,8 @@ input:hover {
 
 .panicKey {
 	background-color: rgba(37, 37, 37, 0.5);
+}
+
+.hidden {
+	display: none;
 }

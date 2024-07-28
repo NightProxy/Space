@@ -98,8 +98,29 @@ const { file: swFile, config: swConfigSettings } = swConfig[proxySetting] ?? {
 // Search function definition
 function search(input) {
 	input = input.trim();
-	const searchTemplate =
-		localStorage.getItem('search') || 'https://google.com/search?q=%s';
+	let searchTemplate;
+
+	if (
+		localStorage.getItem('dropdown-selected-text-searchEngine') ===
+		'Duck Duck Go'
+	) {
+		searchTemplate = 'https://duckduckgo.com/?q=%s';
+	} else if (
+		localStorage.getItem('dropdown-selected-text-searchEngine') === 'Bing'
+	) {
+		searchTemplate = 'https://bing.com/search?q=%s';
+	} else if (
+		localStorage.getItem('dropdown-selected-text-searchEngine') ===
+		'Google (default)'
+	) {
+		searchTemplate = 'https://google.com/search?q=%s';
+	} else if (
+		localStorage.getItem('dropdown-selected-text-searchEngine') === 'Yahoo!'
+	) {
+		searchTemplate = 'https://search.yahoo.com/search?p=%s';
+	} else {
+		searchTemplate = 'https://google.com/search?q=%s';
+	}
 
 	try {
 		return new URL(input).toString();
