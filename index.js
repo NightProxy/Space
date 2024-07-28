@@ -52,6 +52,10 @@ app.get('/g', (req, res) => {
 	res.sendFile(path.join(__dirname, 'public/g.html'));
 });
 
+app.get('/a', (req, res) => {
+	res.sendFile(path.join(__dirname, 'public/a.html'));
+});
+
 server.on('request', (req, res) => {
 	if (bare.shouldRoute(req)) {
 		bare.routeRequest(req, res);

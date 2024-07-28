@@ -63,6 +63,7 @@ window.onload = function () {
 	if (queryParam) {
 		Promise.all([
 			fetch('/json/g.json').then(response => response.json()),
+			fetch('/json/a.json').then(response => response.json()),
 			fetch('/json/shortcuts.json').then(response => response.json())
 		])
 			.then(([gData, shortcutsData]) => {

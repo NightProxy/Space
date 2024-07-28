@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		page.style.display = 'none';
 	});
 	document.getElementById('blank').style.display = 'block';
-	showPageFromHash(); // Show the page based on the initial hash
+	showPageFromHash();
 });
 
 window.addEventListener('load', showPageFromHash);

@@ -14,7 +14,7 @@ body {
 	left: 50%;
 	top: 50%;
 	justify-content: center;
-	z-index: 1;
+	z-index: 10;
 }
 
 .header > h1 p {
@@ -101,9 +101,50 @@ body {
 	object-fit: cover;
 }
 
+.appImage {
+	opacity: 0;
+	animation: fade-in-bottom 1s;
+}
+
+.appsContainer {
+	top: 65px;
+	position: absolute;
+	width: 1100px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 20px;
+	justify-content: flex-start;
+}
+
+.appsContainer img {
+	width: 198px;
+	height: 128px;
+	object-fit: cover;
+	border-radius: 14px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.appsContainer img:hover {
+	transform: scale(1.05);
+	transition: 0.2s ease-in-out;
+}
+
+.appsContainer img:active {
+	transition: 0s;
+	outline: 2px solid #4400ff;
+}
+
 .gameImage {
 	opacity: 0;
 	animation: fade-in-bottom 1s;
+}
+
+.no-animation {
+	animation: none !important;
+	transition: none !important;
+	opacity: 1;
 }
 
 .gameContain {
@@ -160,6 +201,19 @@ body img {
 .sparkles:hover {
 	animation: vibrate 0.3s linear infinite forwards;
 	cursor: pointer;
+}
+
+@keyframes fade-in-left {
+	0% {
+		-webkit-transform: translateX(-50px);
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 
 @keyframes vibrate {
@@ -498,6 +552,60 @@ span.material-symbols-outlined {
 	}
 }
 
+.scrolltop {
+	background-color: #2020205e;
+	backdrop-filter: blur(10px);
+	width: 49px;
+	height: 49px;
+	border-radius: 50%;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 9999;
+	transition: 0.3s ease-in-out all;
+	opacity: 0;
+}
+
+.scrolltop:hover {
+	transform: scale(1.1);
+}
+
+.scrolltop span.material-symbols-outlined {
+	justify-content: center;
+	font-size: 30px;
+	margin-top: 0px;
+}
+
+.randomBtn {
+	height: 35px;
+	background-color: #0a0a0a;
+	border-radius: 10px;
+	border: 0;
+	text-align: center;
+	outline: #ffffff17 1px solid;
+	user-select: none;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	width: 140px;
+	margin-left: -13em;
+	font-weight: 200;
+	color: #868686;
+	font-family: 'DM Sans';
+	transition: 0.3s all ease-in-out;
+	animation: fade-in-left 1s;
+}
+
+.randomBtn:hover {
+	background-color: rgb(25, 25, 25);
+	outline: #525252 1px solid;
+}
+
+.randomBtn:active {
+	background-color: rgb(15, 15, 15);
+}
+
 .search-header {
 	display: flex;
 	align-items: center;
@@ -507,7 +615,7 @@ span.material-symbols-outlined {
 }
 
 .search-header__input {
-	font-family: inherit;
+	font-family: 'DM Sans';
 	font-size: 16px;
 	background-color: #0a0a0a;
 	border: solid 0.5px #525252;
