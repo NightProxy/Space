@@ -1,3 +1,10 @@
+/* This is basically the settings loader file, it loads the settings options,
+so like cloaking, panic key, etc. the search engine isnt set here because
+the code in index.js was already set. This isnt inside of index.js,
+because index.js has uv logic, and because uv isnt imported on every page,
+index.js fails to run on some pages. So c.js is its own import
+*/
+
 function isInLocalStorage(key) {
 	return localStorage.getItem(key) !== null;
 }
