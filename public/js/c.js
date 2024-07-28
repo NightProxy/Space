@@ -19,9 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		const launchType = localStorage.getItem('launchType');
 
 		if (launchType === 'blob') {
-			const currentSiteUrl = currentLocation + '?redirect=true';
+			setTimeout(() => {
+				const currentSiteUrl = currentLocation + '?redirect=true';
 
-			const htmlContent = `
+				const htmlContent = `
 		<html>
 		  <head>
 			<title>Space</title>
@@ -49,37 +50,42 @@ document.addEventListener('DOMContentLoaded', function () {
 		</html>
 	  `;
 
-			const blob = new Blob([htmlContent], {
-				type: 'text/html'
-			});
+				const blob = new Blob([htmlContent], {
+					type: 'text/html'
+				});
 
-			const blobUrl = URL.createObjectURL(blob);
+				const blobUrl = URL.createObjectURL(blob);
 
-			let newWindow = window.open(blobUrl);
-			if (newWindow) {
-				newWindow.onload = () => {
-					newWindow.document.title = 'Space';
-				};
-				window.location.href = 'https://google.com';
-			} else {
-				console.error('Failed to open a new window.');
-			}
+				let newWindow = window.open(blobUrl);
+				if (newWindow) {
+					newWindow.onload = () => {
+						newWindow.document.title = 'Space';
+					};
+					window.location.href = 'https://google.com';
+				}
+			}, 500);
 		} else if (launchType === 'aboutBlank') {
-			const win = window.open();
-			const url = currentLocation;
-			const iframe = win.document.createElement('iframe');
-			iframe.style.position = 'absolute';
-			iframe.style.left = '0';
-			iframe.style.top = '0';
-			iframe.style.width = '100vw';
-			iframe.style.height = '100vh';
-			iframe.style.border = 'none';
-			iframe.style.margin = '0';
-			iframe.style.padding = '0';
-			iframe.src = url;
-			win.document.body.appendChild(iframe);
-			win.document.body.style.overflow = 'hidden';
-			window.location.href = 'https://google.com';
+			setTimeout(() => {
+				const win = window.open();
+				const url = currentLocation;
+				const iframe = win.document.createElement('iframe');
+				iframe.style.position = 'absolute';
+				iframe.style.left = '0';
+				iframe.style.top = '0';
+				iframe.style.width = '100vw';
+				iframe.style.height = '100vh';
+				iframe.style.border = 'none';
+				iframe.style.margin = '0';
+				iframe.style.padding = '0';
+				iframe.src = url;
+				win.document.body.appendChild(iframe);
+				win.document.body.style.overflow = 'hidden';
+				if (window.parent !== window) {
+					window.parent.location.href = 'https://google.com';
+				} else {
+					window.location.href = 'https://google.com';
+				}
+			}, 500);
 		}
 	}
 

@@ -178,11 +178,69 @@ function handleCheckboxChange() {
 				if (this.classList.contains('autoLaunchBlob')) {
 					localStorage.setItem('launchType', 'blob');
 					localStorage.removeItem('aboutBlank');
-					launchBlob();
+
+					const currentSiteUrl = window.location.href;
+
+					const htmlContent = `
+						<html>
+							<head>
+								<title>Space</title>
+								<style>
+									body, html {
+										margin: 0;
+										padding: 0;
+										width: 100%;
+										height: 100%;
+										overflow: hidden;
+									}
+									iframe {
+										position: fixed;
+										top: 0;
+										left: 0;
+										width: 100%;
+										height: 100%;
+										border: none;
+									}
+								</style>
+							</head>
+							<body>
+								<iframe src="${currentSiteUrl}"></iframe>
+							</body>
+						</html>
+					`;
+
+					const blob = new Blob([htmlContent], {
+						type: 'text/html'
+					});
+
+					const blobUrl = URL.createObjectURL(blob);
+
+					let newWindow = window.open(blobUrl);
+					if (newWindow) {
+						newWindow.onload = () => {
+							newWindow.document.title = 'Space';
+						};
+					}
 				} else if (this.classList.contains('autoLaunchAboutBlank')) {
+					const currentSiteUrl = window.location.href;
+
 					localStorage.setItem('launchType', 'aboutBlank');
 					localStorage.removeItem('blob');
-					launchAboutBlank();
+					var win = window.open();
+					var url = currentSiteUrl;
+					var iframe = win.document.createElement('iframe');
+					iframe.style.position = 'absolute';
+					iframe.style.left = '0';
+					iframe.style.top = '0';
+					iframe.style.width = '100vw';
+					iframe.style.height = '100vh';
+					iframe.style.border = 'none';
+					iframe.style.margin = '0';
+					iframe.style.padding = '0';
+					iframe.src = url;
+					win.document.body.appendChild(iframe);
+					win.document.body.style.overflow = 'hidden';
+					window.close();
 				}
 			} else {
 				localStorage.removeItem('launchType');
@@ -190,7 +248,11 @@ function handleCheckboxChange() {
 				localStorage.removeItem('aboutBlank');
 				window.open('/~/#/blank');
 				window.close();
-				window.location.href = 'https://google.com';
+				if (window.parent !== window) {
+					window.parent.location.href = 'https://google.com';
+				} else {
+					window.location.href = 'https://google.com';
+				}
 			}
 		});
 	});
@@ -246,10 +308,7 @@ function launchBlob() {
 		newWindow.onload = () => {
 			newWindow.document.title = 'Space';
 		};
-	} else {
-		console.error('Failed to open a new window.');
 	}
-	window.location.href = 'https://google.com';
 }
 function launchAboutBlank() {
 	var win = window.open();
