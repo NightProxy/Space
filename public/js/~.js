@@ -91,11 +91,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
 function showPageFromHash() {
 	let hash = window.location.hash.slice(1);
-	console.log('Original hash:', hash);
+	// console.log('Original hash:', hash);
 	if (hash.startsWith('/')) {
 		hash = hash.slice(1);
 	}
-	console.log('Processed hash:', hash);
+	// console.log('Processed hash:', hash);
 
 	const pages = document.querySelectorAll('.scontent');
 	let pageToShow = document.getElementById('blank');
@@ -113,10 +113,10 @@ function showPageFromHash() {
 			console.log('Showing page:', targetPage);
 			pageToShow.style.display = 'block';
 		} else {
-			console.log('No page found for hash:', hash);
+			// console.log('No page found for hash:', hash);
 		}
 	} else {
-		console.log('No hash found, showing blank page.');
+		// console.log('No hash found, showing blank page.');
 		pageToShow.style.display = 'block';
 	}
 
@@ -175,24 +175,26 @@ function handleCheckboxChange() {
 							otherCheckbox.checked = false;
 						}
 					});
-
 				if (this.classList.contains('autoLaunchBlob')) {
 					localStorage.setItem('launchType', 'blob');
 					localStorage.removeItem('aboutBlank');
+					launchBlob();
 				} else if (this.classList.contains('autoLaunchAboutBlank')) {
 					localStorage.setItem('launchType', 'aboutBlank');
 					localStorage.removeItem('blob');
+					launchAboutBlank();
 				}
 			} else {
 				localStorage.removeItem('launchType');
 				localStorage.removeItem('blob');
 				localStorage.removeItem('aboutBlank');
+				window.open('/~/#/blank');
+				window.close();
+				window.location.href = 'https://google.com';
 			}
 		});
 	});
 }
-
-handleCheckboxChange();
 
 setCheckboxState();
 
@@ -247,6 +249,7 @@ function launchBlob() {
 	} else {
 		console.error('Failed to open a new window.');
 	}
+	window.location.href = 'https://google.com';
 }
 function launchAboutBlank() {
 	var win = window.open();
@@ -263,7 +266,7 @@ function launchAboutBlank() {
 	iframe.src = url;
 	win.document.body.appendChild(iframe);
 	win.document.body.style.overflow = 'hidden';
-	window.location.href = 'https://google.com';
+	window.close();
 }
 
 document.addEventListener('DOMContentLoaded', () => {

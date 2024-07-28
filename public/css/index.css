@@ -1371,7 +1371,7 @@ input:hover {
 .panicKeyFailed {
 	transition: all 0.2s ease-in-out;
 	box-shadow: 0px 0px 30px -5px #e20b41;
-	background-color: #640b29 !important;
+	background-color: #e20b41 !important;
 	z-index: 999999999;
 }
 
