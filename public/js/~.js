@@ -165,11 +165,11 @@ function setCheckboxState() {
 }
 
 function handleCheckboxChange() {
-	document.querySelectorAll('.checkbox').forEach(checkbox => {
+	document.querySelectorAll('.checkbox-blob-aboutBlank').forEach(checkbox => {
 		checkbox.addEventListener('change', function () {
 			if (this.checked) {
 				document
-					.querySelectorAll('.checkbox')
+					.querySelectorAll('.checkbox-blob-aboutBlank')
 					.forEach(otherCheckbox => {
 						if (otherCheckbox !== this) {
 							otherCheckbox.checked = false;
@@ -191,6 +191,8 @@ function handleCheckboxChange() {
 		});
 	});
 }
+
+handleCheckboxChange();
 
 setCheckboxState();
 
