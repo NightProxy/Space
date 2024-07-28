@@ -4,6 +4,7 @@ function isInLocalStorage(key) {
 
 const currentLocation = window.location.href;
 document.addEventListener('DOMContentLoaded', function () {
+	// Cloaking
 	if (
 		currentLocation !== 'about:blank' ||
 		!currentLocation.includes('blob:')
@@ -74,4 +75,28 @@ document.addEventListener('DOMContentLoaded', function () {
 			window.location.href = 'https://google.com';
 		}
 	}
+
+	// Tab Cloaking
+	if (isInLocalStorage('tabCloak')) {
+		console.log('not done yet');
+	}
+
+	// Panic Key
+	if (!localStorage.getItem('panicKeyBind')) {
+		localStorage.setItem('panicKeyBind', '`');
+	}
+
+	function handlePanicKey(event) {
+		const panicKeyBind = localStorage.getItem('panicKeyBind');
+
+		if (
+			event.key === panicKeyBind &&
+			event.target.tagName !== 'INPUT' &&
+			event.target.tagName !== 'TEXTAREA'
+		) {
+			window.location.href = 'https://google.com';
+		}
+	}
+
+	document.addEventListener('keydown', handlePanicKey);
 });

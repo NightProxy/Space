@@ -189,3 +189,41 @@ function launchAboutBlank() {
 	win.document.body.style.overflow = 'hidden';
 	window.location.href = 'https://google.com';
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+	const panicKeyInput = document.querySelector('.panicKey');
+	const saveButton = document.querySelector('.panicKeySave');
+	const validKeys =
+		'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`.~!@#$%^&*()-_=+[{]}|;:,<.>/?';
+
+	panicKeyInput.addEventListener('input', () => {
+		if (panicKeyInput.value.length > 1) {
+			panicKeyInput.value = panicKeyInput.value[0];
+		}
+	});
+
+	saveButton.addEventListener('click', () => {
+		const key = panicKeyInput.value;
+
+		if (validKeys.includes(key) && key.length === 1) {
+			localStorage.setItem('panicKeyBind', key);
+
+			saveButton.classList.add('panicKeySuccessful');
+			setTimeout(() => {
+				saveButton.classList.remove('panicKeySuccessful');
+			}, 1000);
+		} else if (key.length < 1) {
+			localStorage.setItem('panicKeyBind', '`');
+
+			saveButton.classList.add('panicKeySuccessful');
+			setTimeout(() => {
+				saveButton.classList.remove('panicKeySuccessful');
+			}, 1000);
+		} else {
+			saveButton.classList.add('panicKeyFailed');
+			setTimeout(() => {
+				saveButton.classList.remove('panicKeyFailed');
+			}, 1000);
+		}
+	});
+});

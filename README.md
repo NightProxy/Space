@@ -5,8 +5,7 @@
 
 ![inpreview](https://i.imgur.com/DGnFipl.jpeg)
 
-> [!IMPORTANT]
-> If you fork this repo please consider giving the original repo a
+> [!IMPORTANT] If you fork this repo please consider giving the original repo a
 > star. Thank you!
 
 ## Features
@@ -21,8 +20,7 @@
 
 ## Deployment
 
-> [!WARNING]
-> You **can not** host Space locally via a static web hosting site
+> [!WARNING] You **can not** host Space locally via a static web hosting site
 > such as Netlify, Github Pages, and Cloudflare Pages.
 
 Please run the following commands to host a server:
@@ -47,8 +45,7 @@ git pull --force --allow-unrelated-histories
 
 ## Where to ask for help
 
-> [!NOTE]
-> If you'd like to get links, support, or other deployment methods join
+> [!NOTE] If you'd like to get links, support, or other deployment methods join
 > our [Discord Server](https://discord.gg/7SCnPUM5S6) or open a discussion.
 
 ## Contribution
