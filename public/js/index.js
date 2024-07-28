@@ -1,63 +1,62 @@
 // Typewriting effect
-var TxtType = function (el, toRotate, period) {
-	this.toRotate = toRotate;
-	this.el = el;
-	this.loopNum = 0;
-	this.period = parseInt(period, 10) || 2000;
-	this.txt = '';
-	this.tick();
-	this.isDeleting = false;
-};
-
-TxtType.prototype.tick = function () {
-	var i = this.loopNum % this.toRotate.length;
-	var fullTxt = this.toRotate[i];
-
-	if (this.isDeleting) {
-		this.txt = fullTxt.substring(0, this.txt.length - 1);
-	} else {
-		this.txt = fullTxt.substring(0, this.txt.length + 1);
-	}
-
-	this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-	var that = this;
-	var delta = 200 - Math.random() * 100;
-
-	if (this.isDeleting) {
-		delta /= 2;
-	}
-
-	if (!this.isDeleting && this.txt === fullTxt) {
-		delta = this.period;
-		this.isDeleting = true;
-	} else if (this.isDeleting && this.txt === '') {
+class TxtType {
+	constructor(el, toRotate, period) {
+		this.toRotate = toRotate;
+		this.el = el;
+		this.loopNum = 0;
+		this.period = parseInt(period, 10) || 2000;
+		this.txt = '';
+		this.tick();
 		this.isDeleting = false;
-		this.loopNum++;
-		delta = 500;
 	}
 
-	setTimeout(function () {
-		that.tick();
-	}, delta);
-};
+	tick() {
+		const i = this.loopNum % this.toRotate.length;
+		const fullTxt = this.toRotate[i];
+
+		if (this.isDeleting) {
+			this.txt = fullTxt.substring(0, this.txt.length - 1);
+		} else {
+			this.txt = fullTxt.substring(0, this.txt.length + 1);
+		}
+
+		this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+		let delta = 200 - Math.random() * 100;
+
+		if (this.isDeleting) {
+			delta /= 2;
+		}
+
+		if (!this.isDeleting && this.txt === fullTxt) {
+			delta = this.period;
+			this.isDeleting = true;
+		} else if (this.isDeleting && this.txt === '') {
+			this.isDeleting = false;
+			this.loopNum++;
+			delta = 500;
+		}
+
+		setTimeout(() => this.tick(), delta);
+	}
+}
 
 window.onload = function () {
-	var elements = document.getElementsByClassName('typewrite');
-	for (var i = 0; i < elements.length; i++) {
-		var toRotate = elements[i].getAttribute('data-type');
-		var period = elements[i].getAttribute('data-period');
+	const elements = document.getElementsByClassName('typewrite');
+	for (let i = 0; i < elements.length; i++) {
+		const toRotate = elements[i].getAttribute('data-type');
+		const period = elements[i].getAttribute('data-period');
 		if (toRotate) {
 			new TxtType(elements[i], JSON.parse(toRotate), period);
 		}
 	}
+
 	// INJECT CSS
-	var css = document.createElement('style');
+	const css = document.createElement('style');
 	css.type = 'text/css';
 	css.innerHTML = '.typewrite > .wrap { border-right: 0.06em solid #a04cff}';
 	document.body.appendChild(css);
 
-	// Handle url params, go see if q is there etc.
 	const urlParams = new URLSearchParams(window.location.search);
 	const queryParam = urlParams.get('q');
 	if (queryParam) {
@@ -66,8 +65,8 @@ window.onload = function () {
 			fetch('/json/a.json').then(response => response.json()),
 			fetch('/json/shortcuts.json').then(response => response.json())
 		])
-			.then(([gData, shortcutsData]) => {
-				const data = [...gData, ...shortcutsData];
+			.then(([gData, aData, shortcutsData]) => {
+				const data = [...gData, ...aData, ...shortcutsData];
 				const item = data.find(
 					d => d.name.toLowerCase() === queryParam.toLowerCase()
 				);
@@ -95,31 +94,25 @@ const { file: swFile, config: swConfigSettings } = swConfig[proxySetting] ?? {
 	config: __uv$config
 };
 
-// Search function definition
 function search(input) {
 	input = input.trim();
 	let searchTemplate;
 
-	if (
-		localStorage.getItem('dropdown-selected-text-searchEngine') ===
-		'Duck Duck Go'
-	) {
-		searchTemplate = 'https://duckduckgo.com/?q=%s';
-	} else if (
-		localStorage.getItem('dropdown-selected-text-searchEngine') === 'Bing'
-	) {
-		searchTemplate = 'https://bing.com/search?q=%s';
-	} else if (
-		localStorage.getItem('dropdown-selected-text-searchEngine') ===
-		'Google (default)'
-	) {
-		searchTemplate = 'https://google.com/search?q=%s';
-	} else if (
-		localStorage.getItem('dropdown-selected-text-searchEngine') === 'Yahoo!'
-	) {
-		searchTemplate = 'https://search.yahoo.com/search?p=%s';
-	} else {
-		searchTemplate = 'https://google.com/search?q=%s';
+	switch (localStorage.getItem('dropdown-selected-text-searchEngine')) {
+		case 'Duck Duck Go':
+			searchTemplate = 'https://duckduckgo.com/?q=%s';
+			break;
+		case 'Bing':
+			searchTemplate = 'https://bing.com/search?q=%s';
+			break;
+		case 'Google (default)':
+			searchTemplate = 'https://google.com/search?q=%s';
+			break;
+		case 'Yahoo!':
+			searchTemplate = 'https://search.yahoo.com/search?p=%s';
+			break;
+		default:
+			searchTemplate = 'https://google.com/search?q=%s';
 	}
 
 	try {
