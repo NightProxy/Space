@@ -38,65 +38,65 @@ document.addEventListener('click', function (event) {
 });
 
 function showPageFromHash() {
-    let hash = window.location.hash.slice(1);
-    if (hash.startsWith('/')) {
-        hash = hash.slice(1);
-    }
+	let hash = window.location.hash.slice(1);
+	if (hash.startsWith('/')) {
+		hash = hash.slice(1);
+	}
 
-    const pages = document.querySelectorAll('.scontent');
-    let pageToShow = document.getElementById('blank');
+	const pages = document.querySelectorAll('.scontent');
+	let pageToShow = document.getElementById('blank');
 
-    pages.forEach(page => {
-        page.style.display = 'none';
-    });
+	pages.forEach(page => {
+		page.style.display = 'none';
+	});
 
-    if (hash) {
-        const targetPage = document.getElementById(hash);
-        if (targetPage) {
-            pageToShow = targetPage;
-            pageToShow.style.display = 'block';
-        }
-    } else {
-        pageToShow.style.display = 'block';
-    }
+	if (hash) {
+		const targetPage = document.getElementById(hash);
+		if (targetPage) {
+			pageToShow = targetPage;
+			pageToShow.style.display = 'block';
+		}
+	} else {
+		pageToShow.style.display = 'block';
+	}
 
-    const settingItems = document.querySelectorAll('.settingItem');
-    let foundActive = false;
+	const settingItems = document.querySelectorAll('.settingItem');
+	let foundActive = false;
 
-    settingItems.forEach(item => {
-        if (item.dataset.id === hash) {
-            item.classList.add('sideActive');
-            foundActive = true;
-        } else {
-            item.classList.remove('sideActive');
-        }
-    });
+	settingItems.forEach(item => {
+		if (item.dataset.id === hash) {
+			item.classList.add('sideActive');
+			foundActive = true;
+		} else {
+			item.classList.remove('sideActive');
+		}
+	});
 
-    if (!foundActive) {
-        const defaultSettingItem = document.querySelector(
-            '.settingItem[data-id="blank"]'
-        );
-        if (defaultSettingItem) {
-            defaultSettingItem.classList.add('sideActive');
-        }
-    }
+	if (!foundActive) {
+		const defaultSettingItem = document.querySelector(
+			'.settingItem[data-id="blank"]'
+		);
+		if (defaultSettingItem) {
+			defaultSettingItem.classList.add('sideActive');
+		}
+	}
 }
 
 function setupHashChangeListener() {
-    window.addEventListener('hashchange', showPageFromHash);
+	window.addEventListener('hashchange', showPageFromHash);
 }
 
 function preventDefaultLinkBehavior() {
-    const settingItems = document.querySelectorAll('.settingItem');
-    settingItems.forEach(item => {
-        item.addEventListener('click', event => {
-            event.preventDefault();
-            const targetHash = item.dataset.id;
-            if (targetHash) {
-                window.location.hash = targetHash;
-            }
-        });
-    });
+	const settingItems = document.querySelectorAll('.settingItem');
+	settingItems.forEach(item => {
+		item.addEventListener('click', event => {
+			event.preventDefault();
+			const targetHash = item.dataset.id;
+			if (targetHash) {
+				window.location.hash = targetHash;
+			}
+		});
+	});
 }
 
 setupHashChangeListener();
@@ -565,10 +565,42 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 
+	function base64Encode(str) {
+		return btoa(str);
+	}
+
+	function xorEncode(str, key) {
+		let result = '';
+		for (let i = 0; i < str.length; i++) {
+			result += String.fromCharCode(str.charCodeAt(i) ^ key);
+		}
+		return result;
+	}
+
+	function savePassword() {
+		const passwordInput = document.querySelector('.pPasswordInput');
+		const newPassword = passwordInput.value;
+
+		if (newPassword) {
+			const key = 42;
+			const encodedPassword = xorEncode(base64Encode(newPassword), key);
+			localStorage.setItem('pPassword', encodedPassword);
+			localStorage.setItem('passwordProtected', 'true');
+			alert('Password has been set and saved.');
+			passwordInput.value = '';
+		} else {
+			alert('Please enter a password.');
+		}
+	}
+
+	const saveButton2 = document.querySelector('.pPasswordSave');
+	saveButton2.addEventListener('click', savePassword);
+
 	const pages = document.querySelectorAll('.scontent');
 	pages.forEach(page => {
 		page.style.display = 'none';
 	});
+
 	document.getElementById('blank').style.display = 'block';
 	showPageFromHash();
 });
