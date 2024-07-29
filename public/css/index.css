@@ -23,6 +23,63 @@ body {
 	font-weight: 200;
 }
 
+#utilityactive {
+	background-color: #8c00ff8c;
+	border-radius: 7px;
+}
+
+.utility span:hover {
+	background-color: #8c00ff21;
+	border-radius: 7px;
+	transition: 0.2s all ease-in-out;
+}
+
+.utility span {
+	transition: 0.2s;
+}
+
+.utility span.material-symbols-outlined {
+	margin: 0;
+}
+
+.utility {
+	list-style-type: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: 0;
+	direction: ltr;
+	width: calc(100% - 2.5rem - 9px);
+	height: 3.633em;
+	background-color: rgb(22, 22, 22);
+	position: fixed;
+	text-align: center;
+	box-shadow: 1.5px 1px 1px 0 rgba(66, 66, 66, 0.86);
+	z-index: 999999999;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	left: calc(2.5rem + 9px);
+	clip-path: path(
+		'M 0 0 L 0 100% Q 20px 80% 40px 100% L 100% 100% L 100% 0 Z'
+	); /* Outward curve at bottom left */
+}
+
+.utility li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.utility hr {
+	width: 40px;
+	height: 1px;
+	background: rgba(160, 160, 160, 0.274);
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Reg Nav */
+
 #navactive {
 	background-color: #8c00ff8c;
 	border-radius: 7px;
@@ -50,7 +107,7 @@ body {
 	background-color: rgb(22, 22, 22);
 	position: fixed;
 	text-align: center;
-	box-shadow: 1px 1px 5px -3px rgba(66, 66, 66, 0.86);
+	box-shadow: 1px 0 1px 0 rgba(66, 66, 66, 0.86);
 	z-index: 99999999;
 }
 
@@ -706,7 +763,7 @@ span.material-symbols-outlined {
 		#ff00d4
 	);
 	background-blend-mode: multiply;
-	filter: blur(50px);
+	filter: blur(50px) contrast(1.1);
 	position: fixed;
 	transform: translate(-50%, -50%);
 	left: 40em;
@@ -724,7 +781,7 @@ span.material-symbols-outlined {
 		#ff00d4
 	);
 	background-blend-mode: multiply;
-	filter: blur(50px);
+	filter: blur(50px) contrast(1.2);
 	position: fixed;
 	transform: translate(-50%, -50%);
 	left: 55em;
@@ -742,7 +799,7 @@ span.material-symbols-outlined {
 		#ff00d4
 	);
 	background-blend-mode: multiply;
-	filter: blur(50px);
+	filter: blur(50px) contrast(1.1);
 	position: fixed;
 	transform: translate(-50%, -50%);
 	rotate: -20deg;
@@ -1465,10 +1522,10 @@ input:hover {
 	padding: 8px 16px;
 	color: white;
 	cursor: pointer;
+	z-index: -1;
 }
 
 .dropdown-menu li:first-child:hover {
-	background-color: rgb(25, 25, 25);
 	border-radius: 10px 10px 0 0;
 }
 
@@ -1479,6 +1536,16 @@ input:hover {
 
 .dropdown-menu li:hover {
 	background-color: rgb(25, 25, 25);
+}
+
+.dropdown-menu li.second-to-last-conditional:hover {
+	background-color: rgb(25, 25, 25);
+	border-radius: 0 0 10px 10px;
+}
+
+.dropdown-menu li.second-to-first-conditional:hover {
+	background-color: rgb(25, 25, 25);
+	border-radius: 10px 10px 0px 0px;
 }
 
 #arrow {
@@ -1523,4 +1590,213 @@ input:hover {
 .sideSnav li {
 	transform: perspective(500px) rotateX(90deg);
 	transition: transform 0.2s ease-out;
+}
+
+/* Failure Notification */
+
+.failtoast {
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	border-radius: 12px;
+	background: rgb(255, 0, 0);
+	background: rgb(255, 0, 0);
+	background: linear-gradient(
+		165deg,
+		rgba(255, 0, 0, 0.14508449864320727) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	backdrop-filter: blur(20px);
+	padding: 20px 25px 20px 35px;
+	box-shadow: 0 6px 20px -5px rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	transform: translateX(calc(100vw + 30px));
+	transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.failtoast.active {
+	transform: translateX(0%);
+}
+
+.failtoast .failtoast-content {
+	display: flex;
+	align-items: center;
+}
+
+.failtoast-content .fail {
+	display: flex;
+	height: 35px;
+	min-width: 35px;
+	color: red;
+	font-size: 30px;
+	border-radius: 50%;
+}
+
+.failtoast-content .failmessage {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px;
+}
+
+.failmessage .failtext {
+	font-size: 16px;
+	font-weight: 400;
+	color: #ffffff7a;
+}
+
+.failmessage .failtext.text-1 {
+	font-weight: 600;
+	color: #ffffff7a;
+	margin: 0 !important;
+}
+
+.failtoast .failclose {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	padding: 5px;
+	cursor: pointer;
+	opacity: 0.7;
+	color: #fff;
+}
+
+.failtoast .failclose:hover {
+	opacity: 1;
+}
+
+.failtoast .failprogress {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 3px;
+	width: 100%;
+}
+
+.failtoast .failprogress:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #b70000;
+}
+
+.failprogress.active:before {
+	animation: progress 5s linear forwards;
+}
+
+.failtoast.active ~ button {
+	pointer-events: none;
+}
+
+@keyframes failprogress {
+	100% {
+		right: 100%;
+	}
+}
+
+/* Save Notification */
+
+.toast {
+	position: absolute;
+	top: 25px;
+	right: 30px;
+	border-radius: 12px;
+	background: rgb(43, 255, 0);
+	background: linear-gradient(
+		165deg,
+		rgba(0, 255, 0, 0.145) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	backdrop-filter: blur(20px);
+	padding: 20px 35px 20px 25px;
+	box-shadow: 0 6px 20px -5px rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	transform: translateX(calc(100vw + 30px));
+	transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast.active {
+	transform: translateX(0%);
+}
+
+.toast .toast-content {
+	display: flex;
+	align-items: center;
+}
+
+.toast-content .check {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	min-width: 35px;
+	background-color: #00b709;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 50%;
+}
+
+.toast-content .message {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px;
+}
+
+.message .text {
+	font-size: 16px;
+	font-weight: 400;
+	color: #ffffff7a;
+}
+
+.message .text.text-1 {
+	font-weight: 600;
+	color: #ffffff7a;
+}
+
+.toast .close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	padding: 5px;
+	cursor: pointer;
+	opacity: 0.7;
+	color: #fff;
+}
+
+.toast .close:hover {
+	opacity: 1;
+}
+
+.toast .progress {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 3px;
+	width: 100%;
+}
+
+.toast .progress:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #00b709;
+}
+
+.progress.active:before {
+	animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+	100% {
+		right: 100%;
+	}
+}
+
+.toast.active ~ button {
+	pointer-events: none;
 }

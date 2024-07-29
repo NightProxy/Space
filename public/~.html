@@ -21,7 +21,35 @@
 		<meta property="og:image" content="/assets/logo.png" />
 	</head>
 
-	<body>
+	<body style="overflow: hidden">
+		<div class="toast">
+			<div class="toast-content">
+				<i class="fas fa-solid fa-check check"></i>
+				<div class="message">
+					<span class="text text-1">Success</span>
+					<span class="text text-2"
+						>Your changes has been saved.</span
+					>
+				</div>
+			</div>
+			<i class="fa-solid fa-xmark close"></i>
+			<div class="progress"></div>
+		</div>
+
+		<div class="failtoast">
+			<div class="failtoast-content">
+				<i class="fa fa-solid fa-circle-exclamation fail"></i>
+				<div class="failmessage">
+					<span class="failtext text-1">Failed to save</span>
+					<span class="failtext text-2"
+						>Something went wrong. Please try again.</span
+					>
+				</div>
+			</div>
+			<i class="fa-solid fa-xmark failclose"></i>
+			<div class="failprogress"></div>
+		</div>
+
 		<ul class="navbar">
 			<li style="margin-left: -1px; margin-top: 2px">
 				<a href="/"
@@ -78,7 +106,7 @@
 				display: inline-flex;
 				width: 900px;
 				backdrop-filter: blur(8px);
-				background-color: transparent;
+				background-color: rgba(21, 21, 21, 0.1);
 				z-index: -1;
 				box-shadow: 0 0 15px -10px #fff;
 				border-radius: 27px;
@@ -717,7 +745,7 @@
 						<input
 							class="password pPasswordInput"
 							type="password"
-							placeholder="New Password"
+							placeholder="Set Password"
 						/>
 					</div>
 					<button

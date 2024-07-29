@@ -531,6 +531,63 @@ document.addEventListener('DOMContentLoaded', function () {
 	const saveButton = document.querySelector('.panicKeySave');
 	const validKeys =
 		'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`.~!@#$%^&*()-_=+[{]}|;:,<.>/?';
+	function panicKeySuccessPopup() {
+		toast = document.querySelector('.toast');
+		(closeIcon = document.querySelector('.close')),
+			(progress = document.querySelector('.progress'));
+
+		let timer1, timer2;
+		toast.classList.add('active');
+		progress.classList.add('active');
+
+		timer1 = setTimeout(() => {
+			toast.classList.remove('active');
+		}, 5000);
+
+		timer2 = setTimeout(() => {
+			progress.classList.remove('active');
+		}, 5300);
+
+		closeIcon.addEventListener('click', () => {
+			toast.classList.remove('active');
+
+			setTimeout(() => {
+				progress.classList.remove('active');
+			}, 300);
+
+			clearTimeout(timer1);
+			clearTimeout(timer2);
+		});
+	}
+
+	function panicKeyFailedPopup() {
+		toast = document.querySelector('.failtoast');
+		(closeIcon = document.querySelector('.failclose')),
+			(progress = document.querySelector('.failprogress'));
+
+		let timer1, timer2;
+		toast.classList.add('active');
+		progress.classList.add('active');
+
+		timer1 = setTimeout(() => {
+			toast.classList.remove('active');
+		}, 5000);
+
+		timer2 = setTimeout(() => {
+			progress.classList.remove('active');
+		}, 5300);
+
+		closeIcon.addEventListener('click', () => {
+			toast.classList.remove('active');
+
+			setTimeout(() => {
+				progress.classList.remove('active');
+			}, 300);
+
+			clearTimeout(timer1);
+			clearTimeout(timer2);
+		});
+	}
 
 	saveButton.addEventListener('click', () => {
 		const keys = panicKeyInput.value.split(',').map(key => key.trim());
@@ -544,24 +601,30 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 		if (allValid) {
+			//worked
 			localStorage.setItem('panicKeyBind', keys.join(','));
 
-			saveButton.classList.add('panicKeySuccessful');
-			setTimeout(() => {
-				saveButton.classList.remove('panicKeySuccessful');
-			}, 1000);
+			if (document.querySelector('.toast.active, .failtoast.active')) {
+				return;
+			} else {
+				panicKeySuccessPopup();
+			}
 		} else if (panicKeyInput.value.length < 1) {
+			// panickey SUCCESS LETS GO
 			localStorage.setItem('panicKeyBind', '`');
 
-			saveButton.classList.add('panicKeySuccessful');
-			setTimeout(() => {
-				saveButton.classList.remove('panicKeySuccessful');
-			}, 500);
+			if (document.querySelector('.toast.active, .failtoast.active')) {
+				return;
+			} else {
+				panicKeySuccessPopup();
+			}
 		} else {
-			saveButton.classList.add('panicKeyFailed');
-			setTimeout(() => {
-				saveButton.classList.remove('panicKeyFailed');
-			}, 500);
+			// failed :c
+			if (document.querySelector('.toast.active, .failtoast.active')) {
+				return;
+			} else {
+				panicKeyFailedPopup();
+			}
 		}
 	});
 
@@ -603,4 +666,64 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	document.getElementById('blank').style.display = 'block';
 	showPageFromHash();
+
+	const dropdownMenu = document.querySelector('.dropdown-menu');
+
+	if (dropdownMenu) {
+		function updateStyles() {
+			const items = dropdownMenu.querySelectorAll('li');
+			if (items.length >= 2) {
+				const lastItem = items[items.length - 1];
+				const firstItem = items[0];
+				const secondToLastItem = items[items.length - 2];
+				const secondItem = items[1]; // second element (second-to-first)
+
+				if (secondToLastItem) {
+					if (lastItem.classList.contains('hidden')) {
+						secondToLastItem.classList.add(
+							'second-to-last-conditional'
+						);
+					} else {
+						secondToLastItem.classList.remove(
+							'second-to-last-conditional'
+						);
+					}
+				}
+
+				if (secondItem) {
+					if (firstItem.classList.contains('hidden')) {
+						secondItem.classList.add('second-to-first-conditional');
+					} else {
+						secondItem.classList.remove(
+							'second-to-first-conditional'
+						);
+					}
+				}
+			}
+		}
+
+		updateStyles();
+
+		const observer = new MutationObserver(() => {
+			setTimeout(updateStyles, 0);
+		});
+
+		observer.observe(dropdownMenu, {
+			childList: true,
+			subtree: true
+		});
+
+		dropdownMenu.querySelectorAll('li').forEach(item => {
+			observer.observe(item, {
+				attributes: true,
+				attributeFilter: ['class']
+			});
+		});
+
+		dropdownMenu.addEventListener('click', event => {
+			if (event.target.tagName === 'LI') {
+				// console.log('Clicked item:', event.target);
+			}
+		});
+	}
 });

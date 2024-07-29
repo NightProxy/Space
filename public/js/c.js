@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					document.body.style.cursor = '';
 					document.body.style.userSelect = '';
 					localStorage.setItem('passwordProtected', 'false');
-					protectionOpen = false; // Reset protection state
+					protectionOpen = false;
 				}
 			});
 
