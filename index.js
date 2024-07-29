@@ -56,6 +56,10 @@ app.get('/a', (req, res) => {
 	res.sendFile(path.join(__dirname, 'public/a.html'));
 });
 
+app.get('/password', (req, res) => {
+	res.sendFile(path.join(__dirname, 'public/password.html'));
+});
+
 app.use((req, res, next) => {
 	res.status(404).sendFile(path.join(__dirname, 'public/err.html'));
 });

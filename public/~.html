@@ -92,26 +92,59 @@
 					<li class="settingItem" data-id="blank">
 						<span class="material-symbols-outlined"
 							>ad_group_off</span
-						>About:Blank & Blob
-					</li>
-				</a>
-				<a href="/~/#/cloak">
-					<li class="settingItem" data-id="cloak">
-						<span class="material-symbols-outlined"
-							>visibility_off</span
-						>Tab Cloaking
+						>Cloaking
 					</li>
 				</a>
 				<a href="/~/#/plugins">
 					<li class="settingItem" data-id="plugins">
 						<span class="material-symbols-outlined">crossword</span
 						>Plugins
+						<span
+							style="
+								background-color: #6b6b6b63;
+								color: rgba(255, 255, 255, 0.48);
+								border-radius: 30px;
+								padding: 1px 7px;
+								font-size: 12px;
+								margin-left: 4px;
+								transform: translateY(1px);
+							"
+							>Coming Soon</span
+						>
+					</li>
+				</a>
+				<a href="/~/#/customkey">
+					<!-- Bindable, programmable, set-able?-->
+					<li class="settingItem" data-id="customkey">
+						<span class="material-symbols-outlined"
+							>deployed_code</span
+						>Bindable Keybind
+					</li>
+				</a>
+				<a href="/~/#/performance">
+					<!-- Bindable, programmable, set-able?-->
+					<li class="settingItem" data-id="performance">
+						<span class="material-symbols-outlined">speed</span
+						>Performance
 					</li>
 				</a>
 				<a href="/~/#/themes">
 					<li class="settingItem" data-id="themes">
 						<span class="material-symbols-outlined">palette</span
 						>Themes
+						<span
+							style="
+								background-color: #6b6b6b63;
+								color: rgba(255, 255, 255, 0.48);
+								border-radius: 30px;
+								padding: 1px 7px;
+								font-size: 12px;
+								margin-left: 4px;
+								transform: translateY(1px);
+								text-wrap: nowrap;
+							"
+							>Coming Soon</span
+						>
 					</li>
 				</a>
 				<a href="/~/#/proxy">
@@ -149,9 +182,31 @@
 					</li>
 				</a>
 			</ul>
+			<div
+				class="scontent"
+				id="loading"
+				style="display: block; animation: none !important"
+			>
+				<h1>Loading...</h1>
+				<div
+					class="settingsection"
+					style="animation: none !important; opacity: 1 !important"
+				>
+					<h1>Loading...</h1>
+					<p>
+						Loading settings. While you wait, you can join our
+						<a href="https://discord.lightgo.app">Discord</a> for
+						updates. If you have had this loading for long enought
+						to read this, please refresh the page. Or check your
+						internet connection
+					</p>
+				</div>
+			</div>
 			<div class="scontent" id="blank">
-				<h1>About:Blank</h1>
-				<div class="settingsection">
+				<h1 style="animation: fade-in-left 1s">
+					About:Blank & Tab Cloaking
+				</h1>
+				<div class="settingsection settingsection1">
 					<h1>About:Blank & Blob Cloaking</h1>
 					<p>
 						About:Blank allows you to hide your tab history, and
@@ -177,7 +232,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="settingsection">
+				<div class="settingsection settingsection1">
 					<h1>Automatic cloaking</h1>
 					<p>
 						This toggles automatic cloaking when the site first
@@ -207,10 +262,8 @@
 						<span class="slider round"></span>
 					</label>
 				</div>
-			</div>
-			<div class="scontent" id="cloak">
-				<h1>Tab Cloaking & Panic Key</h1>
-				<div class="settingsection">
+
+				<div class="settingsection settingsection1">
 					<h1>Tab Cloaking</h1>
 					<p>
 						Tab Cloaking cloaks the name of the tab & icon, so your
@@ -234,8 +287,11 @@
 						</ul>
 					</div>
 				</div>
-				<div style="z-index: 998" class="settingsection">
-					<h1>Panic Key</h1>
+				<div
+					style="z-index: 998"
+					class="settingsection settingsection1"
+				>
+					<h1 style="animation: fade-in-left 1s">Panic Key</h1>
 					<p>
 						Press the selected keybind to go to another site
 						quickly. You can set multiple keybinds by seperating
@@ -282,8 +338,8 @@
 				</div>
 			</div>
 			<div class="scontent" id="plugins">
-				<h1>Plugins</h1>
-				<div class="settingsection">
+				<h1 style="animation: fade-in-left 1s">Plugins</h1>
+				<div class="settingsection settingsection2">
 					<h1>Coming Soon</h1>
 					<p>
 						Plugins will be added soon to Space. While you wait, you
@@ -293,9 +349,23 @@
 					</p>
 				</div>
 			</div>
+			<div class="scontent" id="customkey">
+				<h1 style="animation: fade-in-left 1s">Programmable Keybind</h1>
+				<div class="settingsection settingsection3">
+					<h1>Bindable Keybind</h1>
+					<p>Description</p>
+				</div>
+			</div>
+			<div class="scontent" id="performance">
+				<h1 style="animation: fade-in-left 1s">Performance</h1>
+				<div class="settingsection settingsection4">
+					<h1>Bindable Keybind</h1>
+					<p>Description</p>
+				</div>
+			</div>
 			<div class="scontent" id="themes">
-				<h1>Themes</h1>
-				<div class="settingsection">
+				<h1 style="animation: fade-in-left 1s">Themes</h1>
+				<div class="settingsection settingsection5">
 					<h1>Coming Soon</h1>
 					<p>
 						Themes will be added soon to Space. While you wait, you
@@ -306,8 +376,8 @@
 				</div>
 			</div>
 			<div class="scontent" id="proxy">
-				<h1>Proxy & Browser</h1>
-				<div class="settingsection">
+				<h1 style="animation: fade-in-left 1s">Proxy & Browser</h1>
+				<div class="settingsection settingsection6">
 					<h1>Proxy</h1>
 					<p>
 						Proxies are what run the unblocking backend for you to
@@ -336,7 +406,10 @@
 						</ul>
 					</div>
 				</div>
-				<div class="settingsection" style="height: 325px">
+				<div
+					class="settingsection settingsection6"
+					style="height: 325px"
+				>
 					<h1>Browser</h1>
 					<p>
 						This allows you to change settings about the browser and
@@ -369,8 +442,8 @@
 				</div>
 			</div>
 			<div class="scontent" id="ads">
-				<h1>Advertising</h1>
-				<div class="settingsection">
+				<h1 style="animation: fade-in-left 1s">Advertising</h1>
+				<div class="settingsection settingsection7">
 					<h1>Enable Advertising</h1>
 					<p>
 						Toggle advertising on and off with the switch below. If
@@ -389,7 +462,11 @@
 						<span class="slider round"></span>
 					</label>
 				</div>
-				<div class="settingsection">
+				<!--
+				<div
+					class="settingsection settingsection7"
+					style="transition: all 0.2s ease-in-out !important"
+				>
 					<h1>Ad Types</h1>
 					<p>
 						Toggles the types of ads that will be shown. These will
@@ -400,101 +477,104 @@
 						By enabling more ad types you allow us to gain more CPM
 						(cost per 1K impressions).
 					</p>
-					<div
-						style="
-							display: flex;
-							align-items: center;
-							margin-bottom: -13px;
-						"
-					>
-						<div class="cntr">
-							<input
-								class="hidden-xs-up"
-								id="cbx"
-								type="checkbox"
-								checked=""
-							/>
-							<label class="cbx" for="cbx"></label>
+					<div>
+						<div
+							style="
+								display: flex;
+								align-items: center;
+								margin-bottom: -13px;
+							"
+						>
+							<div class="cntr">
+								<input
+									class="hidden-xs-up"
+									id="cbx"
+									type="checkbox"
+									checked=""
+								/>
+								<label class="cbx" for="cbx"></label>
+							</div>
+							<p style="margin-left: 5px">Erotic Ads</p>
 						</div>
-						<p style="margin-left: 5px">Erotic Ads</p>
-					</div>
-					<div
-						style="
-							display: flex;
-							align-items: center;
-							margin-bottom: -13px;
-						"
-					>
-						<div class="cntr">
-							<input
-								class="hidden-xs-up"
-								id="cbx"
-								type="checkbox"
-								checked=""
-							/>
-							<label class="cbx" for="cbx"></label>
+						<div
+							style="
+								display: flex;
+								align-items: center;
+								margin-bottom: -13px;
+							"
+						>
+							<div class="cntr">
+								<input
+									class="hidden-xs-up"
+									id="cbx"
+									type="checkbox"
+									checked=""
+								/>
+								<label class="cbx" for="cbx"></label>
+							</div>
+							<p style="margin-left: 5px">Ads with Sound</p>
 						</div>
-						<p style="margin-left: 5px">Ads with Sound</p>
-					</div>
-					<div
-						style="
-							display: flex;
-							align-items: center;
-							margin-bottom: -13px;
-						"
-					>
-						<div class="cntr">
-							<input
-								class="hidden-xs-up"
-								id="cbx"
-								type="checkbox"
-								checked=""
-							/>
-							<label class="cbx" for="cbx"></label>
+						<div
+							style="
+								display: flex;
+								align-items: center;
+								margin-bottom: -13px;
+							"
+						>
+							<div class="cntr">
+								<input
+									class="hidden-xs-up"
+									id="cbx"
+									type="checkbox"
+									checked=""
+								/>
+								<label class="cbx" for="cbx"></label>
+							</div>
+							<p style="margin-left: 5px">Software Ads</p>
 						</div>
-						<p style="margin-left: 5px">Software Ads</p>
-					</div>
-					<div
-						style="
-							display: flex;
-							align-items: center;
-							margin-bottom: -13px;
-						"
-					>
-						<div class="cntr">
-							<input
-								class="hidden-xs-up"
-								id="cbx"
-								type="checkbox"
-								checked=""
-							/>
-							<label class="cbx" for="cbx"></label>
+						<div
+							style="
+								display: flex;
+								align-items: center;
+								margin-bottom: -13px;
+							"
+						>
+							<div class="cntr">
+								<input
+									class="hidden-xs-up"
+									id="cbx"
+									type="checkbox"
+									checked=""
+								/>
+								<label class="cbx" for="cbx"></label>
+							</div>
+							<p style="margin-left: 5px">Gambling Ads</p>
 						</div>
-						<p style="margin-left: 5px">Gambling Ads</p>
-					</div>
-					<div
-						style="
-							display: flex;
-							align-items: center;
-							margin-bottom: -13px;
-						"
-					>
-						<div class="cntr">
-							<input
-								class="hidden-xs-up"
-								id="cbx"
-								type="checkbox"
-								checked=""
-							/>
-							<label class="cbx" for="cbx"></label>
+						<div
+							style="
+								display: flex;
+								align-items: center;
+								margin-bottom: -13px;
+							"
+						>
+							<div class="cntr">
+								<input
+									class="hidden-xs-up"
+									id="cbx"
+									type="checkbox"
+									checked=""
+								/>
+								<label class="cbx" for="cbx"></label>
+							</div>
+							<p style="margin-left: 5px">Alert Ads</p>
 						</div>
-						<p style="margin-left: 5px">Alert Ads</p>
 					</div>
 				</div>
+			-->
 			</div>
 			<div class="scontent" id="about">
-				<h1>About & Statistics</h1>
-				<div class="settingsection">
+				<h1 style="animation: fade-in-left 1s">About & Statistics</h1>
+				<div class="settingsection settingsection8">
 					<h1>Development Team</h1>
 					<p>
 						Space is owned, maintained, and managed by the Dusk till
@@ -509,7 +589,7 @@
 						>.
 					</p>
 				</div>
-				<div class="settingsection">
+				<div class="settingsection settingsection8">
 					<h1>Version & Analytics</h1>
 					<p>
 						You are currently on:
@@ -556,7 +636,7 @@
 						>
 					</p>
 				</div>
-				<div class="settingsection">
+				<div class="settingsection settingsection8">
 					<h1>Contributions</h1>
 					<p>
 						Contributions are welcome on our
@@ -570,7 +650,7 @@
 						<a href="https://discord.lightgo.app/">Discord</a>.
 					</p>
 				</div>
-				<div class="settingsection">
+				<div class="settingsection settingsection8">
 					<h1>Support</h1>
 					<p>
 						If you have any issues while using Space please report
@@ -590,8 +670,8 @@
 				</div>
 			</div>
 			<div class="scontent" id="account">
-				<h1>Account Settings</h1>
-				<div class="settingsection">
+				<h1 style="animation: fade-in-left 1s">Account Settings</h1>
+				<div class="settingsection settingsection9">
 					<h1>Two-Factor Authentication</h1>
 					<p>Add another layer of security to your account.</p>
 					<label class="switch">
@@ -599,7 +679,7 @@
 						<span class="slider round"></span>
 					</label>
 				</div>
-				<div class="settingsection">
+				<div class="settingsection settingsection9">
 					<h1>Password Protection</h1>
 					<p>
 						Protect your account with a password that way only you
@@ -615,7 +695,7 @@
 						get locked out of your account.
 					</p>
 				</div>
-				<div class="settingsection">
+				<div class="settingsection settingsection9">
 					<h1>Change password</h1>
 					<p>Current Password</p>
 					<div class="pgroup">
@@ -661,10 +741,30 @@
 					</div>
 					<button class="buttonreg" style="width: 300px">Save</button>
 				</div>
+				<div class="settingsection settingsection11">
+					<h1>Import & Export Data</h1>
+					<p>
+						Import simply loads your current userData and boots most of your user settings and data from the last site. Exporting downloads a save file that allows you to load your userData onto another URL to save settings and whatnot.
+					</p>
+					<input
+						type="file"
+						id="dataInput"
+						style="display: none"
+						onchange="importData();"
+					/>
+					<div style="display: flex">
+						<button class="splitbutton" id="exportData">
+							Export Data <span style="position: absolute; transform: translateY(-22px);" class="material-symbols-outlined">cloud_upload</span>
+						</button>
+						<button class="splitbutton" id="importData">
+							Import Data <span style="position: absolute; transform: translateY(-22px);" class="material-symbols-outlined">cloud_download</span>
+						</button>
+					</div>
+				</div>
 			</div>
 			<div class="scontent" id="news">
-				<h1>News & Updates</h1>
-				<div class="settingsection">
+				<h1 style="animation: fade-in-left 1s">News & Updates</h1>
+				<div class="settingsection settingsection10">
 					<h1>
 						Space has released!<span class="changelog"
 							>Version release [v.1.0.0]</span
@@ -811,6 +911,84 @@
 		<script src="/js/~.js"></script>
 		<script src="/js/index.js"></script>
 		<script src="/js/c.js"></script>
-		<script type='text/javascript' src='//pl23881934.highrevenuenetwork.com/c6/de/c6/c6dec671fa7ab5d0a210b2e6300c91eb.js'></script>
+		<script>
+			window.addEventListener('DOMContentLoaded', () => {
+				function setupObserver(selector) {
+					const observer = new MutationObserver(function (
+						mutationsList,
+						observer
+					) {
+						mutationsList.forEach(function (mutation) {
+							if (mutation.type === 'childList') {
+								const settingsSections =
+									document.querySelectorAll(selector);
+								if (settingsSections.length > 0) {
+									settingsSections.forEach(
+										(settingsSection, index) => {
+											const animationDelay = (
+												index * 0.1
+											).toFixed(2);
+											settingsSection.style.animationDelay = `${animationDelay}s`;
+											settingsSection.addEventListener(
+												'animationend',
+												() => {
+													settingsSection.classList.add(
+														'no-animation2'
+													);
+												}
+											);
+										}
+									);
+								}
+							}
+						});
+					});
+
+					observer.observe(document.body, {
+						childList: true,
+						subtree: true
+					});
+
+					function handleURLChange() {
+						const settingsSections =
+							document.querySelectorAll(selector);
+						settingsSections.forEach(settingsSection => {
+							settingsSection.classList.remove('no-animation2');
+						});
+					}
+
+					window.addEventListener('popstate', handleURLChange);
+					window.addEventListener('hashchange', handleURLChange);
+					handleURLChange();
+				}
+
+				function initializeObservers() {
+					setupObserver('.settingsection1');
+					setupObserver('.settingsection2');
+					setupObserver('.settingsection3');
+					setupObserver('.settingsection4');
+					setupObserver('.settingsection5');
+					setupObserver('.settingsection6');
+					setupObserver('.settingsection7');
+					setupObserver('.settingsection8');
+					setupObserver('.settingsection9');
+					setupObserver('.settingsection10');
+					setupObserver('.settingsection11');
+					// class="settingsection settingsection#"
+				}
+
+				initializeObservers();
+				const ul = document.querySelector('.sideSnav');
+				const lis = ul.querySelectorAll('li');
+
+				ul.style.opacity = '1';
+				lis.forEach((li, index) => {
+					li.style.transitionDelay = `${index * 0.1}s`;
+					setTimeout(() => {
+						li.style.transform = 'rotateX(0)';
+					}, 0);
+				});
+			});
+		</script>
 	</body>
 </html>

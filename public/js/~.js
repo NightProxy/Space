@@ -356,12 +356,240 @@ document.addEventListener('DOMContentLoaded', () => {
 			saveButton.classList.add('panicKeySuccessful');
 			setTimeout(() => {
 				saveButton.classList.remove('panicKeySuccessful');
-			}, 1000);
+			}, 500);
 		} else {
 			saveButton.classList.add('panicKeyFailed');
 			setTimeout(() => {
 				saveButton.classList.remove('panicKeyFailed');
-			}, 1000);
+			}, 500);
 		}
+	});
+});
+
+function base6xorEncrypt(text) {
+	let output = '';
+	for (let i = 0; i < text.length; i++) {
+		let charCode = text.charCodeAt(i) ^ 2;
+		let encryptedData = String.fromCharCode(charCode);
+		output += encryptedData;
+	}
+	return window.btoa(encodeURIComponent(output));
+}
+
+function base6xorDecrypt(encryptedData) {
+	let decodedData = decodeURIComponent(window.atob(encryptedData));
+	let output = '';
+	for (let i = 0; i < decodedData.length; i++) {
+		let charCode = decodedData.charCodeAt(i) ^ 2;
+		let decryptedOutput = String.fromCharCode(charCode);
+		output += decryptedOutput;
+	}
+	return output;
+}
+
+function extractCookies() {
+	let cookies = {};
+	document.cookie.split(';').forEach(c => {
+		let parts = c.split('=');
+		cookies[parts.shift().trim()] = decodeURI(parts.join('='));
+	});
+	return cookies;
+}
+
+async function getIDBData(databaseName) {
+	return new Promise((resolve, reject) => {
+		let dbRequest = indexedDB.open(databaseName);
+
+		dbRequest.onsuccess = event => {
+			let db = event.target.result;
+			let transaction = db.transaction(db.objectStoreNames, 'readonly');
+			let data = {};
+
+			transaction.oncomplete = () => {
+				resolve({ name: databaseName, data });
+			};
+
+			transaction.onerror = event => {
+				reject(event.target.error);
+			};
+
+			for (let storeName of db.objectStoreNames) {
+				let objectStore = transaction.objectStore(storeName);
+				let request = objectStore.openCursor();
+				data[storeName] = [];
+
+				request.onsuccess = event => {
+					let cursor = event.target.result;
+					if (cursor) {
+						data[storeName].push({
+							key: cursor.primaryKey,
+							value: cursor.value
+						});
+						cursor.continue();
+					}
+				};
+
+				request.onerror = event => {
+					reject(event.target.error);
+				};
+			}
+		};
+
+		dbRequest.onerror = event => {
+			reject(event.target.error);
+		};
+	});
+}
+
+function decodeBase64(dataUrl) {
+	const base64String = dataUrl.split(',')[1];
+	return window.atob(base64String);
+}
+
+function getAllIDBData() {
+	return indexedDB.databases().then(databases => {
+		let promises = databases.map(dbInfo => getIDBData(dbInfo.name));
+		return Promise.all(promises);
+	});
+}
+
+function exportData() {
+	getAllIDBData()
+		.then(idbData => {
+			let data = {
+				idbData: JSON.stringify(idbData),
+				localStorageData: JSON.stringify(localStorage),
+				cookies: extractCookies()
+			};
+
+			let jsonData = JSON.stringify(data);
+			let encryptedData = base6xorEncrypt(jsonData);
+
+			let blob = new Blob([encryptedData], {
+				type: 'application/octet-stream'
+			});
+
+			if (window.navigator.msSaveOrOpenBlob) {
+				window.navigator.msSaveBlob(blob, 'data.space');
+			} else {
+				let a = document.createElement('a');
+				a.href = URL.createObjectURL(blob);
+				a.download = 'data.space';
+				document.body.appendChild(a);
+				a.click();
+				document.body.removeChild(a);
+			}
+
+			alert('Browsing Data has been correctly exported!');
+		})
+		.catch(err => {
+			console.error('An error occurred during the export of data:', err);
+		});
+}
+
+function importData() {
+	let fileInput = document.getElementById('dataInput');
+	let file = fileInput.files[0];
+	let reader = new FileReader();
+
+	reader.onload = e => {
+		try {
+			let decryptedDataJSON = base6xorDecrypt(e.target.result);
+			let decryptedData = JSON.parse(decryptedDataJSON);
+
+			let idbData = JSON.parse(decryptedData.idbData);
+			let idbPromises = idbData.map(dbInfo => {
+				return new Promise((resolve, reject) => {
+					let dbRequest = indexedDB.open(dbInfo.name);
+
+					dbRequest.onsuccess = event => {
+						let db = event.target.result;
+						let transaction = db.transaction(
+							db.objectStoreNames,
+							'readwrite'
+						);
+
+						transaction.oncomplete = () => {
+							resolve();
+						};
+
+						transaction.onerror = event => {
+							reject(event.target.error);
+						};
+
+						for (let storeName of db.objectStoreNames) {
+							let objectStore =
+								transaction.objectStore(storeName);
+							let storeData = dbInfo.data[storeName];
+
+							// Clear the object store
+							objectStore.clear().onsuccess = () => {
+								storeData.forEach(item => {
+									if (item.key) {
+										objectStore.put(item.value, item.key);
+									} else {
+										objectStore.add(item.value);
+									}
+								});
+							};
+						}
+					};
+
+					dbRequest.onerror = event => {
+						reject(event.target.error);
+					};
+				});
+			});
+
+			localStorage.clear();
+			let localStorageData = JSON.parse(decryptedData.localStorageData);
+			for (let key in localStorageData) {
+				localStorage.setItem(key, localStorageData[key]);
+			}
+
+			document.cookie.split(';').forEach(c => {
+				document.cookie = c
+					.replace(/^ +/, '')
+					.replace(
+						/=.*/,
+						'=;expires=' + new Date().toUTCString() + ';path=/'
+					);
+			});
+
+			let cookieData = decryptedData.cookies;
+			for (let key in cookieData) {
+				document.cookie = key + '=' + cookieData[key] + ';path=/';
+			}
+
+			Promise.all(idbPromises)
+				.then(() => {
+					alert('Browsing Data has been correctly imported!');
+				})
+				.catch(err => {
+					console.error(
+						'An error occurred during the import of data:',
+						err
+					);
+				});
+		} catch (error) {
+			console.error('Error during import:', error);
+			alert(
+				'An error occurred during the import of data. Please ensure the file is correct and try again.'
+			);
+		}
+	};
+
+	reader.readAsText(file);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+	let importButton = document.getElementById('importData');
+	let exportButton = document.getElementById('exportData');
+
+	importButton.addEventListener('click', function () {
+		document.getElementById('dataInput').click();
+	});
+	exportButton.addEventListener('click', function () {
+		exportData();
 	});
 });

@@ -213,6 +213,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 			.catch(error => console.error('Error loading app :( ', error));
 
+		const scrollToTopBtn = document.querySelector('.scrolltop');
+
 		window.addEventListener('scroll', function () {
 			if (window.scrollY === 0) {
 				scrollToTopBtn.style.opacity = '0';

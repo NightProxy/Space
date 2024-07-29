@@ -147,6 +147,16 @@ body {
 	opacity: 1;
 }
 
+.no-animation2 {
+	animation: none !important;
+	transition: none !important;
+	opacity: 1 !important;
+}
+
+.appsContainer {
+	opacity: 1;
+}
+
 .gameContain {
 	top: 65px;
 	position: absolute;
@@ -298,8 +308,19 @@ body img {
 	}
 
 	100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in-left {
+	0% {
+		-webkit-transform: translateX(-50px);
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
 		opacity: 1;
 	}
 }
@@ -578,6 +599,8 @@ span.material-symbols-outlined {
 
 .randomBtn {
 	height: 35px;
+	padding: 0 20px;
+	text-wrap: nowrap;
 	background-color: #0a0a0a;
 	border-radius: 10px;
 	border: 0;
@@ -595,6 +618,8 @@ span.material-symbols-outlined {
 	font-family: 'DM Sans';
 	transition: 0.3s all ease-in-out;
 	animation: fade-in-left 1s;
+	display: flex;
+	align-items: center;
 }
 
 .randomBtn:hover {
@@ -839,10 +864,8 @@ span.material-symbols-outlined {
 	margin: 0;
 	padding: 0 5px 0 0;
 	position: relative;
-	margin-bottom: -2px;
 	font-size: 17px;
 	vertical-align: middle;
-	/* update this */
 	color: #666;
 }
 
@@ -1013,11 +1036,17 @@ h3 {
 	text-align: left;
 	background-color: #0c0c0c;
 	min-height: 90px;
-	width: 94%;
-	padding: 10px;
+	width: 90%;
+	padding: 10px 14px;
 	border-radius: 7px;
 	margin-bottom: 13px;
 	position: relative;
+	animation: fade-in-left 1s;
+	opacity: 0;
+}
+
+.settingItem {
+	display: block;
 }
 
 .settingsection p {
@@ -1214,6 +1243,32 @@ li {
 
 	to {
 		transform: scale(1, 1);
+	}
+}
+
+@-webkit-keyframes flip-in-hor-bottom {
+	0% {
+		-webkit-transform: rotateX(80deg);
+		transform: rotateX(80deg);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: rotateX(0);
+		transform: rotateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes flip-in-hor-bottom {
+	0% {
+		-webkit-transform: rotateX(80deg);
+		transform: rotateX(80deg);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: rotateX(0);
+		transform: rotateX(0);
+		opacity: 1;
 	}
 }
 
@@ -1441,7 +1496,7 @@ input:hover {
 
 .panicKeySuccessful {
 	transition: all 0.2s ease-in-out;
-	box-shadow: 0px 0px 30px -5px #07f05d;
+	box-shadow: 0px 0px 20px -5px #07f05d;
 	background-color: #24b95b !important;
 	z-index: 999999999;
 }
@@ -1459,4 +1514,13 @@ input:hover {
 
 .hidden {
 	display: none;
+}
+
+.sideSnav {
+	opacity: 0;
+}
+
+.sideSnav li {
+	transform: perspective(500px) rotateX(90deg);
+	transition: transform 0.2s ease-out;
 }
