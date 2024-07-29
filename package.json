@@ -4,8 +4,8 @@
 	"type": "module",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "node index.js"
+		"start": "node index.js",
+		"format": "prettier --write ."
 	},
 	"keywords": [
 		"Space",
@@ -16,7 +16,7 @@
 		"Space",
 		"Unblocker"
 	],
-	"author": "xnoctra",
+	"author": "xnoctra <x.noctra@outlook.com>; crllect <crllect@proton.me>",
 	"license": "ISC",
 	"description": "",
 	"dependencies": {
