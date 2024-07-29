@@ -90,9 +90,106 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	// Tab Cloaking
-	if (isInLocalStorage('tabCloak')) {
-		console.log('not done yet');
+	const cloaks = {
+		'None (Default)': {
+			title: 'Space',
+			favicon: '/assets/favicon.ico'
+		},
+		'Google Classroom': {
+			title: 'Google Classroom',
+			favicon: 'https://www.gstatic.com/classroom/favicon.png'
+		},
+		Schoology: {
+			title: 'Schoology',
+			favicon: 'https://www.powerschool.com/favicon.ico'
+		},
+		Desmos: {
+			title: 'Desmos',
+			favicon:
+				'https://www.desmos.com/assets/img/apps/graphing/favicon.ico'
+		},
+		'Google Drive': {
+			title: 'Google Drive',
+			favicon:
+				'https://ssl.gstatic.com/images/branding/product/2x/hh_drive_36dp.png'
+		},
+		'Khan Academy': {
+			title: 'Khan Academy',
+			favicon: 'https://www.khanacademy.org/favicon.ico'
+		},
+		Quizlet: {
+			title: 'Quizlet',
+			favicon:
+				'https://quizlet.com/_next/static/media/q-twilight.e27821d9.png'
+		}
+		/*
+		"Example Cloak": {
+			title: "Example Title",
+			favicon: "https://example.com/favicon.png"
+		}
+		*/
+	};
+
+	function setCloak(cloak) {
+		if (cloaks[cloak]) {
+			document.title = cloaks[cloak].title;
+			const link =
+				document.querySelector("link[rel*='icon']") ||
+				document.createElement('link');
+			link.type = 'image/x-icon';
+			link.rel = 'shortcut icon';
+			link.href = cloaks[cloak].favicon;
+			document.getElementsByTagName('head')[0].appendChild(link);
+		}
 	}
+
+	function checkCloakTab() {
+		const cloakTab = localStorage.getItem(
+			'dropdown-selected-text-tabCloak'
+		);
+		if (!cloakTab) {
+			localStorage.setItem(
+				'dropdown-selected-text-tabCloak',
+				'None (Default)'
+			);
+		} else if (cloaks[cloakTab]) {
+			setCloak(cloakTab);
+		}
+	}
+
+	checkCloakTab();
+
+	window.addEventListener('storage', function (event) {
+		if (event.key === 'dropdown-selected-text-tabCloak') {
+			checkCloakTab();
+		}
+	});
+
+	const dummyElement = document.createElement('div');
+	dummyElement.id = 'localStorageObserver';
+	dummyElement.style.display = 'none';
+	document.body.appendChild(dummyElement);
+
+	function updateDummyElement() {
+		dummyElement.setAttribute(
+			'data-cloakTab',
+			localStorage.getItem('dropdown-selected-text-tabCloak')
+		);
+	}
+
+	const observer = new MutationObserver(checkCloakTab);
+	observer.observe(dummyElement, { attributes: true });
+
+	updateDummyElement();
+	window.addEventListener('storage', updateDummyElement);
+
+	const originalSetItem = localStorage.setItem;
+	localStorage.setItem = function (key, value) {
+		originalSetItem.apply(this, arguments);
+		if (key === 'dropdown-selected-text-tabCloak') {
+			updateDummyElement();
+		}
+	};
 
 	// Panic Key
 	if (!localStorage.getItem('panicKeyBind')) {
@@ -101,9 +198,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function handlePanicKey(event) {
 		const panicKeyBind = localStorage.getItem('panicKeyBind');
+		const panicKeys = panicKeyBind.split(',');
 
 		if (
-			event.key === panicKeyBind &&
+			panicKeys.includes(event.key) &&
 			event.target.tagName !== 'INPUT' &&
 			event.target.tagName !== 'TEXTAREA'
 		) {

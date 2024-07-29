@@ -37,123 +37,71 @@ document.addEventListener('click', function (event) {
 	});
 });
 
-window.addEventListener('DOMContentLoaded', function () {
-	const dropdowns = document.querySelectorAll('.dropdown.dropdown-memory');
-
-	dropdowns.forEach(function (dropdown) {
-		const dropdownId = dropdown.id;
-		const selectedText = localStorage.getItem(
-			`dropdown-selected-text-${dropdownId}`
-		);
-		if (selectedText) {
-			const toggle = dropdown.querySelector('.dropdown-toggle');
-			const selectedSpan = toggle.querySelector('.dropdown-selected');
-			const menu = dropdown.querySelector('.dropdown-menu');
-			const items = menu.querySelectorAll('li');
-
-			selectedSpan.textContent = selectedText;
-
-			items.forEach(function (item) {
-				item.classList.remove('hidden');
-				if (item.textContent.trim() === selectedText) {
-					item.classList.add('hidden');
-				}
-			});
-		}
-	});
-});
-
-window.addEventListener('DOMContentLoaded', function () {
-	const dropdowns = document.querySelectorAll('.dropdown.dropdown-memory');
-
-	dropdowns.forEach(function (dropdown) {
-		const dropdownId = dropdown.id;
-		const selectedText = localStorage.getItem(
-			'dropdown-selected-text-' + dropdownId
-		);
-		if (selectedText) {
-			const toggle = dropdown.querySelector('.dropdown-toggle');
-			const selectedSpan = toggle.querySelector('.dropdown-selected');
-			const menu = dropdown.querySelector('.dropdown-menu');
-			const items = menu.querySelectorAll('li');
-
-			selectedSpan.textContent = selectedText;
-
-			items.forEach(function (item) {
-				item.classList.remove('hidden');
-				if (item.textContent.trim() === selectedText) {
-					item.classList.add('hidden');
-				}
-			});
-		}
-	});
-});
-
 function showPageFromHash() {
-	let hash = window.location.hash.slice(1);
-	// console.log('Original hash:', hash);
-	if (hash.startsWith('/')) {
-		hash = hash.slice(1);
-	}
-	// console.log('Processed hash:', hash);
+    let hash = window.location.hash.slice(1);
+    if (hash.startsWith('/')) {
+        hash = hash.slice(1);
+    }
 
-	const pages = document.querySelectorAll('.scontent');
-	let pageToShow = document.getElementById('blank');
+    const pages = document.querySelectorAll('.scontent');
+    let pageToShow = document.getElementById('blank');
 
-	// Hide all pages
-	pages.forEach(page => {
-		page.style.display = 'none';
-	});
+    pages.forEach(page => {
+        page.style.display = 'none';
+    });
 
-	if (hash) {
-		// Show the target page if it exists
-		const targetPage = document.getElementById(hash);
-		if (targetPage) {
-			pageToShow = targetPage;
-			console.log('Showing page:', targetPage);
-			pageToShow.style.display = 'block';
-		} else {
-			// console.log('No page found for hash:', hash);
-		}
-	} else {
-		// console.log('No hash found, showing blank page.');
-		pageToShow.style.display = 'block';
-	}
+    if (hash) {
+        const targetPage = document.getElementById(hash);
+        if (targetPage) {
+            pageToShow = targetPage;
+            pageToShow.style.display = 'block';
+        }
+    } else {
+        pageToShow.style.display = 'block';
+    }
 
-	const settingItems = document.querySelectorAll('.settingItem');
-	let foundActive = false;
+    const settingItems = document.querySelectorAll('.settingItem');
+    let foundActive = false;
 
-	// Update setting items
-	settingItems.forEach(item => {
-		if (item.dataset.id === hash) {
-			item.classList.add('sideActive');
-			foundActive = true;
-		} else {
-			item.classList.remove('sideActive');
-		}
-	});
+    settingItems.forEach(item => {
+        if (item.dataset.id === hash) {
+            item.classList.add('sideActive');
+            foundActive = true;
+        } else {
+            item.classList.remove('sideActive');
+        }
+    });
 
-	if (!foundActive) {
-		const defaultSettingItem = document.querySelector(
-			'.settingItem[data-id="blank"]'
-		);
-		if (defaultSettingItem) {
-			defaultSettingItem.classList.add('sideActive');
-		}
-	}
+    if (!foundActive) {
+        const defaultSettingItem = document.querySelector(
+            '.settingItem[data-id="blank"]'
+        );
+        if (defaultSettingItem) {
+            defaultSettingItem.classList.add('sideActive');
+        }
+    }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-	const pages = document.querySelectorAll('.scontent');
-	pages.forEach(page => {
-		page.style.display = 'none';
-	});
-	document.getElementById('blank').style.display = 'block';
-	showPageFromHash();
-});
+function setupHashChangeListener() {
+    window.addEventListener('hashchange', showPageFromHash);
+}
 
-window.addEventListener('load', showPageFromHash);
-window.addEventListener('hashchange', showPageFromHash);
+function preventDefaultLinkBehavior() {
+    const settingItems = document.querySelectorAll('.settingItem');
+    settingItems.forEach(item => {
+        item.addEventListener('click', event => {
+            event.preventDefault();
+            const targetHash = item.dataset.id;
+            if (targetHash) {
+                window.location.hash = targetHash;
+            }
+        });
+    });
+}
+
+setupHashChangeListener();
+preventDefaultLinkBehavior();
+showPageFromHash();
 
 function setCheckboxState() {
 	const launchType = localStorage.getItem('launchType');
@@ -327,44 +275,6 @@ function launchAboutBlank() {
 	win.document.body.style.overflow = 'hidden';
 	window.close();
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-	const panicKeyInput = document.querySelector('.panicKey');
-	const saveButton = document.querySelector('.panicKeySave');
-	const validKeys =
-		'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`.~!@#$%^&*()-_=+[{]}|;:,<.>/?';
-
-	panicKeyInput.addEventListener('input', () => {
-		if (panicKeyInput.value.length > 1) {
-			panicKeyInput.value = panicKeyInput.value[0];
-		}
-	});
-
-	saveButton.addEventListener('click', () => {
-		const key = panicKeyInput.value;
-
-		if (validKeys.includes(key) && key.length === 1) {
-			localStorage.setItem('panicKeyBind', key);
-
-			saveButton.classList.add('panicKeySuccessful');
-			setTimeout(() => {
-				saveButton.classList.remove('panicKeySuccessful');
-			}, 1000);
-		} else if (key.length < 1) {
-			localStorage.setItem('panicKeyBind', '`');
-
-			saveButton.classList.add('panicKeySuccessful');
-			setTimeout(() => {
-				saveButton.classList.remove('panicKeySuccessful');
-			}, 500);
-		} else {
-			saveButton.classList.add('panicKeyFailed');
-			setTimeout(() => {
-				saveButton.classList.remove('panicKeyFailed');
-			}, 500);
-		}
-	});
-});
 
 function base6xorEncrypt(text) {
 	let output = '';
@@ -583,6 +493,30 @@ function importData() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+	const dropdowns = document.querySelectorAll('.dropdown.dropdown-memory');
+
+	dropdowns.forEach(function (dropdown) {
+		const dropdownId = dropdown.id;
+		const selectedText = localStorage.getItem(
+			'dropdown-selected-text-' + dropdownId
+		);
+		if (selectedText) {
+			const toggle = dropdown.querySelector('.dropdown-toggle');
+			const selectedSpan = toggle.querySelector('.dropdown-selected');
+			const menu = dropdown.querySelector('.dropdown-menu');
+			const items = menu.querySelectorAll('li');
+
+			selectedSpan.textContent = selectedText;
+
+			items.forEach(function (item) {
+				item.classList.remove('hidden');
+				if (item.textContent.trim() === selectedText) {
+					item.classList.add('hidden');
+				}
+			});
+		}
+	});
+
 	let importButton = document.getElementById('importData');
 	let exportButton = document.getElementById('exportData');
 
@@ -592,4 +526,49 @@ document.addEventListener('DOMContentLoaded', function () {
 	exportButton.addEventListener('click', function () {
 		exportData();
 	});
+
+	const panicKeyInput = document.querySelector('.panicKey');
+	const saveButton = document.querySelector('.panicKeySave');
+	const validKeys =
+		'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`.~!@#$%^&*()-_=+[{]}|;:,<.>/?';
+
+	saveButton.addEventListener('click', () => {
+		const keys = panicKeyInput.value.split(',').map(key => key.trim());
+		let allValid = true;
+
+		for (let key of keys) {
+			if (!validKeys.includes(key) || key.length !== 1) {
+				allValid = false;
+				break;
+			}
+		}
+
+		if (allValid) {
+			localStorage.setItem('panicKeyBind', keys.join(','));
+
+			saveButton.classList.add('panicKeySuccessful');
+			setTimeout(() => {
+				saveButton.classList.remove('panicKeySuccessful');
+			}, 1000);
+		} else if (panicKeyInput.value.length < 1) {
+			localStorage.setItem('panicKeyBind', '`');
+
+			saveButton.classList.add('panicKeySuccessful');
+			setTimeout(() => {
+				saveButton.classList.remove('panicKeySuccessful');
+			}, 500);
+		} else {
+			saveButton.classList.add('panicKeyFailed');
+			setTimeout(() => {
+				saveButton.classList.remove('panicKeyFailed');
+			}, 500);
+		}
+	});
+
+	const pages = document.querySelectorAll('.scontent');
+	pages.forEach(page => {
+		page.style.display = 'none';
+	});
+	document.getElementById('blank').style.display = 'block';
+	showPageFromHash();
 });
