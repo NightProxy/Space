@@ -160,13 +160,13 @@ body {
 }
 
 #gointospace2:hover {
-	color: rgba(90, 90, 90, 1);
+	color: #ffffff7e;
 }
 
 #gointospace2:active,
 #gointospace2:focus,
 #gointospace2:focus-visible {
-	color: #ffffff7e;
+	color: #ffffffcf;
 }
 
 .webSecurityIcon {
@@ -823,8 +823,9 @@ span.material-symbols-outlined {
 	filter: blur(50px) contrast(1.1);
 	position: fixed;
 	transform: translate(-50%, -50%);
-	left: 40em;
+	left: 47vw;
 	top: 100vh;
+	position: absolute;
 }
 
 .blobsmall {
@@ -841,8 +842,9 @@ span.material-symbols-outlined {
 	filter: blur(50px) contrast(1.2);
 	position: fixed;
 	transform: translate(-50%, -50%);
-	left: 55em;
+	left: 60vw;
 	top: 100vh;
+	position: absolute;
 }
 
 .blobtop {
@@ -860,8 +862,9 @@ span.material-symbols-outlined {
 	position: fixed;
 	transform: translate(-50%, -50%);
 	rotate: -20deg;
-	left: 37em;
-	top: 60vh;
+	left: 41.6vw;
+	top: 65vh;
+	position: absolute;
 }
 
 .spinner {
