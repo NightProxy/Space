@@ -152,6 +152,33 @@ body {
 
 /* Actual page ---------------------------------------------------- */
 
+#gointospace2 {
+	font-family: 'DM Sans';
+	font-size: 16px;
+	transition: all ease-in-out 0.5s;
+	color: rgba(82, 82, 82, 0.97);
+}
+
+#gointospace2:hover {
+	color: rgba(90, 90, 90, 1);
+}
+
+#gointospace2:active,
+#gointospace2:focus,
+#gointospace2:focus-visible {
+	color: #ffffff7e;
+}
+
+.webSecurityIcon {
+	position: absolute !important;
+	top: 20px !important;
+	left: 165px !important;
+	color: #ffffff7e;
+	height: 16px !important;
+	width: 16px !important;
+	font-size: 16px !important;
+}
+
 .shortcuts {
 	width: 500px;
 	display: flex;

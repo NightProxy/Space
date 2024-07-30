@@ -135,6 +135,10 @@ if (window.location.pathname === '/&') {
 			document.querySelector('.shortcuts').style.display = 'none';
 		}
 
+		document.querySelectorAll('input').forEach(input => input.blur());
+
+		document.getElementById('gointospace2').style.paddingLeft = '40px'; // for the security icon thing, if we need to change the padding ammount
+
 		// make check for uv error
 		iframe.addEventListener('load', function () {
 			const iframeDocument =
@@ -177,8 +181,48 @@ if (window.location.pathname === '/&') {
 
 	function updateGointospace2(url) {
 		let cleanedUrl = __uv$config.decodeUrl(url.split('/!/space/').pop());
+		let isSecure = cleanedUrl.startsWith('https://');
+
+		cleanedUrl = cleanedUrl.replace(/^https?:\/\//, '');
+
 		address2.value = cleanedUrl;
+
+		let webSecurityIcon = document.querySelector('.webSecurityIcon');
+		if (isSecure) {
+			webSecurityIcon.id = 'secure';
+			webSecurityIcon.innerHTML =
+				'<span class="material-icons" style="font-size: 20px !important; height: 16px !important; width: 16px !important; padding: 0 !important; background-color: transparent !important;">lock</span>';
+		} else {
+			webSecurityIcon.id = 'notSecure';
+			webSecurityIcon.innerHTML =
+				'<span class="material-icons" style="font-size: 20px !important; height: 16px !important; width: 16px !important; padding: 0 !important; background-color: transparent !important;">lock_open</span>';
+		}
 	}
+
+	address2.addEventListener('click', function () {
+		let currentValue = this.value;
+
+		if (
+			!currentValue.startsWith('http://') &&
+			!currentValue.startsWith('https://') &&
+			intospace.src
+		) {
+			this.value = 'https://' + currentValue;
+		}
+
+		this.select();
+	});
+
+	address2.addEventListener('blur', function () {
+		let currentValue = this.value;
+
+		if (
+			currentValue.startsWith('http://') ||
+			currentValue.startsWith('https://')
+		) {
+			this.value = currentValue.replace(/^https?:\/\//, '');
+		}
+	});
 
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker
