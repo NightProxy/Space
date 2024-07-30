@@ -56,33 +56,12 @@ window.onload = function () {
 	css.type = 'text/css';
 	css.innerHTML = '.typewrite > .wrap { border-right: 0.06em solid #a04cff}';
 	document.body.appendChild(css);
-
-	const urlParams = new URLSearchParams(window.location.search);
-	const queryParam = urlParams.get('q');
-	if (queryParam) {
-		Promise.all([
-			fetch('/json/g.json').then(response => response.json()),
-			fetch('/json/a.json').then(response => response.json()),
-			fetch('/json/shortcuts.json').then(response => response.json())
-		])
-			.then(([gData, aData, shortcutsData]) => {
-				const data = [...gData, ...aData, ...shortcutsData];
-				const item = data.find(
-					d => d.name.toLowerCase() === queryParam.toLowerCase()
-				);
-				if (item) {
-					executeSearch(item.url);
-				} else {
-					console.error('No matching name found in JSON data.');
-				}
-			})
-			.catch(error => console.error('Error fetching JSON:', error));
-	}
 };
 
 if (window.location.pathname === '/&') {
 	// UV INPUT FORM
-	const address = document.getElementById('gointospace');
+	const address1 = document.getElementById('gointospace');
+	const address2 = document.getElementById('gointospace2');
 
 	const proxySetting = localStorage.getItem('proxy') ?? 'uv'; // Using nullish coalescing operator for default value
 
@@ -96,6 +75,16 @@ if (window.location.pathname === '/&') {
 		file: '/uv',
 		config: __uv$config
 	};
+
+	const urlPattern = new RegExp(
+		'^(https?:\\/\\/)?' +
+			'((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' +
+			'((\\d{1,3}\\.){3}\\d{1,3}))' +
+			'(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' +
+			'(\\?[;&a-z\\d%_.~+=-]*)?' +
+			'(\\#[-a-z\\d_]*)?$',
+		'i'
+	);
 
 	function search(input) {
 		input = input.trim();
@@ -118,22 +107,16 @@ if (window.location.pathname === '/&') {
 				searchTemplate = 'https://google.com/search?q=%s';
 		}
 
-		try {
-			return new URL(input).toString();
-		} catch (err) {
-			try {
-				const url = new URL(`http://${input}`);
-				if (url.hostname.includes('.')) {
-					return url.toString();
-				}
-				throw new Error('Invalid hostname');
-			} catch (err) {
-				return searchTemplate.replace('%s', encodeURIComponent(input));
-			}
+		if (urlPattern.test(input)) {
+			const url = new URL(
+				input.includes('://') ? input : `http://${input}`
+			);
+			return url.toString();
+		} else {
+			return searchTemplate.replace('%s', encodeURIComponent(input));
 		}
 	}
 
-	// Make it so that if the user goes to /&?q= it searches it, I think it works
 	function executeSearch(query) {
 		const encodedUrl =
 			swConfigSettings.prefix + __uv$config.encodeUrl(search(query));
@@ -148,7 +131,7 @@ if (window.location.pathname === '/&') {
 		iframe.src = encodedUrl;
 		iframe.style.display = 'block';
 
-		if (iframe.src && window.location.pathname === '/&') {
+		if (iframe.src) {
 			document.querySelector('.shortcuts').style.display = 'none';
 		}
 
@@ -156,17 +139,45 @@ if (window.location.pathname === '/&') {
 		iframe.addEventListener('load', function () {
 			const iframeDocument =
 				iframe.contentDocument || iframe.contentWindow.document;
-			const title = iframeDocument.title;
-			const errorHeader = iframeDocument.querySelector('h1');
-
+			const errorList = iframeDocument.querySelectorAll('ul li');
 			if (
-				title === 'Error' &&
-				errorHeader &&
-				errorHeader.textContent.trim() === 'This site can’t be reached'
+				errorList &&
+				Array.from(errorList).some(
+					li =>
+						li.textContent.trim() ===
+						'Checking your internet connection'
+				)
 			) {
 				iframe.src = '/500';
 			}
+
+			startURLMonitoring();
 		});
+	}
+
+	function startURLMonitoring() {
+		const iframe = document.getElementById('intospace');
+		let lastUrl = iframe.contentWindow.location.href;
+
+		const checkIframeURL = () => {
+			try {
+				const currentUrl = iframe.contentWindow.location.href;
+				if (currentUrl !== lastUrl) {
+					console.log('Iframe URL changed to:', currentUrl);
+					lastUrl = currentUrl;
+					updateGointospace2(currentUrl);
+				}
+			} catch (e) {
+				console.log('Error accessing iframe URL:', e);
+			}
+		};
+
+		setInterval(checkIframeURL, 1000);
+	}
+
+	function updateGointospace2(url) {
+		let cleanedUrl = __uv$config.decodeUrl(url.split('/!/space/').pop());
+		address2.value = cleanedUrl;
 	}
 
 	if ('serviceWorker' in navigator) {
@@ -174,19 +185,89 @@ if (window.location.pathname === '/&') {
 			.register(swFile, { scope: swConfigSettings.prefix })
 			.then(async registration => {
 				// console.log('ServiceWorker registration successful with scope: ', registration.scope);
-				document
-					.getElementById('gointospace')
-					.addEventListener('keydown', function (event) {
+				if (address1) {
+					address1.addEventListener('keydown', function (event) {
 						if (event.key === 'Enter') {
 							event.preventDefault();
-							let query =
-								document.getElementById('gointospace').value;
+							let query = address1.value;
 							executeSearch(query);
 						}
 					});
+				}
+				if (address2) {
+					address2.addEventListener('keydown', function (event) {
+						if (event.key === 'Enter') {
+							event.preventDefault();
+							let query = address2.value;
+							executeSearch(query);
+						}
+					});
+				}
 			})
 			.catch(error => {
 				console.error('ServiceWorker registration failed:', error);
 			});
+	}
+
+	// Make it so that if the user goes to /&?q= it searches it, I think it works
+	window.onload = function () {
+		const urlParams = new URLSearchParams(window.location.search);
+		const queryParam = urlParams.get('q');
+		if (queryParam) {
+			Promise.all([
+				fetch('/json/g.json').then(response => response.json()),
+				fetch('/json/a.json').then(response => response.json()),
+				fetch('/json/shortcuts.json').then(response => response.json())
+			])
+				.then(([gData, aData, shortcutsData]) => {
+					const data = [...gData, ...aData, ...shortcutsData];
+					const item = data.find(
+						d => d.name.toLowerCase() === queryParam.toLowerCase()
+					);
+					if (item) {
+						executeSearch(item.url);
+					} else {
+						console.error('No matching name found in JSON data.');
+					}
+				})
+				.catch(error => console.error('Error fetching JSON:', error));
+		}
+
+		if (queryParam) {
+			document.querySelector('.utilityBar').style.display = 'none';
+			document.getElementById('intospace').style.height = '100vh';
+			document.getElementById('intospace').style.top = '0';
+		} else {
+			document.querySelector('.utilityBar').style.display = 'block';
+			document.getElementById('intospace').style.height =
+				'calc(100% - 3.633em)';
+			document.getElementById('intospace').style.top = '3.65em';
+		}
+	};
+
+	const iframe = document.getElementById('intospace');
+	const observer = new MutationObserver(function (mutationsList) {
+		mutationsList.forEach(function (mutation) {
+			if (
+				mutation.type === 'attributes' &&
+				mutation.attributeName === 'src'
+			) {
+				iframe.addEventListener(
+					'load',
+					function () {
+						const initialUrl = iframe.contentWindow.location.href;
+						updateGointospace2(initialUrl);
+						startURLMonitoring();
+					},
+					{ once: true }
+				);
+			}
+		});
+	});
+	if (iframe) {
+		observer.observe(iframe, {
+			attributes: true,
+			attributeFilter: ['src']
+		});
 	}
 }

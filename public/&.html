@@ -24,7 +24,7 @@
 		<meta property="og:image" content="/assets/logo.png" />
 	</head>
 
-	<body>
+	<body style="overflow: hidden">
 		<ul class="navbar">
 			<li style="margin-left: -1px; margin-top: 2px">
 				<a href="/"
@@ -76,77 +76,88 @@
 			</li>
 		</ul>
 
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="30"
-			height="30"
-			viewBox="0 0 30 30"
-			fill="none"
-			style="
-				position: absolute;
-				z-index: 2147483646;
-				left: calc(2.5rem + 9.53px);
-				top: calc(3.633em);
-			"
-		>
-			<path
-				d="M30 0H0V30C0 30 -1.11468e-05 18.2353 8.86364 9.11765C17.7273 0 30 0 30 0Z"
-				fill="#161616"
-			/>
-		</svg>
-
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			width="30"
-			height="30"
-			viewBox="0 0 30 30"
-			fill="none"
-			style="
-				position: absolute;
-				z-index: 2147483639;
-				left: calc(2.5rem + 9.73px);
-				top: calc(3.633em + 0.1px);
-				filter: blur(0.75px);
-				transition: none !important;
-			"
-		>
-			<path
-				d="M30 0H0V30C0 30 -1.11468e-05 18.2353 8.86364 9.11765C17.7273 0 30 0 30 0Z"
-				stroke="rgba(66, 66, 66, 0.86)"
-				stroke-width="2"
-			/>
-		</svg>
-
-		<ul class="utility">
-			<li>
-				<span class="material-symbols-outlined">arrow_back</span>
-			</li>
-			<li><span class="material-symbols-outlined">refresh</span></li>
-			<li>
-				<span class="material-symbols-outlined">arrow_forward</span>
-			</li>
-			<hr />
-			<div class="search-header">
-				<input
-					placeholder="Search Space..."
-					class="search-header__input"
-					type="text"
+		<div class="utilityBar">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="30"
+				height="30"
+				viewBox="0 0 30 30"
+				fill="none"
+				style="
+					position: absolute;
+					z-index: 2147483646;
+					left: calc(2.5rem + 9.53px);
+					top: calc(3.633em);
+				"
+			>
+				<path
+					d="M30 0H0V30C0 30 -1.11468e-05 18.2353 8.86364 9.11765C17.7273 0 30 0 30 0Z"
+					fill="#161616"
 				/>
-			</div>
-			<hr style="margin-left: 43px" />
-			<li><span class="material-symbols-outlined">open_in_new</span></li>
-			<li><span class="material-symbols-outlined">code</span></li>
-			<li>
-				<span class="material-symbols-outlined">fullscreen</span>
-			</li>
-			<li>
-				<a href="/~/#proxy"
-					><span class="material-symbols-outlined"
-						>instant_mix</span
-					></a
+			</svg>
+
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="30"
+				height="30"
+				viewBox="0 0 30 30"
+				fill="none"
+				style="
+					position: absolute;
+					z-index: 2147483639;
+					left: calc(2.5rem + 9.73px);
+					top: calc(3.633em + 0.1px);
+					filter: blur(0.75px);
+					transition: none !important;
+				"
+			>
+				<path
+					d="M30 0H0V30C0 30 -1.11468e-05 18.2353 8.86364 9.11765C17.7273 0 30 0 30 0Z"
+					stroke="rgba(66, 66, 66, 0.86)"
+					stroke-width="2"
+				/>
+			</svg>
+
+			<ul class="utility">
+				<li>
+					<span class="material-symbols-outlined">arrow_back</span>
+				</li>
+				<li><span class="material-symbols-outlined">refresh</span></li>
+				<li>
+					<span class="material-symbols-outlined">arrow_forward</span>
+				</li>
+				<hr style="min-width: 1px" />
+				<div
+					class="search-header"
+					style="flex-grow: 1; margin-left: 8px; margin-right: 8px"
 				>
-			</li>
-		</ul>
+					<input
+						placeholder="Search Space..."
+						class="search-header__input"
+						id="gointospace2"
+						type="text"
+						style="flex-grow: 1"
+					/>
+				</div>
+				<hr style="margin-left: 43px; min-width: 1px" />
+				<li>
+					<span class="material-symbols-outlined">open_in_new</span>
+				</li>
+				<li><span class="material-symbols-outlined">code</span></li>
+				<li>
+					<span class="material-symbols-outlined">fullscreen</span>
+				</li>
+				<li>
+					<a href="/~/#proxy"
+						><span
+							class="material-symbols-outlined"
+							style="margin-right: 14px"
+							>instant_mix</span
+						></a
+					>
+				</li>
+			</ul>
+		</div>
 
 		<div class="header">
 			<div
@@ -194,14 +205,11 @@
 			style="
 				display: none;
 				width: calc(100vw - 50px);
-				height: calc(100% - 3.633em);
 				position: absolute;
 				border: none;
 				outline: 0;
 				right: 0;
-				top: 3.65em;
 				z-index: 9999999;
-				border-radius: 30px 0 0 0;
 			"
 		></iframe>
 		<div
