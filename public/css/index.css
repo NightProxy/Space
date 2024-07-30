@@ -54,7 +54,7 @@ body {
 	position: fixed;
 	text-align: center;
 	box-shadow: 1.5px 1px 1px 0 rgba(66, 66, 66, 0.86);
-	z-index: 999999999;
+	z-index: 2147483641;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -108,7 +108,7 @@ body {
 	position: fixed;
 	text-align: center;
 	box-shadow: 1px 0 1px 0 rgba(66, 66, 66, 0.86);
-	z-index: 99999999;
+	z-index: 2147483640;
 }
 
 .navbar hr {
