@@ -726,4 +726,20 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
+
+	const checkbox = document.querySelector('.checkbox.utilBarYesNo');
+
+	if (localStorage.getItem('utilBarHidden') === null) {
+		localStorage.setItem('utilBarHidden', 'false');
+	}
+
+	const isUtilBarHidden = localStorage.getItem('utilBarHidden') === 'true';
+	checkbox.checked = !isUtilBarHidden;
+
+	checkbox.addEventListener('change', function () {
+		localStorage.setItem(
+			'utilBarHidden',
+			checkbox.checked ? 'false' : 'true'
+		);
+	});
 });

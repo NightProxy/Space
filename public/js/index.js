@@ -282,7 +282,11 @@ if (window.location.pathname === '/&') {
 			document.getElementById('intospace').style.height = '100vh';
 			document.getElementById('intospace').style.top = '0';
 		} else {
-			document.querySelector('.utilityBar').style.display = 'block';
+			if (localStorage.getItem('utilBarHidden') === 'true') {
+				document.querySelector('.utilityBar').style.display = 'none';
+			} else {
+				document.querySelector('.utilityBar').style.display = 'block';
+			}
 			document.getElementById('intospace').style.height =
 				'calc(100% - 3.633em)';
 			document.getElementById('intospace').style.top = '3.65em';
