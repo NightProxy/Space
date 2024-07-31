@@ -500,7 +500,7 @@
 	{
 		"name": "What Remains",
 		"url": "https://kdata1.com/2021/07/3911393/",
-		"img": "/assets/imgs/g/whatremains.png",
+		"img": "https://lightgo.app/assets/imgs/g/whatremains.png",
 		"categories": ["all"]
 	},
 	{
@@ -530,7 +530,7 @@
 	{
 		"name": "Last Hope",
 		"url": "https://kdata1.com/2021/09/LastHope/",
-		"img": "/assets/imgs/g/lasthope.png",
+		"img": "https://lightgo.app/assets/imgs/g/lasthope.png",
 		"categories": ["all"]
 	},
 	{
@@ -1174,7 +1174,7 @@
 	{
 		"name": "Torchure",
 		"url": "https://html-classic.itch.zone/html/3473461/Builds/index.html",
-		"img": "",
+		"img": "https://img.itch.zone/aW1nLzUzMjA1NjUucG5n/original/yj%2FXft.png",
 		"categories": ["all"]
 	},
 	{
@@ -1193,6 +1193,354 @@
 		"name": "Arena",
 		"url": "https://html-classic.itch.zone/html/7053230/index.html",
 		"img": "https://th.bing.com/th/id/OIP.MIxZRYiGLxB3vUtqGhSoCwAAAA?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "8 Ball Pool",
+		"url": "https://8ballpool.com/en/game",
+		"img": "https://th.bing.com/th/id/OIP.O7gOB-la_awI5DTipghpFwHaEo?w=1280&h=800&rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Drift Boss",
+		"url": "https://www.hoodamath.com/mobile/games/drift-boss/game.html",
+		"img": "https://assets.humoq.com/cdn-cgi/image/quality=78,fit=cover,f=auto,width=3840/images/h512/drift-boss.webp",
+		"categories": ["all"]
+	},
+	{
+		"name": "Google Snake Modded",
+		"url": "https://googlesnakemods.com/v/current/",
+		"img": "https://www.giantbomb.com/a/uploads/original/47/472150/3204862-hirezsnake.png",
+		"categories": ["all"]
+	},
+	{
+		"name": "Helix Jump",
+		"url": "https://helixjumponline.com/",
+		"img": "https://static.starbie.co.uk/8/113348/94193/672x448/helix-jump.webp",
+		"categories": ["all"]
+	},
+	{
+		"name": "Mutilate-a-doll 2",
+		"url": "https://f.silvergames.com/ruffle/player.php?id=4638",
+		"img": "https://th.bing.com/th/id/R.dc71af4723d828e8b1e178d010d989a2?rik=hv4YkflMOhWw%2bg&riu=http%3a%2f%2fgamemedia.armorgames.com%2f16117%2ficn_heroimage.png&ehk=IAp6mXqUciPg9cJfOPcRI5oKvlCT9MX4mqOIdPwUx8k%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+		"categories": ["all"]
+	},
+	{
+		"name": "Superfighers 2",
+		"url": "https://f.silvergames.com/ruffle/player.php?id=6456",
+		"img": "https://th.bing.com/th/id/R.f1814e0d189957e83e28ab5859f71c4e?rik=K6Xv0TrS19VCsQ&riu=http%3a%2f%2fsuperfighters2.net%2fwp-content%2fuploads%2fsuperfighters-2-game.jpg&ehk=f93AHpMFtUxSdqO5rL4Swrsv1wk8sJnXwb7un1tE6Zk%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+		"categories": ["all"]
+	},
+	{
+		"name": "Superhot",
+		"url": "https://f3.silvergames.com/html5/super-hot/",
+		"img": "https://cdn.vox-cdn.com/thumbor/R-B-z5wuKOr2k4wge-dnBG41YEY=/0x0:2560x1440/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/49843907/SUPERHOT_VR_coming_soon.0.0.png",
+		"categories": ["all"]
+	},
+	{
+		"name": "Pandemic Simulator",
+		"url": "https://html5.gamedistribution.com/rvvASMiM/f2a015a45b6443358238a54f8f4a557f/index.html?gdpr-targeting=1&gd_sdk_referrer_url=https%3A%2F%2Fwww.silvergames.com%2Fen%2Fpandemic-simulator&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5zaWx2ZXJnYW1lcy5jb20vZW4vcGFuZGVtaWMtc2ltdWxhdG9yIiwicGFyZW50RG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwidG9wRG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwiaGFzSW1wcmVzc2lvbiI6ZmFsc2UsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuMTcifQ%253D%253D",
+		"img": "https://assets1.ignimgs.com/2015/09/14/plague-incjpg-b69c44_160w.jpg?width=1280",
+		"categories": ["all"]
+	},
+	{
+		"name": "Raze 2",
+		"url": "https://f.silvergames.com/ruffle/player.php?id=1594",
+		"img": "https://www.bigdino.com/images/screenshots/434_1.jpg",
+		"categories": ["all"]
+	},
+	{
+		"name": "Strike Force Heros 2",
+		"url": "https://f.silvergames.com/ruffle/player.php?id=2879",
+		"img": "https://gamemedia.armorgames.com/14775/icn_heroimage.png",
+		"categories": ["all"]
+	},
+	{
+		"name": "Strike Force Heros 3",
+		"url": "https://f.silvergames.com/ruffle/player.php?id=5067",
+		"img": "https://gamemedia.armorgames.com/17706/icn_heroimage.png",
+		"categories": ["all"]
+	},
+	{
+		"name": "Sift Heads World",
+		"url": "https://f.silvergames.com/ruffle/player.php?id=8950",
+		"img": "https://images.crazygames.com/games/sift-heads-world-act-1/cover-1629881367080.png?auto=format%2Ccompress&q=45&cs=strip&ch=DPR&w=710&h=398&fit=crop",
+		"categories": ["all"]
+	},
+	{
+		"name": "Stickman Dismount",
+		"url": "https://cdn.gamemonetize.com/d2pe3o8rrt57q6mro0vjkor7q0xequ04/",
+		"img": "https://images.crazygames.com/turbodismounting.png?auto=format,compress&q=75&cs=strip&ch=DPR&w=1200&h=630&fit=crop",
+		"categories": ["all"]
+	},
+	{
+		"name": "Sift Heads Cartels",
+		"url": "https://f.silvergames.com/ruffle/player.php?id=3199",
+		"img": "https://th.bing.com/th/id/R.5cb4f4d6952a0d634224b8bc2ad66bfe?rik=3taJHYufWtTLFQ&pid=ImgRaw&r=0",
+		"categories": ["all"]
+	},
+	{
+		"name": "Cut the Rope",
+		"url": "https://games.cdn.famobi.com/html5games/c/cut-the-rope/v070/?fg_domain=play.famobi.com&fg_aid=A-SILVERGAMES&fg_uid=4531b37c-a8e0-4a67-9ebd-e8d3190b6277&fg_pid=8a24e5f2-94a8-4593-b4e5-81cc68f524c8&fg_beat=969&original_ref=https%3A%2F%2Fwww.silvergames.com%2F",
+		"img": "https://th.bing.com/th/id/OIP.7I__MG-1dCFFhcG2qY3_7gAAAA?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Give Up 2",
+		"url": "https://f.silvergames.com/ruffle/player.php?id=4717",
+		"img": "https://th.bing.com/th/id/R.fc5f723901237adee5f63e2b604a8730?rik=lk%2bw%2fUhdcOoGFg&pid=ImgRaw&r=0",
+		"categories": ["all"]
+	},
+	{
+		"name": "Draw Climber",
+		"url": "https://f3.silvergames.com/m/draw-cube/",
+		"img": "https://th.bing.com/th/id/R.ca112530ed9162206bedc47de90d706b?rik=TRGQwyvadpMfSA&pid=ImgRaw&r=0",
+		"categories": ["all"]
+	},
+	{
+		"name": "Would you Rather?",
+		"url": "https://html5.gamedistribution.com/a6f3ad3c7b8f4df6b28c3cec4dd4c0df/?gdpr-targeting=1&gd_sdk_referrer_url=https://www.silvergames.com/en/would-you-rather",
+		"img": "https://th.bing.com/th/id/OIP.mR-mev3m6d6Tp-igrYGergHaEK?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "N-Game 2",
+		"url": "https://f.silvergames.com/ruffle/player.php?id=2987",
+		"img": "https://th.bing.com/th/id/R.95adf08275a2aa72cbcfbbaed15701d9?rik=VMyl58sQW4761A&riu=http%3a%2f%2f4.bp.blogspot.com%2f-aoe9EVrYSvU%2fU2jQjeCPIuI%2fAAAAAAAAASc%2f1Fd1W-IC9cU%2fw1200-h630-p-k-no-nu%2fThe_N_game_by_frmjewduhh.jpg&ehk=aDNidZ1rf1Tk6uPX9nbnf2MmtLquyjK%2ftCx3t1ALiRM%3d&risl=&pid=ImgRaw&r=0",
+		"categories": ["all"]
+	},
+	{
+		"name": "Stickman Ragdoll Playground",
+		"url": "https://html5.gamedistribution.com/rvvASMiM/1c0a1c13e443454a9a029c155b957778/index.html?gdpr-targeting=1&gd_sdk_referrer_url=https%3A%2F%2Fwww.silvergames.com%2Fen%2Fstickman-ragdoll-playground&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5zaWx2ZXJnYW1lcy5jb20vZW4vc3RpY2ttYW4tcmFnZG9sbC1wbGF5Z3JvdW5kIiwicGFyZW50RG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwidG9wRG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwiaGFzSW1wcmVzc2lvbiI6ZmFsc2UsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuMTcifQ%253D%253D",
+		"img": "https://www.gamenora.com/upload/games/thumbnails/Stickman%20Ragdoll%20Playground.webp",
+		"categories": ["all"]
+	},
+	{
+		"name": "Stealth Hunter 2",
+		"url": "https://f.silvergames.com/ruffle/player.php?id=1965",
+		"img": "https://th.bing.com/th/id/R.1592a1b49bcaee0f5fb24d73cc16fcf0?rik=DHXFEN7US5Smeg&riu=http%3a%2f%2fgamemedia.armorgames.com%2f13136%2ficn_lrg_feat.png&ehk=y8JLcQlUl9hGy4sW8EgLKlyM8XYXZSmhlj6WxIfoLAc%3d&risl=&pid=ImgRaw&r=0",
+		"categories": ["all"]
+	},
+	{
+		"name": "Castel Wars",
+		"url": "https://files.twoplayergames.org/files/games/o1/Castel_Wars/index.html",
+		"img": "https://images.crazygames.com/games/castle-wars/cover-1631009598936.jpeg?auto=format,compress&q=45&cs=strip&ch=DPR&w=1200&h=630&fit=crop",
+		"categories": ["all"]
+	},
+	{
+		"name": "Castel Wars Modern",
+		"url": "https://files.twoplayergames.org/files/games/o1/Castel_Wars_Modern/index.html",
+		"img": "https://slopeonline.io/data/image/castel-wars-modern.png",
+		"categories": ["all"]
+	},
+	{
+		"name": "Castel Wars New Era",
+		"url": "https://files.twoplayergames.org/files/games/o1/Castel_Wars_New_Era/index.html",
+		"img": "https://th.bing.com/th/id/OIP.uhTjeytWAMLviFxPDZpcTwAAAA?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Uno Online",
+		"url": "https://html5.gamedistribution.com/rvvASMiM/f2520bae00624e93a4f4614732fa259e/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.twoplayergames.org%2Fgame%2Funo-online&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy50d29wbGF5ZXJnYW1lcy5vcmcvZ2FtZS91bm8tb25saW5lIiwicGFyZW50RG9tYWluIjoidHdvcGxheWVyZ2FtZXMub3JnIiwidG9wRG9tYWluIjoidHdvcGxheWVyZ2FtZXMub3JnIiwiaGFzSW1wcmVzc2lvbiI6ZmFsc2UsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuMTcifQ%253D%253D",
+		"img": "https://cdn2.unrealengine.com/Diesel/productv2/uno/home/GameName_Store_Landscape_2560x1440-2560x1440-5195e8a3e06d672f97a1ee49ecea59027c14cae4.jpg",
+		"categories": ["all"]
+	},
+	{
+		"name": "Stick Duel Battle Hero",
+		"url": "https://files.twoplayergames.org/files/games/o1/Stick_Duel_Battle_Hero/index.html",
+		"img": "https://th.bing.com/th/id/OIP.ymvQmzzxK4m-qhEn8vOcfAHaEH?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "House of Hazards",
+		"url": "https://www.twoplayergames.org/gameframe/house-of-hazards",
+		"img": "https://th.bing.com/th/id/OIP.J9F8nMbCYyaxkaiCfOdanAHaD4?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Tennis Physics",
+		"url": "https://files.twoplayergames.org/files/games/o1/Tennis_Physics/index.html",
+		"img": "https://th.bing.com/th/id/OIP.J9F8nMbCYyaxkaiCfOdanAHaD4?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Pixel Smash Duel",
+		"url": "https://html5.gamedistribution.com/81c5e3e4cae448a5876b1c2e424fd96b/?gd_sdk_referrer_url=https%3A%2F%2Fwww.twoplayergames.org%2Fgame%2Fpixel-smash-duel",
+		"img": "https://images.crazygames.com/pixel-smash-duel/20230309065424/pixel-smash-duel-cover?auto=format%2Ccompress&q=45&cs=strip&ch=DPR&w=1200&h=630&fit=crop",
+		"categories": ["all"]
+	},
+	{
+		"name": "Volley Random",
+		"url": "https://files.twoplayergames.org/files/games/o1/Volley_random/index.html",
+		"img": "https://images.crazygames.com/games/volley-random/cover-1613988274520.jpeg?auto=format,compress&q=75&cs=strip&ch=DPR&w=1200&h=630&fit=crop",
+		"categories": ["all"]
+	},
+	{
+		"name": "Fancy Snowboarding",
+		"url": "https://f.silvergames.com/ruffle/player.php?id=10106",
+		"img": "https://th.bing.com/th/id/R.d7f841e5136a4d07e244b332539a98a0?rik=te7QHet%2b22qpEg&pid=ImgRaw&r=0",
+		"categories": ["all"]
+	},
+	{
+		"name": "Line Rider",
+		"url": "https://www.linerider.com/",
+		"img": "https://www4.minijuegosgratis.com/v3/games/thumbnails/7159_1.jpg",
+		"categories": ["all"]
+	},
+	{
+		"name": "Draw Joust",
+		"url": "https://html5.gamedistribution.com/99539b64e8544c1b9b5c852911349e6b/?gdpr-targeting=1&gd_sdk_referrer_url=https://www.silvergames.com/en/draw-joust",
+		"img": "https://i.ytimg.com/vi/3Vom9hFrPVg/maxresdefault.jpg",
+		"categories": ["all"]
+	},
+	{
+		"name": "PolyTrack",
+		"url": "https://html-classic.itch.zone/html/11040108/index.html",
+		"img": "https://webgamer.io/games/polytrack/polytrack.1280x.85pc.webp",
+		"categories": ["all"]
+	},
+	{
+		"name": "Leap of Life",
+		"url": "https://html5.gamedistribution.com/rvvASMiM/a3cddb497804491ca590c34ee5fa7339/index.html?gdpr-targeting=1&gd_sdk_referrer_url=https%3A%2F%2Fwww.silvergames.com%2Fen%2Fleap-of-life&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5zaWx2ZXJnYW1lcy5jb20vZW4vbGVhcC1vZi1saWZlIiwicGFyZW50RG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwidG9wRG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwiaGFzSW1wcmVzc2lvbiI6ZmFsc2UsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuMTcifQ%253D%253D",
+		"img": "https://th.bing.com/th/id/OIP.UrPoBytldwejzn6hJ78BNgHaE8?w=672&h=448&rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Ragdoll Parkour Simulator",
+		"url": "https://html5.gamedistribution.com/fcfa6095c9be4762aa3c26ae6483426b/?gdpr-targeting=1&gd_sdk_referrer_url=https://www.silvergames.com/en/ragdoll-parkour-simulator",
+		"img": "https://static.keygames.com/8/117468/103491/672x448/ragdoll-parkour-simulator.webp",
+		"categories": ["all"]
+	},
+	{
+		"name": "Geometry Neon Dash Subzero",
+		"url": "https://html5.gamedistribution.com/1f37997f4c6845519807e0a335ed1c75/",
+		"img": "https://th.bing.com/th/id/OIP.44HugOlX-OcASVSD6WR8igHaEo?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Space Waves",
+		"url": "https://games.crazygames.com/en_US/space-waves/index.html",
+		"img": "https://images.crazygames.com/space-waves_16x9/20240723090521/space-waves_16x9-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Worlds Hardest Game 3",
+		"url": "https://www.coolmathgames.com/0-worlds-hardest-game-3/play",
+		"img": "https://www.coolmathgames.com/sites/default/files/WorldsHardestGame3_OG-logo.jpg",
+		"categories": ["all"]
+	},
+	{
+		"name": "Arsenal Online",
+		"url": "https://html5.gamedistribution.com/7fca096beb4f4bd88e65e98b26c22d5d/?gdpr-targeting=1&gd_sdk_referrer_url=https://www.silvergames.com/en/arsenal-online",
+		"img": "https://th.bing.com/th/id/OIP.uxLQ3UBYF4JxcxQp4sDsjQAAAA?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Bad Dolls 2",
+		"url": "https://f3.silvergames.com/m/bad-dolls_v2/",
+		"img": "https://th.bing.com/th/id/OIP.R9y7NXxc2FdQXjTyuLrlNAHaEL?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Hangman With Buddies",
+		"url": "https://html5.gamedistribution.com/34226889084a4d2ea110787751ede09d/?gdpr-targeting=1&gd_sdk_referrer_url=https://www.silvergames.com/en/hangman-with-buddies",
+		"img": "https://simple.game/assets/thumbs/u23433t2w2/hangman-with-buddies.jpeg",
+		"categories": ["all"]
+	},
+	{
+		"name": "Grenade Hit Stickman",
+		"url": "https://html5.gamedistribution.com/adf581cab0c74bdbbaa1fd74ab68e244/?gdpr-targeting=1&gd_sdk_referrer_url=https://www.silvergames.com/en/grenade-hit-stickman",
+		"img": "https://th.bing.com/th/id/OIP.yLAvpTrvYVgWDChpjnFLQgHaEK?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Fire Circle",
+		"url": "https://f3.silvergames.com/m/fire-circle/",
+		"img": "https://th.bing.com/th/id/OIP.Ev4xJvuNE5j4p1HBYKwWbQHaE6?w=512&h=340&rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Grandpas Minigun",
+		"url": "https://uploads.ungrounded.net/alternate/1773000/1773956_alternate_160158_r103.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a97942d14be&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
+		"img": "https://www.mobygames.com/images/covers/l/804283-grandpa-s-minigun-browser-front-cover.png",
+		"categories": ["all"]
+	},
+	{
+		"name": "Seeking Peace Zombeez",
+		"url": "https://uploads.ungrounded.net/alternate/5903000/5903058_alternate_273533_r1.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a979cdd610c&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
+		"img": "https://picon.ngfiles.com/941000/flash_941055_card.webp?f1722014822",
+		"categories": ["all"]
+	},
+	{
+		"name": "Stealth Optional",
+		"url": "https://uploads.ungrounded.net/alternate/5775000/5775059_alternate_266950_r2.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a987bbcbbc4&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
+		"img": "https://picon.ngfiles.com/934000/flash_934084_card.webp?f1718187264",
+		"categories": ["all"]
+	},
+	{
+		"name": "Fruity Tower",
+		"url": "https://uploads.ungrounded.net/alternate/4622000/4622142_alternate_215472_r10.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a98ce60a9a3&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
+		"img": "https://picon.ngfiles.com/879000/flash_879676_card.webp?f1680598164",
+		"categories": ["all"]
+	},
+	{
+		"name": "Armed with Wings Culmination",
+		"url": "https://uploads.ungrounded.net/ruffle_wrapper/ruffleembed.html?v=1.0.67&browsermode=default&props=%7B%22ruffle%22%3A%22%2Fruffle_wrapper%2Flib%2Fruffle.js%3F1722140126%22%2C%22public_path%22%3A%22%2Fruffle_wrapper%2Flib%2F%22%2C%22swf%22%3A%22https%3A%2F%2Fuploads.ungrounded.net%2F584000%2F584398_Culmination_coolbuddy_v2.swf%3F1691321603%22%2C%22vars%22%3A%7B%22NewgroundsAPI_PublisherID%22%3A1%2C%22NewgroundsAPI_SandboxID%22%3A%2266a98da258f08%22%2C%22NewgroundsAPI_SessionID%22%3A%22%22%2C%22NewgroundsAPI_UserName%22%3A%22%26lt%3Bdeleted%26gt%3B%22%2C%22NewgroundsAPI_UserID%22%3A0%2C%22ng_username%22%3A%22%26lt%3Bdeleted%26gt%3B%22%7D%2C%22width%22%3A800%2C%22height%22%3A480%2C%22icon%22%3A%22https%3A%2F%2Fpicon.ngfiles.com%2F584000%2Fflash_584398_card.webp%3Ff1679409096%22%2C%22warnOnUnsupportedContent%22%3Afalse%7D",
+		"img": "https://picon.ngfiles.com/584000/flash_584398_card.webp?f1679409096",
+		"categories": ["all"]
+	},
+	{
+		"name": "Armed with Wings Ashbelt",
+		"url": "https://uploads.ungrounded.net/ruffle_wrapper/ruffleembed.html?v=1.0.67&browsermode=default&props=%7B%22ruffle%22%3A%22%2Fruffle_wrapper%2Flib%2Fruffle.js%3F1722140126%22%2C%22public_path%22%3A%22%2Fruffle_wrapper%2Flib%2F%22%2C%22swf%22%3A%22https%3A%2F%2Fuploads.ungrounded.net%2F782000%2F782748_game.swf%3F1616075212%22%2C%22vars%22%3A%7B%22NewgroundsAPI_PublisherID%22%3A1%2C%22NewgroundsAPI_SandboxID%22%3A%2266a98e02c7e2c%22%2C%22NewgroundsAPI_SessionID%22%3A%22%22%2C%22NewgroundsAPI_UserName%22%3A%22%26lt%3Bdeleted%26gt%3B%22%2C%22NewgroundsAPI_UserID%22%3A0%2C%22ng_username%22%3A%22%26lt%3Bdeleted%26gt%3B%22%7D%2C%22width%22%3A1280%2C%22height%22%3A720%2C%22icon%22%3A%22https%3A%2F%2Fpicon.ngfiles.com%2F782000%2Fflash_782748_card.png%3Ff1614591642%22%2C%22warnOnUnsupportedContent%22%3Afalse%7D",
+		"img": "https://picon.ngfiles.com/782000/flash_782748_card.png?f1614591642",
+		"categories": ["all"]
+	},
+	{
+		"name": "The I of It",
+		"url": "https://uploads.ungrounded.net/ruffle_wrapper/ruffleembed.html?v=1.0.67&browsermode=default&props=%7B%22ruffle%22%3A%22%2Fruffle_wrapper%2Flib%2Fruffle.js%3F1722140126%22%2C%22public_path%22%3A%22%2Fruffle_wrapper%2Flib%2F%22%2C%22swf%22%3A%22https%3A%2F%2Fuploads.ungrounded.net%2F570000%2F570709_theIofIt_640x400.swf%3F1306330288%22%2C%22vars%22%3A%7B%22NewgroundsAPI_PublisherID%22%3A1%2C%22NewgroundsAPI_SandboxID%22%3A%2266a98e3dc2710%22%2C%22NewgroundsAPI_SessionID%22%3A%22%22%2C%22NewgroundsAPI_UserName%22%3A%22%26lt%3Bdeleted%26gt%3B%22%2C%22NewgroundsAPI_UserID%22%3A0%2C%22ng_username%22%3A%22%26lt%3Bdeleted%26gt%3B%22%7D%2C%22width%22%3A640%2C%22height%22%3A400%2C%22icon%22%3A%22https%3A%2F%2Fpicon.ngfiles.com%2F570000%2Fflash_570709_card.png%3Ff1664325606%22%2C%22warnOnUnsupportedContent%22%3Afalse%7D",
+		"img": "https://picon.ngfiles.com/570000/flash_570709_card.png?f1664325606",
+		"categories": ["all"]
+	},
+	{
+		"name": "Armed with Wings Rearmed Trials",
+		"url": "https://uploads.ungrounded.net/ruffle_wrapper/ruffleembed.html?v=1.0.67&browsermode=default&props=%7B%22ruffle%22%3A%22%2Fruffle_wrapper%2Flib%2Fruffle.js%3F1722140126%22%2C%22public_path%22%3A%22%2Fruffle_wrapper%2Flib%2F%22%2C%22swf%22%3A%22https%3A%2F%2Fuploads.ungrounded.net%2F682000%2F682880_rearmed-survival.swf%3F1477582558%22%2C%22vars%22%3A%7B%22NewgroundsAPI_PublisherID%22%3A1%2C%22NewgroundsAPI_SandboxID%22%3A%2266a991c001117%22%2C%22NewgroundsAPI_SessionID%22%3A%22%22%2C%22NewgroundsAPI_UserName%22%3A%22%26lt%3Bdeleted%26gt%3B%22%2C%22NewgroundsAPI_UserID%22%3A0%2C%22ng_username%22%3A%22%26lt%3Bdeleted%26gt%3B%22%7D%2C%22width%22%3A960%2C%22height%22%3A540%2C%22icon%22%3A%22https%3A%2F%2Fpicon.ngfiles.com%2F682000%2Fflash_682880_card.png%3Ff1691322341%22%2C%22warnOnUnsupportedContent%22%3Afalse%7D",
+		"img": "https://picon.ngfiles.com/682000/flash_682880_card.png?f1691322341",
+		"categories": ["all"]
+	},
+	{
+		"name": "Bunny Bun",
+		"url": "https://uploads.ungrounded.net/alternate/1524000/1524514_alternate_251347_r26.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a994378fd7d&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
+		"img": "https://picon.ngfiles.com/917000/flash_917642_card.webp?f1707685274",
+		"categories": ["all"]
+	},
+	{
+		"name": "Dark Sword: Light of Ainn",
+		"url": "https://uploads.ungrounded.net/alternate/5580000/5580932_alternate_257601_r8.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a9951709f9b&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
+		"img": "https://picon.ngfiles.com/924000/flash_924213_card.webp?f1712089143",
+		"categories": ["all"]
+	},
+	{
+		"name": "Dark Sword",
+		"url": "https://uploads.ungrounded.net/alternate/4465000/4465067_alternate_208055_r41.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a9965971fd6&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
+		"img": "https://th.bing.com/th/id/OIP.ewweE9neVxxLMVdZ6tBdTQHaE8?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Parking Ticket Mayhem",
+		"url": "https://uploads.ungrounded.net/alternate/5144000/5144516_alternate_238037_r1.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a9959e79ce0&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
+		"img": "https://th.bing.com/th/id/OIP.x4Z5Nuc1jF6YSdDy8WTKkAHaEK?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Sans Last Breath",
+		"url": "https://mario1d240.github.io/undertale-last-breath-remake-bad-time-simulator",
+		"img": "https://th.bing.com/th/id/R.fe3f3c50050612338c5c99450b87ccc7?rik=MEaWJnHFrSgHaA&riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2fcfc70bb43d90cfcc9c156ff1c68617ad5cc3eb42.jpg&ehk=WM0GkBHtY888tWLLN8U4sLcbw5OgdKlZIY9YX%2fOiZLI%3d&risl=&pid=ImgRaw&r=0",
+		"categories": ["all"]
+	},
+	{
+		"name": "Burger & Frights",
+		"url": "https://html-classic.itch.zone/html/5033568/index.html",
+		"img": "https://i.ytimg.com/vi/Zp7_fyI5ZLw/maxresdefault.jpg",
 		"categories": ["all"]
 	}
 ]
