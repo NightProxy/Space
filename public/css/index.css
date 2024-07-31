@@ -179,6 +179,12 @@ body {
 	transition: transform 0.2s ease-in-out;
 }
 
+.backButton,
+.forwardButton {
+	transition: transform 0.2s ease-in-out;
+	opacity: 0.5;
+}
+
 .refreshButton:hover {
 	animation: rotateReload 0.3s forwards;
 	animation-fill-mode: forwards;

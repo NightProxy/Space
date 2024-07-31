@@ -175,14 +175,10 @@ if (window.location.pathname === '/&') {
 		}
 
 		document.querySelectorAll('input').forEach(input => input.blur());
-		iframe.addEventListener(
-			'load',
-			function () {
-				document.getElementById('gointospace2').style.paddingLeft =
-					'40px';
-			},
-			{ once: true }
-		);
+
+		setTimeout(() => {
+			document.getElementById('gointospace2').style.paddingLeft = '40px';
+		}, 250);
 
 		// make check for uv error
 		iframe.addEventListener('load', function () {
@@ -204,6 +200,19 @@ if (window.location.pathname === '/&') {
 		});
 	}
 
+	let historyArray = JSON.parse(localStorage.getItem('historyArray')) || [];
+	let currentIndex = parseInt(localStorage.getItem('currentIndex')) || -1;
+
+	if (historyArray.length > 0) {
+		currentIndex = historyArray.length;
+		saveHistory();
+	}
+
+	function saveHistory() {
+		localStorage.setItem('historyArray', JSON.stringify(historyArray));
+		localStorage.setItem('currentIndex', currentIndex.toString());
+	}
+
 	function startURLMonitoring() {
 		const iframe = document.getElementById('intospace');
 		let lastUrl = iframe.contentWindow.location.href;
@@ -212,9 +221,18 @@ if (window.location.pathname === '/&') {
 			try {
 				const currentUrl = iframe.contentWindow.location.href;
 				if (currentUrl !== lastUrl) {
-					// console.log('url changed to:', currentUrl);
 					lastUrl = currentUrl;
+
+					if (historyArray[currentIndex] !== currentUrl) {
+						// if the user navigates while in history, it clears the history after
+						historyArray = historyArray.slice(0, currentIndex + 1);
+						historyArray.push(currentUrl);
+						currentIndex++;
+						saveHistory();
+					}
+
 					updateGointospace2(currentUrl);
+					updateButtonStates();
 				}
 			} catch (e) {
 				console.log('Error getting iframe url:', e);
@@ -272,6 +290,8 @@ if (window.location.pathname === '/&') {
 	const refreshButton = document.querySelector('.refreshButton');
 	const homeButton = document.querySelector('.homeButton');
 	const fullscreenButton = document.querySelector('.fullscreenButton');
+	const backButton = document.querySelector('.backButton');
+	const forwardButton = document.querySelector('.forwardButton');
 
 	refreshButton.addEventListener('click', function () {
 		iframe.contentWindow.location.reload();
@@ -310,6 +330,52 @@ if (window.location.pathname === '/&') {
 			fullscreenButton.innerText = 'fullscreen_exit';
 		}
 	});
+
+	backButton.addEventListener('click', function () {
+		if (currentIndex > 0) {
+			currentIndex--;
+			iframe.src = historyArray[currentIndex];
+			iframe.style.display = 'block';
+			setTimeout(() => {
+				document.getElementById('gointospace2').style.paddingLeft =
+					'40px';
+			}, 250);
+			updateButtonStates();
+			saveHistory();
+		}
+	});
+
+	forwardButton.addEventListener('click', function () {
+		if (currentIndex < historyArray.length - 1) {
+			currentIndex++;
+			iframe.src = historyArray[currentIndex];
+			iframe.style.display = 'block';
+			setTimeout(() => {
+				document.getElementById('gointospace2').style.paddingLeft =
+					'40px';
+			}, 250);
+			updateButtonStates();
+			saveHistory();
+		}
+	});
+
+	function updateButtonStates() {
+		if (currentIndex > 0) {
+			backButton.style.opacity = '1';
+			backButton.style.cursor = 'pointer';
+		} else {
+			backButton.style.opacity = '0.5';
+			backButton.style.cursor = 'default';
+		}
+
+		if (currentIndex < historyArray.length - 1) {
+			forwardButton.style.opacity = '1';
+			forwardButton.style.cursor = 'pointer';
+		} else {
+			forwardButton.style.opacity = '0.5';
+			forwardButton.style.cursor = 'default';
+		}
+	}
 
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker
@@ -378,6 +444,8 @@ if (window.location.pathname === '/&') {
 				'calc(100% - 3.633em)';
 			document.getElementById('intospace').style.top = '3.65em';
 		}
+		startURLMonitoring();
+		updateButtonStates();
 	};
 
 	const iframe = document.getElementById('intospace');
