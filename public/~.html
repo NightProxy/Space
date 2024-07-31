@@ -1024,87 +1024,85 @@
 				retina_detect: true
 			});
 		</script>
-		<script>
-			window.addEventListener('DOMContentLoaded', () => {
-				function setupObserver(selector) {
-					const observer = new MutationObserver(function (
-						mutationsList,
-						observer
-					) {
-						mutationsList.forEach(function (mutation) {
-							if (mutation.type === 'childList') {
-								const settingsSections =
-									document.querySelectorAll(selector);
-								if (settingsSections.length > 0) {
-									settingsSections.forEach(
-										(settingsSection, index) => {
-											const animationDelay = (
-												index * 0.1
-											).toFixed(2);
-											settingsSection.style.animationDelay = `${animationDelay}s`;
-											settingsSection.addEventListener(
-												'animationend',
-												() => {
-													settingsSection.classList.add(
-														'no-animation2'
-													);
-												}
-											);
-										}
-									);
-								}
-							}
-						});
-					});
-
-					observer.observe(document.body, {
-						childList: true,
-						subtree: true
-					});
-
-					function handleURLChange() {
-						const settingsSections =
-							document.querySelectorAll(selector);
-						settingsSections.forEach(settingsSection => {
-							settingsSection.classList.remove('no-animation2');
-						});
-					}
-
-					window.addEventListener('popstate', handleURLChange);
-					window.addEventListener('hashchange', handleURLChange);
-					handleURLChange();
-				}
-
-				function initializeObservers() {
-					setupObserver('.settingsection1');
-					setupObserver('.settingsection2');
-					setupObserver('.settingsection3');
-					setupObserver('.settingsection4');
-					setupObserver('.settingsection5');
-					setupObserver('.settingsection6');
-					setupObserver('.settingsection7');
-					setupObserver('.settingsection8');
-					setupObserver('.settingsection9');
-					setupObserver('.settingsection10');
-					setupObserver('.settingsection11');
-					// class="settingsection settingsection#"
-				}
-
-				initializeObservers();
-				const ul = document.querySelector('.sideSnav');
-				const lis = ul.querySelectorAll('li');
-
-				ul.style.opacity = '1';
-				lis.forEach((li, index) => {
-					li.style.transitionDelay = `${index * 0.1}s`;
-					setTimeout(() => {
-						li.style.transform = 'rotateX(0)';
-					}, 0);
-				});
-			});
-		</script>
 		<script src="/js/~.js"></script>
 		<script src="/js/index.js"></script>
 		<script src="/js/c.js"></script>
+		<script>
+			function setupObserver(selector) {
+				const observer = new MutationObserver(function (
+					mutationsList,
+					observer
+				) {
+					mutationsList.forEach(function (mutation) {
+						if (mutation.type === 'childList') {
+							const settingsSections =
+								document.querySelectorAll(selector);
+							if (settingsSections.length > 0) {
+								settingsSections.forEach(
+									(settingsSection, index) => {
+										const animationDelay = (
+											index * 0.1
+										).toFixed(2);
+										settingsSection.style.animationDelay = `${animationDelay}s`;
+										settingsSection.addEventListener(
+											'animationend',
+											() => {
+												settingsSection.classList.add(
+													'no-animation2'
+												);
+											}
+										);
+									}
+								);
+							}
+						}
+					});
+				});
+
+				observer.observe(document.body, {
+					childList: true,
+					subtree: true
+				});
+
+				function handleURLChange() {
+					const settingsSections =
+						document.querySelectorAll(selector);
+					settingsSections.forEach(settingsSection => {
+						settingsSection.classList.remove('no-animation2');
+					});
+				}
+
+				window.addEventListener('popstate', handleURLChange);
+				window.addEventListener('hashchange', handleURLChange);
+				handleURLChange();
+			}
+
+			function initializeObservers() {
+				setupObserver('.settingsection1');
+				setupObserver('.settingsection2');
+				setupObserver('.settingsection3');
+				setupObserver('.settingsection4');
+				setupObserver('.settingsection5');
+				setupObserver('.settingsection6');
+				setupObserver('.settingsection7');
+				setupObserver('.settingsection8');
+				setupObserver('.settingsection9');
+				setupObserver('.settingsection10');
+				setupObserver('.settingsection11');
+				// class="settingsection settingsection#"
+			}
+
+			initializeObservers();
+			const ul = document.querySelector('.sideSnav');
+			const lis = ul.querySelectorAll('li');
+
+			ul.style.opacity = '1';
+			lis.forEach((li, index) => {
+				li.style.transitionDelay = `${index * 0.1}s`;
+				setTimeout(() => {
+					li.style.transform = 'rotateX(0)';
+				}, 0);
+			});
+		</script>
 	</body>
 </html>
