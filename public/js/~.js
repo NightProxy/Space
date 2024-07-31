@@ -169,6 +169,9 @@ function handleCheckboxChange() {
 							newWindow.document.title = 'Space';
 						};
 					}
+
+					window.close();
+					window.location.href = 'https://google.com';
 				} else if (this.classList.contains('autoLaunchAboutBlank')) {
 					const currentSiteUrl = window.location.href;
 
@@ -189,6 +192,7 @@ function handleCheckboxChange() {
 					win.document.body.appendChild(iframe);
 					win.document.body.style.overflow = 'hidden';
 					window.close();
+					window.location.href = 'https://google.com';
 				}
 			} else {
 				localStorage.removeItem('launchType');
@@ -558,6 +562,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			clearTimeout(timer1);
 			clearTimeout(timer2);
 		});
+
+		panicKeyInput.value = localStorage.getItem('panicKeyBind');
+	}
+
+	if (localStorage.getItem('panicKeyBind')) {
+		panicKeyInput.value = localStorage.getItem('panicKeyBind');
 	}
 
 	function panicKeyFailedPopup() {
@@ -587,6 +597,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			clearTimeout(timer1);
 			clearTimeout(timer2);
 		});
+
+		panicKeyInput.value = localStorage.getItem('panicKeyBind');
 	}
 
 	saveButton.addEventListener('click', () => {

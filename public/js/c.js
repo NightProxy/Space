@@ -5,6 +5,92 @@ because index.js has uv logic, and because uv isnt imported on every page,
 index.js fails to run on some pages. So c.js is its own import
 */
 
+
+// fancy animation
+function setupObserver(selector) {
+	const observer = new MutationObserver(function (mutationsList) {
+		mutationsList.forEach(function (mutation) {
+			if (mutation.type === 'childList') {
+				const contentElements = document.querySelectorAll(selector);
+				if (contentElements.length > 0) {
+					contentElements.forEach((contentElement, index) => {
+						let animationDelay;
+
+						if (pathname.includes('~')) {
+							animationDelay = (index * 0.1).toFixed(2);
+						} else if (pathname === '/g' || pathname === '/a') {
+							animationDelay = (index * 0.04).toFixed(2);
+						} else if (pathname === '/&') {
+							animationDelay = (index * 0.05).toFixed(2);
+						} else {
+							animationDelay = (index * 0.1).toFixed(2);
+						}
+
+						contentElement.style.animationDelay = `${animationDelay}s`;
+						contentElement.addEventListener('animationend', () => {
+							contentElement.classList.add('no-animation2');
+						});
+					});
+				}
+			}
+		});
+	});
+
+	observer.observe(document.body, {
+		childList: true,
+		subtree: true
+	});
+
+	function handleURLChange() {
+		const contentElements = document.querySelectorAll(selector);
+		contentElements.forEach(contentElement => {
+			contentElement.classList.remove('no-animation2');
+		});
+	}
+
+	window.addEventListener('popstate', handleURLChange);
+	window.addEventListener('hashchange', handleURLChange);
+	handleURLChange();
+}
+
+function initializeObservers() {
+	setupObserver('.settingsection1');
+	setupObserver('.settingsection2');
+	setupObserver('.settingsection3');
+	setupObserver('.settingsection4');
+	setupObserver('.settingsection5');
+	setupObserver('.settingsection6');
+	setupObserver('.settingsection7');
+	setupObserver('.settingsection8');
+	setupObserver('.settingsection9');
+	setupObserver('.settingsection10');
+	setupObserver('.settingsection11');
+}
+
+const pathname = window.location.pathname;
+
+if (pathname.includes('~')) {
+	initializeObservers();
+
+	const ul = document.querySelector('.sideSnav');
+	if (ul) {
+		const lis = ul.querySelectorAll('li');
+		ul.style.opacity = '1';
+		lis.forEach((li, index) => {
+			li.style.transitionDelay = `${index * 0.1}s`;
+			setTimeout(() => {
+				li.style.transform = 'rotateX(0)';
+			}, 0);
+		});
+	}
+} else if (pathname === '/g') {
+	setupObserver('.gameImage');
+} else if (pathname === '/a') {
+	setupObserver('.appImage');
+} else if (pathname === '/&') {
+	setupObserver('.shortcut');
+}
+
 function isInLocalStorage(key) {
 	return localStorage.getItem(key) !== null;
 }

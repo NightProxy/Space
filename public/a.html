@@ -258,38 +258,6 @@
 		</script>
 		<script src="/js/json-loader.js"></script>
 		<script src="/js/index.js"></script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-				const observer = new MutationObserver(function (
-					mutationsList,
-					observer
-				) {
-					mutationsList.forEach(function (mutation) {
-						if (mutation.type === 'childList') {
-							const apps = document.querySelectorAll('.appImage');
-							if (apps.length > 0) {
-								apps.forEach((apps, index) => {
-									const animationDelay = (
-										index * 0.04
-									).toFixed(2);
-									apps.style.animationDelay = `${animationDelay}s`;
-									apps.addEventListener(
-										'animationend',
-										() => {
-											apps.style.opacity = '1';
-										}
-									);
-								});
-							}
-						}
-					});
-				});
-				observer.observe(document.body, {
-					childList: true,
-					subtree: true
-				});
-			});
-		</script>
 		<script src="/js/c.js"></script>
 	</body>
 </html>
