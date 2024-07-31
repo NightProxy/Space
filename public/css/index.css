@@ -863,7 +863,7 @@ span.material-symbols-outlined {
 	transform: translate(-50%, -50%);
 	rotate: -20deg;
 	left: 41.6vw;
-	top: 65vh;
+	top: calc(89vh - 200px);
 	position: absolute;
 }
 
