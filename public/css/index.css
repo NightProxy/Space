@@ -154,8 +154,15 @@ body {
 #gointospace2 {
 	font-family: 'DM Sans';
 	font-size: 16px;
-	transition: all ease-in-out 0.5s;
+	transition: color ease-in-out 0.5s;
 	color: rgba(82, 82, 82, 0.97);
+	text-overflow: ellipsis;
+	padding-right: 32px;
+}
+
+#gointospace {
+	padding-right: 38px;
+	text-overflow: ellipsis;
 }
 
 #gointospace2:hover {

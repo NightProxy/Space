@@ -175,9 +175,14 @@ if (window.location.pathname === '/&') {
 		}
 
 		document.querySelectorAll('input').forEach(input => input.blur());
-		setTimeout(() => {
-			document.getElementById('gointospace2').style.paddingLeft = '40px'; // for the security icon thing, if we need to change the padding ammount
-		}, 1500);
+		iframe.addEventListener(
+			'load',
+			function () {
+				document.getElementById('gointospace2').style.paddingLeft =
+					'40px';
+			},
+			{ once: true }
+		);
 
 		// make check for uv error
 		iframe.addEventListener('load', function () {
@@ -207,12 +212,12 @@ if (window.location.pathname === '/&') {
 			try {
 				const currentUrl = iframe.contentWindow.location.href;
 				if (currentUrl !== lastUrl) {
-					console.log('Iframe URL changed to:', currentUrl);
+					// console.log('url changed to:', currentUrl);
 					lastUrl = currentUrl;
 					updateGointospace2(currentUrl);
 				}
 			} catch (e) {
-				console.log('Error accessing iframe URL:', e);
+				console.log('Error getting iframe url:', e);
 			}
 		};
 
