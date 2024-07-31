@@ -1500,5 +1500,149 @@
 		"url": "https://html-classic.itch.zone/html/5033568/index.html",
 		"img": "https://i.ytimg.com/vi/Zp7_fyI5ZLw/maxresdefault.jpg",
 		"categories": ["all"]
+	},
+	{
+		"name": "Falling Art Ragdoll Simulator",
+		"url": "https://games.crazygames.com/en_US/falling-art-ragdoll-simulator/index.html",
+		"img": "https://images.crazygames.com/falling-art-ragdoll-simulator_16x9/20240424035804/falling-art-ragdoll-simulator_16x9-cover?auto=format,compress&q=45&cs=strip&ch=DPR&w=1200&h=630&fit=crop",
+		"categories": ["all"]
+	},
+	{
+		"name": "Zombie Survival v2",
+		"url": "https://f3.silvergames.com/html5/zombie-survival_v2/",
+		"img": "https://cdn.akamai.steamstatic.com/steam/apps/2268560/ss_12ddd7d1d519a79c9e12a10cafc14b73388cbe4c.1920x1080.jpg?t=1692209037",
+		"categories": ["all"]
+	},
+	{
+		"name": "Lonewolf",
+		"url": "https://f.silvergames.com/ruffle/player.php?id=5668",
+		"img": "https://th.bing.com/th/id/R.f2f21a11c48eab36d1b330182fa513f5?rik=ExUbG4ZA0dI0Gg&pid=ImgRaw&r=0",
+		"categories": ["all"]
+	},
+	{
+		"name": "Evo-F4",
+		"url": "https://www.gamearter.com/game/evo-f4/",
+		"img": "https://images.crazygames.com/games/evo-f-4/thumb-1593072219579.png?auto=format,compress&q=75&cs=strip&ch=DPR&w=1200&h=630&fit=crop",
+		"categories": ["all"]
+	},
+	{
+		"name": "Pixel Warfare",
+		"url": "https://games.crazygames.com/en_US/pixel-warfare/index.html?v=1.295",
+		"img": "https://lh3.games-cdn.com/cz/io/37570-pixel-warfare.jpeg",
+		"categories": ["all"]
+	},
+	{
+		"name": "Mine Shooter - Save your world",
+		"url": "https://games.crazygames.com/en_US/mine-shooter---save-your-world/index.html?v=1.295",
+		"img": "https://images.crazygames.com/mine-shooter---save-your-world/20221222122048/mine-shooter---save-your-world-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Bodycamera Shooter",
+		"url": "https://games.crazygames.com/en_US/bodycamera-shooter/index.html?v=1.295",
+		"img": "https://th.bing.com/th/id/OIP.LLN_3N5GGk0M6SrkryyhrAHaEP?rs=1&pid=ImgDetMain",
+		"categories": ["all"]
+	},
+	{
+		"name": "Bank Robbery 3",
+		"url": "https://games.crazygames.com/en_US/bank-robbery-3/index.html?v=1.295",
+		"img": "https://images.crazygames.com/bank-robbery-3/20230601103414/bank-robbery-3-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Sniper Shot - Bullet Time",
+		"url": "https://games.crazygames.com/en_US/sniper-shot-bullet-time/index.html?v=1.295",
+		"img": "https://images.crazygames.com/sniper-shot-bullet-time/20220616222647/sniper-shot-bullet-time-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=445.5",
+		"categories": ["all"]
+	},
+	{
+		"name": "Spy Highway",
+		"url": "https://games.crazygames.com/en_US/shotgun-highway/index.html?v=1.295",
+		"img": "https://images.crazygames.com/shotgun-highway/20230605172142/shotgun-highway-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Save the Hostages",
+		"url": "https://games.crazygames.com/en_US/save-the-hostages/index.html?v=1.295",
+		"img": "https://i.ytimg.com/vi/Zp7_fyI5ZLw/maxresdefault.jpg",
+		"categories": ["all"]
+	},
+	{
+		"name": "Zombie Shooter: Part 2",
+		"url": "https://games.crazygames.com/en_US/zombies-shooter-part-2/index.html?v=1.295",
+		"img": "https://images.crazygames.com/zombies-shooter-part-2/20220210091323/zombies-shooter-part-2-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Sandbox City",
+		"url": "https://games.crazygames.com/en_US/sandbox-city---cars-zombies-ragdolls/index.html?v=1.295",
+		"img": "https://images.crazygames.com/sandbox-city---cars-zombies-ragdolls_16x9/20231204110852/sandbox-city---cars-zombies-ragdolls_16x9-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Resident Zombies: Horror Shooter",
+		"url": "https://games.crazygames.com/en_US/resident-zombies---horror-shooter/index.html?v=1.295",
+		"img": "https://images.crazygames.com/resident-zombies---horror-shooter/20230216174450/resident-zombies---horror-shooter-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=445.5",
+		"categories": ["all"]
+	},
+	{
+		"name": "Stickman Zombie Annihilation",
+		"url": "https://games.crazygames.com/en_US/stickman-zombie-annihilation/index.html?v=1.295",
+		"img": "https://images.crazygames.com/stickman-zombie-annihilation/20210409034231/stickman-zombie-annihilation-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Deadly Red Spikes",
+		"url": "https://games.crazygames.com/en_US/deadly-red-spikes/index.html?v=1.295",
+		"img": "https://images.crazygames.com/deadly-red-spikes/20230311191214/deadly-red-spikes-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Crazy Stunt Cars Multiplayer",
+		"url": "https://games.crazygames.com/en_US/crazy-stunt-cars-multiplayer/index.html?v=1.295",
+		"img": "https://images.crazygames.com/crazy-stunt-cars-multiplayerc.png?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Supreme Bomb Tag",
+		"url": "https://games.crazygames.com/en_US/supreme-bomb-tag/index.html?v=1.295",
+		"img": "https://images.crazygames.com/supreme-bomb-tag/20220809092423/supreme-bomb-tag-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=461",
+		"categories": ["all"]
+	},
+	{
+		"name": "Mini-Caps: Arena",
+		"url": "https://games.crazygames.com/en_US/mini-caps-arena/index.html?v=1.295",
+		"img": "https://images.crazygames.com/mini-caps-arena/20230411150743/mini-caps-arena-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Mini-Caps: Bombs",
+		"url": "https://games.crazygames.com/en_US/mini-caps-bombs/index.html?v=1.295",
+		"img": "https://images.crazygames.com/mini-caps-bombs/20230427105117/mini-caps-bombs-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Stickman Zombie Annihilation 2",
+		"url": "https://games.crazygames.com/en_US/stickman-annihilation-2/index.html?v=1.295",
+		"img": "https://images.crazygames.com/stickman-annihilation-2/20210331200716/stickman-annihilation-2-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Derby Crash 5",
+		"url": "https://games.crazygames.com/en_US/derby-crash-5/index.html?v=1.295",
+		"img": "https://images.crazygames.com/derby-crash-5/20220922130125/derby-crash-5-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
+	},
+	{
+		"name": "Night City Racing",
+		"url": "https://games.crazygames.com/en_US/night-city-racing/index.html?v=1.295",
+		"img": "https://images.crazygames.com/night-city-racing/20230127195620/night-city-racing-cover?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=461",
+		"categories": ["all"]
+	},
+	{
+		"name": "Crazy for Speed",
+		"url": "https://games.crazygames.com/en_US/crazy-for-speed/index.html?v=1.295",
+		"img": "https://images.crazygames.com/games/crazy-for-speed/cover_16x9-1693302507505.jpg?auto=format%2Ccompress&q=75&cs=strip&ch=DPR&w=684",
+		"categories": ["all"]
 	}
 ]

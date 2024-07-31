@@ -162,6 +162,7 @@ body {
 
 #gointospace {
 	padding-right: 38px;
+	padding-left: 38px;
 	text-overflow: ellipsis;
 }
 
@@ -805,8 +806,8 @@ span.material-symbols-outlined {
 	box-shadow:
 		10px 5px 40px -10px #ae00ff,
 		-14px -4px 40px -10px #4400ff;
-	padding-left: calc(+50px);
-	padding-right: calc(+50px);
+	padding-left: calc(+50px) !important;
+	padding-right: calc(+50px) !important;
 }
 
 .search-header__input:focus {
@@ -1890,4 +1891,8 @@ input:hover {
 
 .toast.active ~ button {
 	pointer-events: none;
+}
+
+.gameSearchInput, .appsSearchInput, #gointospace {
+	padding-left: 40px;
 }
