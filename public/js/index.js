@@ -136,8 +136,9 @@ if (window.location.pathname === '/&') {
 		}
 
 		document.querySelectorAll('input').forEach(input => input.blur());
-
+		setTimeout(() => {
 		document.getElementById('gointospace2').style.paddingLeft = '40px'; // for the security icon thing, if we need to change the padding ammount
+		}, 1500);
 
 		// make check for uv error
 		iframe.addEventListener('load', function () {
@@ -176,7 +177,7 @@ if (window.location.pathname === '/&') {
 			}
 		};
 
-		setInterval(checkIframeURL, 1000);
+		setInterval(checkIframeURL, 250);
 	}
 
 	function updateGointospace2(url) {
