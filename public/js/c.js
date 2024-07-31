@@ -319,4 +319,41 @@ document.addEventListener('DOMContentLoaded', function () {
 	if (localStorage.getItem('passwordProtected') === 'true') {
 		// applyPasswordProtection();
 	}
+
+	// disabling or enabling particles
+	function updateParticlesDisplay() {
+		const particlesHidden = localStorage.getItem('particlesHidden');
+		const particlesCanvas = document.querySelector(
+			'.particles-js-canvas-el'
+		);
+		if (particlesCanvas) {
+			particlesCanvas.style.display =
+				particlesHidden === 'true' ? 'none' : 'block';
+		}
+	}
+
+	if (localStorage.getItem('particlesHidden') === null) {
+		localStorage.setItem('particlesHidden', 'false');
+	}
+
+	updateParticlesDisplay();
+
+	const toggleButton = document.querySelector('.particlesYesNo');
+	if (toggleButton) {
+		toggleButton.addEventListener('click', () => {
+			const currentState = localStorage.getItem('particlesHidden');
+			const newState = currentState === 'true' ? 'false' : 'true';
+			localStorage.setItem('particlesHidden', newState);
+			updateParticlesDisplay();
+		});
+	}
+
+	window.addEventListener('storage', event => {
+		if (
+			event.key === 'particlesHidden' &&
+			event.newValue !== event.oldValue
+		) {
+			updateParticlesDisplay();
+		}
+	});
 });

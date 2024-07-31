@@ -1,101 +1,65 @@
-// Typewriting effect
-class TxtType {
-	constructor(el, toRotate, period) {
-		this.toRotate = toRotate;
-		this.el = el;
-		this.loopNum = 0;
-		this.period = parseInt(period, 10) || 2000;
-		this.txt = '';
-		this.tick();
-		this.isDeleting = false;
-	}
-
-	tick() {
-		const i = this.loopNum % this.toRotate.length;
-		const fullTxt = this.toRotate[i];
-
-		if (this.isDeleting) {
-			this.txt = fullTxt.substring(0, this.txt.length - 1);
-		} else {
-			this.txt = fullTxt.substring(0, this.txt.length + 1);
-		}
-
-		this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-		let delta = 200 - Math.random() * 100;
-
-		if (this.isDeleting) {
-			delta /= 2;
-		}
-
-		if (!this.isDeleting && this.txt === fullTxt) {
-			delta = this.period;
-			this.isDeleting = true;
-		} else if (this.isDeleting && this.txt === '') {
+if (window.location.pathname === '/') {
+	// Typewriting effect
+	class TxtType {
+		constructor(el, toRotate, period) {
+			this.toRotate = toRotate;
+			this.el = el;
+			this.loopNum = 0;
+			this.period = parseInt(period, 10) || 2000;
+			this.txt = '';
+			this.tick();
 			this.isDeleting = false;
-			this.loopNum++;
-			delta = 500;
 		}
 
-		setTimeout(() => this.tick(), delta);
-	}
-}
+		tick() {
+			const i = this.loopNum % this.toRotate.length;
+			const fullTxt = this.toRotate[i];
 
-window.onload = function () {
-	const elements = document.getElementsByClassName('typewrite');
-	for (let i = 0; i < elements.length; i++) {
-		const toRotate = elements[i].getAttribute('data-type');
-		const period = elements[i].getAttribute('data-period');
-		if (toRotate) {
-			new TxtType(elements[i], JSON.parse(toRotate), period);
-		}
-	}
+			if (this.isDeleting) {
+				this.txt = fullTxt.substring(0, this.txt.length - 1);
+			} else {
+				this.txt = fullTxt.substring(0, this.txt.length + 1);
+			}
 
-	// INJECT CSS
-	const css = document.createElement('style');
-	css.type = 'text/css';
-	css.innerHTML = '.typewrite > .wrap { border-right: 0.06em solid #a04cff}';
-	document.body.appendChild(css);
-};
+			this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-document.addEventListener('DOMContentLoaded', function () {
-	// disabling or enabling particles
-	function updateParticlesDisplay() {
-		const particlesHidden = localStorage.getItem('particlesHidden');
-		const particlesCanvas = document.querySelector(
-			'.particles-js-canvas-el'
-		);
-		if (particlesCanvas) {
-			particlesCanvas.style.display =
-				particlesHidden === 'true' ? 'none' : 'block';
+			let delta = 200 - Math.random() * 100;
+
+			if (this.isDeleting) {
+				delta /= 2;
+			}
+
+			if (!this.isDeleting && this.txt === fullTxt) {
+				delta = this.period;
+				this.isDeleting = true;
+			} else if (this.isDeleting && this.txt === '') {
+				this.isDeleting = false;
+				this.loopNum++;
+				delta = 500;
+			}
+
+			setTimeout(() => this.tick(), delta);
 		}
 	}
 
-	if (localStorage.getItem('particlesHidden') === null) {
-		localStorage.setItem('particlesHidden', 'false');
-	}
-
-	updateParticlesDisplay();
-
-	const toggleButton = document.querySelector('.particlesYesNo');
-	if (toggleButton) {
-		toggleButton.addEventListener('click', () => {
-			const currentState = localStorage.getItem('particlesHidden');
-			const newState = currentState === 'true' ? 'false' : 'true';
-			localStorage.setItem('particlesHidden', newState);
-			updateParticlesDisplay();
-		});
-	}
-
-	window.addEventListener('storage', event => {
-		if (
-			event.key === 'particlesHidden' &&
-			event.newValue !== event.oldValue
-		) {
-			updateParticlesDisplay();
+	document.addEventListener('DOMContentLoaded', function () {
+		const elements = document.getElementsByClassName('typewrite');
+		for (let i = 0; i < elements.length; i++) {
+			const toRotate = elements[i].getAttribute('data-type');
+			const period = elements[i].getAttribute('data-period');
+			if (toRotate) {
+				new TxtType(elements[i], JSON.parse(toRotate), period);
+			}
 		}
+
+		// INJECT CSS
+		const css = document.createElement('style');
+		css.type = 'text/css';
+		css.innerHTML =
+			'.typewrite > .wrap { border-right: 0.06em solid #a04cff}';
+		document.body.appendChild(css);
 	});
-});
+}
 
 if (window.location.pathname === '/&') {
 	// UV INPUT FORM
@@ -407,7 +371,7 @@ if (window.location.pathname === '/&') {
 	}
 
 	// Make it so that if the user goes to /&?q= it searches it, I think it works
-	window.onload = function () {
+	document.addEventListener('DOMContentLoaded', function () {
 		const urlParams = new URLSearchParams(window.location.search);
 		const queryParam = urlParams.get('q');
 		if (queryParam) {
@@ -446,7 +410,7 @@ if (window.location.pathname === '/&') {
 		}
 		startURLMonitoring();
 		updateButtonStates();
-	};
+	});
 
 	const iframe = document.getElementById('intospace');
 	const observer = new MutationObserver(function (mutationsList) {
