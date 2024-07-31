@@ -58,6 +58,45 @@ window.onload = function () {
 	document.body.appendChild(css);
 };
 
+document.addEventListener('DOMContentLoaded', function () {
+	// disabling or enabling particles
+	function updateParticlesDisplay() {
+		const particlesHidden = localStorage.getItem('particlesHidden');
+		const particlesCanvas = document.querySelector(
+			'.particles-js-canvas-el'
+		);
+		if (particlesCanvas) {
+			particlesCanvas.style.display =
+				particlesHidden === 'true' ? 'none' : 'block';
+		}
+	}
+
+	if (localStorage.getItem('particlesHidden') === null) {
+		localStorage.setItem('particlesHidden', 'false');
+	}
+
+	updateParticlesDisplay();
+
+	const toggleButton = document.querySelector('.particlesYesNo');
+	if (toggleButton) {
+		toggleButton.addEventListener('click', () => {
+			const currentState = localStorage.getItem('particlesHidden');
+			const newState = currentState === 'true' ? 'false' : 'true';
+			localStorage.setItem('particlesHidden', newState);
+			updateParticlesDisplay();
+		});
+	}
+
+	window.addEventListener('storage', event => {
+		if (
+			event.key === 'particlesHidden' &&
+			event.newValue !== event.oldValue
+		) {
+			updateParticlesDisplay();
+		}
+	});
+});
+
 if (window.location.pathname === '/&') {
 	// UV INPUT FORM
 	const address1 = document.getElementById('gointospace');
@@ -137,7 +176,7 @@ if (window.location.pathname === '/&') {
 
 		document.querySelectorAll('input').forEach(input => input.blur());
 		setTimeout(() => {
-		document.getElementById('gointospace2').style.paddingLeft = '40px'; // for the security icon thing, if we need to change the padding ammount
+			document.getElementById('gointospace2').style.paddingLeft = '40px'; // for the security icon thing, if we need to change the padding ammount
 		}, 1500);
 
 		// make check for uv error
@@ -225,6 +264,48 @@ if (window.location.pathname === '/&') {
 		}
 	});
 
+	const refreshButton = document.querySelector('.refreshButton');
+	const homeButton = document.querySelector('.homeButton');
+	const fullscreenButton = document.querySelector('.fullscreenButton');
+
+	refreshButton.addEventListener('click', function () {
+		iframe.contentWindow.location.reload();
+	});
+
+	homeButton.addEventListener('click', function () {
+		window.location.href = '/&';
+	});
+
+	fullscreenButton.addEventListener('click', () => {
+		if (document.fullscreenElement) {
+			document.exitFullscreen?.() ||
+				document.mozCancelFullScreen?.() ||
+				document.webkitExitFullscreen?.() ||
+				document.msExitFullscreen?.();
+		} else {
+			const requestFullscreen = element => {
+				element.requestFullscreen?.() ||
+					element.mozRequestFullScreen?.() ||
+					element.webkitRequestFullscreen?.() ||
+					element.msRequestFullscreen?.();
+			};
+
+			if (!iframe.src || iframe.src === 'about:blank') {
+				requestFullscreen(document.documentElement);
+			} else {
+				requestFullscreen(iframe);
+			}
+		}
+	});
+
+	document.addEventListener('fullscreenchange', () => {
+		if (!document.fullscreenElement) {
+			fullscreenButton.innerText = 'fullscreen';
+		} else {
+			fullscreenButton.innerText = 'fullscreen_exit';
+		}
+	});
+
 	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker
 			.register(swFile, { scope: swConfigSettings.prefix })
@@ -272,10 +353,10 @@ if (window.location.pathname === '/&') {
 					if (item) {
 						executeSearch(item.url);
 					} else {
-						console.error('No matching name found in JSON data.');
+						console.error('Param not found in json file :(');
 					}
 				})
-				.catch(error => console.error('Error fetching JSON:', error));
+				.catch(error => console.error('Error fetching json:', error));
 		}
 
 		if (queryParam) {

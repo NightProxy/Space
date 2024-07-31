@@ -726,20 +726,24 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
+	function checkboxToggle(checkboxClass, storageKey) {
+		const checkbox = document.querySelector(`.checkbox.${checkboxClass}`);
 
-	const checkbox = document.querySelector('.checkbox.utilBarYesNo');
+		if (localStorage.getItem(storageKey) === null) {
+			localStorage.setItem(storageKey, 'false');
+		}
 
-	if (localStorage.getItem('utilBarHidden') === null) {
-		localStorage.setItem('utilBarHidden', 'false');
+		const isHidden = localStorage.getItem(storageKey) === 'true';
+		checkbox.checked = !isHidden;
+
+		checkbox.addEventListener('change', function () {
+			localStorage.setItem(
+				storageKey,
+				checkbox.checked ? 'false' : 'true'
+			);
+		});
 	}
 
-	const isUtilBarHidden = localStorage.getItem('utilBarHidden') === 'true';
-	checkbox.checked = !isUtilBarHidden;
-
-	checkbox.addEventListener('change', function () {
-		localStorage.setItem(
-			'utilBarHidden',
-			checkbox.checked ? 'false' : 'true'
-		);
-	});
+	checkboxToggle('utilBarYesNo', 'utilBarHidden');
+	checkboxToggle('particlesYesNo', 'particlesHidden');
 });

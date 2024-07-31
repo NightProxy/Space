@@ -404,8 +404,21 @@
 			<div class="scontent" id="performance">
 				<h1 style="animation: fade-in-left 1s">Performance</h1>
 				<div class="settingsection settingsection4">
-					<h1>Bindable Keybind</h1>
-					<p>Description</p>
+					<h1>Background Particles</h1>
+					<p>
+						This enables the background star particle effects, this
+						is on by default.
+						<strong>Performance Impact</strong>: High on low-end
+						devices
+					</p>
+
+					<label class="switch">
+						<input
+							class="checkbox particlesYesNo"
+							type="checkbox"
+						/>
+						<span class="slider round"></span>
+					</label>
 				</div>
 			</div>
 			<div class="scontent" id="themes">
@@ -897,7 +910,7 @@
 			<div style="z-index: -998; position: fixed" class="blob"></div>
 			<div style="z-index: -998; position: fixed" class="blobsmall"></div>
 			<div style="z-index: -998; position: fixed" class="blobtop"></div>
-			<div style="z-index: -999" id="particles-js"></div>
+			<div style="z-index: -999" id="particles-js" class=""></div>
 		</div>
 		<script>
 			particlesJS('particles-js', {
@@ -1011,9 +1024,6 @@
 				retina_detect: true
 			});
 		</script>
-		<script src="/js/~.js"></script>
-		<script src="/js/index.js"></script>
-		<script src="/js/c.js"></script>
 		<script>
 			window.addEventListener('DOMContentLoaded', () => {
 				function setupObserver(selector) {
@@ -1093,5 +1103,8 @@
 				});
 			});
 		</script>
+		<script src="/js/~.js"></script>
+		<script src="/js/index.js"></script>
+		<script src="/js/c.js"></script>
 	</body>
 </html>

@@ -28,10 +28,9 @@ body {
 	border-radius: 7px;
 }
 
-.utility span:hover {
+.utility .utilityIcon:hover {
 	background-color: #8c00ff21;
 	border-radius: 7px;
-	padding: 7px;
 	transition: 0.2s all ease-in-out;
 }
 
@@ -167,6 +166,25 @@ body {
 #gointospace2:focus,
 #gointospace2:focus-visible {
 	color: #ffffffcf;
+}
+
+.refreshButton {
+	transition: transform 0.2s ease-in-out;
+}
+
+.refreshButton:hover {
+	animation: rotateReload 0.3s forwards;
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
+}
+
+@keyframes rotateReload {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .webSecurityIcon {
