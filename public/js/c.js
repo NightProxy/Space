@@ -71,8 +71,6 @@ function initializeObservers() {
 const pathname = window.location.pathname;
 
 if (pathname.includes('~')) {
-	initializeObservers();
-
 	const ul = document.querySelector('.sideSnav');
 	if (ul) {
 		const lis = ul.querySelectorAll('li');
@@ -84,6 +82,8 @@ if (pathname.includes('~')) {
 			}, 0);
 		});
 	}
+
+	initializeObservers();
 } else if (pathname === '/g') {
 	setupObserver('.gameImage');
 } else if (pathname === '/a') {
