@@ -1,3 +1,5 @@
+localforage.setItem('e', 'e');
+
 document.addEventListener('click', function (event) {
 	const dropdowns = document.querySelectorAll('.dropdown');
 
@@ -171,7 +173,52 @@ function handleCheckboxChange() {
 					}
 
 					window.close();
-					window.location.href = 'https://google.com';
+					if (
+						localStorage.getItem(
+							'dropdown-selected-text-tabCloak'
+						) === 'None (Default)'
+					) {
+						window.location.href = 'https://google.com';
+					} else if (
+						localStorage.getItem(
+							'dropdown-selected-text-tabCloak'
+						) === 'Google Classroom'
+					) {
+						window.location.href = 'https://classroom.google.com';
+					} else if (
+						localStorage.getItem(
+							'dropdown-selected-text-tabCloak'
+						) === 'Schoology'
+					) {
+						window.location.href = 'https://app.schoology.com/home';
+					} else if (
+						localStorage.getItem(
+							'dropdown-selected-text-tabCloak'
+						) === 'Desmos'
+					) {
+						window.location.href =
+							'https://www.desmos.com/calculator';
+					} else if (
+						localStorage.getItem(
+							'dropdown-selected-text-tabCloak'
+						) === 'Google Drive'
+					) {
+						window.location.href = 'https://drive.google.com';
+					} else if (
+						localStorage.getItem(
+							'dropdown-selected-text-tabCloak'
+						) === 'Kahn Academy'
+					) {
+						window.location.href = 'https://www.khanacademy.org/';
+					} else if (
+						localStorage.getItem(
+							'dropdown-selected-text-tabCloak'
+						) === 'Quizlet'
+					) {
+						window.location.href = 'https://quizlet.com/';
+					} else {
+						window.location.href = 'https://google.com';
+					}
 				} else if (this.classList.contains('autoLaunchAboutBlank')) {
 					const currentSiteUrl = window.location.href;
 
@@ -191,8 +238,38 @@ function handleCheckboxChange() {
 					iframe.src = url;
 					win.document.body.appendChild(iframe);
 					win.document.body.style.overflow = 'hidden';
+
 					window.close();
-					window.location.href = 'https://google.com';
+					switch (
+						localStorage.getItem('dropdown-selected-text-tabCloak')
+					) {
+						case 'Google Classroom':
+							window.location.href =
+								'https://classroom.google.com';
+							break;
+						case 'Schoology':
+							window.location.href =
+								'https://app.schoology.com/home';
+							break;
+						case 'Desmos':
+							window.location.href =
+								'https://www.desmos.com/calculator';
+							break;
+						case 'Google Drive':
+							window.location.href = 'https://drive.google.com';
+							break;
+						case 'Kahn Academy':
+							window.location.href =
+								'https://www.khanacademy.org/';
+							break;
+						case 'Quizlet':
+							window.location.href = 'https://quizlet.com/';
+							break;
+						case 'None (Default)':
+						default:
+							window.location.href = 'https://google.com';
+							break;
+					}
 				}
 			} else {
 				localStorage.removeItem('launchType');
@@ -200,10 +277,25 @@ function handleCheckboxChange() {
 				localStorage.removeItem('aboutBlank');
 				window.open('/~/#/blank');
 				window.close();
+				const urlMap = {
+					'None (Default)': 'https://google.com',
+					'Google Classroom': 'https://classroom.google.com',
+					Schoology: 'https://app.schoology.com/home',
+					Desmos: 'https://www.desmos.com/calculator',
+					'Google Drive': 'https://drive.google.com',
+					'Kahn Academy': 'https://www.khanacademy.org/',
+					Quizlet: 'https://quizlet.com/'
+				};
+
+				const selectedText = localStorage.getItem(
+					'dropdown-selected-text-tabCloak'
+				);
+				const targetUrl = urlMap[selectedText] || 'https://google.com';
+
 				if (window.parent !== window) {
-					window.parent.location.href = 'https://google.com';
+					window.parent.location.href = targetUrl;
 				} else {
-					window.location.href = 'https://google.com';
+					window.location.href = targetUrl;
 				}
 			}
 		});
@@ -478,6 +570,7 @@ function importData() {
 			Promise.all(idbPromises)
 				.then(() => {
 					alert('Browsing Data has been correctly imported!');
+					window.location.reload();
 				})
 				.catch(err => {
 					console.error(
@@ -752,6 +845,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			localStorage.setItem(
 				storageKey,
 				checkbox.checked ? 'false' : 'true'
+				//wow a nullish coalescent operator
 			);
 		});
 	}

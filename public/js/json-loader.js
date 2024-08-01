@@ -1,3 +1,5 @@
+localforage.setItem('e', 'e');
+
 document.addEventListener('DOMContentLoaded', () => {
 	if (window.location.pathname === '/g') {
 		fetch('/json/g.json')

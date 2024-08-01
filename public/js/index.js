@@ -1,3 +1,5 @@
+localforage.setItem('e', 'e');
+
 if (window.location.pathname === '/') {
 	// Typewriting effect
 	class TxtType {

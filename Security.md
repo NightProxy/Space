@@ -23,5 +23,5 @@ The current version of Space is **v1.0.0**
 
 If you are having issues with your repository and/or its versions, you can
 submit a discussion or open a report in our
-[Discord](https://discord.lightgo.app) and we will try to reach you ASAP. Thank
-you for using Space.
+[Discord](https://discord.gointospace.app) and we will try to reach you ASAP.
+Thank you for using Space.

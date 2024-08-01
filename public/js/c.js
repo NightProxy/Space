@@ -5,6 +5,7 @@ because index.js has uv logic, and because uv isnt imported on every page,
 index.js fails to run on some pages. So c.js is its own import
 */
 
+localforage.setItem('e', 'e');
 
 // fancy animation
 function setupObserver(selector) {
@@ -147,7 +148,41 @@ document.addEventListener('DOMContentLoaded', function () {
 					newWindow.onload = () => {
 						newWindow.document.title = 'Space';
 					};
-					window.location.href = 'https://google.com';
+
+					const tabCloak = localStorage.getItem(
+						'dropdown-selected-text-tabCloak'
+					);
+
+					switch (tabCloak) {
+						case 'None (Default)':
+							window.location.href = 'https://google.com';
+							break;
+						case 'Google Classroom':
+							window.location.href =
+								'https://classroom.google.com';
+							break;
+						case 'Schoology':
+							window.location.href =
+								'https://app.schoology.com/home';
+							break;
+						case 'Desmos':
+							window.location.href =
+								'https://www.desmos.com/calculator';
+							break;
+						case 'Google Drive':
+							window.location.href = 'https://drive.google.com';
+							break;
+						case 'Kahn Academy':
+							window.location.href =
+								'https://www.khanacademy.org/';
+							break;
+						case 'Quizlet':
+							window.location.href = 'https://quizlet.com/';
+							break;
+						default:
+							window.location.href = 'https://google.com';
+							break;
+					}
 				}
 			}, 500);
 		} else if (launchType === 'aboutBlank') {
@@ -166,10 +201,26 @@ document.addEventListener('DOMContentLoaded', function () {
 				iframe.src = url;
 				win.document.body.appendChild(iframe);
 				win.document.body.style.overflow = 'hidden';
+				const selectedTab =
+					localStorage.getItem('dropdown-selected-text-tabCloak') ||
+					'None (Default)';
+
+				const urlMap = {
+					'None (Default)': 'https://google.com',
+					'Google Classroom': 'https://classroom.google.com',
+					Schoology: 'https://app.schoology.com/home',
+					Desmos: 'https://www.desmos.com/calculator',
+					'Google Drive': 'https://drive.google.com',
+					'Kahn Academy': 'https://www.khanacademy.org/',
+					Quizlet: 'https://quizlet.com/'
+				};
+
+				const redirectTo = urlMap[selectedTab] || 'https://google.com';
+
 				if (window.parent !== window) {
-					window.parent.location.href = 'https://google.com';
+					window.parent.location.href = redirectTo;
 				} else {
-					window.location.href = 'https://google.com';
+					window.location.href = redirectTo;
 				}
 			}, 500);
 		}
@@ -208,24 +259,30 @@ document.addEventListener('DOMContentLoaded', function () {
 			favicon:
 				'https://quizlet.com/_next/static/media/q-twilight.e27821d9.png'
 		}
-		/*
-		"Example Cloak": {
-			title: "Example Title",
-			favicon: "https://example.com/favicon.png"
-		}
-		*/
 	};
 
 	function setCloak(cloak) {
 		if (cloaks[cloak]) {
 			document.title = cloaks[cloak].title;
-			const link =
+			window.parent.document.title = cloaks[cloak].title;
+
+			let link =
 				document.querySelector("link[rel*='icon']") ||
 				document.createElement('link');
 			link.type = 'image/x-icon';
 			link.rel = 'shortcut icon';
 			link.href = cloaks[cloak].favicon;
 			document.getElementsByTagName('head')[0].appendChild(link);
+
+			let parentLink =
+				window.parent.document.querySelector("link[rel*='icon']") ||
+				window.parent.document.createElement('link');
+			parentLink.type = 'image/x-icon';
+			parentLink.rel = 'shortcut icon';
+			parentLink.href = cloaks[cloak].favicon;
+			window.parent.document
+				.getElementsByTagName('head')[0]
+				.appendChild(parentLink);
 		}
 	}
 
@@ -262,7 +319,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			localStorage.getItem('dropdown-selected-text-tabCloak')
 		);
 	}
-
 	const observer = new MutationObserver(checkCloakTab);
 	observer.observe(dummyElement, { attributes: true });
 
@@ -291,7 +347,36 @@ document.addEventListener('DOMContentLoaded', function () {
 			event.target.tagName !== 'INPUT' &&
 			event.target.tagName !== 'TEXTAREA'
 		) {
-			window.location.href = 'https://google.com';
+			const selectedText = localStorage.getItem(
+				'dropdown-selected-text-tabCloak'
+			);
+
+			switch (selectedText) {
+				case 'None (Default)':
+					window.location.href = 'https://google.com';
+					break;
+				case 'Google Classroom':
+					window.location.href = 'https://classroom.google.com';
+					break;
+				case 'Schoology':
+					window.location.href = 'https://app.schoology.com/home';
+					break;
+				case 'Desmos':
+					window.location.href = 'https://www.desmos.com/calculator';
+					break;
+				case 'Google Drive':
+					window.location.href = 'https://drive.google.com';
+					break;
+				case 'Kahn Academy':
+					window.location.href = 'https://www.khanacademy.org/';
+					break;
+				case 'Quizlet':
+					window.location.href = 'https://quizlet.com/';
+					break;
+				default:
+					window.location.href = 'https://google.com';
+					break;
+			}
 		}
 	}
 
@@ -442,4 +527,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			updateParticlesDisplay();
 		}
 	});
+
+	setTimeout(() => {
+		checkCloakTab();
+	}, 500);
 });
