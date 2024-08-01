@@ -383,20 +383,56 @@ if (window.location.pathname === '/&') {
 				fetch('/json/shortcuts.json').then(response => response.json())
 			])
 				.then(([gData, aData, shortcutsData]) => {
-					const data = [...gData, ...aData, ...shortcutsData];
+					let data = [];
+					let source = '';
+
+					if (
+						gData.some(
+							d =>
+								d.name.toLowerCase() ===
+								queryParam.toLowerCase()
+						)
+					) {
+						data = gData;
+						source = 'g';
+					} else if (
+						aData.some(
+							d =>
+								d.name.toLowerCase() ===
+								queryParam.toLowerCase()
+						)
+					) {
+						data = aData;
+						source = 'a';
+					} else if (
+						shortcutsData.some(
+							d =>
+								d.name.toLowerCase() ===
+								queryParam.toLowerCase()
+						)
+					) {
+						data = shortcutsData;
+						source = 'shortcuts';
+					}
+
 					const item = data.find(
 						d => d.name.toLowerCase() === queryParam.toLowerCase()
 					);
+
 					if (item) {
+						if (source === 'g') {
+							document.querySelector('.gPage').id = 'navactive';
+						} else if (source === 'a') {
+							document.querySelector('.aPage').id = 'navactive';
+						} else {
+							document.querySelector('.pPage').id = 'navactive';
+						}
 						executeSearch(item.url);
 					} else {
 						console.error('Param not found in json file :(');
 					}
 				})
 				.catch(error => console.error('Error fetching json:', error));
-		}
-
-		if (queryParam) {
 			document.querySelector('.utilityBar').style.display = 'none';
 			document.getElementById('intospace').style.height = '100vh';
 			document.getElementById('intospace').style.top = '0';
@@ -409,6 +445,8 @@ if (window.location.pathname === '/&') {
 			document.getElementById('intospace').style.height =
 				'calc(100% - 3.633em)';
 			document.getElementById('intospace').style.top = '3.65em';
+
+			document.querySelector('.pPage').id = 'navactive';
 		}
 		startURLMonitoring();
 		updateButtonStates();
