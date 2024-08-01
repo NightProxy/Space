@@ -1,6 +1,6 @@
 # Security & Supported versions
 
-> Supported versions of Light are as followed:
+> Supported versions of Space are as followed:
 
 | Version | Supported |
 | ------- | --------- |
