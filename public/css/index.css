@@ -1,13 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
 
+/* ------------- Root Variables ------------- */
+:root {
+	--background-color: #000;
+	--header-active-background-color: rgba(140, 0, 255, 0.55);
+	--header-hover-background-color: rgba(140, 0, 255, 0.13);
+	--input-background-color: #0a0a0a;
+	--border-color: #525252;
+	--text-color: #ffffff;
+	--hover-text-color: rgba(255, 255, 255, 0.49);
+	--active-text-color: rgba(255, 255, 255, 0.81);
+	--utility-background-color: rgb(22, 22, 22);
+	--utility-shadow-color: rgba(66, 66, 66, 0.86);
+	--hr-background: rgba(160, 160, 160, 0.274);
+	--navbar-background-color: rgb(22, 22, 22);
+	--page-text-color: rgba(82, 82, 82, 0.97);
+	--shortcut-background-color: #fff;
+	--shortcut-box-shadow: 0 0 20px 1px #fff;
+	--image-outline-color: #4400ff;
+	--button-background-color: #4400ff;
+	--button-gradient-color: linear-gradient(
+		304deg,
+		rgb(204, 0, 245) 0%,
+		#4400ff 100%
+	);
+	--scrolltop-background-color: rgba(32, 32, 32, 0.37);
+	--scrolltop-backdrop-filter: blur(10px);
+	--random-btn-background-color: #0a0a0a;
+	--random-btn-hover-background-color: rgb(25, 25, 25);
+	--random-btn-active-background-color: rgb(15, 15, 15);
+	--settingsection-background-color: #0c0c0c;
+	--link-hover-color: #7d2ae8;
+	--settingsection-hr-background: rgba(255, 255, 255, 0.22);
+	--button-reg-background-color: rgb(22, 22, 22);
+	--button-reg-hover-background-color: rgb(25, 25, 25);
+	--button-reg-active-background-color: rgb(15, 15, 15);
+	--dropdown-background-color: rgb(22, 22, 22);
+	--dropdown-hover-background-color: rgb(25, 25, 25);
+	--panic-key-successful-color: #24b95b;
+	--panic-key-failed-color: #e20b41;
+	--failtoast-background: rgb(255, 0, 0);
+	--failtoast-gradient: linear-gradient(
+		165deg,
+		rgba(255, 0, 0, 0.15) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--toast-background: rgb(43, 255, 0);
+	--toast-gradient: linear-gradient(
+		165deg,
+		rgba(0, 255, 0, 0.145) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--slider-background-color: #d84f68;
+	--slider-box-shadow: inset 1px 1px 2px 0px #ff7ca7;
+	--checkbox-background-color: rgb(255, 169, 250);
+	--checkbox-gradient: linear-gradient(
+		126deg,
+		rgba(255, 169, 250, 1) 0%,
+		rgba(73, 24, 255, 1) 100%
+	);
+	--password-background-color: #252525;
+	--password-hover-background-color: #181818;
+}
+
+/* ------------- Global Styles ------------- */
 body {
 	padding: 0;
 	margin: 0;
-	background-color: #000;
+	background-color: var(--background-color);
 	font-family: 'DM Sans';
 }
 
+/* ------------- Header Styles ------------- */
 .header {
 	position: absolute;
 	transform: translate(-50%, -50%);
@@ -23,13 +88,14 @@ body {
 	font-weight: 200;
 }
 
+/* ------------- Utility Styles ------------- */
 #utilityactive {
-	background-color: #8c00ff8c;
-	border-radius: 7px;
+    background-color: var(--header-active-background-color);
+    border-radius: 7px;
 }
 
 .utility .utilityIcon:hover {
-	background-color: #8c00ff21;
+	background-color: var(--header-hover-background-color);
 	border-radius: 7px;
 	transition: 0.2s all ease-in-out;
 }
@@ -42,9 +108,9 @@ body {
 .utility .search-header__input {
 	font-family: 'DM Sans';
 	font-size: 16px;
-	background-color: #0a0a0a;
-	border: solid 0.5px #525252;
-	color: #ffffff;
+	background-color: var(--input-background-color);
+	border: solid 0.5px var(--border-color);
+	color: var(--text-color);
 	padding: 0.5rem 1rem;
 	border-radius: 25px;
 	min-width: 240px;
@@ -65,7 +131,7 @@ body {
 	font-size: 20px;
 	margin: 0;
 	padding: 8px;
-	color: white;
+	color: var(--text-color);
 }
 
 .utility {
@@ -76,10 +142,10 @@ body {
 	direction: ltr;
 	width: calc(100% - 2.5rem - 9px);
 	height: 3.633em;
-	background-color: rgb(22, 22, 22);
+	background-color: var(--utility-background-color);
 	position: fixed;
 	text-align: center;
-	box-shadow: 1.5px 1px 1px 0 rgba(66, 66, 66, 0.86);
+	box-shadow: 1.5px 1px 1px 0 var(--utility-shadow-color);
 	z-index: 2147483641;
 	display: flex;
 	align-items: center;
@@ -101,21 +167,20 @@ body {
 .utility hr {
 	width: 1px;
 	height: 35px;
-	background: rgba(160, 160, 160, 0.274);
+	background: var(--hr-background);
 	border: none;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-/* Reg Nav */
-
+/* ------------- Navigation Styles ------------- */
 #navactive {
-	background-color: #8c00ff8c;
+	background-color: var(--header-active-background-color);
 	border-radius: 7px;
 }
 
 .navbar span:hover {
-	background-color: #8c00ff21;
+	background-color: var(--header-hover-background-color);
 	border-radius: 7px;
 	transition: 0.2s all ease-in-out;
 }
@@ -133,29 +198,28 @@ body {
 	direction: ltr;
 	width: 2.5em;
 	height: 100%;
-	background-color: rgb(22, 22, 22);
+	background-color: var(--navbar-background-color);
 	position: fixed;
 	text-align: center;
-	box-shadow: 1px 0 1px 0 rgba(66, 66, 66, 0.86);
+	box-shadow: 1px 0 1px 0 var(--utility-shadow-color);
 	z-index: 2147483640;
 }
 
 .navbar hr {
 	width: 40px;
 	height: 1px;
-	background: rgba(160, 160, 160, 0.274);
+	background: var(--hr-background);
 	border: none;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-/* Actual page ---------------------------------------------------- */
-
+/* ------------- Page Styles ------------- */
 #gointospace2 {
 	font-family: 'DM Sans';
 	font-size: 16px;
 	transition: color ease-in-out 0.5s;
-	color: rgba(82, 82, 82, 0.97);
+	color: var(--page-text-color);
 	text-overflow: ellipsis;
 	padding-right: 32px;
 }
@@ -167,15 +231,16 @@ body {
 }
 
 #gointospace2:hover {
-	color: #ffffff7e;
+	color: var(--hover-text-color);
 }
 
 #gointospace2:active,
 #gointospace2:focus,
 #gointospace2:focus-visible {
-	color: #ffffffcf;
+	color: var(--active-text-color);
 }
 
+/* ------------- Button Styles ------------- */
 .refreshButton {
 	transition: transform 0.2s ease-in-out;
 }
@@ -201,11 +266,12 @@ body {
 	}
 }
 
+/* ------------- Miscellaneous Styles ------------- */
 .webSecurityIcon {
 	position: absolute !important;
 	top: 19px !important;
 	left: 165px !important;
-	color: #ffffff7e;
+	color: var(--hover-text-color);
 	height: 16px !important;
 	width: 16px !important;
 	font-size: 16px !important;
@@ -225,7 +291,7 @@ body {
 	width: 50px;
 	height: 50px;
 	border-radius: 23%;
-	background-color: #fff;
+	background-color: var(--shortcut-background-color);
 	align-content: center;
 	justify-content: center;
 	transition: 0.2s ease-in-out;
@@ -237,7 +303,7 @@ body {
 	transform: scale(1.05);
 	transition: 0.2s ease-in-out;
 	cursor: pointer;
-	box-shadow: 0 0 20px 1px #fff;
+	box-shadow: var(--shortcut-box-shadow);
 }
 
 .shortcut img {
@@ -279,7 +345,7 @@ body {
 
 .appsContainer img:active {
 	transition: 0s;
-	outline: 2px solid #4400ff;
+	outline: 2px solid var(--image-outline-color);
 }
 
 .gameImage {
@@ -287,6 +353,7 @@ body {
 	animation: fade-in-bottom 1s;
 }
 
+/* ------------- Animation Styles ------------- */
 .no-animation {
 	animation: none !important;
 	transition: none !important;
@@ -330,7 +397,7 @@ body {
 
 .gameContain img:active {
 	transition: 0s;
-	outline: 2px solid #4400ff;
+	outline: 2px solid var(--image-outline-color);
 }
 
 body img {
@@ -501,14 +568,15 @@ body img {
 	cursor: pointer;
 }
 
+/* ------------- Typography Styles ------------- */
 h1 {
 	font-size: 50px;
-	color: #fff;
+	color: var(--text-color);
 }
 
 p {
 	font-size: 20px;
-	color: #fff;
+	color: var(--text-color);
 	font-weight: 200;
 }
 
@@ -521,7 +589,7 @@ p {
 	font-size: 17px;
 	margin-top: 19px;
 	margin-bottom: -6px;
-	color: white;
+	color: var(--text-color);
 }
 
 span.material-symbols-outlined {
@@ -529,7 +597,7 @@ span.material-symbols-outlined {
 	margin-top: 10px;
 	margin-bottom: -6px;
 	padding: 10px;
-	color: white;
+	color: var(--text-color);
 }
 
 .content {
@@ -548,15 +616,16 @@ span.material-symbols-outlined {
 	left: 0;
 }
 
+/* ------------- Button Styles ------------- */
 .btn {
 	position: relative;
 	padding: 1px 25px;
 	border-radius: 35px;
 	border: none;
-	color: #fff;
+	color: var(--text-color);
 	cursor: pointer;
-	background: #4400ff;
-	background: linear-gradient(304deg, rgb(204, 0, 245) 0%, #4400ff 100%);
+	background: var(--button-background-color);
+	background: var(--button-gradient-color);
 	transition: all 0.2s ease;
 	box-shadow:
 		14px 7px 30px -5px #ae00ff,
@@ -719,9 +788,10 @@ span.material-symbols-outlined {
 	}
 }
 
+/* ------------- Scrolltop Button Styles ------------- */
 .scrolltop {
-	background-color: #2020205e;
-	backdrop-filter: blur(10px);
+	background-color: var(--scrolltop-background-color);
+	backdrop-filter: var(--scrolltop-backdrop-filter);
 	width: 49px;
 	height: 49px;
 	border-radius: 50%;
@@ -740,14 +810,14 @@ span.material-symbols-outlined {
 .scrolltop span.material-symbols-outlined {
 	justify-content: center;
 	font-size: 30px;
-	margin-top: 0px;
 }
 
+/* ------------- Random Button Styles ------------- */
 .randomBtn {
 	height: 35px;
 	padding: 0 20px;
 	text-wrap: nowrap;
-	background-color: #0a0a0a;
+	background-color: var(--random-btn-background-color);
 	border-radius: 10px;
 	border: 0;
 	text-align: center;
@@ -769,14 +839,15 @@ span.material-symbols-outlined {
 }
 
 .randomBtn:hover {
-	background-color: rgb(25, 25, 25);
-	outline: #525252 1px solid;
+	background-color: var(--random-btn-hover-background-color);
+	outline: var(--border-color) 1px solid;
 }
 
 .randomBtn:active {
-	background-color: rgb(15, 15, 15);
+	background-color: var(--random-btn-active-background-color);
 }
 
+/* ------------- Search Header Styles ------------- */
 .search-header {
 	display: flex;
 	align-items: center;
@@ -788,9 +859,9 @@ span.material-symbols-outlined {
 .search-header__input {
 	font-family: 'DM Sans';
 	font-size: 16px;
-	background-color: #0a0a0a;
-	border: solid 0.5px #525252;
-	color: #ffffff;
+	background-color: var(--input-background-color);
+	border: solid 0.5px var(--border-color);
+	color: var(--text-color);
 	padding: 0.7rem 1rem;
 	border-radius: 25px;
 	width: 240px;
@@ -841,6 +912,7 @@ span.material-symbols-outlined {
 	fill: #3a3a3a;
 }
 
+/* ------------- Blob Styles ------------- */
 .blob {
 	box-shadow: 0 0 150px 100px #8400ff;
 	border-radius: 50%;
@@ -899,6 +971,7 @@ span.material-symbols-outlined {
 	position: absolute;
 }
 
+/* ------------- Spinner Styles ------------- */
 .spinner {
 	background-image: linear-gradient(rgb(186, 66, 255) 35%, rgb(76, 0, 255));
 	width: 100px;
@@ -1183,7 +1256,7 @@ h3 {
 
 .settingsection {
 	text-align: left;
-	background-color: #0c0c0c;
+	background-color: var(--settingsection-background-color);
 	min-height: 90px;
 	width: 90%;
 	padding: 10px 14px 14px 14px;
@@ -1199,7 +1272,7 @@ h3 {
 }
 
 .settingsection p {
-	color: #ffffff7a;
+	color: rgba(255, 255, 255, 0.48);
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: 300;
@@ -1215,7 +1288,7 @@ h3 {
 }
 
 .settingsection p a:hover {
-	text-decoration-color: #7d2ae8;
+	text-decoration-color: var(--link-hover-color);
 	text-underline-offset: 2px;
 }
 
@@ -1234,7 +1307,7 @@ h3 {
 }
 
 .settingsection h1 {
-	color: #fff;
+	color: var(--text-color);
 	font-size: 20px;
 }
 
@@ -1248,7 +1321,7 @@ h3 {
 
 .settingsection ul,
 li {
-	color: #ffffff7a;
+	color: rgba(255, 255, 255, 0.48);
 	font-size: 14px;
 	list-style-type: disc;
 }
@@ -1256,7 +1329,7 @@ li {
 .settingsection hr {
 	border: 0;
 	height: 1px;
-	background: #ffffff38;
+	background: var(--settingsection-hr-background);
 	opacity: 0.4;
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -1265,8 +1338,8 @@ li {
 .buttonreg {
 	width: 100%;
 	height: 35px;
-	background-color: rgb(22, 22, 22);
-	color: white;
+	background-color: var(--button-reg-background-color);
+	color: var(--text-color);
 	border-radius: 10px;
 	border: 0;
 	text-align: center;
@@ -1283,18 +1356,18 @@ li {
 }
 
 .buttonreg:hover {
-	background-color: rgb(25, 25, 25);
+	background-color: var(--button-reg-hover-background-color);
 }
 
 .buttonreg:active {
-	background-color: rgb(15, 15, 15);
+	background-color: var(--button-reg-active-background-color);
 }
 
 .splitbutton {
 	width: 50%;
 	height: 35px;
-	background-color: rgb(22, 22, 22);
-	color: white;
+	background-color: var(--button-reg-background-color);
+	color: var(--text-color);
 	border-radius: 10px;
 	border: 0;
 	text-align: center;
@@ -1306,11 +1379,11 @@ li {
 }
 
 .splitbutton:hover {
-	background-color: rgb(25, 25, 25);
+	background-color: var(--button-reg-hover-background-color);
 }
 
 .splitbutton:active {
-	background-color: rgb(15, 15, 15);
+	background-color: var(--button-reg-active-background-color);
 }
 
 .splitbutton:first-child {
@@ -1351,12 +1424,8 @@ li {
 
 #cbx:checked ~ .cbx {
 	border-color: transparent;
-	background: rgb(255, 169, 250);
-	background: linear-gradient(
-		126deg,
-		rgba(255, 169, 250, 1) 0%,
-		rgba(73, 24, 255, 1) 100%
-	);
+	background: var(--checkbox-background-color);
+	background: var(--checkbox-gradient);
 	animation: jelly 0.4s ease;
 }
 
@@ -1457,7 +1526,7 @@ li {
 	background-color: transparent;
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
-	box-shadow: 1px 1px 5px 0 #d84f68 inset;
+	box-shadow: 1px 1px 5px 0 var(--slider-background-color) inset;
 }
 
 .slider:before {
@@ -1467,10 +1536,10 @@ li {
 	width: 20px;
 	left: 4px;
 	bottom: 4px;
-	background-color: #d84f68;
+	background-color: var(--slider-background-color);
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
-	box-shadow: inset 1px 1px 2px 0px #ff7ca7;
+	box-shadow: var(--slider-box-shadow);
 }
 
 .checkbox:checked + .slider {
@@ -1533,7 +1602,7 @@ li {
 	border: 2px solid transparent;
 	border-radius: 10px;
 	outline: none;
-	background-color: #252525;
+	background-color: var(--password-background-color);
 	color: #818181;
 }
 
@@ -1544,7 +1613,7 @@ li {
 .password:focus,
 input:hover {
 	outline: none;
-	background-color: #181818;
+	background-color: var(--password-hover-background-color);
 }
 
 ::-ms-reveal {
@@ -1560,12 +1629,13 @@ input:hover {
 	color: white;
 }
 
+/* ------------- Dropdown Styles ------------- */
 .dropdown-button {
 	width: 297px;
 	height: 35px;
 	padding-left: 10px;
-	background-color: rgb(22, 22, 22);
-	color: white;
+	background-color: var(--dropdown-background-color);
+	color: var(--text-color);
 	border-radius: 10px;
 	border: 0;
 	text-align: left;
@@ -1581,11 +1651,11 @@ input:hover {
 }
 
 .dropdown-button:hover {
-	background-color: rgb(25, 25, 25);
+	background-color: var(--dropdown-hover-background-color);
 }
 
 .dropdown-button:active {
-	background-color: rgb(15, 15, 15);
+	background-color: var(--button-reg-active-background-color);
 }
 
 .dropdown {
@@ -1599,7 +1669,7 @@ input:hover {
 	left: 19px;
 	display: none;
 	position: absolute;
-	background-color: rgb(22, 22, 22);
+	background-color: var(--dropdown-background-color);
 	width: 300px;
 	border-radius: 10px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -1612,7 +1682,7 @@ input:hover {
 .dropdown-menu li {
 	list-style-type: none;
 	padding: 8px 16px;
-	color: white;
+	color: var(--text-color);
 	cursor: pointer;
 	z-index: -1;
 }
@@ -1622,21 +1692,21 @@ input:hover {
 }
 
 .dropdown-menu li:last-child:hover {
-	background-color: rgb(25, 25, 25);
+	background-color: var(--dropdown-hover-background-color);
 	border-radius: 0 0 10px 10px;
 }
 
 .dropdown-menu li:hover {
-	background-color: rgb(25, 25, 25);
+	background-color: var(--dropdown-hover-background-color);
 }
 
 .dropdown-menu li.second-to-last-conditional:hover {
-	background-color: rgb(25, 25, 25);
+	background-color: var(--dropdown-hover-background-color);
 	border-radius: 0 0 10px 10px;
 }
 
 .dropdown-menu li.second-to-first-conditional:hover {
-	background-color: rgb(25, 25, 25);
+	background-color: var(--dropdown-hover-background-color);
 	border-radius: 10px 10px 0px 0px;
 }
 
@@ -1653,17 +1723,18 @@ input:hover {
 	transform: rotate(-90deg);
 }
 
+/* ------------- Panic Key Styles ------------- */
 .panicKeySuccessful {
 	transition: all 0.2s ease-in-out;
 	box-shadow: 0px 0px 20px -5px #07f05d;
-	background-color: #24b95b !important;
+	background-color: var(--panic-key-successful-color) !important;
 	z-index: 999999999;
 }
 
 .panicKeyFailed {
 	transition: all 0.2s ease-in-out;
 	box-shadow: 0px 0px 30px -5px #e20b41;
-	background-color: #e20b41 !important;
+	background-color: var(--panic-key-failed-color) !important;
 	z-index: 999999999;
 }
 
@@ -1691,13 +1762,8 @@ input:hover {
 	top: 25px;
 	right: 30px;
 	border-radius: 12px;
-	background: rgb(255, 0, 0);
-	background: rgb(255, 0, 0);
-	background: linear-gradient(
-		165deg,
-		rgba(255, 0, 0, 0.14508449864320727) 0%,
-		rgba(255, 255, 255, 0) 45%
-	);
+	background: var(--failtoast-background);
+	background: var(--failtoast-gradient);
 	backdrop-filter: blur(20px);
 	padding: 20px 25px 20px 35px;
 	box-shadow: 0 6px 20px -5px rgba(255, 255, 255, 0.1);
@@ -1733,12 +1799,12 @@ input:hover {
 .failmessage .failtext {
 	font-size: 16px;
 	font-weight: 400;
-	color: #ffffff7a;
+	color: rgba(255, 255, 255, 0.48);
 }
 
 .failmessage .failtext.text-1 {
 	font-weight: 600;
-	color: #ffffff7a;
+	color: rgba(255, 255, 255, 0.48);
 	margin: 0 !important;
 }
 
@@ -1795,12 +1861,8 @@ input:hover {
 	top: 25px;
 	right: 30px;
 	border-radius: 12px;
-	background: rgb(43, 255, 0);
-	background: linear-gradient(
-		165deg,
-		rgba(0, 255, 0, 0.145) 0%,
-		rgba(255, 255, 255, 0) 45%
-	);
+	background: var(--toast-background);
+	background: var(--toast-gradient);
 	backdrop-filter: blur(20px);
 	padding: 20px 35px 20px 25px;
 	box-shadow: 0 6px 20px -5px rgba(255, 255, 255, 0.1);
@@ -1839,12 +1901,12 @@ input:hover {
 .message .text {
 	font-size: 16px;
 	font-weight: 400;
-	color: #ffffff7a;
+	color: rgba(255, 255, 255, 0.48);
 }
 
 .message .text.text-1 {
 	font-weight: 600;
-	color: #ffffff7a;
+	color: rgba(255, 255, 255, 0.48);
 }
 
 .toast .close {

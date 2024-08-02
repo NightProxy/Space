@@ -772,65 +772,70 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById('blank').style.display = 'block';
 	showPageFromHash();
 
-	const dropdownMenu = document.querySelector('.dropdown-menu');
+	const dropdownMenus = document.querySelectorAll('.dropdown-menu');
 
-	if (dropdownMenu) {
-		function updateStyles() {
-			const items = dropdownMenu.querySelectorAll('li');
-			if (items.length >= 2) {
-				const lastItem = items[items.length - 1];
-				const firstItem = items[0];
-				const secondToLastItem = items[items.length - 2];
-				const secondItem = items[1]; // second element (second-to-first)
+	dropdownMenus.forEach(dropdownMenu => {
+		if (dropdownMenu) {
+			function updateStyles() {
+				const items = dropdownMenu.querySelectorAll('li');
+				if (items.length >= 2) {
+					const lastItem = items[items.length - 1];
+					const firstItem = items[0];
+					const secondToLastItem = items[items.length - 2];
+					const secondItem = items[1];
 
-				if (secondToLastItem) {
-					if (lastItem.classList.contains('hidden')) {
-						secondToLastItem.classList.add(
-							'second-to-last-conditional'
-						);
-					} else {
-						secondToLastItem.classList.remove(
-							'second-to-last-conditional'
-						);
+					if (secondToLastItem) {
+						if (lastItem.classList.contains('hidden')) {
+							secondToLastItem.classList.add(
+								'second-to-last-conditional'
+							);
+						} else {
+							secondToLastItem.classList.remove(
+								'second-to-last-conditional'
+							);
+						}
 					}
-				}
 
-				if (secondItem) {
-					if (firstItem.classList.contains('hidden')) {
-						secondItem.classList.add('second-to-first-conditional');
-					} else {
-						secondItem.classList.remove(
-							'second-to-first-conditional'
-						);
+					if (secondItem) {
+						if (firstItem.classList.contains('hidden')) {
+							secondItem.classList.add(
+								'second-to-first-conditional'
+							);
+						} else {
+							secondItem.classList.remove(
+								'second-to-first-conditional'
+							);
+						}
 					}
 				}
 			}
-		}
 
-		updateStyles();
+			updateStyles();
 
-		const observer = new MutationObserver(() => {
-			setTimeout(updateStyles, 0);
-		});
-
-		observer.observe(dropdownMenu, {
-			childList: true,
-			subtree: true
-		});
-
-		dropdownMenu.querySelectorAll('li').forEach(item => {
-			observer.observe(item, {
-				attributes: true,
-				attributeFilter: ['class']
+			const observer = new MutationObserver(() => {
+				setTimeout(updateStyles, 0);
 			});
-		});
 
-		dropdownMenu.addEventListener('click', event => {
-			if (event.target.tagName === 'LI') {
-				// console.log('Clicked item:', event.target);
-			}
-		});
-	}
+			observer.observe(dropdownMenu, {
+				childList: true,
+				subtree: true
+			});
+
+			dropdownMenu.querySelectorAll('li').forEach(item => {
+				observer.observe(item, {
+					attributes: true,
+					attributeFilter: ['class']
+				});
+			});
+
+			dropdownMenu.addEventListener('click', event => {
+				if (event.target.tagName === 'LI') {
+					// console.log('Clicked item:', event.target);
+				}
+			});
+		}
+	});
+
 	function checkboxToggle(checkboxClass, storageKey) {
 		const checkbox = document.querySelector(`.checkbox.${checkboxClass}`);
 

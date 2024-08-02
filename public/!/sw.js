@@ -1,7 +1,16 @@
-importScripts('/!/uv.bundle.js');
-importScripts('/!/uv.config.js');
-importScripts(__uv$config.sw || '/!/uv.sw.js');
+importScripts('/!/meteor.codecs.js');
+importScripts('/!/meteor.config.js');
+importScripts('/!/meteor.bundle.js');
+importScripts('/!/meteor.worker.js');
 
-const sw = new UVServiceWorker();
+const meteor = new MeteorServiceWorker();
+function handleRequest(event) {
+	if (meteor.shouldRoute(event)) {
+		return meteor.handleFetch(event);
+	}
 
-self.addEventListener('fetch', event => event.respondWith(sw.fetch(event)));
+	return fetch(event.request);
+}
+self.addEventListener('fetch', event => {
+	event.respondWith(handleRequest(event));
+});
