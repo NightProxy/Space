@@ -41,14 +41,15 @@ var wispUrl = localStorage.getItem('wisp') || defWisp;
 var bareUrl = localStorage.getItem('bare') || defBare;
 
 async function setTransports() {
-	const transports = localStorage.getItem('transports') || 'epoxy';
-	if (transports === 'epoxy') {
+	const transports =
+		localStorage.getItem('dropdown-selected-text-transport') || 'Epoxy';
+	if (transports === 'Epoxy') {
 		await connection.setTransport('/epoxy/index.mjs', [{ wisp: wispUrl }]);
-	} else if (transports === 'libcurl') {
+	} else if (transports === 'Libcurl') {
 		await connection.setTransport('/libcurl/index.mjs', [
 			{ wisp: wispUrl }
 		]);
-	} else if (transports === 'bare') {
+	} else if (transports === 'Baremod') {
 		await connection.setTransport('/baremod/index.mjs', [bareUrl]);
 	} else {
 		await connection.setTransport('/epoxy/index.mjs', [{ wisp: wispUrl }]);

@@ -35,7 +35,8 @@ async function executeSearch(query) {
 					'Checking your internet connection'
 			)
 		) {
-			iframe.src = '/500';
+			// TODO: Uncomment
+			// iframe.src = '/500';
 		}
 
 		startURLMonitoring();
@@ -308,12 +309,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	} else {
 		if (localStorage.getItem('utilBarHidden') === 'true') {
 			document.querySelector('.utilityBar').style.display = 'none';
-            		document.getElementById('intospace').style.height =
-						'100%';
+			document.getElementById('intospace').style.height = '100%';
 		} else {
 			document.querySelector('.utilityBar').style.display = 'block';
-            		document.getElementById('intospace').style.height =
-						'calc(100% - 3.633em)';
+			document.getElementById('intospace').style.height =
+				'calc(100% - 3.633em)';
 		}
 
 		document.querySelector('.pPage').id = 'navactive';
