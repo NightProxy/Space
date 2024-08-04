@@ -43,57 +43,60 @@
 
 	<body style="overflow: hidden">
 		<ul class="navbar">
-			<li style="margin-left: -1px; margin-top: 2px">
-				<a href="/"
-					><img class="logo" src="/assets/logo.png" alt="Logo"
-				/></a>
-			</li>
-			<hr style="margin-top: 5px" />
-			<li>
-				<a href="/"
-					><span
-						id="navactive"
-						style="margin-top: 0px"
-						class="material-symbols-outlined"
-						>cottage</span
-					></a
-				>
-			</li>
-			<li>
-				<a href="/g"
-					><span class="material-symbols-outlined">joystick</span></a
-				>
-			</li>
-			<li>
-				<a href="/a"
-					><span class="material-symbols-outlined">apps</span></a
-				>
-			</li>
-			<li>
-				<a href="/&"
-					><span class="material-symbols-outlined">public</span></a
-				>
-			</li>
-
-			<hr />
-			<li>
-				<a href="/~"
-					><span
-						style="margin-top: 0"
-						class="material-symbols-outlined"
-						>tune</span
-					></a
-				>
-			</li>
-			<li>
-				<a
-					aria-label="Discord"
-					target="_blank"
-					href="https://discord.gointospace.app"
-					><i class="fa-brands fa-discord"></i
-				></a>
-			</li>
+			<div class="top-item">
+				<li>
+					<a href="/">
+						<img class="logo" src="/assets/logo.png" alt="Logo" />
+					</a>
+				</li>
+				<li>
+					<a href="/">
+						<span
+							style="transform: translateY(-7.5px)"
+							class="material-symbols-outlined"
+							>cottage</span
+						>
+					</a>
+				</li>
+			</div>
+			<div class="center-items">
+				<li class="center-item">
+					<a href="/g">
+						<span class="material-symbols-outlined">joystick</span>
+					</a>
+				</li>
+				<li class="center-item">
+					<a href="/a">
+						<span class="material-symbols-outlined">apps</span>
+					</a>
+				</li>
+				<li class="center-item">
+					<a href="/&">
+						<span class="material-symbols-outlined">public</span>
+					</a>
+				</li>
+			</div>
+			<div class="bottom-item">
+				<li>
+					<a href="/~">
+						<span class="material-symbols-outlined">tune</span>
+					</a>
+				</li>
+				<li>
+					<a
+						aria-label="Discord"
+						target="_blank"
+						href="https://discord.gointospace.app"
+					>
+						<i
+							style="transform: translateY(-7.5px)"
+							class="fa-brands fa-discord"
+						></i>
+					</a>
+				</li>
+			</div>
 		</ul>
+
 		<a href="/~/#/news">
 			<i data-lucide="newspaper" class="sparkles"></i>
 		</a>
