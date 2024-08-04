@@ -53,13 +53,13 @@ git pull --force --allow-unrelated-histories
 
 ## Contribution
 
-To contribute to Light, clone the repo locally and submit your code in a pull
+To contribute to Space, clone the repo locally and submit your code in a pull
 request. If you are making large changes, please make sure you test your code
 before submitting a pull request.
 
 ## Contributors
 
-Thank you to the following people for contributing to Light.
+Thank you to the following people for contributing to Space.
 
 [![Contributors](https://contrib.rocks/image?repo=NightProxy/Space)](https://github.com/NightProxy/Space/graphs/contributors)
 
