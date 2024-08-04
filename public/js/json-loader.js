@@ -135,14 +135,14 @@ document.addEventListener('DOMContentLoaded', () => {
 					shortcutImage.style.objectFit = 'cover';
 					shortcutImage.style.transition = '0.2s';
 
-					document.querySelector('.searchEngine').style.display = 'none';
+					document.querySelector('.searchEngine').style.display =
+						'none';
 					document.querySelector(
 						'.gointospaceSearchButton'
 					).style.cssText =
 						'transform: translate(-11px, 3px); user-select: none; cursor: default;';
-						document.getElementById(
-							'formintospace'
-						).style.transform = 'translateY(150px)';
+					document.getElementById('formintospace').style.transform =
+						'translateY(150px)';
 
 					if (shortcut.style) {
 						shortcutImage.style.cssText += shortcut.style;
@@ -189,13 +189,14 @@ document.addEventListener('DOMContentLoaded', () => {
 					shortcutImage.style.width = '170px';
 					shortcutImage.style.height = '90px';
 					shortcutImage.style.padding = '0';
-					shortcutImage.style.transition = '0.2s'
+					shortcutImage.style.transition = '0.2s';
 
-					document.getElementById('gointospace').style.cssText = 'width: 500px; text-align: left; padding: 15px; margin-right: -0.5rem; padding-left: 49.5px;';
-									document.querySelector(
-										'.gointospaceSearchButton'
-									).style.cssText =
-										'transform: translate(-34px, 3px); user-select: none; cursor: default;';
+					document.getElementById('gointospace').style.cssText =
+						'width: 500px; text-align: left; padding: 15px; margin-right: -0.5rem; padding-left: 49.5px;';
+					document.querySelector(
+						'.gointospaceSearchButton'
+					).style.cssText =
+						'transform: translate(-34px, 3px); user-select: none; cursor: default;';
 
 					shortcutImage.onerror = () => {
 						shortcutImage.src = '/assets/default.png';
