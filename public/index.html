@@ -2,6 +2,9 @@
 <html lang="en">
 	<head>
 		<link rel="stylesheet" href="/css/index.css" />
+
+		<script src="https://unpkg.com/lucide@latest"></script>
+
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
@@ -91,9 +94,9 @@
 				></a>
 			</li>
 		</ul>
-		<a href="/~/#/news"
-			><img class="sparkles" alt="News" src="/assets/sparkles.png"
-		/></a>
+		<a href="/~/#/news">
+			<i data-lucide="newspaper" class="sparkles"></i>
+		</a>
 		<div
 			class="header"
 			style="
@@ -152,18 +155,19 @@
 						<p
 							style="
 								font-weight: 600;
-								margin: 13px 3px;
+								margin: 7px;
 								font-size: 14px;
-								letter-spacing: 0.4%;
+
 								display: flex;
 								align-items: center;
+								font-family: 'DM Sans', sans-serif;
 							"
 						>
-							Get Started<img
-								style="width: 20px; margin-left: 5px"
+							Get Started<i
+								style="width: 18px; margin-left: 5px"
 								alt="Get started icon"
-								src="/assets/sparkles.png"
-							/>
+								data-lucide="sparkles"
+							></i>
 						</p>
 					</a>
 				</button>
@@ -290,6 +294,9 @@
 		<script src="/js/localforage.min.js"></script>
 		<script src="/js/index.js"></script>
 		<script src="/js/c.js"></script>
+		<script>
+			lucide.createIcons();
+		</script>
 		<script
 			type="text/javascript"
 			src="//pl23881934.highrevenuenetwork.com/c6/de/c6/c6dec671fa7ab5d0a210b2e6300c91eb.js"

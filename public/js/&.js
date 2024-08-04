@@ -6,7 +6,6 @@ async function executeSearch(query) {
 	document.querySelectorAll('.spinnerParent')[0].style.display = 'block';
 	document.querySelectorAll('.spinner')[0].style.display = 'block';
 	document.getElementById('gointospace').style.display = 'none';
-	document.querySelectorAll('.search-header__icon')[0].style.display = 'none';
 	const iframe = document.getElementById('intospace');
 	await registerSW();
 	iframe.src = encodedUrl;
@@ -17,10 +16,6 @@ async function executeSearch(query) {
 	}
 
 	document.querySelectorAll('input').forEach(input => input.blur());
-
-	setTimeout(() => {
-		document.getElementById('gointospace2').style.paddingLeft = '40px';
-	}, 500);
 
 	// make check for uv error
 	iframe.addEventListener('load', function () {
@@ -86,6 +81,8 @@ function startURLMonitoring() {
 }
 
 function updateGointospace2(url) {
+	document.querySelectorAll('.search-header__icon')[0].style.display = 'none';
+
 	let cleanedUrl = __uv$config.decodeUrl(
 		url.split(swConfigSettings.prefix).pop()
 	);
@@ -115,7 +112,18 @@ address2.addEventListener('click', function () {
 		!currentValue.startsWith('https://') &&
 		intospace.src
 	) {
-		this.value = 'https://' + currentValue;
+		let isSecure = __uv$config
+			.decodeUrl(
+				iframe.contentWindow.location.href
+					.split(swConfigSettings.prefix)
+					.pop()
+			)
+			.startsWith('https://');
+		if (isSecure) {
+			this.value = 'https://' + currentValue;
+		} else {
+			this.value = 'http://' + currentValue;
+		}
 	}
 
 	this.select();

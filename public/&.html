@@ -57,13 +57,14 @@
 			</li>
 			<hr style="margin-top: 5px" />
 			<li>
-				<a href="/"
-					><span
-						style="margin-top: 0px"
-						class="material-symbols-outlined"
-						>cottage</span
-					></a
-				>
+				<a href="/">
+					<div class="navHover">
+						<span
+							style="margin-top: 0px"
+							class="material-symbols-outlined"
+							>cottage</span
+					></div>
+					</a>
 			</li>
 			<li>
 				<a href="/g"
@@ -100,6 +101,9 @@
 				<a target="_blank" href="https://discord.gointospace.app"
 					><i class="fa-brands fa-discord"></i
 				></a>
+			</li>
+			<li style="position: absolute; bottom: 15px">
+				<span class="material-symbols-outlined">view_cozy</span>
 			</li>
 		</ul>
 
@@ -173,7 +177,7 @@
 					style="flex-grow: 1; margin-left: 8px; margin-right: 8px"
 				>
 					<input
-						placeholder="Search Space..."
+						placeholder="Enter search or web address"
 						class="search-header__input"
 						id="gointospace2"
 						type="text"
@@ -186,7 +190,8 @@
 							user-select: none;
 							cursor: default;
 							position: absolute;
-							right: 216px;
+							margin-left: 7px;
+							margin-bottom: -2px;
 						"
 						type="submit"
 						class="search-header__button"
@@ -240,7 +245,6 @@
 				</li>
 			</ul>
 		</div>
-
 		<div class="header">
 			<div
 				style="
@@ -248,9 +252,26 @@
 					flex-direction: column;
 					align-items: center;
 					margin: 20px;
+					width: 100vw;
 				"
 			>
-				<div style="animation: fade-in-top 1s" class="search-header">
+				<div
+					style="animation: fade-in-top 1s; margin-top: -150px"
+					class="search-header"
+				>
+					<img
+						src="https://images.prismic.io/elhard/8d25d604-ea29-4175-a0e1-af5625e86c5e_300221.png?auto=compress,format"
+						class="searchEngine"
+						style="
+							width: 20px;
+							height: 20px;
+							border-radius: 50%;
+							object-fit: cover;
+							position: relative;
+							z-index: 9999999;
+							margin-right: -35px;
+						"
+					/>
 					<form id="formintospace">
 						<input
 							id="gointospace"
@@ -260,13 +281,8 @@
 						/>
 						<button
 							aria-label="search"
-							style="
-								transform: translate(-11px, 3px);
-								user-select: none;
-								cursor: default;
-							"
 							type="submit"
-							class="search-header__button"
+							class="search-header__button gointospaceSearchButton"
 						>
 							<svg
 								fill="none"
@@ -284,6 +300,7 @@
 					</form>
 				</div>
 				<div class="shortcuts"></div>
+				<div class="shortcutsbig"></div>
 			</div>
 		</div>
 		<iframe
@@ -296,7 +313,7 @@
 				outline: 0;
 				right: 0;
 				z-index: 9999999;
-				background-color: #dadada;
+				background-color: #252525;
 				bottom: 0;
 			"
 		></iframe>

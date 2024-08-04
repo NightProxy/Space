@@ -105,7 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-	if (window.location.pathname === '/&') {
+	if (
+		window.location.pathname === '/&' &&
+		localStorage.getItem('smallIcons') === 'true'
+	) {
 		fetch('/json/shortcuts.json')
 			.then(response => response.json())
 			.then(data => {
@@ -130,6 +133,16 @@ document.addEventListener('DOMContentLoaded', () => {
 					shortcutImage.style.height = '28px';
 					shortcutImage.style.padding = '11px';
 					shortcutImage.style.objectFit = 'cover';
+					shortcutImage.style.transition = '0.2s';
+
+					document.querySelector('.searchEngine').style.display = 'none';
+					document.querySelector(
+						'.gointospaceSearchButton'
+					).style.cssText =
+						'transform: translate(-11px, 3px); user-select: none; cursor: default;';
+						document.getElementById(
+							'formintospace'
+						).style.transform = 'translateY(150px)';
 
 					if (shortcut.style) {
 						shortcutImage.style.cssText += shortcut.style;
@@ -138,6 +151,51 @@ document.addEventListener('DOMContentLoaded', () => {
 					if (shortcut.bg) {
 						shortcutImage.style.backgroundColor = shortcut.bg;
 					}
+
+					shortcutImage.onerror = () => {
+						shortcutImage.src = '/assets/default.png';
+					};
+
+					shortcutLink.appendChild(shortcutImage);
+					shortcuts.appendChild(shortcutLink);
+				});
+			})
+			.catch(error => console.error('Error loading shortcut :( ', error));
+	} else if (
+		window.location.pathname === '/&' &&
+		localStorage.getItem('smallIcons') === 'false'
+	) {
+		fetch('/json/shortcutsBig.json')
+			.then(response => response.json())
+			.then(data => {
+				const shortcuts = document.querySelector('.shortcutsbig');
+
+				data.forEach(shortcut => {
+					const shortcutLink = document.createElement('a');
+
+					if (shortcut.name.toLowerCase() === 'settings') {
+						shortcutLink.href = '/~/#/proxy';
+					} else {
+						shortcutLink.href = `/&?q=${encodeURIComponent(shortcut.name)}`;
+					}
+
+					const shortcutImage = document.createElement('img');
+					shortcutImage.src = shortcut.img;
+					shortcutImage.alt = shortcut.name;
+					shortcutImage.title = shortcut.name;
+					shortcutLink.classList.add('shortcutbig');
+					shortcutImage.classList.add('shortcutbigimg');
+
+					shortcutImage.style.width = '170px';
+					shortcutImage.style.height = '90px';
+					shortcutImage.style.padding = '0';
+					shortcutImage.style.transition = '0.2s'
+
+					document.getElementById('gointospace').style.cssText = 'width: 500px; text-align: left; padding: 15px; margin-right: -0.5rem; padding-left: 49.5px;';
+									document.querySelector(
+										'.gointospaceSearchButton'
+									).style.cssText =
+										'transform: translate(-34px, 3px); user-select: none; cursor: default;';
 
 					shortcutImage.onerror = () => {
 						shortcutImage.src = '/assets/default.png';

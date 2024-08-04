@@ -1,5 +1,15 @@
 localforage.setItem('e', 'e');
-
+shapePositions = {
+	blank: '26.5px',
+	plugins: '65.27px',
+	performance: '103.5px',
+	themes: '142px',
+	proxy: '180.8px',
+	ads: '219px',
+	about: '278.5px',
+	account: '317px',
+	news: '377px'
+};
 document.addEventListener('click', function (event) {
 	const dropdowns = document.querySelectorAll('.dropdown');
 
@@ -67,7 +77,29 @@ function showPageFromHash() {
 
 	settingItems.forEach(item => {
 		if (item.dataset.id === hash) {
+			shapePositions = {
+				blank: '26.5px',
+				plugins: '65.27px',
+				performance: '103.5px',
+				themes: '142px',
+				proxy: '180.8px',
+				ads: '219px',
+				about: '278.5px',
+				account: '317px',
+				news: '377px'
+			};
+
+			console.log(item.dataset.id);
+			console.log(shapePositions);
+			console.log(shapePositions[item.dataset.id]);
 			item.classList.add('sideActive');
+			document
+				.querySelector('.settingsShape')
+				.setAttribute(
+					'style',
+					`top: ${shapePositions[item.dataset.id]}`
+				);
+			console.log(item.dataset.id);
 			foundActive = true;
 		} else {
 			item.classList.remove('sideActive');
@@ -857,4 +889,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	checkboxToggle('utilBarYesNo', 'utilBarHidden');
 	checkboxToggle('particlesYesNo', 'particlesHidden');
+	checkboxToggle('smallIconsYesNo', 'smallIcons');
 });

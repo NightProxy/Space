@@ -70,6 +70,7 @@ body {
 	margin: 0;
 	background-color: var(--background-color);
 	font-family: 'DM Sans';
+	transition: color 0.2s ease;
 }
 
 /* ------------- Header Styles ------------- */
@@ -182,11 +183,11 @@ body {
 .navbar span:hover {
 	background-color: var(--header-hover-background-color);
 	border-radius: 7px;
-	transition: 0.2s all ease-in-out;
+	transition: 0.12s all ease-in-out;
 }
 
 .navbar span {
-	transition: 0.2s;
+	transition: 0.12s;
 }
 
 .navbar {
@@ -222,6 +223,7 @@ body {
 	color: var(--page-text-color);
 	text-overflow: ellipsis;
 	padding-right: 32px;
+	padding-left: 40px;
 }
 
 #gointospace {
@@ -277,6 +279,47 @@ body {
 	font-size: 16px !important;
 }
 
+.shortcutsbig {
+	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	gap: 20px;
+	justify-content: center;
+	margin-top: -3.5em;
+	left: 50vw;
+	transform: translateX(-50%);
+}
+
+.shortcutbig {
+	background: none;
+	align-content: center;
+	justify-content: center;
+	transition: 0.2s ease-in-out;
+	opacity: 1;
+	border-radius: 30px;
+}
+
+.shortcutbigimg {
+	animation: fade-in-bottom 1s;
+	opacity: 0;
+}
+
+.shortcutbig img {
+	width: 170px;
+	height: 90px;
+	border-radius: 20px;
+	transition: 0.2s ease-in-out !important;
+}
+
+.shortcutbig img:hover {
+	transform: scale(1.1);
+	border-radius: 20px;
+	transition: 0.12s ease;
+	cursor: pointer;
+	transition: 0.2s ease-in-out !important;
+}
+
 .shortcuts {
 	width: 500px;
 	display: flex;
@@ -285,6 +328,8 @@ body {
 	gap: 29px;
 	justify-content: center;
 	margin-top: 4.5em;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .shortcut {
@@ -294,14 +339,14 @@ body {
 	background-color: var(--shortcut-background-color);
 	align-content: center;
 	justify-content: center;
-	transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out !important;
 	animation: fade-in-bottom 1s;
 	opacity: 0;
 }
 
 .shortcut:hover {
 	transform: scale(1.05);
-	transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out !important;
 	cursor: pointer;
 	box-shadow: var(--shortcut-box-shadow);
 }
@@ -311,6 +356,7 @@ body {
 	height: 28px;
 	padding: 11px;
 	object-fit: cover;
+	transition: 0.2s ease-in-out !important;
 }
 
 .appImage {
@@ -414,8 +460,10 @@ body img {
 }
 
 .sparkles {
-	width: 25px;
-	height: 25px;
+	stroke-width: 1.5px;
+	color: #fff;
+	width: 24px;
+	height: 24px;
 	position: absolute;
 	right: 0.5em;
 	top: 0.5em;
@@ -578,6 +626,7 @@ p {
 	font-size: 20px;
 	color: var(--text-color);
 	font-weight: 200;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .material-symbols-outlined {
@@ -619,7 +668,8 @@ span.material-symbols-outlined {
 /* ------------- Button Styles ------------- */
 .btn {
 	position: relative;
-	padding: 1px 25px;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-radius: 35px;
 	border: none;
 	color: var(--text-color);
@@ -634,6 +684,7 @@ span.material-symbols-outlined {
 
 .btn:active {
 	transform: scale(0.95) !important;
+	transition: all 0.2s ease;
 }
 
 .btn:before,
@@ -649,7 +700,8 @@ span.material-symbols-outlined {
 }
 
 .btn:hover {
-	padding: 1px 35px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .btn:hover:before {
@@ -1093,6 +1145,7 @@ span.material-symbols-outlined {
 
 .sideSnav li:active > span.material-symbols-outlined {
 	color: white;
+	transition: all 0.2s ease;
 }
 
 .sideSnav h1 {
@@ -1107,27 +1160,19 @@ span.material-symbols-outlined {
 	/* add this */
 	align-items: center;
 	/* add this */
+	transition: color 0.2s ease;
 }
 
 .sideSnav li:hover,
 .sideSnav li:hover span.material-symbols-outlined {
 	color: #adadad;
+	transition: color 0.2s ease;
 }
 
 .sideSnav li:active {
 	color: #fff;
 	position: relative;
-}
-
-.sideSnav li:active:before {
-	content: '';
-	position: absolute;
-	left: -20px;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 3px;
-	height: 35px;
-	background-color: #fff;
+	transition: all 0.2s ease;
 }
 
 .sideActive {
@@ -1140,22 +1185,6 @@ span.material-symbols-outlined {
 
 .sideActive > span.material-symbols-outlined {
 	color: none;
-}
-
-.sideActive:before {
-	content: '';
-	position: absolute;
-	left: -20px;
-	top: 50%;
-	transform: translateY(-50%);
-	width: 3px;
-	height: 35px;
-	background-image: linear-gradient(
-		80deg,
-		hsl(270, 100%, 50%),
-		hsl(300, 100%, 50%)
-	);
-	animation: baractiveani 2s linear infinite;
 }
 
 @keyframes baractiveani {
@@ -1191,6 +1220,18 @@ span.material-symbols-outlined {
 	color: #ae00ff;
 }
 
+.settingsShape {
+	transition: all 0.5s ease;
+	animation: activeani 2s linear infinite;
+	width: 3px;
+	height: 35px;
+
+	border-top-right-radius: 999px;
+	border-bottom-right-radius: 999px;
+	margin-left: -20px;
+	position: relative;
+	top: 26.5px;
+}
 @keyframes activeani {
 	0% {
 		color: #ae00ff;
@@ -1285,11 +1326,13 @@ h3 {
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-decoration: underline;
+	transition: color 0.2s ease;
 }
 
 .settingsection p a:hover {
 	text-decoration-color: var(--link-hover-color);
 	text-underline-offset: 2px;
+	transition: color 0.2s ease;
 }
 
 @keyframes link {
@@ -1626,7 +1669,7 @@ input:hover {
 	fill: none;
 	width: 1rem;
 	height: 1rem;
-	color: white;
+	color: #fff;
 }
 
 /* ------------- Dropdown Styles ------------- */

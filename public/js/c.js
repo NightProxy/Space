@@ -81,6 +81,11 @@ if (pathname.includes('~')) {
 				li.style.transform = 'rotateX(0)';
 			}, 0);
 		});
+		setTimeout(function () {
+			lis.forEach((li, index) => {
+				li.setAttribute('style', 'transform: rotateX(0)');
+			});
+		}, 1000);
 	}
 
 	initializeObservers();
@@ -90,6 +95,7 @@ if (pathname.includes('~')) {
 	setupObserver('.appImage');
 } else if (pathname === '/&') {
 	setupObserver('.shortcut');
+	setupObserver('.shortcutbigimg');
 }
 
 function isInLocalStorage(key) {
