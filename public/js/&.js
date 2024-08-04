@@ -1,6 +1,12 @@
+let encodedUrl = '';
 async function executeSearch(query) {
-	const encodedUrl =
-		swConfigSettings.prefix + __uv$config.encodeUrl(search(query));
+	if (localStorage.getItem('dropdown-selected-text-proxy') == 'Dynamic') {
+		encodedUrl =
+			swConfigSettings.prefix + 'route?url=' + encodeURIComponent(search(query));
+	} else {
+		encodedUrl =
+			swConfigSettings.prefix + __uv$config.encodeUrl(search(query));
+	}
 	localStorage.setItem('input', query);
 	localStorage.setItem('output', encodedUrl);
 	document.querySelectorAll('.spinnerParent')[0].style.display = 'block';
@@ -9,6 +15,12 @@ async function executeSearch(query) {
 	const iframe = document.getElementById('intospace');
 	await registerSW();
 	iframe.src = encodedUrl;
+	await registerSW().then(async () => {
+		await setTransports();
+		setTimeout(() => {
+			iframe.src = iframe.src;
+		}, 100);
+	});
 	iframe.style.display = 'block';
 
 	if (iframe.src) {
@@ -30,8 +42,7 @@ async function executeSearch(query) {
 					'Checking your internet connection'
 			)
 		) {
-			// TODO: Uncomment
-			// iframe.src = '/500';
+			iframe.src = '/500';
 		}
 
 		startURLMonitoring();
@@ -81,16 +92,22 @@ function startURLMonitoring() {
 }
 
 function updateGointospace2(url) {
-	document.querySelectorAll('.search-header__icon')[0].style.display = 'none';
+	document.querySelectorAll('.search-header__icon')[0].style.display =
+		'none';
 
 	let cleanedUrl = __uv$config.decodeUrl(
 		url.split(swConfigSettings.prefix).pop()
 	);
+
 	let isSecure = cleanedUrl.startsWith('https://');
 
 	cleanedUrl = cleanedUrl.replace(/^https?:\/\//, '');
 
-	address2.value = cleanedUrl;
+	if (cleanedUrl == 'a`owt8bnalk') {
+		address2.value = 'loading...';
+	} else {
+		address2.value = cleanedUrl;
+	}
 
 	let webSecurityIcon = document.querySelector('.webSecurityIcon');
 	if (isSecure) {

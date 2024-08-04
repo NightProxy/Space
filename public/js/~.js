@@ -868,11 +868,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 
-	function checkboxToggle(checkboxClass, storageKey) {
+	function checkboxToggle(checkboxClass, storageKey, defaultChecked) {
 		const checkbox = document.querySelector(`.checkbox.${checkboxClass}`);
 
 		if (localStorage.getItem(storageKey) === null) {
-			localStorage.setItem(storageKey, 'false');
+			localStorage.setItem(storageKey, defaultChecked ? 'false' : 'true');
 		}
 
 		const isHidden = localStorage.getItem(storageKey) === 'true';
@@ -882,12 +882,13 @@ document.addEventListener('DOMContentLoaded', function () {
 			localStorage.setItem(
 				storageKey,
 				checkbox.checked ? 'false' : 'true'
-				//wow a nullish coalescent operator
+				//wow a nullish coalescent operator - not crllect
+				// I know, crazy right? - crllect
 			);
 		});
 	}
 
-	checkboxToggle('utilBarYesNo', 'utilBarHidden');
-	checkboxToggle('particlesYesNo', 'particlesHidden');
-	checkboxToggle('smallIconsYesNo', 'smallIcons');
+	checkboxToggle('utilBarYesNo', 'utilBarHidden', true);
+	checkboxToggle('particlesYesNo', 'particlesHidden', true);
+	checkboxToggle('smallIconsYesNo', 'smallIcons', false);
 });

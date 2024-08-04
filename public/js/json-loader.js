@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	if (
 		window.location.pathname === '/&' &&
-		localStorage.getItem('smallIcons') === 'true'
+		(localStorage.getItem('smallIcons') === 'true' || !localStorage.getItem('smallIcons'))
 	) {
 		fetch('/json/shortcuts.json')
 			.then(response => response.json())

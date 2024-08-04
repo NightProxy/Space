@@ -1189,27 +1189,20 @@ span.material-symbols-outlined {
 
 @keyframes baractiveani {
 	0% {
-		background-image: linear-gradient(
-			180deg,
-			hsl(270, 100%, 50%),
-			hsl(300, 100%, 50%)
-		);
+		background: hsl(270, 100%, 50%),
 	}
-
+	25%{
+		background: hsl(300, 100%, 50%)
+	}
 	50% {
-		background-image: linear-gradient(
-			180deg,
-			hsl(300, 100%, 50%),
-			hsl(270, 100%, 50%)
-		);
+		background: hsl(270, 100%, 50%)
 	}
 
-	100% {
-		background-image: linear-gradient(
-			180deg,
-			hsl(270, 100%, 50%),
-			hsl(300, 100%, 50%)
-		);
+	75% {
+		background: hsl(300, 100%, 50%),
+	}
+	100%{
+		background: hsl(270, 100%, 50%)
 	}
 }
 
@@ -1222,10 +1215,11 @@ span.material-symbols-outlined {
 
 .settingsShape {
 	transition: all 0.5s ease;
-	animation: activeani 2s linear infinite;
+	
+	animation: baractiveani 10s linear infinite;
 	width: 3px;
 	height: 35px;
-
+	background: hsl(270, 100%, 50%);
 	border-top-right-radius: 999px;
 	border-bottom-right-radius: 999px;
 	margin-left: -20px;

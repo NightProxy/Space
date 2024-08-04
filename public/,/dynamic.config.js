@@ -1,7 +1,7 @@
 // See documentation for more information
 
 self.__dynamic$config = {
-	prefix: '/service/',
+	prefix: '/,/space/',
 	encoding: 'xor',
 	mode: 'production',
 	logLevel: 3,
@@ -11,7 +11,7 @@ self.__dynamic$config = {
 		ua: null
 	},
 	assets: {
-		prefix: '/dynamic/',
+		prefix: '/,/',
 		files: {
 			handler: 'dynamic.handler.js',
 			client: 'dynamic.client.js',
