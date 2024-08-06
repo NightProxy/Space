@@ -187,10 +187,18 @@
 				});
 		</script>
 		<script src="/js/c.js"></script>
-		<script
-			type="text/javascript"
-			src="//pl23881934.highrevenuenetwork.com/c6/de/c6/c6dec671fa7ab5d0a210b2e6300c91eb.js"
-		></script>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function() {
+				let hideAds = localStorage.getItem('hideAds');
+
+				if (hideAds === null || hideAds === 'false') {
+					let script = document.createElement('script');
+					script.type = 'text/javascript';
+					script.src = '//pl23881934.highrevenuenetwork.com/c6/de/c6/c6dec671fa7ab5d0a210b2e6300c91eb.js';
+					document.body.appendChild(script);
+				}
+			});
+		</script>
 		<script src="/js/localforage.min.js"></script>
 	</body>
 </html>

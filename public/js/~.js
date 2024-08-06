@@ -893,5 +893,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	checkboxToggle('utilBarYesNo', 'utilBarHidden', true);
 	checkboxToggle('particlesYesNo', 'particlesHidden', true);
 	checkboxToggle('smallIconsYesNo', 'smallIcons', false);
-	checkboxToggle('adsYesNo', 'showAds', true);
+	checkboxToggle('adsYesNo', 'hideAds', true);
+
+	document.querySelector('.adsYesNo').addEventListener('change', () => {
+		window.location.reload();
+	});
 });
