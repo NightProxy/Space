@@ -1,194 +1,316 @@
 [
-	{
-		"name": "Amazon",
-		"url": "https://www.amazon.com/",
-		"img": "https://d1fdloi71mui9q.cloudfront.net/caFTNAYkQSm3go0bwMf8_p857XcnFjR99x343",
-		"categories": ["all", "media"]
-	},
-	{
-		"name": "Amazon Luna",
-		"url": "https://luna.amazon.com/",
-		"img": "https://th.bing.com/th/id/OIP.meyKp26jYIEY-EiH7Yr0ugHaEK?rs=1&pid=ImgDetMain",
-		"categories": ["all", "game"]
-	},
-	{
-		"name": "OpenAI",
-		"url": "https://chat.openai.com/",
-		"img": "https://th.bing.com/th/id/OIP.VnVXR4_bEcJQbfZs9Sq_JQHaFj?rs=1&pid=ImgDetMain",
-		"categories": ["all", "media", "popular", "ai"]
-	},
-	{
-		"name": "Chess.com",
-		"url": "https://chess.com/",
-		"img": "https://betacssjs.chesscomfiles.com/bundles/web/images/social/share-logo.38a45f6e.png",
-		"categories": ["all", "game"]
-	},
-	{
-		"name": "Cool Math Games",
-		"url": "https://www.coolmathgames.com/cmg.jpg",
-		"img": "https://th.bing.com/th/id/OIP.YS15BgPgDk7JbgHVt_mkNgHaFD?rs=1&pid=ImgDetMain",
-		"categories": ["all", "game"]
-	},
-	{
-		"name": "Discord",
-		"url": "https://discord.com/",
-		"img": "https://cdn.vox-cdn.com/thumbor/ZpYQ4euN1Ce0mut6-NC-0SFR7GY=/0x0:2400x1600/1200x800/filters:focal(1008x608:1392x992)/cdn.vox-cdn.com/uploads/chorus_image/image/60778543/discord_logo_wordmark_2400.0.jpg",
-		"categories": ["all", "social", "messaging", "media"]
-	},
-	{
-		"name": "Discord | Login",
-		"url": "https://discord.com/login",
-		"img": "https://cdn.vox-cdn.com/thumbor/ZpYQ4euN1Ce0mut6-NC-0SFR7GY=/0x0:2400x1600/1200x800/filters:focal(1008x608:1392x992)/cdn.vox-cdn.com/uploads/chorus_image/image/60778543/discord_logo_wordmark_2400.0.jpg",
-		"categories": ["all", "social", "messaging", "media"]
-	},
-	{
-		"name": "ESPN",
-		"url": "https://www.espn.com/",
-		"img": "https://wallpapercave.com/wp/wp3642071.jpg",
-		"categories": ["all", "media", "popular"]
-	},
-	{
-		"name": "Flix HQ",
-		"url": "https://flixhq.bz/",
-		"img": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_400,h_300/https://theglobalmagazine.org/wp-content/uploads/2023/09/flixhq-400x300.jpg",
-		"categories": ["all", "media", "popular"]
-	},
-	{
-		"name": "Geforce NOW",
-		"url": "https://play.geforcenow.com/",
-		"img": "https://th.bing.com/th/id/OIP.5aM0plcDtSk5k5IDIxTi4wHaHa?w=666&h=666&rs=1&pid=ImgDetMain",
-		"categories": ["all", "game", "popular"]
-	},
-	{
-		"name": "GitHub",
-		"url": "https://github.com/",
-		"img": "https://th.bing.com/th/id/OIP.EXWQJfspi7KUmoytngGDlAAAAA?rs=1&pid=ImgDetMain",
-		"categories": ["all", "social", "ai"]
-	},
-	{
-		"name": "HBO MAX",
-		"url": "https://www.max.com/",
-		"img": "https://tv-fanatic-res.cloudinary.com/iu/s--XJdGWfUx--/t_full/cs_srgb,f_auto,fl_strip_profile.lossy,q_auto:420/v1678469327/hbo-max-logo-2023.png",
-		"categories": ["all", "media"]
-	},
-	{
-		"name": "Newgrounds",
-		"url": "https://www.newgrounds.com/",
-		"img": "https://th.bing.com/th/id/R.871aace69dcded36f1472884a49a9a17?rik=VbTKk%2bHCM0qYsw&riu=http%3a%2f%2fchannels.roku.com%2fimages%2f553b7ad2b85542618c3480b9fda3b5fc-hd.jpg&ehk=TdzcNhfM50TtzMcyKQTWNRT1mdARLzGvW81VMfW6Qvg%3d&risl=&pid=ImgRaw&r=0",
-		"categories": ["all", "media", "social"]
-	},
-	{
-		"name": "Paramount Plus",
-		"url": "https://www.paramountplus.com/",
-		"img": "https://kidscreen.com/wp/wp-content/uploads/2020/06/Paramount2.jpg",
-		"categories": ["all", "media"]
-	},
-	{
-		"name": "Pinterest",
-		"url": "https://www.pinterest.com/",
-		"img": "https://martech.org/wp-content/uploads/2014/07/pinterest-name-white-1920-800x450.png",
-		"categories": ["all", "media", "social"]
-	},
-	{
-		"name": "Pixlr",
-		"url": "https://pixlr.com/",
-		"img": "https://blog.pixlr.com/wp-content/uploads/2023/11/Unveiling2023stopgeometrictrendswithpixlr-1.jpg",
-		"categories": ["all", "media"]
-	},
-	{
-		"name": "Poki",
-		"url": "https://poki.com/",
-		"img": "https://play-lh.googleusercontent.com/f5oUfPS2sGkerkXrzEXCPVcMsgBUevdWQz13IIKC2ZSmxrYYJoBj3tLi-gsQhB5h0EY",
-		"categories": ["all", "game"]
-	},
-	{
-		"name": "Soundcloud",
-		"url": "https://soundcloud.com/",
-		"img": "https://logowik.com/content/uploads/images/soundcloud-icon5250.logowik.com.webp",
-		"categories": ["all", "media"]
-	},
-	{
-		"name": "Telegram",
-		"url": "https://web.telegram.org/",
-		"img": "https://forestryexplained.co.za/wp-content/uploads/2020/01/Telegram-logo-Featured.jpg",
-		"categories": ["all", "messaging", "media", "social"]
-	},
-	{
-		"name": "Temu",
-		"url": "https://www.temu.com/",
-		"img": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/33/54/ba/3354ba63-d369-94af-0068-67641f2ddd5e/AppIcon-1x_U007emarketing-0-7-0-0-P3-85-220.png/1200x630wa.png",
-		"categories": ["all", "media"]
-	},
-	{
-		"name": "TikTok",
-		"url": "https://www.tiktok.com/explore",
-		"img": "https://th.bing.com/th/id/OIP.Ft11zmIGQdWkSihl2il9oQHaEo?rs=1&pid=ImgDetMain",
-		"categories": ["all", "media", "social"]
-	},
-	{
-		"name": "Tumblr",
-		"url": "https://www.tumblr.com/",
-		"img": "https://th.bing.com/th/id/R.9cc59d4878a35ff62af81ed6e0824cec?rik=jsOAf1zuSuqQ6w&riu=http%3a%2f%2f4.bp.blogspot.com%2f-aCmFR1tBJhg%2fTdEXJo1EKHI%2fAAAAAAAAAJg%2f4AtyzUuPQEg%2fs1600%2ftumblr_logo.jpg&ehk=L%2bSKAu2sZMUucORnKbwcISYPfG%2fh%2bgErX4KZPXisyMQ%3d&risl=&pid=ImgRaw&r=0",
-		"categories": ["all", "messaging", "social", "media"]
-	},
-	{
-		"name": "Twitch",
-		"url": "https://www.twitch.tv/",
-		"img": "https://cdn.shopify.com/s/files/1/0649/2523/7472/files/Twitch-emblem.jpg?v=1670508400&width=1420",
-		"categories": ["all", "social", "media", "game"]
-	},
-	{
-		"name": "Twitter X",
-		"url": "https://twitter.com/",
-		"img": "https://th.bing.com/th/id/OIP.dKd56xH4Os37rLdkxcy9AwHaEK?rs=1&pid=ImgDetMain",
-		"categories": ["all", "media", "messaging"]
-	},
-	{
-		"name": "VS Code",
-		"url": "https://vscode.dev/",
-		"img": "https://xirosoft.com/wp-content/uploads/2021/06/Visual-Studio-Code.jpg",
-		"categories": ["all", "media"]
-	},
-	{
-		"name": "Y8 Games",
-		"url": "https://www.y8.com/",
-		"img": "https://th.bing.com/th/id/OIP.BqpFZT7H-TVJKFoo1O-SxQAAAA?rs=1&pid=ImgDetMain",
-		"categories": ["all", "game"]
-	},
-	{
-		"name": "YouTube",
-		"url": "https://www.youtube.com",
-		"img": "https://cdn.shopify.com/s/files/1/0595/6970/1019/files/kevin-asia-Youtube.png?v=1633069302",
-		"categories": ["all", "media", "popular"]
-	},
-	{
-		"name": "webretro",
-		"url": "https://binbashbanana.github.io/webretro/",
-		"img": "https://alvarotrigo.com/blog/wp-content/uploads/2024/02/xbox-one-emulator-pc-retroarch.jpg",
-		"categories": ["all", "game", "popular"]
-	},
-	{
-		"name": "Character.AI",
-		"url": "https://beta.character.ai",
-		"img": "https://dataconomy.com/wp-content/uploads/2023/05/What-is-Character-AI-Download-Voice-Plus-and-more-4.jpg",
-		"categories": ["all", "ai", "popular"]
-	},
-	{
-		"name": "Snapchat",
-		"url": "https://www.snapchat.com",
-		"img": "https://th.bing.com/th/id/OIP.dK8JT3n5f3vsBCWAlJbZ6AHaE8?w=525&h=350&rs=1&pid=ImgDetMain",
-		"categories": ["all", "media", "messaging", "popular"]
-	},
-	{
-		"name": "Shuttle.lol",
-		"url": "https://shuttle.lol",
-		"img": "https://th.bing.com/th/id/OIP.vTNUbMgTC_c1AhmhQHIfXwHaHa?rs=1&pid=ImgDetMain",
-		"categories": ["all", "game"]
-	},
-	{
-		"name": "Wattpad",
-		"url": "https://wattpad.com",
-		"img": "https://i.pinimg.com/originals/1e/a5/a8/1ea5a8e2e0d5b3332efb057b914a368f.png",
-		"categories": ["all", "popular", "media"]
-	}
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.com/",
+    "img": "/assets/imgs/./a/Amazon.webp",
+    "categories": [
+      "all",
+      "media"
+    ]
+  },
+  {
+    "name": "Amazon Luna",
+    "url": "https://luna.amazon.com/",
+    "img": "/assets/imgs/./a/Amazon_Luna.webp",
+    "categories": [
+      "all",
+      "game"
+    ]
+  },
+  {
+    "name": "OpenAI",
+    "url": "https://chat.openai.com/",
+    "img": "/assets/imgs/./a/OpenAI.webp",
+    "categories": [
+      "all",
+      "media",
+      "popular",
+      "ai"
+    ]
+  },
+  {
+    "name": "Chess.com",
+    "url": "https://chess.com/",
+    "img": "/assets/imgs/./a/Chess_com.webp",
+    "categories": [
+      "all",
+      "game"
+    ]
+  },
+  {
+    "name": "Cool Math Games",
+    "url": "https://www.coolmathgames.com/cmg.jpg",
+    "img": "/assets/imgs/./a/Cool_Math_Games.webp",
+    "categories": [
+      "all",
+      "game"
+    ]
+  },
+  {
+    "name": "Discord",
+    "url": "https://discord.com/",
+    "img": "/assets/imgs/./a/Discord.webp",
+    "categories": [
+      "all",
+      "social",
+      "messaging",
+      "media"
+    ]
+  },
+  {
+    "name": "Discord | Login",
+    "url": "https://discord.com/login",
+    "img": "/assets/imgs/./a/Discord.webp",
+    "categories": [
+      "all",
+      "social",
+      "messaging",
+      "media"
+    ]
+  },
+  {
+    "name": "ESPN",
+    "url": "https://www.espn.com/",
+    "img": "/assets/imgs/./a/ESPN.webp",
+    "categories": [
+      "all",
+      "media",
+      "popular"
+    ]
+  },
+  {
+    "name": "Flix HQ",
+    "url": "https://flixhq.bz/",
+    "img": "/assets/imgs/./a/Flix_HQ.webp",
+    "categories": [
+      "all",
+      "media",
+      "popular"
+    ]
+  },
+  {
+    "name": "Geforce NOW",
+    "url": "https://play.geforcenow.com/",
+    "img": "/assets/imgs/./a/Geforce_NOW.webp",
+    "categories": [
+      "all",
+      "game",
+      "popular"
+    ]
+  },
+  {
+    "name": "GitHub",
+    "url": "https://github.com/",
+    "img": "/assets/imgs/./a/GitHub.webp",
+    "categories": [
+      "all",
+      "social",
+      "ai"
+    ]
+  },
+  {
+    "name": "HBO MAX",
+    "url": "https://www.max.com/",
+    "img": "/assets/imgs/./a/HBO_MAX.webp",
+    "categories": [
+      "all",
+      "media"
+    ]
+  },
+  {
+    "name": "Newgrounds",
+    "url": "https://www.newgrounds.com/",
+    "img": "/assets/imgs/./a/Newgrounds.webp",
+    "categories": [
+      "all",
+      "media",
+      "social"
+    ]
+  },
+  {
+    "name": "Paramount Plus",
+    "url": "https://www.paramountplus.com/",
+    "img": "/assets/imgs/./a/Paramount_Plus.webp",
+    "categories": [
+      "all",
+      "media"
+    ]
+  },
+  {
+    "name": "Pinterest",
+    "url": "https://www.pinterest.com/",
+    "img": "/assets/imgs/./a/Pinterest.webp",
+    "categories": [
+      "all",
+      "media",
+      "social"
+    ]
+  },
+  {
+    "name": "Pixlr",
+    "url": "https://pixlr.com/",
+    "img": "https://blog.pixlr.com/wp-content/uploads/2023/11/Unveiling2023stopgeometrictrendswithpixlr-1.jpg",
+    "categories": [
+      "all",
+      "media"
+    ]
+  },
+  {
+    "name": "Poki",
+    "url": "https://poki.com/",
+    "img": "/assets/imgs/./a/Poki.webp",
+    "categories": [
+      "all",
+      "game"
+    ]
+  },
+  {
+    "name": "Soundcloud",
+    "url": "https://soundcloud.com/",
+    "img": "/assets/imgs/./a/Soundcloud.webp",
+    "categories": [
+      "all",
+      "media"
+    ]
+  },
+  {
+    "name": "Telegram",
+    "url": "https://web.telegram.org/",
+    "img": "/assets/imgs/./a/Telegram.webp",
+    "categories": [
+      "all",
+      "messaging",
+      "media",
+      "social"
+    ]
+  },
+  {
+    "name": "Temu",
+    "url": "https://www.temu.com/",
+    "img": "/assets/imgs/./a/Temu.webp",
+    "categories": [
+      "all",
+      "media"
+    ]
+  },
+  {
+    "name": "TikTok",
+    "url": "https://www.tiktok.com/explore",
+    "img": "/assets/imgs/./a/TikTok.webp",
+    "categories": [
+      "all",
+      "media",
+      "social"
+    ]
+  },
+  {
+    "name": "Tumblr",
+    "url": "https://www.tumblr.com/",
+    "img": "/assets/imgs/./a/Tumblr.webp",
+    "categories": [
+      "all",
+      "messaging",
+      "social",
+      "media"
+    ]
+  },
+  {
+    "name": "Twitch",
+    "url": "https://www.twitch.tv/",
+    "img": "/assets/imgs/./a/Twitch.webp",
+    "categories": [
+      "all",
+      "social",
+      "media",
+      "game"
+    ]
+  },
+  {
+    "name": "Twitter X",
+    "url": "https://twitter.com/",
+    "img": "/assets/imgs/./a/Twitter_X.webp",
+    "categories": [
+      "all",
+      "media",
+      "messaging"
+    ]
+  },
+  {
+    "name": "VS Code",
+    "url": "https://vscode.dev/",
+    "img": "/assets/imgs/./a/VS_Code.webp",
+    "categories": [
+      "all",
+      "media"
+    ]
+  },
+  {
+    "name": "Y8 Games",
+    "url": "https://www.y8.com/",
+    "img": "/assets/imgs/./a/Y8_Games.webp",
+    "categories": [
+      "all",
+      "game"
+    ]
+  },
+  {
+    "name": "YouTube",
+    "url": "https://www.youtube.com",
+    "img": "/assets/imgs/./a/YouTube.webp",
+    "categories": [
+      "all",
+      "media",
+      "popular"
+    ]
+  },
+  {
+    "name": "webretro",
+    "url": "https://binbashbanana.github.io/webretro/",
+    "img": "/assets/imgs/./a/webretro.webp",
+    "categories": [
+      "all",
+      "game",
+      "popular"
+    ]
+  },
+  {
+    "name": "Character.AI",
+    "url": "https://beta.character.ai",
+    "img": "/assets/imgs/./a/Character_AI.webp",
+    "categories": [
+      "all",
+      "ai",
+      "popular"
+    ]
+  },
+  {
+    "name": "Snapchat",
+    "url": "https://www.snapchat.com",
+    "img": "/assets/imgs/./a/Snapchat.webp",
+    "categories": [
+      "all",
+      "media",
+      "messaging",
+      "popular"
+    ]
+  },
+  {
+    "name": "Shuttle.lol",
+    "url": "https://shuttle.lol",
+    "img": "/assets/imgs/./a/Shuttle_lol.webp",
+    "categories": [
+      "all",
+      "game"
+    ]
+  },
+  {
+    "name": "Wattpad",
+    "url": "https://wattpad.com",
+    "img": "/assets/imgs/./a/Wattpad.webp",
+    "categories": [
+      "all",
+      "popular",
+      "media"
+    ]
+  }
 ]

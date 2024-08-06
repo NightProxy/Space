@@ -1,53 +1,53 @@
 [
-	{
-		"name": "Google",
-		"url": "https://google.com",
-		"img": "https://pixelz.cc/wp-content/uploads/2018/07/google-logo-redesign-uhd-4k-wallpaper.jpg",
-		"bg": "#fff"
-	},
-	{
-		"name": "YouTube",
-		"url": "https://google.com/",
-		"img": "https://www.besttechguru.com/wp-content/uploads/2017/08/Youtube-logo-new-besttechguru.jpg"
-	},
-	{
-		"name": "Spotify",
-		"url": "https://open.spotify.com",
-		"img": "https://th.bing.com/th/id/R.c6e2dfa90d0a282fe528a29929461d18?rik=FSR9N8TRKknDYw&riu=http%3a%2f%2foneokrock.love%2fwp-content%2fuploads%2f2018%2f11%2f03-768x403.png&ehk=o%2beaOEanYpb8km8n9O%2f1rOQ%2foEXvXnYBwRN7I2susDo%3d&risl=&pid=ImgRaw&r=0"
-	},
-	{
-		"name": "Discord",
-		"url": "https://discord.com/login",
-		"img": "https://progameguides.com/wp-content/uploads/2022/02/Featured-Discord-Stuck-loading-heres-what-you-can-do-450x253.jpg"
-	},
-	{
-		"name": "ChatGPT",
-		"url": "https://chatgpt.com/",
-		"img": "https://techandtronmagazine.com/wp-content/uploads/2023/11/what-is-chatgpt-e1699831267362.png"
-	},
-	{
-		"name": "Geforce Now",
-		"url": "https://play.geforcenow.com/mall/",
-		"img": "https://th.bing.com/th/id/OIP.PJxPU5KpCP7RDdrbj5LsSgAAAA?rs=1&pid=ImgDetMain"
-	},
-	{
-		"name": "GitHub",
-		"url": "https://github.com/",
-		"img": "https://th.bing.com/th/id/OIP.r7qMsUcmNjDVLcWehbleDgHaD4?rs=1&pid=ImgDetMain"
-	},
-	{
-		"name": "Twitch",
-		"url": "https://twitch.com/",
-		"img": "https://d.ibtimes.co.uk/en/full/1455639/twitch-logo.jpg?w=790&f=6cceaad55494ad288a3ab768ba776f54"
-	},
-	{
-		"name": "ESPN",
-		"url": "https://www.espn.com/",
-		"img": "https://thestreamable.com/media/pages/news/espn-to-debut-500-new-shows-across-streaming-platforms/931e71fe73-1580145094/espn-image-768x432-crop.png"
-	},
-	{
-		"name": "Add a Shortcut",
-		"url": "",
-		"img": "https://i.imgur.com/iYcLROM.png"
-	}
+  {
+    "name": "Google",
+    "url": "https://google.com",
+    "img": "/assets/imgs/sb/Google.webp",
+    "bg": "#fff"
+  },
+  {
+    "name": "YouTube",
+    "url": "https://google.com/",
+    "img": "/assets/imgs/sb/YouTube.webp"
+  },
+  {
+    "name": "Spotify",
+    "url": "https://open.spotify.com",
+    "img": "/assets/imgs/sb/Spotify.webp"
+  },
+  {
+    "name": "Discord",
+    "url": "https://discord.com/login",
+    "img": "/assets/imgs/sb/Discord.webp"
+  },
+  {
+    "name": "ChatGPT",
+    "url": "https://chatgpt.com/",
+    "img": "/assets/imgs/sb/ChatGPT.webp"
+  },
+  {
+    "name": "Geforce Now",
+    "url": "https://play.geforcenow.com/mall/",
+    "img": "/assets/imgs/sb/Geforce_Now.webp"
+  },
+  {
+    "name": "GitHub",
+    "url": "https://github.com/",
+    "img": "/assets/imgs/sb/GitHub.webp"
+  },
+  {
+    "name": "Twitch",
+    "url": "https://twitch.com/",
+    "img": "/assets/imgs/sb/Twitch.webp"
+  },
+  {
+    "name": "ESPN",
+    "url": "https://www.espn.com/",
+    "img": "/assets/imgs/sb/ESPN.webp"
+  },
+  {
+    "name": "Add a Shortcut",
+    "url": "",
+    "img": "https://i.imgur.com/iYcLROM.png"
+  }
 ]

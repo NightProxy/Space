@@ -4,6 +4,8 @@
 *.scss.map
 node_modules/
 
+temp_image
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
