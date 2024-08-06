@@ -1,3 +1,5 @@
+// Handles loading and rendering resources from the json files, hence json-loader.js
+
 localforage.setItem('e', 'e');
 
 document.addEventListener('DOMContentLoaded', () => {

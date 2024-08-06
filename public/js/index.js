@@ -1,3 +1,5 @@
+// index.js, for index.html. Duh
+
 localforage.setItem('e', 'e');
 
 // Typewriting effect

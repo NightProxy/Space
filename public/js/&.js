@@ -1,3 +1,5 @@
+// & is the name of the proxy page, so &.js is the js for the proxy page minus the actual proxy code, because thats long enough to cause readability issues
+
 let encodedUrl = '';
 async function executeSearch(query) {
 	if (localStorage.getItem('dropdown-selected-text-proxy') == 'Dynamic') {

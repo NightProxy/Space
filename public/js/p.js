@@ -1,3 +1,5 @@
+// Proxy specific code, so registering service workers, updating urls, checking search engines, etc. P, for proxy
+
 const address1 = document.getElementById('gointospace');
 const address2 = document.getElementById('gointospace2');
 const connection = new BareMux.BareMuxConnection('/baremux/worker.js');

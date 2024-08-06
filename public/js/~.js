@@ -1,3 +1,5 @@
+// ~ is the settings page, so ~.js is settings specific js that wont get loaded globally
+
 localforage.setItem('e', 'e');
 shapePositions = {
 	blank: '26.5px',
