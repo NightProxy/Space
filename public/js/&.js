@@ -108,7 +108,7 @@ function updateGointospace2(url) {
 	if (cleanedUrl === 'a`owt8bnalk') {
 		address2.value = 'Loading...';
 	} else if (__uv$config.decodeUrl(cleanedUrl).endsWith('/500')) {
-    address2.value = 'Internal Server Error! Did you load a broken link?';
+    	address2.value = 'Internal Server Error! Did you load a broken link?';
 	} else {
 		address2.value = cleanedUrl;
 	}
