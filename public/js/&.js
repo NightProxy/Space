@@ -103,11 +103,14 @@ function updateGointospace2(url) {
 
 	cleanedUrl = cleanedUrl.replace(/^https?:\/\//, '');
 
-	if (cleanedUrl == 'a`owt8bnalk') {
-		address2.value = 'loading...';
+	if (cleanedUrl === 'a`owt8bnalk') {
+		address2.value = 'Loading...';
+	} else if (__uv$config.decodeUrl(cleanedUrl).endsWith('/500') || cleanedUrl.decodeBase64.endsWith('/500')) {
+		address2.value = 'Internal Server Error! Did you load a broken link?';
 	} else {
 		address2.value = cleanedUrl;
 	}
+
 
 	let webSecurityIcon = document.querySelector('.webSecurityIcon');
 	if (isSecure) {
@@ -127,7 +130,9 @@ address2.addEventListener('click', function () {
 	if (
 		!currentValue.startsWith('http://') &&
 		!currentValue.startsWith('https://') &&
-		intospace.src
+		intospace.src &&
+		currentValue != 'Internal Server Error! Did you load a broken link?' &&
+		currentValue != 'Loading...'
 	) {
 		let isSecure = __uv$config
 			.decodeUrl(
