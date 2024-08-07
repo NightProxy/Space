@@ -2,7 +2,7 @@
   {
     "name": "1v1.LOL",
     "url": "https://1v1.lol/",
-    "img": "/assets/imgs/./g/1v1_LOL.webp",
+    "img": "/assets/imgs/g/1v1_LOL.webp",
     "categories": [
       "all",
       "popular",
@@ -12,7 +12,7 @@
   {
     "name": "2048",
     "url": "https://www.2048.org/",
-    "img": "/assets/imgs/./g/2048.webp",
+    "img": "/assets/imgs/g/2048.webp",
     "categories": [
       "all"
     ]
@@ -20,7 +20,7 @@
   {
     "name": "2048 Multitasking",
     "url": "https://calculatorgames.github.io/simplegimes/2048-multitask/index.html",
-    "img": "/assets/imgs/./g/2048.webp",
+    "img": "/assets/imgs/g/2048.webp",
     "categories": [
       "all"
     ]
@@ -28,7 +28,7 @@
   {
     "name": "3D Dino Game",
     "url": "https://lagged.com/api/play2/t-rex-3d2/",
-    "img": "/assets/imgs/./g/3D_Dino_Game.webp",
+    "img": "/assets/imgs/g/3D_Dino_Game.webp",
     "categories": [
       "all"
     ]
@@ -36,7 +36,7 @@
   {
     "name": "60 Second Burger Run",
     "url": "https://www.coolmathgames.com/0-60-second-burger-run/play",
-    "img": "/assets/imgs/./g/60_Second_Burger_Run.webp",
+    "img": "/assets/imgs/g/60_Second_Burger_Run.webp",
     "categories": [
       "all"
     ]
@@ -44,7 +44,7 @@
   {
     "name": "A Dark Room",
     "url": "https://adarkroom.doublespeakgames.com/",
-    "img": "/assets/imgs/./g/A_Dark_Room.webp",
+    "img": "/assets/imgs/g/A_Dark_Room.webp",
     "categories": [
       "all",
       "popular"
@@ -53,7 +53,7 @@
   {
     "name": "Age of War",
     "url": "https://age-of-war.game-files.crazygames.com/ruffle/ageofwar.html",
-    "img": "/assets/imgs/./g/Age_of_War.webp",
+    "img": "/assets/imgs/g/Age_of_War.webp",
     "categories": [
       "all"
     ]
@@ -61,7 +61,7 @@
   {
     "name": "Happy Wheels",
     "url": "https://totaljerkface.com",
-    "img": "/assets/imgs/./g/Happy_Wheels.webp",
+    "img": "/assets/imgs/g/Happy_Wheels.webp",
     "categories": [
       "all"
     ]
@@ -69,7 +69,7 @@
   {
     "name": "Basketball Random",
     "url": "https://basketrandomonline.github.io/g8/basket-random/",
-    "img": "/assets/imgs/./g/Basketball_Random.webp",
+    "img": "/assets/imgs/g/Basketball_Random.webp",
     "categories": [
       "all",
       "popular"
@@ -78,7 +78,7 @@
   {
     "name": "Soccer Random",
     "url": "https://soccer-random.github.io/s8/soccer-random/",
-    "img": "/assets/imgs/./g/Soccer_Random.webp",
+    "img": "/assets/imgs/g/Soccer_Random.webp",
     "categories": [
       "all"
     ]
@@ -86,7 +86,7 @@
   {
     "name": "Basketball Stars",
     "url": "https://basketballstars.pro/game/basketball-stars/",
-    "img": "/assets/imgs/./g/Basketball_Stars.webp",
+    "img": "/assets/imgs/g/Basketball_Stars.webp",
     "categories": [
       "all",
       "popular"
@@ -95,7 +95,7 @@
   {
     "name": "Getaway Shootout",
     "url": "https://www.twoplayergames.org/embed/getaway-shootout",
-    "img": "/assets/imgs/./g/Getaway_Shootout.webp",
+    "img": "/assets/imgs/g/Getaway_Shootout.webp",
     "categories": [
       "all",
       "media"
@@ -104,7 +104,7 @@
   {
     "name": "Boxing Random",
     "url": "https://boxingrandom.github.io/file/",
-    "img": "/assets/imgs/./g/Boxing_Random.webp",
+    "img": "/assets/imgs/g/Boxing_Random.webp",
     "categories": [
       "all"
     ]
@@ -112,7 +112,7 @@
   {
     "name": "Rooftop Snipers",
     "url": "https://h52304.github.io/s/rooftop-snipers/",
-    "img": "/assets/imgs/./g/Rooftop_Snipers.webp",
+    "img": "/assets/imgs/g/Rooftop_Snipers.webp",
     "categories": [
       "all"
     ]
@@ -120,7 +120,7 @@
   {
     "name": "Glass City",
     "url": "https://rpc.lol/games/projects/glass-city/index.html",
-    "img": "/assets/imgs/./g/Glass_City.webp",
+    "img": "/assets/imgs/g/Glass_City.webp",
     "categories": [
       "all"
     ]
@@ -128,7 +128,7 @@
   {
     "name": "Hacker Typer",
     "url": "https://hackertyper.com/",
-    "img": "/assets/imgs/./g/Hacker_Typer.webp",
+    "img": "/assets/imgs/g/Hacker_Typer.webp",
     "categories": [
       "all"
     ]
@@ -136,7 +136,7 @@
   {
     "name": "Idle Shark Game",
     "url": "https://alpha.shark.tobot.dev/",
-    "img": "/assets/imgs/./g/Idle_Shark_Game.webp",
+    "img": "/assets/imgs/g/Idle_Shark_Game.webp",
     "categories": [
       "all"
     ]
@@ -144,7 +144,7 @@
   {
     "name": "Interactive Buddy",
     "url": "https://1kh0.github.io/projects/interactivebuddy/index.html",
-    "img": "/assets/imgs/./g/Interactive_Buddy.webp",
+    "img": "/assets/imgs/g/Interactive_Buddy.webp",
     "categories": [
       "all"
     ]
@@ -152,7 +152,7 @@
   {
     "name": "Just One Boss",
     "url": "https://www.coolmathgames.com/0-just-one-boss/play",
-    "img": "/assets/imgs/./g/Just_One_Boss.webp",
+    "img": "/assets/imgs/g/Just_One_Boss.webp",
     "categories": [
       "all"
     ]
@@ -160,7 +160,7 @@
   {
     "name": "Portal Mario",
     "url": "https://tannerrogalsky.com/mari0/",
-    "img": "/assets/imgs/./g/Portal_Mario.webp",
+    "img": "/assets/imgs/g/Portal_Mario.webp",
     "categories": [
       "all"
     ]
@@ -168,7 +168,7 @@
   {
     "name": "Eaglercraft v1.8",
     "url": "https://mcv18.netlify.app/",
-    "img": "/assets/imgs/./g/Eaglercraft_v1_8.webp",
+    "img": "/assets/imgs/g/Eaglercraft_v1_8.webp",
     "categories": [
       "all",
       "popular",
@@ -178,7 +178,7 @@
   {
     "name": "Eaglercraft v1.5.2",
     "url": "https://mcv152.netlify.app/",
-    "img": "/assets/imgs/./g/Eaglercraft_v1_8.webp",
+    "img": "/assets/imgs/g/Eaglercraft_v1_8.webp",
     "categories": [
       "all",
       "popular",
@@ -188,7 +188,7 @@
   {
     "name": "n-gon",
     "url": "https://landgreen.github.io/n-gon/",
-    "img": "/assets/imgs/./g/n_gon.webp",
+    "img": "/assets/imgs/g/n_gon.webp",
     "categories": [
       "all",
       "popular"
@@ -197,7 +197,7 @@
   {
     "name": "Paper.io",
     "url": "https://paper-io.com/",
-    "img": "/assets/imgs/./g/Paper_io.webp",
+    "img": "/assets/imgs/g/Paper_io.webp",
     "categories": [
       "all",
       "multiplayer",
@@ -207,7 +207,7 @@
   {
     "name": "Portal Flash",
     "url": "https://1kh0.github.io/projects/portalflash/index.html",
-    "img": "/assets/imgs/./g/Portal_Flash.webp",
+    "img": "/assets/imgs/g/Portal_Flash.webp",
     "categories": [
       "all",
       "emulator",
@@ -217,7 +217,7 @@
   {
     "name": "Retro Bowl",
     "url": "https://1kh0.github.io/projects/retro-bowl/index.html",
-    "img": "/assets/imgs/./g/Retro_Bowl.webp",
+    "img": "/assets/imgs/g/Retro_Bowl.webp",
     "categories": [
       "all",
       "popular"
@@ -226,7 +226,7 @@
   {
     "name": "Slope",
     "url": "https://1kh0.github.io/projects/slope/index.html",
-    "img": "/assets/imgs/./g/Slope.webp",
+    "img": "/assets/imgs/g/Slope.webp",
     "categories": [
       "all",
       "popular"
@@ -235,7 +235,7 @@
   {
     "name": "Sandspiel",
     "url": "https://sandspiel.club/",
-    "img": "/assets/imgs/./g/Sandspiel.webp",
+    "img": "/assets/imgs/g/Sandspiel.webp",
     "categories": [
       "all"
     ]
@@ -243,7 +243,7 @@
   {
     "name": "Cryzen",
     "url": "https://cryzen.io/play",
-    "img": "/assets/imgs/./g/Cryzen.webp",
+    "img": "/assets/imgs/g/Cryzen.webp",
     "categories": [
       "all"
     ]
@@ -251,7 +251,7 @@
   {
     "name": "Deeeep.io",
     "url": "https://beta.deeeep.io/",
-    "img": "/assets/imgs/./g/Deeeep_io.webp",
+    "img": "/assets/imgs/g/Deeeep_io.webp",
     "categories": [
       "all",
       "multiplayer"
@@ -260,7 +260,7 @@
   {
     "name": "diep.io",
     "url": "https://diep.io/",
-    "img": "/assets/imgs/./g/diep_io.webp",
+    "img": "/assets/imgs/g/diep_io.webp",
     "categories": [
       "all",
       "multiplayer"
@@ -269,7 +269,7 @@
   {
     "name": "Dreader",
     "url": "https://donitz.itch.io/dreader",
-    "img": "/assets/imgs/./g/Dreader.webp",
+    "img": "/assets/imgs/g/Dreader.webp",
     "categories": [
       "all",
       "horror"
@@ -278,7 +278,7 @@
   {
     "name": "Drift Hunters",
     "url": "https://webglmath.github.io/drift-hunters/",
-    "img": "/assets/imgs/./g/Drift_Hunters.webp",
+    "img": "/assets/imgs/g/Drift_Hunters.webp",
     "categories": [
       "all"
     ]
@@ -286,7 +286,7 @@
   {
     "name": "OvO",
     "url": "https://www.coolmathgames.com/0-ovo/play",
-    "img": "/assets/imgs/./g/OvO.webp",
+    "img": "/assets/imgs/g/OvO.webp",
     "categories": [
       "all"
     ]
@@ -294,7 +294,7 @@
   {
     "name": "Rainbow Tower",
     "url": "https://www.mathplayground.com/mobile_rainbow_tower/index.html",
-    "img": "/assets/imgs/./g/Rainbow_Tower.webp",
+    "img": "/assets/imgs/g/Rainbow_Tower.webp",
     "categories": [
       "all"
     ]
@@ -302,7 +302,7 @@
   {
     "name": "Gunspin",
     "url": "https://static.playunblocked.com/2019/11/gunspin/",
-    "img": "/assets/imgs/./g/Gunspin.webp",
+    "img": "/assets/imgs/g/Gunspin.webp",
     "categories": [
       "all"
     ]
@@ -310,7 +310,7 @@
   {
     "name": "Territorial.io",
     "url": "https://territorial.io/",
-    "img": "/assets/imgs/./g/Territorial_io.webp",
+    "img": "/assets/imgs/g/Territorial_io.webp",
     "categories": [
       "all"
     ]
@@ -318,7 +318,7 @@
   {
     "name": "Madness: Haphazard",
     "url": "https://f.silvergames.com/ruffle/player.php?id=3404",
-    "img": "/assets/imgs/./g/Madness__Haphazard.webp",
+    "img": "/assets/imgs/g/Madness__Haphazard.webp",
     "categories": [
       "all"
     ]
@@ -326,7 +326,7 @@
   {
     "name": "Space Plan",
     "url": "http://www.jhollands.co.uk/spaceplan/",
-    "img": "/assets/imgs/./g/Space_Plan.webp",
+    "img": "/assets/imgs/g/Space_Plan.webp",
     "categories": [
       "all"
     ]
@@ -334,7 +334,7 @@
   {
     "name": "thisissand",
     "url": "https://thisissand.com/",
-    "img": "/assets/imgs/./g/thisissand.webp",
+    "img": "/assets/imgs/g/thisissand.webp",
     "categories": [
       "all"
     ]
@@ -342,7 +342,7 @@
   {
     "name": "Shell Shockers",
     "url": "https://shellshock.io/",
-    "img": "/assets/imgs/./g/Shell_Shockers.webp",
+    "img": "/assets/imgs/g/Shell_Shockers.webp",
     "categories": [
       "all",
       "multiplayer"
@@ -351,7 +351,7 @@
   {
     "name": "Rooftop Snipers 2",
     "url": "https://h52304.github.io/s6/rooftop-snipers-2/",
-    "img": "/assets/imgs/./g/Rooftop_Snipers_2.webp",
+    "img": "/assets/imgs/g/Rooftop_Snipers_2.webp",
     "categories": [
       "all"
     ]
@@ -359,7 +359,7 @@
   {
     "name": "Temple of Boom",
     "url": "https://temple-of-boom.github.io/file/",
-    "img": "/assets/imgs/./g/Temple_of_Boom.webp",
+    "img": "/assets/imgs/g/Temple_of_Boom.webp",
     "categories": [
       "all"
     ]
@@ -367,7 +367,7 @@
   {
     "name": "Earn to Die 2012 P.2",
     "url": "https://games-online.io/game/EarnToDie/index.html",
-    "img": "/assets/imgs/./g/Earn_to_Die_2012_P_2.webp",
+    "img": "/assets/imgs/g/Earn_to_Die_2012_P_2.webp",
     "categories": [
       "all"
     ]
@@ -375,7 +375,7 @@
   {
     "name": "FNAF 2",
     "url": "https://sussygamedeveloper.github.io/FNAF2/",
-    "img": "/assets/imgs/./g/FNAF_2.webp",
+    "img": "/assets/imgs/g/FNAF_2.webp",
     "categories": [
       "all",
       "horror"
@@ -384,7 +384,7 @@
   {
     "name": "FNAF 3",
     "url": "https://sussygamedeveloper.github.io/fnaf3/",
-    "img": "/assets/imgs/./g/FNAF_3.webp",
+    "img": "/assets/imgs/g/FNAF_3.webp",
     "categories": [
       "all",
       "popular",
@@ -394,7 +394,7 @@
   {
     "name": "Time Shooter 2",
     "url": "https://html5.gamedistribution.com/62a72f2da7cb4b609579a47653546e6a/",
-    "img": "/assets/imgs/./g/Time_Shooter_2.webp",
+    "img": "/assets/imgs/g/Time_Shooter_2.webp",
     "categories": [
       "all"
     ]
@@ -402,7 +402,7 @@
   {
     "name": "Haunt the House",
     "url": "https://w8.snokido.com/games/flash/ruffle.html?g=haunt-the-house&v=231027",
-    "img": "/assets/imgs/./g/Haunt_the_House.webp",
+    "img": "/assets/imgs/g/Haunt_the_House.webp",
     "categories": [
       "all",
       "popular"
@@ -411,7 +411,7 @@
   {
     "name": "Strike Force Heros",
     "url": "https://f.silvergames.com/ruffle/player.php?id=2194",
-    "img": "/assets/imgs/./g/Strike_Force_Heros.webp",
+    "img": "/assets/imgs/g/Strike_Force_Heros.webp",
     "categories": [
       "all",
       "popular"
@@ -420,7 +420,7 @@
   {
     "name": "Armed with Wings 3",
     "url": "https://www.silvergames.com/en/armed-with-wings-3/gameframe",
-    "img": "/assets/imgs/./g/Armed_with_Wings_3.webp",
+    "img": "/assets/imgs/g/Armed_with_Wings_3.webp",
     "categories": [
       "all"
     ]
@@ -428,7 +428,7 @@
   {
     "name": "Amazing Strange Rope Police",
     "url": "https://www.gamearter.com/game/amazing-strange-rope-police-vice-spider-vegas/",
-    "img": "/assets/imgs/./g/Amazing_Strange_Rope_Police.webp",
+    "img": "/assets/imgs/g/Amazing_Strange_Rope_Police.webp",
     "categories": [
       "all"
     ]
@@ -436,7 +436,7 @@
   {
     "name": "N-Game",
     "url": "https://www.numuki.com/gameframe/n-game",
-    "img": "/assets/imgs/./g/N_Game.webp",
+    "img": "/assets/imgs/g/N_Game.webp",
     "categories": [
       "all",
       "popular"
@@ -445,7 +445,7 @@
   {
     "name": "Gun Mayhem 2",
     "url": "https://www.silvergames.com/en/gun-mayhem-2/gameframe",
-    "img": "/assets/imgs/./g/Gun_Mayhem_2.webp",
+    "img": "/assets/imgs/g/Gun_Mayhem_2.webp",
     "categories": [
       "all",
       "popular"
@@ -454,7 +454,7 @@
   {
     "name": "Bullet Force",
     "url": "https://games.crazygames.com/en_US/bullet-force-multiplayer/index.html",
-    "img": "/assets/imgs/./g/Bullet_Force.webp",
+    "img": "/assets/imgs/g/Bullet_Force.webp",
     "categories": [
       "all",
       "multiplayer",
@@ -464,7 +464,7 @@
   {
     "name": "People Playground",
     "url": "https://html5.gamedistribution.com/rvvASMiM/4eacf9fb9012479194568af9a7e0417c/index.html?gdpr-targeting=1&gd_sdk_referrer_url=https%3A%2F%2Fwww.silvergames.com%2Fen%2Fpeople-playground&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5zaWx2ZXJnYW1lcy5jb20vZW4vcGVvcGxlLXBsYXlncm91bmQiLCJwYXJlbnREb21haW4iOiJzaWx2ZXJnYW1lcy5jb20iLCJ0b3BEb21haW4iOiJzaWx2ZXJnYW1lcy5jb20iLCJoYXNJbXByZXNzaW9uIjp0cnVlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS41LjE3In0%253D",
-    "img": "/assets/imgs/./g/People_Playground.webp",
+    "img": "/assets/imgs/g/People_Playground.webp",
     "categories": [
       "all",
       "popular"
@@ -473,7 +473,7 @@
   {
     "name": "Hole.io",
     "url": "https://hole-io.com/",
-    "img": "/assets/imgs/./g/Hole_io.webp",
+    "img": "/assets/imgs/g/Hole_io.webp",
     "categories": [
       "all",
       "multiplayer",
@@ -483,7 +483,7 @@
   {
     "name": "Color Tunnel",
     "url": "https://f3.silvergames.com/html5/color-tunnel/",
-    "img": "/assets/imgs/./g/Color_Tunnel.webp",
+    "img": "/assets/imgs/g/Color_Tunnel.webp",
     "categories": [
       "all"
     ]
@@ -491,7 +491,7 @@
   {
     "name": "Slice it all",
     "url": "https://html5.gamedistribution.com/rvvASMiM/efa941135635400f94bdb0b7430a92f4/index.html?gdpr-targeting=1&gd_sdk_referrer_url=https%3A%2F%2Fwww.silvergames.com%2Fen%2Fslice-it-all&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5zaWx2ZXJnYW1lcy5jb20vZW4vc2xpY2UtaXQtYWxsIiwicGFyZW50RG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwidG9wRG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwiaGFzSW1wcmVzc2lvbiI6dHJ1ZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9",
-    "img": "/assets/imgs/./g/Slice_it_all.webp",
+    "img": "/assets/imgs/g/Slice_it_all.webp",
     "categories": [
       "all"
     ]
@@ -499,7 +499,7 @@
   {
     "name": "Granny",
     "url": "https://html5.gamemonetize.co/pm5wjn3np4xl59y8ie3a85xqs1m1nyma/",
-    "img": "/assets/imgs/./g/Granny.webp",
+    "img": "/assets/imgs/g/Granny.webp",
     "categories": [
       "all",
       "horror"
@@ -508,7 +508,7 @@
   {
     "name": "Piano Tiles",
     "url": "https://h5.4j.com/games/Piano-Tiles-2-Online/index.html?pubid=silvergames&v=1503580918",
-    "img": "/assets/imgs/./g/Piano_Tiles.webp",
+    "img": "/assets/imgs/g/Piano_Tiles.webp",
     "categories": [
       "all",
       "popular"
@@ -517,7 +517,7 @@
   {
     "name": "Raze",
     "url": "https://f.silvergames.com/ruffle/player.php?id=4195",
-    "img": "/assets/imgs/./g/Raze.webp",
+    "img": "/assets/imgs/g/Raze.webp",
     "categories": [
       "all",
       "popular"
@@ -526,7 +526,7 @@
   {
     "name": "Intrusion",
     "url": "https://f.silvergames.com/ruffle/player.php?id=2278",
-    "img": "/assets/imgs/./g/Intrusion.webp",
+    "img": "/assets/imgs/g/Intrusion.webp",
     "categories": [
       "all",
       "popular"
@@ -535,7 +535,7 @@
   {
     "name": "10 Minutes till Dawn",
     "url": "https://abinbins.github.io/a7/10-minutes-till-dawn/",
-    "img": "/assets/imgs/./g/10_Minutes_till_Dawn.webp",
+    "img": "/assets/imgs/g/10_Minutes_till_Dawn.webp",
     "categories": [
       "all"
     ]
@@ -543,7 +543,7 @@
   {
     "name": "Bitlife",
     "url": "https://ubg365.github.io/bitlife-life-simulator/play.html",
-    "img": "/assets/imgs/./g/Bitlife.webp",
+    "img": "/assets/imgs/g/Bitlife.webp",
     "categories": [
       "all",
       "popular"
@@ -552,7 +552,7 @@
   {
     "name": "Death Run 3D",
     "url": "https://mathgames66.github.io/games/html5/deathrun3d/",
-    "img": "/assets/imgs/./g/Death_Run_3D.webp",
+    "img": "/assets/imgs/g/Death_Run_3D.webp",
     "categories": [
       "all"
     ]
@@ -560,7 +560,7 @@
   {
     "name": "Vex 3",
     "url": "https://html5.gamedistribution.com/762c932b4db74c6da0c1d101b2da8be6/?timestamp=1713731401&countryCode=en&siteLocale=en&locale=en&gd_sdk_referrer_url=https%3A%2F%2Fkizi.com%2Fgames%2Fvex-3",
-    "img": "/assets/imgs/./g/Vex_3.webp",
+    "img": "/assets/imgs/g/Vex_3.webp",
     "categories": [
       "all"
     ]
@@ -568,7 +568,7 @@
   {
     "name": "Vex 4",
     "url": "https://html5.gamedistribution.com/80e6a5ae477f4d4fbcd1ea293d10087d/?timestamp=1713731551&countryCode=en&siteLocale=en&locale=en&gd_sdk_referrer_url=https%3A%2F%2Fkizi.com%2Fgames%2Fvex-4",
-    "img": "/assets/imgs/./g/Vex_4.webp",
+    "img": "/assets/imgs/g/Vex_4.webp",
     "categories": [
       "all"
     ]
@@ -576,7 +576,7 @@
   {
     "name": "Vex 5",
     "url": "https://html5.gamedistribution.com/f120262ab72743039fbce88c1f370df8/?timestamp=1713731604&countryCode=en&siteLocale=en&locale=en&gd_sdk_referrer_url=https%3A%2F%2Fkizi.com%2Fgames%2Fvex-5",
-    "img": "/assets/imgs/./g/Vex_5.webp",
+    "img": "/assets/imgs/g/Vex_5.webp",
     "categories": [
       "all"
     ]
@@ -584,7 +584,7 @@
   {
     "name": "Vex 6",
     "url": "https://html5.gamedistribution.com/4925e12574364121a48c61c35f649c36/?timestamp=1713731635&countryCode=en&siteLocale=en&locale=en&gd_sdk_referrer_url=https%3A%2F%2Fkizi.com%2Fgames%2Fvex-6",
-    "img": "/assets/imgs/./g/Vex_6.webp",
+    "img": "/assets/imgs/g/Vex_6.webp",
     "categories": [
       "all"
     ]
@@ -592,7 +592,7 @@
   {
     "name": "Vex 7",
     "url": "https://html5.gamedistribution.com/0c454c9562d249d28ba3a2b50564042c/?timestamp=1713731659&countryCode=en&siteLocale=en&locale=en&gd_sdk_referrer_url=https%3A%2F%2Fkizi.com%2Fgames%2Fvex-7",
-    "img": "/assets/imgs/./g/Vex_7.webp",
+    "img": "/assets/imgs/g/Vex_7.webp",
     "categories": [
       "all",
       "popular"
@@ -601,7 +601,7 @@
   {
     "name": "Backrooms",
     "url": "https://backroomsgame.io/game/backrooms/",
-    "img": "/assets/imgs/./g/Backrooms.webp",
+    "img": "/assets/imgs/g/Backrooms.webp",
     "categories": [
       "all",
       "horror"
@@ -610,7 +610,7 @@
   {
     "name": "Cookie Clicker",
     "url": "https://orteil.dashnet.org/cookieclicker/",
-    "img": "/assets/imgs/./g/Cookie_Clicker.webp",
+    "img": "/assets/imgs/g/Cookie_Clicker.webp",
     "categories": [
       "all",
       "popular"
@@ -619,7 +619,7 @@
   {
     "name": "Toss the Turle",
     "url": "https://kdata1.com/RS/game.php?r=https://kdata1.com/2024/02/tosstheturtle_0.swf&w=900&h=563&warnsupport=true",
-    "img": "/assets/imgs/./g/Toss_the_Turle.webp",
+    "img": "/assets/imgs/g/Toss_the_Turle.webp",
     "categories": [
       "all"
     ]
@@ -627,7 +627,7 @@
   {
     "name": "Binding of Issac",
     "url": "https://f.kbhgames.com/RS/game.php?r=//f.kbhgames.com/2011/10/binding-of-issac.swf&w=800&h=600&warnsupport=true",
-    "img": "/assets/imgs/./g/Binding_of_Issac.webp",
+    "img": "/assets/imgs/g/Binding_of_Issac.webp",
     "categories": [
       "all"
     ]
@@ -635,7 +635,7 @@
   {
     "name": "Ultimate Car Driving Simulator",
     "url": "https://app-258100.games.s3.yandex.net/258100/tjl3zpx5pqgflpnp9trchxb110lsyvvz/index.html?is-united-page=1&skip-guard=1&header=no&clid=2818308&flags=%7B%22adv_sticky_banner_disabled%22%3Atrue%7D&sdk=%2Fsdk%2F_%2Fv2.40602063910d0212bbe3.js#origin=https%3A%2F%2Fyandex.com&app-id=258100&device-type=desktop",
-    "img": "/assets/imgs/./g/Ultimate_Car_Driving_Simulator.webp",
+    "img": "/assets/imgs/g/Ultimate_Car_Driving_Simulator.webp",
     "categories": [
       "all",
       "popular"
@@ -644,7 +644,7 @@
   {
     "name": "Madalin Cars Multiplayer",
     "url": "https://f.kbhgames.com/2018/03/madalin-cars-multiplayer/",
-    "img": "/assets/imgs/./g/Madalin_Cars_Multiplayer.webp",
+    "img": "/assets/imgs/g/Madalin_Cars_Multiplayer.webp",
     "categories": [
       "all",
       "popular"
@@ -653,7 +653,7 @@
   {
     "name": "Deadshot.io",
     "url": "https://deadshot.io/",
-    "img": "/assets/imgs/./g/Deadshot_io.webp",
+    "img": "/assets/imgs/g/Deadshot_io.webp",
     "categories": [
       "all"
     ]
@@ -661,7 +661,7 @@
   {
     "name": "Stick Slasher",
     "url": "https://kdata1.com/2023/03/stickslasher/",
-    "img": "/assets/imgs/./g/Stick_Slasher.webp",
+    "img": "/assets/imgs/g/Stick_Slasher.webp",
     "categories": [
       "all"
     ]
@@ -669,7 +669,7 @@
   {
     "name": "Basketbros.io",
     "url": "https://kdata1.com/2023/03/stickslasher/",
-    "img": "/assets/imgs/./g/Basketbros_io.webp",
+    "img": "/assets/imgs/g/Basketbros_io.webp",
     "categories": [
       "all"
     ]
@@ -677,7 +677,7 @@
   {
     "name": "Fancy Pants Adventure: World 2",
     "url": "https://kdata1.com/2022/12/fancy-pants-adventure-3/?kbhgames",
-    "img": "/assets/imgs/./g/Fancy_Pants_Adventure__World_2.webp",
+    "img": "/assets/imgs/g/Fancy_Pants_Adventure__World_2.webp",
     "categories": [
       "all"
     ]
@@ -685,7 +685,7 @@
   {
     "name": "Fancy Pants Adventure: World 1",
     "url": "https://kbhgames.com/game/fancy-pants-adventures",
-    "img": "/assets/imgs/./g/Fancy_Pants_Adventure__World_1.webp",
+    "img": "/assets/imgs/g/Fancy_Pants_Adventure__World_1.webp",
     "categories": [
       "all"
     ]
@@ -693,7 +693,7 @@
   {
     "name": "Jetpack Joyride",
     "url": "https://kdata1.com/2024/02/jetpack-joyride/",
-    "img": "/assets/imgs/./g/Jetpack_Joyride.webp",
+    "img": "/assets/imgs/g/Jetpack_Joyride.webp",
     "categories": [
       "all"
     ]
@@ -701,7 +701,7 @@
   {
     "name": "Station Meltdown",
     "url": "https://kdata1.com/2022/03/station-meltdown/",
-    "img": "/assets/imgs/./g/Station_Meltdown.webp",
+    "img": "/assets/imgs/g/Station_Meltdown.webp",
     "categories": [
       "all",
       "popular"
@@ -710,7 +710,7 @@
   {
     "name": "What Remains",
     "url": "https://kdata1.com/2021/07/3911393/",
-    "img": "/assets/imgs/./g/What_Remains.webp",
+    "img": "/assets/imgs/g/What_Remains.webp",
     "categories": [
       "all"
     ]
@@ -718,7 +718,7 @@
   {
     "name": "Plazma Burst",
     "url": "https://f.kbhgames.com/RS/game.php?r=//f.kbhgames.com/2018/swf/plazma-burst.swf&w=1000&h=500&warnsupport=true",
-    "img": "/assets/imgs/./g/Plazma_Burst.webp",
+    "img": "/assets/imgs/g/Plazma_Burst.webp",
     "categories": [
       "all"
     ]
@@ -726,7 +726,7 @@
   {
     "name": "Count Secure Operations 2",
     "url": "https://app-256471.games.s3.yandex.net/256471/gctqmljj6yn6nvurax636mu4hme5gsqz/index.html?is-united-page=1&skip-guard=1&header=no&clid=2818308&flags=%7B%22adv_sticky_banner_disabled%22%3Atrue%7D&sdk=%2Fsdk%2F_%2Fv2.40602063910d0212bbe3.js#origin=https%3A%2F%2Fyandex.com&app-id=256471&device-type=desktop",
-    "img": "/assets/imgs/./g/Count_Secure_Operations_2.webp",
+    "img": "/assets/imgs/g/Count_Secure_Operations_2.webp",
     "categories": [
       "all"
     ]
@@ -734,7 +734,7 @@
   {
     "name": "10-103",
     "url": "https://kdata1.com/2020/12/3100528/",
-    "img": "/assets/imgs/./g/10_103.webp",
+    "img": "/assets/imgs/g/10_103.webp",
     "categories": [
       "all"
     ]
@@ -742,7 +742,7 @@
   {
     "name": "10-103: Null Kevin",
     "url": "https://kdata1.com/2021/06/4056473/",
-    "img": "/assets/imgs/./g/10_103__Null_Kevin.webp",
+    "img": "/assets/imgs/g/10_103__Null_Kevin.webp",
     "categories": [
       "all",
       "popular"
@@ -751,7 +751,7 @@
   {
     "name": "Last Hope",
     "url": "https://kdata1.com/2021/09/LastHope/",
-    "img": "/assets/imgs/./g/Last_Hope.webp",
+    "img": "/assets/imgs/g/Last_Hope.webp",
     "categories": [
       "all"
     ]
@@ -759,7 +759,7 @@
   {
     "name": "Make sure it's closed",
     "url": "https://kdata1.com/2019/04/MSIC-WEBGL/",
-    "img": "/assets/imgs/./g/Make_sure_it_s_closed.webp",
+    "img": "/assets/imgs/g/Make_sure_it_s_closed.webp",
     "categories": [
       "all",
       "horror"
@@ -768,7 +768,7 @@
   {
     "name": "Gun Knight",
     "url": "https://stepford.itch.io/gun-knight",
-    "img": "/assets/imgs/./g/Gun_Knight.webp",
+    "img": "/assets/imgs/g/Gun_Knight.webp",
     "categories": [
       "all"
     ]
@@ -776,7 +776,7 @@
   {
     "name": "Mob Inc",
     "url": "https://html-classic.itch.zone/html/1796576/index.html?v=1577643878",
-    "img": "/assets/imgs/./g/Mob_Inc.webp",
+    "img": "/assets/imgs/g/Mob_Inc.webp",
     "categories": [
       "all"
     ]
@@ -784,7 +784,7 @@
   {
     "name": "Black Resin",
     "url": "https://html-classic.itch.zone/html/6957140/BR_WEBGL_NO_WRONG_DRONG/index.html",
-    "img": "/assets/imgs/./g/Black_Resin.webp",
+    "img": "/assets/imgs/g/Black_Resin.webp",
     "categories": [
       "all"
     ]
@@ -792,7 +792,7 @@
   {
     "name": "Feedvid Live",
     "url": "https://html-classic.itch.zone/html/4941980-683813/index.html",
-    "img": "/assets/imgs/./g/Feedvid_Live.webp",
+    "img": "/assets/imgs/g/Feedvid_Live.webp",
     "categories": [
       "all",
       "horror"
@@ -801,7 +801,7 @@
   {
     "name": "FNAF 1 (Scratch)",
     "url": "https://run3.io/popgame/fnaf/fnaf1/",
-    "img": "/assets/imgs/./g/FNAF_1__Scratch_.webp",
+    "img": "/assets/imgs/g/FNAF_1__Scratch_.webp",
     "categories": [
       "all",
       "horror"
@@ -810,7 +810,7 @@
   {
     "name": "FNAF 4 (Scratch)",
     "url": "https://ubg98.github.io/FNAF4/",
-    "img": "/assets/imgs/./g/FNAF_4__Scratch_.webp",
+    "img": "/assets/imgs/g/FNAF_4__Scratch_.webp",
     "categories": [
       "all",
       "horror"
@@ -819,7 +819,7 @@
   {
     "name": "Stumble Guys",
     "url": "https://www.stumbleguys.com/play",
-    "img": "/assets/imgs/./g/Stumble_Guys.webp",
+    "img": "/assets/imgs/g/Stumble_Guys.webp",
     "categories": [
       "all"
     ]
@@ -827,7 +827,7 @@
   {
     "name": "Crossy Road",
     "url": "https://h52304.github.io/s77/crossy-road/",
-    "img": "/assets/imgs/./g/Crossy_Road.webp",
+    "img": "/assets/imgs/g/Crossy_Road.webp",
     "categories": [
       "all"
     ]
@@ -835,7 +835,7 @@
   {
     "name": "Survivor.io",
     "url": "https://html5.gamedistribution.com/rvvASMiM/f1c451e586c04b4c8cba01b0c50d9090/index.html",
-    "img": "/assets/imgs/./g/Survivor_io.webp",
+    "img": "/assets/imgs/g/Survivor_io.webp",
     "categories": [
       "all"
     ]
@@ -843,7 +843,7 @@
   {
     "name": "Super Mario 64",
     "url": "https://probablykam.github.io/Mario64webgl/",
-    "img": "/assets/imgs/./g/Super_Mario_64.webp",
+    "img": "/assets/imgs/g/Super_Mario_64.webp",
     "categories": [
       "all"
     ]
@@ -851,7 +851,7 @@
   {
     "name": "Pokemon Emerald",
     "url": "https://f.kbhgames.com/emujs/play.php?c=gba&f=pokemon-emerald.gba",
-    "img": "/assets/imgs/./g/Pokemon_Emerald.webp",
+    "img": "/assets/imgs/g/Pokemon_Emerald.webp",
     "categories": [
       "all",
       "emulator"
@@ -860,7 +860,7 @@
   {
     "name": "Vex 8",
     "url": "https://html5.gamedistribution.com/rvvASMiM/949009d40a2846f89f887de2285d6c28/index.html?gd_sdk_referrer_url=https%3A%2F%2Farcadespot.com%2Fgame%2Fvex-8&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2FyY2FkZXNwb3QuY29tL2dhbWUvdmV4LTgiLCJwYXJlbnREb21haW4iOiJhcmNhZGVzcG90LmNvbSIsInRvcERvbWFpbiI6ImFyY2FkZXNwb3QuY29tIiwiaGFzSW1wcmVzc2lvbiI6dHJ1ZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9",
-    "img": "/assets/imgs/./g/Vex_8.webp",
+    "img": "/assets/imgs/g/Vex_8.webp",
     "categories": [
       "all",
       "popular"
@@ -869,7 +869,7 @@
   {
     "name": "Precision Client",
     "url": "https://html-classic.itch.zone/html/7086310/PrecisionClient-Static-main/index.html",
-    "img": "/assets/imgs/./g/Precision_Client.webp",
+    "img": "/assets/imgs/g/Precision_Client.webp",
     "categories": [
       "all"
     ]
@@ -877,7 +877,7 @@
   {
     "name": "Idle Breakout",
     "url": "https://www.coolmathgames.com/0-idle-breakout/play",
-    "img": "/assets/imgs/./g/Idle_Breakout.webp",
+    "img": "/assets/imgs/g/Idle_Breakout.webp",
     "categories": [
       "all"
     ]
@@ -885,7 +885,7 @@
   {
     "name": "Burrito Bison",
     "url": "https://f.silvergames.com/awayfl/index.html?swf=burrito-bison.swf",
-    "img": "/assets/imgs/./g/Burrito_Bison.webp",
+    "img": "/assets/imgs/g/Burrito_Bison.webp",
     "categories": [
       "all"
     ]
@@ -893,7 +893,7 @@
   {
     "name": "Twitch Tetris",
     "url": "https://www.rossipotti.de/ausgabe28/tetris/index.html",
-    "img": "/assets/imgs/./g/Twitch_Tetris.webp",
+    "img": "/assets/imgs/g/Twitch_Tetris.webp",
     "categories": [
       "all"
     ]
@@ -901,7 +901,7 @@
   {
     "name": "Mario Kart 64",
     "url": "https://f.kbhgames.com/r/n64/game.php?file=mario-kart-64.zip",
-    "img": "/assets/imgs/./g/Mario_Kart_64.webp",
+    "img": "/assets/imgs/g/Mario_Kart_64.webp",
     "categories": [
       "all",
       "emulator"
@@ -910,7 +910,7 @@
   {
     "name": "Pizza Tower",
     "url": "https://kdata1.com/2021/03/3527391/2.1/",
-    "img": "/assets/imgs/./g/Pizza_Tower.webp",
+    "img": "/assets/imgs/g/Pizza_Tower.webp",
     "categories": [
       "all"
     ]
@@ -918,7 +918,7 @@
   {
     "name": "Shuttle.lol",
     "url": "https://shuttle.lol",
-    "img": "/assets/imgs/./g/Shuttle_lol.webp",
+    "img": "/assets/imgs/g/Shuttle_lol.webp",
     "categories": [
       "all"
     ]
@@ -926,7 +926,7 @@
   {
     "name": "Subway Surfers",
     "url": "https://subwaysurfersonlinegame.github.io/file/",
-    "img": "/assets/imgs/./g/Subway_Surfers.webp",
+    "img": "/assets/imgs/g/Subway_Surfers.webp",
     "categories": [
       "all",
       "popular"
@@ -935,7 +935,7 @@
   {
     "name": "Ragdoll Archers",
     "url": "https://ragdoll-archers.game-files.crazygames.com/ragdoll-archers/30/index.html",
-    "img": "/assets/imgs/./g/Ragdoll_Archers.webp",
+    "img": "/assets/imgs/g/Ragdoll_Archers.webp",
     "categories": [
       "all"
     ]
@@ -943,7 +943,7 @@
   {
     "name": "Stick Archers Battle",
     "url": "https://html5.gamedistribution.com/rvvASMiM/a2eafb6bfed84d56a10d6c57e1e72417/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.twoplayergames.org%2Fgame%2Fstick-archers-battle&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy50d29wbGF5ZXJnYW1lcy5vcmcvZ2FtZS9zdGljay1hcmNoZXJzLWJhdHRsZSIsInBhcmVudERvbWFpbiI6InR3b3BsYXllcmdhbWVzLm9yZyIsInRvcERvbWFpbiI6InR3b3BsYXllcmdhbWVzLm9yZyIsImhhc0ltcHJlc3Npb24iOmZhbHNlLCJsb2FkZXJFbmFibGVkIjp0cnVlLCJob3N0IjoiaHRtbDUuZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ2ZXJzaW9uIjoiMS41LjE3In0%253D",
-    "img": "/assets/imgs/./g/Stick_Archers_Battle.webp",
+    "img": "/assets/imgs/g/Stick_Archers_Battle.webp",
     "categories": [
       "all"
     ]
@@ -951,7 +951,7 @@
   {
     "name": "Funny Shooter 2",
     "url": "https://html5.gamedistribution.com/rvvASMiM/a1b7ac4025214a5cb0bd01a4f675513a/index.html?gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2Z1bm55c2hvb3RlcjIuY29tLyIsInBhcmVudERvbWFpbiI6ImZ1bm55c2hvb3RlcjIuY29tIiwidG9wRG9tYWluIjoiZnVubnlzaG9vdGVyMi5jb20iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9",
-    "img": "/assets/imgs/./g/Funny_Shooter_2.webp",
+    "img": "/assets/imgs/g/Funny_Shooter_2.webp",
     "categories": [
       "all",
       "popular"
@@ -960,7 +960,7 @@
   {
     "name": "Tomb of the Mask",
     "url": "https://tombofthemask.github.io/g8/tomb-of-the-mask/",
-    "img": "/assets/imgs/./g/Tomb_of_the_Mask.webp",
+    "img": "/assets/imgs/g/Tomb_of_the_Mask.webp",
     "categories": [
       "all"
     ]
@@ -968,7 +968,7 @@
   {
     "name": "Exit Path",
     "url": "https://f.silvergames.com/ruffle/player.php?id=606",
-    "img": "/assets/imgs/./g/Exit_Path.webp",
+    "img": "/assets/imgs/g/Exit_Path.webp",
     "categories": [
       "all"
     ]
@@ -976,7 +976,7 @@
   {
     "name": "Awesome Planes",
     "url": "https://f.silvergames.com/ruffle/player.php?id=2017",
-    "img": "/assets/imgs/./g/Awesome_Planes.webp",
+    "img": "/assets/imgs/g/Awesome_Planes.webp",
     "categories": [
       "all",
       "emulator"
@@ -985,7 +985,7 @@
   {
     "name": "OvO 2",
     "url": "https://dedragames.com/games/ovo2/0.2alpha/",
-    "img": "/assets/imgs/./g/OvO_2.webp",
+    "img": "/assets/imgs/g/OvO_2.webp",
     "categories": [
       "all",
       "popular"
@@ -994,7 +994,7 @@
   {
     "name": "60 Seconds",
     "url": "https://www.puzzlegame.com/games/60-Seconds-Atomic-Adventure/index.html?yad",
-    "img": "/assets/imgs/./g/60_Seconds.webp",
+    "img": "/assets/imgs/g/60_Seconds.webp",
     "categories": [
       "all"
     ]
@@ -1002,7 +1002,7 @@
   {
     "name": "BuildNow GG",
     "url": "https://games.crazygames.com/en_US/buildnow-gg/index.html?v=1.282",
-    "img": "/assets/imgs/./g/BuildNow_GG.webp",
+    "img": "/assets/imgs/g/BuildNow_GG.webp",
     "categories": [
       "all",
       "multiplayer"
@@ -1011,7 +1011,7 @@
   {
     "name": "Sans Fight",
     "url": "https://jcw87.github.io/c2-sans-fight/",
-    "img": "/assets/imgs/./g/Sans_Fight.webp",
+    "img": "/assets/imgs/g/Sans_Fight.webp",
     "categories": [
       "all",
       "emulator"
@@ -1020,7 +1020,7 @@
   {
     "name": "Super Mario Bros",
     "url": "https://jcw87.github.io/c2-smb1/",
-    "img": "/assets/imgs/./g/Super_Mario_Bros.webp",
+    "img": "/assets/imgs/g/Super_Mario_Bros.webp",
     "categories": [
       "all",
       "emulator"
@@ -1029,7 +1029,7 @@
   {
     "name": "Friday night Funkin",
     "url": "https://uploads.ungrounded.net/alternate/1528000/1528775_alternate_113347_r112.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=6636730d4b7cd&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
-    "img": "/assets/imgs/./g/Friday_night_Funkin.webp",
+    "img": "/assets/imgs/g/Friday_night_Funkin.webp",
     "categories": [
       "all"
     ]
@@ -1037,7 +1037,7 @@
   {
     "name": "Baldis Basics",
     "url": "https://en.gameslol.net/data/baldis-basics/index.html",
-    "img": "/assets/imgs/./g/Baldis_Basics.webp",
+    "img": "/assets/imgs/g/Baldis_Basics.webp",
     "categories": [
       "all",
       "emulator",
@@ -1047,7 +1047,7 @@
   {
     "name": "Assessment Examination",
     "url": "https://html-classic.itch.zone/html/5392404/Web5/index.html",
-    "img": "/assets/imgs/./g/Assessment_Examination.webp",
+    "img": "/assets/imgs/g/Assessment_Examination.webp",
     "categories": [
       "all",
       "popular",
@@ -1057,7 +1057,7 @@
   {
     "name": "Dome Romantik",
     "url": "https://bippinbits.itch.io/dome-romantik",
-    "img": "/assets/imgs/./g/Dome_Romantik.webp",
+    "img": "/assets/imgs/g/Dome_Romantik.webp",
     "categories": [
       "all"
     ]
@@ -1065,7 +1065,7 @@
   {
     "name": "Nightclub Showdown",
     "url": "https://html-classic.itch.zone/html/3198875/index.html",
-    "img": "/assets/imgs/./g/Nightclub_Showdown.webp",
+    "img": "/assets/imgs/g/Nightclub_Showdown.webp",
     "categories": [
       "all",
       "popular"
@@ -1074,7 +1074,7 @@
   {
     "name": "Goodnight Meowmie",
     "url": "https://ddrkirbyisq.itch.io/goodnight-meowmie",
-    "img": "/assets/imgs/./g/Goodnight_Meowmie.webp",
+    "img": "/assets/imgs/g/Goodnight_Meowmie.webp",
     "categories": [
       "all",
       "horror"
@@ -1083,7 +1083,7 @@
   {
     "name": "Blastronaut",
     "url": "https://html-classic.itch.zone/html/2758024/index.html",
-    "img": "/assets/imgs/./g/Blastronaut.webp",
+    "img": "/assets/imgs/g/Blastronaut.webp",
     "categories": [
       "all"
     ]
@@ -1091,7 +1091,7 @@
   {
     "name": "UZG (COD Zombies)",
     "url": "https://html-classic.itch.zone/html/5713982/UZG_webgl/index.html",
-    "img": "/assets/imgs/./g/UZG__COD_Zombies_.webp",
+    "img": "/assets/imgs/g/UZG__COD_Zombies_.webp",
     "categories": [
       "all",
       "popular"
@@ -1100,7 +1100,7 @@
   {
     "name": "Commonweal",
     "url": "https://html-classic.itch.zone/html/10287783/index.html",
-    "img": "/assets/imgs/./g/Commonweal.webp",
+    "img": "/assets/imgs/g/Commonweal.webp",
     "categories": [
       "all"
     ]
@@ -1108,7 +1108,7 @@
   {
     "name": "Holonomy",
     "url": "https://html-classic.itch.zone/html/7959084/Holonomy%20Web/index.html",
-    "img": "/assets/imgs/./g/Holonomy.webp",
+    "img": "/assets/imgs/g/Holonomy.webp",
     "categories": [
       "all"
     ]
@@ -1116,7 +1116,7 @@
   {
     "name": "Enchain Classic",
     "url": "https://html-classic.itch.zone/html/793359/Enchain%20WebGL/index.html?v=1542781876",
-    "img": "/assets/imgs/./g/Enchain_Classic.webp",
+    "img": "/assets/imgs/g/Enchain_Classic.webp",
     "categories": [
       "all",
       "popular"
@@ -1125,7 +1125,7 @@
   {
     "name": "Hollow Knight Demake",
     "url": "https://html-classic.itch.zone/html/4103396/web/index.html",
-    "img": "/assets/imgs/./g/Hollow_Knight_Demake.webp",
+    "img": "/assets/imgs/g/Hollow_Knight_Demake.webp",
     "categories": [
       "all",
       "popular"
@@ -1134,7 +1134,7 @@
   {
     "name": "Dustsim",
     "url": "https://kodub.itch.io/dustsim",
-    "img": "/assets/imgs/./g/Dustsim.webp",
+    "img": "/assets/imgs/g/Dustsim.webp",
     "categories": [
       "all"
     ]
@@ -1142,7 +1142,7 @@
   {
     "name": "Canabalt",
     "url": "https://html-classic.itch.zone/html/9680307/index.html",
-    "img": "/assets/imgs/./g/Canabalt.webp",
+    "img": "/assets/imgs/g/Canabalt.webp",
     "categories": [
       "all"
     ]
@@ -1150,7 +1150,7 @@
   {
     "name": "Home Alone",
     "url": "https://html-classic.itch.zone/html/8471641/BGJ%202022.2%20-%20Home%20Alone%20WebGL/index.html",
-    "img": "/assets/imgs/./g/Home_Alone.webp",
+    "img": "/assets/imgs/g/Home_Alone.webp",
     "categories": [
       "all",
       "horror"
@@ -1159,7 +1159,7 @@
   {
     "name": "78 Hour Rain",
     "url": "https://html-classic.itch.zone/html/2937814/78HourRain_Webv1/index.html",
-    "img": "/assets/imgs/./g/78_Hour_Rain.webp",
+    "img": "/assets/imgs/g/78_Hour_Rain.webp",
     "categories": [
       "all",
       "horror"
@@ -1168,7 +1168,7 @@
   {
     "name": "Closing Doors",
     "url": "https://collarpill.itch.io/closing-doors",
-    "img": "/assets/imgs/./g/Closing_Doors.webp",
+    "img": "/assets/imgs/g/Closing_Doors.webp",
     "categories": [
       "all",
       "horror"
@@ -1177,7 +1177,7 @@
   {
     "name": "Backrooms 2D",
     "url": "https://html-classic.itch.zone/html/8485327/index.html",
-    "img": "/assets/imgs/./g/Backrooms_2D.webp",
+    "img": "/assets/imgs/g/Backrooms_2D.webp",
     "categories": [
       "all"
     ]
@@ -1185,7 +1185,7 @@
   {
     "name": "Silhouette Showdown",
     "url": "https://html-classic.itch.zone/html/7362417/SilhouetteShowdown080_HTML/index.html",
-    "img": "/assets/imgs/./g/Silhouette_Showdown.webp",
+    "img": "/assets/imgs/g/Silhouette_Showdown.webp",
     "categories": [
       "all",
       "multiplayer"
@@ -1194,7 +1194,7 @@
   {
     "name": "Commando",
     "url": "https://html-classic.itch.zone/html/1824008/www/index.html?v=1577643784",
-    "img": "/assets/imgs/./g/Commando.webp",
+    "img": "/assets/imgs/g/Commando.webp",
     "categories": [
       "all"
     ]
@@ -1202,7 +1202,7 @@
   {
     "name": "Hollow Knight (Silksong Demake)",
     "url": "https://html-classic.itch.zone/html/4927768/web/index.html",
-    "img": "/assets/imgs/./g/Hollow_Knight__Silksong_Demake_.webp",
+    "img": "/assets/imgs/g/Hollow_Knight__Silksong_Demake_.webp",
     "categories": [
       "all",
       "emulator"
@@ -1211,7 +1211,7 @@
   {
     "name": "Nip for speed",
     "url": "https://html-classic.itch.zone/html/9641909/index.html",
-    "img": "/assets/imgs/./g/Nip_for_speed.webp",
+    "img": "/assets/imgs/g/Nip_for_speed.webp",
     "categories": [
       "all"
     ]
@@ -1219,7 +1219,7 @@
   {
     "name": "Vacant",
     "url": "https://html-classic.itch.zone/html/5747771-565757/html/index.html",
-    "img": "/assets/imgs/./g/Vacant.webp",
+    "img": "/assets/imgs/g/Vacant.webp",
     "categories": [
       "all",
       "horror"
@@ -1228,7 +1228,7 @@
   {
     "name": "Deep",
     "url": "https://html-classic.itch.zone/html/3316252/index.html",
-    "img": "/assets/imgs/./g/Deep.webp",
+    "img": "/assets/imgs/g/Deep.webp",
     "categories": [
       "all"
     ]
@@ -1236,7 +1236,7 @@
   {
     "name": "Darkness in Spaceship",
     "url": "https://html-classic.itch.zone/html/9272800/index.html",
-    "img": "/assets/imgs/./g/Darkness_in_Spaceship.webp",
+    "img": "/assets/imgs/g/Darkness_in_Spaceship.webp",
     "categories": [
       "all"
     ]
@@ -1244,7 +1244,7 @@
   {
     "name": "Station 141",
     "url": "https://html-classic.itch.zone/html/3793918/index.html",
-    "img": "/assets/imgs/./g/Station_141.webp",
+    "img": "/assets/imgs/g/Station_141.webp",
     "categories": [
       "all"
     ]
@@ -1252,7 +1252,7 @@
   {
     "name": "Pew Pew Live",
     "url": "https://pewpew.live/webasm/pewpew.html",
-    "img": "/assets/imgs/./g/Pew_Pew_Live.webp",
+    "img": "/assets/imgs/g/Pew_Pew_Live.webp",
     "categories": [
       "all"
     ]
@@ -1260,7 +1260,7 @@
   {
     "name": "Marble Race Generator",
     "url": "https://html-classic.itch.zone/html/2029874/WebV2/index.html?v=1591302253",
-    "img": "/assets/imgs/./g/Marble_Race_Generator.webp",
+    "img": "/assets/imgs/g/Marble_Race_Generator.webp",
     "categories": [
       "all"
     ]
@@ -1268,7 +1268,7 @@
   {
     "name": "Cats Cradle",
     "url": "https://georgioklironomos.itch.io/cats-cradle",
-    "img": "/assets/imgs/./g/Cats_Cradle.webp",
+    "img": "/assets/imgs/g/Cats_Cradle.webp",
     "categories": [
       "all",
       "multiplayer"
@@ -1277,7 +1277,7 @@
   {
     "name": "Blackbox",
     "url": "https://html-classic.itch.zone/html/3475546/index.html",
-    "img": "/assets/imgs/./g/Blackbox.webp",
+    "img": "/assets/imgs/g/Blackbox.webp",
     "categories": [
       "all",
       "horror"
@@ -1286,7 +1286,7 @@
   {
     "name": "This is your life now",
     "url": "https://html-classic.itch.zone/html/1398515/index.html?v=1574335650",
-    "img": "/assets/imgs/./g/This_is_your_life_now.webp",
+    "img": "/assets/imgs/g/This_is_your_life_now.webp",
     "categories": [
       "all"
     ]
@@ -1294,7 +1294,7 @@
   {
     "name": "Hinoken",
     "url": "https://html-classic.itch.zone/html/3435599/hinoken_web_1/index.html",
-    "img": "/assets/imgs/./g/Hinoken.webp",
+    "img": "/assets/imgs/g/Hinoken.webp",
     "categories": [
       "all"
     ]
@@ -1302,7 +1302,7 @@
   {
     "name": "Necrobomb",
     "url": "https://html-classic.itch.zone/html/3433821/index.html",
-    "img": "/assets/imgs/./g/Necrobomb.webp",
+    "img": "/assets/imgs/g/Necrobomb.webp",
     "categories": [
       "all"
     ]
@@ -1310,7 +1310,7 @@
   {
     "name": "Rocket League 2D",
     "url": "https://html-classic.itch.zone/html/3325334/index.html",
-    "img": "/assets/imgs/./g/Rocket_League_2D.webp",
+    "img": "/assets/imgs/g/Rocket_League_2D.webp",
     "categories": [
       "all",
       "multiplayer"
@@ -1319,7 +1319,7 @@
   {
     "name": "dud",
     "url": "https://html-classic.itch.zone/html/10158091/index.html",
-    "img": "/assets/imgs/./g/dud.webp",
+    "img": "/assets/imgs/g/dud.webp",
     "categories": [
       "all",
       "popular"
@@ -1328,7 +1328,7 @@
   {
     "name": "Crater",
     "url": "https://html-classic.itch.zone/html/3300759/CraterWeb/index.html",
-    "img": "/assets/imgs/./g/Crater.webp",
+    "img": "/assets/imgs/g/Crater.webp",
     "categories": [
       "all"
     ]
@@ -1336,7 +1336,7 @@
   {
     "name": "Monolith",
     "url": "https://html-classic.itch.zone/html/473205/index.html?v=1542781942  ",
-    "img": "/assets/imgs/./g/Monolith.webp",
+    "img": "/assets/imgs/g/Monolith.webp",
     "categories": [
       "all"
     ]
@@ -1344,7 +1344,7 @@
   {
     "name": "D.A-V.E",
     "url": "https://html-classic.itch.zone/html/9967430/index.html",
-    "img": "/assets/imgs/./g/D_A_V_E.webp",
+    "img": "/assets/imgs/g/D_A_V_E.webp",
     "categories": [
       "all"
     ]
@@ -1352,7 +1352,7 @@
   {
     "name": "Bright Lancer",
     "url": "https://html-classic.itch.zone/html/3228468/Bright%20Lancer%20Web%20Experimental/index.html",
-    "img": "/assets/imgs/./g/Bright_Lancer.webp",
+    "img": "/assets/imgs/g/Bright_Lancer.webp",
     "categories": [
       "all"
     ]
@@ -1360,7 +1360,7 @@
   {
     "name": "VSCS-I",
     "url": "https://html-classic.itch.zone/html/7627512/index.html",
-    "img": "/assets/imgs/./g/VSCS_I.webp",
+    "img": "/assets/imgs/g/VSCS_I.webp",
     "categories": [
       "all"
     ]
@@ -1368,7 +1368,7 @@
   {
     "name": "Take out the trash",
     "url": "https://html-classic.itch.zone/html/10334699/takeOutTheTrash/index.html",
-    "img": "/assets/imgs/./g/Take_out_the_trash.webp",
+    "img": "/assets/imgs/g/Take_out_the_trash.webp",
     "categories": [
       "all",
       "horror"
@@ -1377,7 +1377,7 @@
   {
     "name": "Examination of Fear",
     "url": "https://html-classic.itch.zone/html/7312990/index.html",
-    "img": "/assets/imgs/./g/Examination_of_Fear.webp",
+    "img": "/assets/imgs/g/Examination_of_Fear.webp",
     "categories": [
       "all",
       "horror"
@@ -1386,7 +1386,7 @@
   {
     "name": "I am not what remains",
     "url": "https://html-classic.itch.zone/html/2479198/index.html",
-    "img": "/assets/imgs/./g/I_am_not_what_remains.webp",
+    "img": "/assets/imgs/g/I_am_not_what_remains.webp",
     "categories": [
       "all"
     ]
@@ -1394,7 +1394,7 @@
   {
     "name": "Last train home",
     "url": "https://html-classic.itch.zone/html/3300759/CraterWeb/index.html",
-    "img": "/assets/imgs/./g/Last_train_home.webp",
+    "img": "/assets/imgs/g/Last_train_home.webp",
     "categories": [
       "all",
       "horror"
@@ -1403,7 +1403,7 @@
   {
     "name": "Dodge & Slash",
     "url": "https://kindanice.itch.io/dodge-and-slash",
-    "img": "/assets/imgs/./g/Dodge___Slash.webp",
+    "img": "/assets/imgs/g/Dodge___Slash.webp",
     "categories": [
       "all"
     ]
@@ -1411,7 +1411,7 @@
   {
     "name": "Like Them",
     "url": "https://html-classic.itch.zone/html/2367352/Like%20Them%20Demo%20HTML/index.html",
-    "img": "/assets/imgs/./g/Like_Them.webp",
+    "img": "/assets/imgs/g/Like_Them.webp",
     "categories": [
       "all"
     ]
@@ -1419,7 +1419,7 @@
   {
     "name": "Agent Pyxel",
     "url": "https://html-classic.itch.zone/html/4491958/index.html",
-    "img": "/assets/imgs/./g/Agent_Pyxel.webp",
+    "img": "/assets/imgs/g/Agent_Pyxel.webp",
     "categories": [
       "all"
     ]
@@ -1427,7 +1427,7 @@
   {
     "name": "A Day in the Office",
     "url": "https://html-classic.itch.zone/html/4268519/index.html",
-    "img": "/assets/imgs/./g/A_Day_in_the_Office.webp",
+    "img": "/assets/imgs/g/A_Day_in_the_Office.webp",
     "categories": [
       "all",
       "horror"
@@ -1436,7 +1436,7 @@
   {
     "name": "Station Saturn",
     "url": "https://html-classic.itch.zone/html/7537780/index.html",
-    "img": "/assets/imgs/./g/Station_Saturn.webp",
+    "img": "/assets/imgs/g/Station_Saturn.webp",
     "categories": [
       "all",
       "popular"
@@ -1445,7 +1445,7 @@
   {
     "name": "DriftR",
     "url": "https://example.com",
-    "img": "/assets/imgs/./g/DriftR.webp",
+    "img": "/assets/imgs/g/DriftR.webp",
     "categories": [
       "all"
     ]
@@ -1453,7 +1453,7 @@
   {
     "name": "Synesthesia",
     "url": "https://html-classic.itch.zone/html/6726608/browser/index.html",
-    "img": "/assets/imgs/./g/Synesthesia.webp",
+    "img": "/assets/imgs/g/Synesthesia.webp",
     "categories": [
       "all"
     ]
@@ -1461,7 +1461,7 @@
   {
     "name": "Spectral Slash",
     "url": "https://kdata1.com/2023/07/spectral-slash/",
-    "img": "/assets/imgs/./g/Spectral_Slash.webp",
+    "img": "/assets/imgs/g/Spectral_Slash.webp",
     "categories": [
       "all"
     ]
@@ -1469,7 +1469,7 @@
   {
     "name": "Rogue Fable III",
     "url": "https://cache.armorgames.com/files/games/rogue-fable-iii-18602/index.html?v=1550624919",
-    "img": "/assets/imgs/./g/Rogue_Fable_III.webp",
+    "img": "/assets/imgs/g/Rogue_Fable_III.webp",
     "categories": [
       "all"
     ]
@@ -1477,7 +1477,7 @@
   {
     "name": "Human or Not?",
     "url": "https://humanornot.so/",
-    "img": "/assets/imgs/./g/Human_or_Not_.webp",
+    "img": "/assets/imgs/g/Human_or_Not_.webp",
     "categories": [
       "all"
     ]
@@ -1485,7 +1485,7 @@
   {
     "name": "OVO Modded",
     "url": "https://ovo-5yu.pages.dev/",
-    "img": "/assets/imgs/./g/OVO_Modded.webp",
+    "img": "/assets/imgs/g/OVO_Modded.webp",
     "categories": [
       "all"
     ]
@@ -1493,7 +1493,7 @@
   {
     "name": "We Become What We Behold",
     "url": "https://html-classic.itch.zone/html/300364/index.html?v=1542781840",
-    "img": "/assets/imgs/./g/We_Become_What_We_Behold.webp",
+    "img": "/assets/imgs/g/We_Become_What_We_Behold.webp",
     "categories": [
       "all"
     ]
@@ -1501,7 +1501,7 @@
   {
     "name": "Buckshot Roulette",
     "url": "https://buckshotroulette.online/game/v13/",
-    "img": "/assets/imgs/./g/Buckshot_Roulette.webp",
+    "img": "/assets/imgs/g/Buckshot_Roulette.webp",
     "categories": [
       "all"
     ]
@@ -1509,7 +1509,7 @@
   {
     "name": "Smash Karts.io",
     "url": "https://smashkarts.io/",
-    "img": "/assets/imgs/./g/Smash_Karts_io.webp",
+    "img": "/assets/imgs/g/Smash_Karts_io.webp",
     "categories": [
       "all"
     ]
@@ -1517,7 +1517,7 @@
   {
     "name": "Cat Mario",
     "url": "https://kdata1.com/2022/04/cat-marioo/",
-    "img": "/assets/imgs/./g/Cat_Mario.webp",
+    "img": "/assets/imgs/g/Cat_Mario.webp",
     "categories": [
       "all"
     ]
@@ -1525,7 +1525,7 @@
   {
     "name": "Rocket Bot Royale",
     "url": "https://rocketbotroyale.winterpixel.io/",
-    "img": "/assets/imgs/./g/Rocket_Bot_Royale.webp",
+    "img": "/assets/imgs/g/Rocket_Bot_Royale.webp",
     "categories": [
       "all"
     ]
@@ -1533,7 +1533,7 @@
   {
     "name": "CSGO Clicker",
     "url": "https://mtsl.dk/csgo/",
-    "img": "/assets/imgs/./g/CSGO_Clicker.webp",
+    "img": "/assets/imgs/g/CSGO_Clicker.webp",
     "categories": [
       "all"
     ]
@@ -1541,7 +1541,7 @@
   {
     "name": "Arsonate",
     "url": "https://html-classic.itch.zone/html/10985323/ARSONATE%20-%20WEBGL_DEMO%20-%2020240722%20-%20RELEASE/index.html",
-    "img": "/assets/imgs/./g/Arsonate.webp",
+    "img": "/assets/imgs/g/Arsonate.webp",
     "categories": [
       "all"
     ]
@@ -1549,7 +1549,7 @@
   {
     "name": "Moon",
     "url": "https://html.itch.zone/html/10993820/Moon/index.html",
-    "img": "/assets/imgs/./g/Moon.webp",
+    "img": "/assets/imgs/g/Moon.webp",
     "categories": [
       "all"
     ]
@@ -1557,7 +1557,7 @@
   {
     "name": "Bullet Bunny",
     "url": "https://html-classic.itch.zone/html/8618172/Bullet%20Bunny/index.html",
-    "img": "/assets/imgs/./g/Bullet_Bunny.webp",
+    "img": "/assets/imgs/g/Bullet_Bunny.webp",
     "categories": [
       "all"
     ]
@@ -1565,7 +1565,7 @@
   {
     "name": "V.R.G.",
     "url": "https://html.itch.zone/html/10999062/index.html",
-    "img": "/assets/imgs/./g/V_R_G_.webp",
+    "img": "/assets/imgs/g/V_R_G_.webp",
     "categories": [
       "all"
     ]
@@ -1573,7 +1573,7 @@
   {
     "name": "Everybody Must Die",
     "url": "https://html-classic.itch.zone/html/4263236/index.html",
-    "img": "/assets/imgs/./g/Everybody_Must_Die.webp",
+    "img": "/assets/imgs/g/Everybody_Must_Die.webp",
     "categories": [
       "all"
     ]
@@ -1581,7 +1581,7 @@
   {
     "name": "Don't Let Her In",
     "url": "https://html-classic.itch.zone/html/10594372/index.html",
-    "img": "/assets/imgs/./g/Don_t_Let_Her_In.webp",
+    "img": "/assets/imgs/g/Don_t_Let_Her_In.webp",
     "categories": [
       "all"
     ]
@@ -1589,7 +1589,7 @@
   {
     "name": "Monster Battlegrounds",
     "url": "https://html-classic.itch.zone/html/10505998/Monster%20Battlegrounds%20(v0_3_0)%20html/index.html",
-    "img": "/assets/imgs/./g/Monster_Battlegrounds.webp",
+    "img": "/assets/imgs/g/Monster_Battlegrounds.webp",
     "categories": [
       "all"
     ]
@@ -1597,7 +1597,7 @@
   {
     "name": "Cuckoo Castle",
     "url": "https://html-classic.itch.zone/html/2315059/CuckooCastle/index.html?v=1591301542",
-    "img": "/assets/imgs/./g/Cuckoo_Castle.webp",
+    "img": "/assets/imgs/g/Cuckoo_Castle.webp",
     "categories": [
       "all"
     ]
@@ -1605,7 +1605,7 @@
   {
     "name": "The Lesser Evil",
     "url": "https://html-classic.itch.zone/html/4604027/TheLesserEvil_Web/index.html",
-    "img": "/assets/imgs/./g/The_Lesser_Evil.webp",
+    "img": "/assets/imgs/g/The_Lesser_Evil.webp",
     "categories": [
       "all"
     ]
@@ -1613,7 +1613,7 @@
   {
     "name": "Flooded Caves",
     "url": "https://html-classic.itch.zone/html/5535808/index.html",
-    "img": "/assets/imgs/./g/Flooded_Caves.webp",
+    "img": "/assets/imgs/g/Flooded_Caves.webp",
     "categories": [
       "all"
     ]
@@ -1621,7 +1621,7 @@
   {
     "name": "Subject 26",
     "url": "https://html-classic.itch.zone/html/196978/index.html?v=1542782131",
-    "img": "/assets/imgs/./g/Subject_26.webp",
+    "img": "/assets/imgs/g/Subject_26.webp",
     "categories": [
       "all"
     ]
@@ -1629,7 +1629,7 @@
   {
     "name": "Proctor",
     "url": "https://html-classic.itch.zone/html/4833194-484298/index.html",
-    "img": "https://img.itch.zone/aW1hZ2UvMjQ0MDA5LzExNjUwMjMucG5n/794x1000/i/7gGc.png",
+    "img": "/assets/imgs/g/Proctor.webp",
     "categories": [
       "all"
     ]
@@ -1637,7 +1637,7 @@
   {
     "name": "Morphology",
     "url": "https://html-classic.itch.zone/html/2174003/index.html?v=1591301905",
-    "img": "/assets/imgs/./g/Morphology.webp",
+    "img": "/assets/imgs/g/Morphology.webp",
     "categories": [
       "all"
     ]
@@ -1645,7 +1645,7 @@
   {
     "name": "Torchure",
     "url": "https://html-classic.itch.zone/html/3473461/Builds/index.html",
-    "img": "/assets/imgs/./g/Torchure.webp",
+    "img": "/assets/imgs/g/Torchure.webp",
     "categories": [
       "all"
     ]
@@ -1653,7 +1653,7 @@
   {
     "name": "Hyper Jump",
     "url": "https://html-classic.itch.zone/html/6364027/index.html",
-    "img": "/assets/imgs/./g/Hyper_Jump.webp",
+    "img": "/assets/imgs/g/Hyper_Jump.webp",
     "categories": [
       "all"
     ]
@@ -1661,7 +1661,7 @@
   {
     "name": "Void Golf",
     "url": "https://html-classic.itch.zone/html/1669372/Void%20Golf%20Web/index.html?v=1574334979",
-    "img": "/assets/imgs/./g/Void_Golf.webp",
+    "img": "/assets/imgs/g/Void_Golf.webp",
     "categories": [
       "all"
     ]
@@ -1669,7 +1669,7 @@
   {
     "name": "Arena",
     "url": "https://html-classic.itch.zone/html/7053230/index.html",
-    "img": "/assets/imgs/./g/Arena.webp",
+    "img": "/assets/imgs/g/Arena.webp",
     "categories": [
       "all"
     ]
@@ -1677,7 +1677,7 @@
   {
     "name": "8 Ball Pool",
     "url": "https://8ballpool.com/en/game",
-    "img": "/assets/imgs/./g/8_Ball_Pool.webp",
+    "img": "/assets/imgs/g/8_Ball_Pool.webp",
     "categories": [
       "all"
     ]
@@ -1685,7 +1685,7 @@
   {
     "name": "Drift Boss",
     "url": "https://www.hoodamath.com/mobile/games/drift-boss/game.html",
-    "img": "/assets/imgs/./g/Drift_Boss.webp",
+    "img": "/assets/imgs/g/Drift_Boss.webp",
     "categories": [
       "all"
     ]
@@ -1693,7 +1693,7 @@
   {
     "name": "Google Snake Modded",
     "url": "https://googlesnakemods.com/v/current/",
-    "img": "/assets/imgs/./g/Google_Snake_Modded.webp",
+    "img": "/assets/imgs/g/Google_Snake_Modded.webp",
     "categories": [
       "all"
     ]
@@ -1701,7 +1701,7 @@
   {
     "name": "Helix Jump",
     "url": "https://helixjumponline.com/",
-    "img": "/assets/imgs/./g/Helix_Jump.webp",
+    "img": "/assets/imgs/g/Helix_Jump.webp",
     "categories": [
       "all"
     ]
@@ -1709,7 +1709,7 @@
   {
     "name": "Mutilate-a-doll 2",
     "url": "https://f.silvergames.com/ruffle/player.php?id=4638",
-    "img": "/assets/imgs/./g/Mutilate_a_doll_2.webp",
+    "img": "/assets/imgs/g/Mutilate_a_doll_2.webp",
     "categories": [
       "all"
     ]
@@ -1717,7 +1717,7 @@
   {
     "name": "Superfighers 2",
     "url": "https://f.silvergames.com/ruffle/player.php?id=6456",
-    "img": "/assets/imgs/./g/Superfighers_2.webp",
+    "img": "/assets/imgs/g/Superfighers_2.webp",
     "categories": [
       "all"
     ]
@@ -1725,7 +1725,7 @@
   {
     "name": "Superhot",
     "url": "https://f3.silvergames.com/html5/super-hot/",
-    "img": "/assets/imgs/./g/Superhot.webp",
+    "img": "/assets/imgs/g/Superhot.webp",
     "categories": [
       "all"
     ]
@@ -1733,7 +1733,7 @@
   {
     "name": "Pandemic Simulator",
     "url": "https://html5.gamedistribution.com/rvvASMiM/f2a015a45b6443358238a54f8f4a557f/index.html?gdpr-targeting=1&gd_sdk_referrer_url=https%3A%2F%2Fwww.silvergames.com%2Fen%2Fpandemic-simulator&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5zaWx2ZXJnYW1lcy5jb20vZW4vcGFuZGVtaWMtc2ltdWxhdG9yIiwicGFyZW50RG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwidG9wRG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwiaGFzSW1wcmVzc2lvbiI6ZmFsc2UsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuMTcifQ%253D%253D",
-    "img": "/assets/imgs/./g/Pandemic_Simulator.webp",
+    "img": "/assets/imgs/g/Pandemic_Simulator.webp",
     "categories": [
       "all"
     ]
@@ -1741,7 +1741,7 @@
   {
     "name": "Raze 2",
     "url": "https://f.silvergames.com/ruffle/player.php?id=1594",
-    "img": "/assets/imgs/./g/Raze_2.webp",
+    "img": "/assets/imgs/g/Raze_2.webp",
     "categories": [
       "all"
     ]
@@ -1749,7 +1749,7 @@
   {
     "name": "Strike Force Heros 2",
     "url": "https://f.silvergames.com/ruffle/player.php?id=2879",
-    "img": "/assets/imgs/./g/Strike_Force_Heros_2.webp",
+    "img": "/assets/imgs/g/Strike_Force_Heros_2.webp",
     "categories": [
       "all"
     ]
@@ -1757,7 +1757,7 @@
   {
     "name": "Strike Force Heros 3",
     "url": "https://f.silvergames.com/ruffle/player.php?id=5067",
-    "img": "/assets/imgs/./g/Strike_Force_Heros_3.webp",
+    "img": "/assets/imgs/g/Strike_Force_Heros_3.webp",
     "categories": [
       "all"
     ]
@@ -1765,7 +1765,7 @@
   {
     "name": "Sift Heads World",
     "url": "https://f.silvergames.com/ruffle/player.php?id=8950",
-    "img": "/assets/imgs/./g/Sift_Heads_World.webp",
+    "img": "/assets/imgs/g/Sift_Heads_World.webp",
     "categories": [
       "all"
     ]
@@ -1773,7 +1773,7 @@
   {
     "name": "Stickman Dismount",
     "url": "https://cdn.gamemonetize.com/d2pe3o8rrt57q6mro0vjkor7q0xequ04/",
-    "img": "/assets/imgs/./g/Stickman_Dismount.webp",
+    "img": "/assets/imgs/g/Stickman_Dismount.webp",
     "categories": [
       "all"
     ]
@@ -1781,7 +1781,7 @@
   {
     "name": "Sift Heads Cartels",
     "url": "https://f.silvergames.com/ruffle/player.php?id=3199",
-    "img": "/assets/imgs/./g/Sift_Heads_Cartels.webp",
+    "img": "/assets/imgs/g/Sift_Heads_Cartels.webp",
     "categories": [
       "all"
     ]
@@ -1789,7 +1789,7 @@
   {
     "name": "Cut the Rope",
     "url": "https://games.cdn.famobi.com/html5games/c/cut-the-rope/v070/?fg_domain=play.famobi.com&fg_aid=A-SILVERGAMES&fg_uid=4531b37c-a8e0-4a67-9ebd-e8d3190b6277&fg_pid=8a24e5f2-94a8-4593-b4e5-81cc68f524c8&fg_beat=969&original_ref=https%3A%2F%2Fwww.silvergames.com%2F",
-    "img": "/assets/imgs/./g/Cut_the_Rope.webp",
+    "img": "/assets/imgs/g/Cut_the_Rope.webp",
     "categories": [
       "all"
     ]
@@ -1797,7 +1797,7 @@
   {
     "name": "Give Up 2",
     "url": "https://f.silvergames.com/ruffle/player.php?id=4717",
-    "img": "/assets/imgs/./g/Give_Up_2.webp",
+    "img": "/assets/imgs/g/Give_Up_2.webp",
     "categories": [
       "all"
     ]
@@ -1805,7 +1805,7 @@
   {
     "name": "Draw Climber",
     "url": "https://f3.silvergames.com/m/draw-cube/",
-    "img": "/assets/imgs/./g/Draw_Climber.webp",
+    "img": "/assets/imgs/g/Draw_Climber.webp",
     "categories": [
       "all"
     ]
@@ -1813,7 +1813,7 @@
   {
     "name": "N-Game 2",
     "url": "https://f.silvergames.com/ruffle/player.php?id=2987",
-    "img": "/assets/imgs/./g/N_Game_2.webp",
+    "img": "/assets/imgs/g/N_Game_2.webp",
     "categories": [
       "all"
     ]
@@ -1821,7 +1821,7 @@
   {
     "name": "Stickman Ragdoll Playground",
     "url": "https://html5.gamedistribution.com/rvvASMiM/1c0a1c13e443454a9a029c155b957778/index.html?gdpr-targeting=1&gd_sdk_referrer_url=https%3A%2F%2Fwww.silvergames.com%2Fen%2Fstickman-ragdoll-playground&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5zaWx2ZXJnYW1lcy5jb20vZW4vc3RpY2ttYW4tcmFnZG9sbC1wbGF5Z3JvdW5kIiwicGFyZW50RG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwidG9wRG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwiaGFzSW1wcmVzc2lvbiI6ZmFsc2UsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuMTcifQ%253D%253D",
-    "img": "/assets/imgs/./g/Stickman_Ragdoll_Playground.webp",
+    "img": "/assets/imgs/g/Stickman_Ragdoll_Playground.webp",
     "categories": [
       "all"
     ]
@@ -1829,7 +1829,7 @@
   {
     "name": "Stealth Hunter 2",
     "url": "https://f.silvergames.com/ruffle/player.php?id=1965",
-    "img": "/assets/imgs/./g/Stealth_Hunter_2.webp",
+    "img": "/assets/imgs/g/Stealth_Hunter_2.webp",
     "categories": [
       "all"
     ]
@@ -1837,7 +1837,7 @@
   {
     "name": "Castel Wars",
     "url": "https://files.twoplayergames.org/files/games/o1/Castel_Wars/index.html",
-    "img": "/assets/imgs/./g/Castel_Wars.webp",
+    "img": "/assets/imgs/g/Castel_Wars.webp",
     "categories": [
       "all"
     ]
@@ -1845,7 +1845,7 @@
   {
     "name": "Castel Wars Modern",
     "url": "https://files.twoplayergames.org/files/games/o1/Castel_Wars_Modern/index.html",
-    "img": "/assets/imgs/./g/Castel_Wars_Modern.webp",
+    "img": "/assets/imgs/g/Castel_Wars_Modern.webp",
     "categories": [
       "all"
     ]
@@ -1853,7 +1853,7 @@
   {
     "name": "Castel Wars New Era",
     "url": "https://files.twoplayergames.org/files/games/o1/Castel_Wars_New_Era/index.html",
-    "img": "/assets/imgs/./g/Castel_Wars_New_Era.webp",
+    "img": "/assets/imgs/g/Castel_Wars_New_Era.webp",
     "categories": [
       "all"
     ]
@@ -1861,7 +1861,7 @@
   {
     "name": "Uno Online",
     "url": "https://html5.gamedistribution.com/rvvASMiM/f2520bae00624e93a4f4614732fa259e/index.html?gd_sdk_referrer_url=https%3A%2F%2Fwww.twoplayergames.org%2Fgame%2Funo-online&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy50d29wbGF5ZXJnYW1lcy5vcmcvZ2FtZS91bm8tb25saW5lIiwicGFyZW50RG9tYWluIjoidHdvcGxheWVyZ2FtZXMub3JnIiwidG9wRG9tYWluIjoidHdvcGxheWVyZ2FtZXMub3JnIiwiaGFzSW1wcmVzc2lvbiI6ZmFsc2UsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuMTcifQ%253D%253D",
-    "img": "/assets/imgs/./g/Uno_Online.webp",
+    "img": "/assets/imgs/g/Uno_Online.webp",
     "categories": [
       "all"
     ]
@@ -1869,7 +1869,7 @@
   {
     "name": "Stick Duel Battle Hero",
     "url": "https://files.twoplayergames.org/files/games/o1/Stick_Duel_Battle_Hero/index.html",
-    "img": "/assets/imgs/./g/Stick_Duel_Battle_Hero.webp",
+    "img": "/assets/imgs/g/Stick_Duel_Battle_Hero.webp",
     "categories": [
       "all"
     ]
@@ -1877,7 +1877,7 @@
   {
     "name": "House of Hazards",
     "url": "https://www.twoplayergames.org/gameframe/house-of-hazards",
-    "img": "/assets/imgs/./g/House_of_Hazards.webp",
+    "img": "/assets/imgs/g/House_of_Hazards.webp",
     "categories": [
       "all"
     ]
@@ -1885,7 +1885,7 @@
   {
     "name": "Tennis Physics",
     "url": "https://files.twoplayergames.org/files/games/o1/Tennis_Physics/index.html",
-    "img": "/assets/imgs/./g/House_of_Hazards.webp",
+    "img": "/assets/imgs/g/House_of_Hazards.webp",
     "categories": [
       "all"
     ]
@@ -1893,7 +1893,7 @@
   {
     "name": "Pixel Smash Duel",
     "url": "https://html5.gamedistribution.com/81c5e3e4cae448a5876b1c2e424fd96b/?gd_sdk_referrer_url=https%3A%2F%2Fwww.twoplayergames.org%2Fgame%2Fpixel-smash-duel",
-    "img": "/assets/imgs/./g/Pixel_Smash_Duel.webp",
+    "img": "/assets/imgs/g/Pixel_Smash_Duel.webp",
     "categories": [
       "all"
     ]
@@ -1901,7 +1901,7 @@
   {
     "name": "Volley Random",
     "url": "https://files.twoplayergames.org/files/games/o1/Volley_random/index.html",
-    "img": "/assets/imgs/./g/Volley_Random.webp",
+    "img": "/assets/imgs/g/Volley_Random.webp",
     "categories": [
       "all"
     ]
@@ -1909,7 +1909,7 @@
   {
     "name": "Fancy Snowboarding",
     "url": "https://f.silvergames.com/ruffle/player.php?id=10106",
-    "img": "/assets/imgs/./g/Fancy_Snowboarding.webp",
+    "img": "/assets/imgs/g/Fancy_Snowboarding.webp",
     "categories": [
       "all"
     ]
@@ -1917,7 +1917,7 @@
   {
     "name": "Line Rider",
     "url": "https://www.linerider.com/",
-    "img": "/assets/imgs/./g/Line_Rider.webp",
+    "img": "/assets/imgs/g/Line_Rider.webp",
     "categories": [
       "all"
     ]
@@ -1925,7 +1925,7 @@
   {
     "name": "Leap of Life",
     "url": "https://html5.gamedistribution.com/rvvASMiM/a3cddb497804491ca590c34ee5fa7339/index.html?gdpr-targeting=1&gd_sdk_referrer_url=https%3A%2F%2Fwww.silvergames.com%2Fen%2Fleap-of-life&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL3d3dy5zaWx2ZXJnYW1lcy5jb20vZW4vbGVhcC1vZi1saWZlIiwicGFyZW50RG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwidG9wRG9tYWluIjoic2lsdmVyZ2FtZXMuY29tIiwiaGFzSW1wcmVzc2lvbiI6ZmFsc2UsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuMTcifQ%253D%253D",
-    "img": "/assets/imgs/./g/Leap_of_Life.webp",
+    "img": "/assets/imgs/g/Leap_of_Life.webp",
     "categories": [
       "all"
     ]
@@ -1933,7 +1933,7 @@
   {
     "name": "Geometry Neon Dash Subzero",
     "url": "https://html5.gamedistribution.com/1f37997f4c6845519807e0a335ed1c75/",
-    "img": "/assets/imgs/./g/Geometry_Neon_Dash_Subzero.webp",
+    "img": "/assets/imgs/g/Geometry_Neon_Dash_Subzero.webp",
     "categories": [
       "all"
     ]
@@ -1941,7 +1941,7 @@
   {
     "name": "Space Waves",
     "url": "https://games.crazygames.com/en_US/space-waves/index.html",
-    "img": "/assets/imgs/./g/Space_Waves.webp",
+    "img": "/assets/imgs/g/Space_Waves.webp",
     "categories": [
       "all"
     ]
@@ -1949,7 +1949,7 @@
   {
     "name": "Worlds Hardest Game 3",
     "url": "https://www.coolmathgames.com/0-worlds-hardest-game-3/play",
-    "img": "/assets/imgs/./g/Worlds_Hardest_Game_3.webp",
+    "img": "/assets/imgs/g/Worlds_Hardest_Game_3.webp",
     "categories": [
       "all"
     ]
@@ -1957,7 +1957,7 @@
   {
     "name": "Bad Dolls 2",
     "url": "https://f3.silvergames.com/m/bad-dolls_v2/",
-    "img": "/assets/imgs/./g/Bad_Dolls_2.webp",
+    "img": "/assets/imgs/g/Bad_Dolls_2.webp",
     "categories": [
       "all"
     ]
@@ -1965,7 +1965,7 @@
   {
     "name": "Fire Circle",
     "url": "https://f3.silvergames.com/m/fire-circle/",
-    "img": "/assets/imgs/./g/Fire_Circle.webp",
+    "img": "/assets/imgs/g/Fire_Circle.webp",
     "categories": [
       "all"
     ]
@@ -1973,7 +1973,7 @@
   {
     "name": "Grandpas Minigun",
     "url": "https://uploads.ungrounded.net/alternate/1773000/1773956_alternate_160158_r103.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a97942d14be&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
-    "img": "/assets/imgs/./g/Grandpas_Minigun.webp",
+    "img": "/assets/imgs/g/Grandpas_Minigun.webp",
     "categories": [
       "all"
     ]
@@ -1981,7 +1981,7 @@
   {
     "name": "Seeking Peace Zombeez",
     "url": "https://uploads.ungrounded.net/alternate/5903000/5903058_alternate_273533_r1.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a979cdd610c&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
-    "img": "/assets/imgs/./g/Seeking_Peace_Zombeez.webp",
+    "img": "/assets/imgs/g/Seeking_Peace_Zombeez.webp",
     "categories": [
       "all"
     ]
@@ -1989,7 +1989,7 @@
   {
     "name": "Stealth Optional",
     "url": "https://uploads.ungrounded.net/alternate/5775000/5775059_alternate_266950_r2.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a987bbcbbc4&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
-    "img": "/assets/imgs/./g/Stealth_Optional.webp",
+    "img": "/assets/imgs/g/Stealth_Optional.webp",
     "categories": [
       "all"
     ]
@@ -1997,7 +1997,7 @@
   {
     "name": "Fruity Tower",
     "url": "https://uploads.ungrounded.net/alternate/4622000/4622142_alternate_215472_r10.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a98ce60a9a3&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
-    "img": "/assets/imgs/./g/Fruity_Tower.webp",
+    "img": "/assets/imgs/g/Fruity_Tower.webp",
     "categories": [
       "all"
     ]
@@ -2005,7 +2005,7 @@
   {
     "name": "Armed with Wings Culmination",
     "url": "https://uploads.ungrounded.net/ruffle_wrapper/ruffleembed.html?v=1.0.67&browsermode=default&props=%7B%22ruffle%22%3A%22%2Fruffle_wrapper%2Flib%2Fruffle.js%3F1722140126%22%2C%22public_path%22%3A%22%2Fruffle_wrapper%2Flib%2F%22%2C%22swf%22%3A%22https%3A%2F%2Fuploads.ungrounded.net%2F584000%2F584398_Culmination_coolbuddy_v2.swf%3F1691321603%22%2C%22vars%22%3A%7B%22NewgroundsAPI_PublisherID%22%3A1%2C%22NewgroundsAPI_SandboxID%22%3A%2266a98da258f08%22%2C%22NewgroundsAPI_SessionID%22%3A%22%22%2C%22NewgroundsAPI_UserName%22%3A%22%26lt%3Bdeleted%26gt%3B%22%2C%22NewgroundsAPI_UserID%22%3A0%2C%22ng_username%22%3A%22%26lt%3Bdeleted%26gt%3B%22%7D%2C%22width%22%3A800%2C%22height%22%3A480%2C%22icon%22%3A%22https%3A%2F%2Fpicon.ngfiles.com%2F584000%2Fflash_584398_card.webp%3Ff1679409096%22%2C%22warnOnUnsupportedContent%22%3Afalse%7D",
-    "img": "/assets/imgs/./g/Armed_with_Wings_Culmination.webp",
+    "img": "/assets/imgs/g/Armed_with_Wings_Culmination.webp",
     "categories": [
       "all"
     ]
@@ -2013,7 +2013,7 @@
   {
     "name": "Armed with Wings Ashbelt",
     "url": "https://uploads.ungrounded.net/ruffle_wrapper/ruffleembed.html?v=1.0.67&browsermode=default&props=%7B%22ruffle%22%3A%22%2Fruffle_wrapper%2Flib%2Fruffle.js%3F1722140126%22%2C%22public_path%22%3A%22%2Fruffle_wrapper%2Flib%2F%22%2C%22swf%22%3A%22https%3A%2F%2Fuploads.ungrounded.net%2F782000%2F782748_game.swf%3F1616075212%22%2C%22vars%22%3A%7B%22NewgroundsAPI_PublisherID%22%3A1%2C%22NewgroundsAPI_SandboxID%22%3A%2266a98e02c7e2c%22%2C%22NewgroundsAPI_SessionID%22%3A%22%22%2C%22NewgroundsAPI_UserName%22%3A%22%26lt%3Bdeleted%26gt%3B%22%2C%22NewgroundsAPI_UserID%22%3A0%2C%22ng_username%22%3A%22%26lt%3Bdeleted%26gt%3B%22%7D%2C%22width%22%3A1280%2C%22height%22%3A720%2C%22icon%22%3A%22https%3A%2F%2Fpicon.ngfiles.com%2F782000%2Fflash_782748_card.png%3Ff1614591642%22%2C%22warnOnUnsupportedContent%22%3Afalse%7D",
-    "img": "/assets/imgs/./g/Armed_with_Wings_Ashbelt.webp",
+    "img": "/assets/imgs/g/Armed_with_Wings_Ashbelt.webp",
     "categories": [
       "all"
     ]
@@ -2021,7 +2021,7 @@
   {
     "name": "The I of It",
     "url": "https://uploads.ungrounded.net/ruffle_wrapper/ruffleembed.html?v=1.0.67&browsermode=default&props=%7B%22ruffle%22%3A%22%2Fruffle_wrapper%2Flib%2Fruffle.js%3F1722140126%22%2C%22public_path%22%3A%22%2Fruffle_wrapper%2Flib%2F%22%2C%22swf%22%3A%22https%3A%2F%2Fuploads.ungrounded.net%2F570000%2F570709_theIofIt_640x400.swf%3F1306330288%22%2C%22vars%22%3A%7B%22NewgroundsAPI_PublisherID%22%3A1%2C%22NewgroundsAPI_SandboxID%22%3A%2266a98e3dc2710%22%2C%22NewgroundsAPI_SessionID%22%3A%22%22%2C%22NewgroundsAPI_UserName%22%3A%22%26lt%3Bdeleted%26gt%3B%22%2C%22NewgroundsAPI_UserID%22%3A0%2C%22ng_username%22%3A%22%26lt%3Bdeleted%26gt%3B%22%7D%2C%22width%22%3A640%2C%22height%22%3A400%2C%22icon%22%3A%22https%3A%2F%2Fpicon.ngfiles.com%2F570000%2Fflash_570709_card.png%3Ff1664325606%22%2C%22warnOnUnsupportedContent%22%3Afalse%7D",
-    "img": "/assets/imgs/./g/The_I_of_It.webp",
+    "img": "/assets/imgs/g/The_I_of_It.webp",
     "categories": [
       "all"
     ]
@@ -2029,7 +2029,7 @@
   {
     "name": "Armed with Wings Rearmed Trials",
     "url": "https://uploads.ungrounded.net/ruffle_wrapper/ruffleembed.html?v=1.0.67&browsermode=default&props=%7B%22ruffle%22%3A%22%2Fruffle_wrapper%2Flib%2Fruffle.js%3F1722140126%22%2C%22public_path%22%3A%22%2Fruffle_wrapper%2Flib%2F%22%2C%22swf%22%3A%22https%3A%2F%2Fuploads.ungrounded.net%2F682000%2F682880_rearmed-survival.swf%3F1477582558%22%2C%22vars%22%3A%7B%22NewgroundsAPI_PublisherID%22%3A1%2C%22NewgroundsAPI_SandboxID%22%3A%2266a991c001117%22%2C%22NewgroundsAPI_SessionID%22%3A%22%22%2C%22NewgroundsAPI_UserName%22%3A%22%26lt%3Bdeleted%26gt%3B%22%2C%22NewgroundsAPI_UserID%22%3A0%2C%22ng_username%22%3A%22%26lt%3Bdeleted%26gt%3B%22%7D%2C%22width%22%3A960%2C%22height%22%3A540%2C%22icon%22%3A%22https%3A%2F%2Fpicon.ngfiles.com%2F682000%2Fflash_682880_card.png%3Ff1691322341%22%2C%22warnOnUnsupportedContent%22%3Afalse%7D",
-    "img": "/assets/imgs/./g/Armed_with_Wings_Rearmed_Trials.webp",
+    "img": "/assets/imgs/g/Armed_with_Wings_Rearmed_Trials.webp",
     "categories": [
       "all"
     ]
@@ -2037,7 +2037,7 @@
   {
     "name": "Bunny Bun",
     "url": "https://uploads.ungrounded.net/alternate/1524000/1524514_alternate_251347_r26.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a994378fd7d&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
-    "img": "/assets/imgs/./g/Bunny_Bun.webp",
+    "img": "/assets/imgs/g/Bunny_Bun.webp",
     "categories": [
       "all"
     ]
@@ -2045,7 +2045,7 @@
   {
     "name": "Dark Sword: Light of Ainn",
     "url": "https://uploads.ungrounded.net/alternate/5580000/5580932_alternate_257601_r8.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a9951709f9b&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
-    "img": "/assets/imgs/./g/Dark_Sword__Light_of_Ainn.webp",
+    "img": "/assets/imgs/g/Dark_Sword__Light_of_Ainn.webp",
     "categories": [
       "all"
     ]
@@ -2053,7 +2053,7 @@
   {
     "name": "Dark Sword",
     "url": "https://uploads.ungrounded.net/alternate/4465000/4465067_alternate_208055_r41.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a9965971fd6&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
-    "img": "/assets/imgs/./g/Dark_Sword.webp",
+    "img": "/assets/imgs/g/Dark_Sword.webp",
     "categories": [
       "all"
     ]
@@ -2061,7 +2061,7 @@
   {
     "name": "Parking Ticket Mayhem",
     "url": "https://uploads.ungrounded.net/alternate/5144000/5144516_alternate_238037_r1.zip/?NewgroundsAPI_PublisherID=1&NewgroundsAPI_SandboxID=66a9959e79ce0&NewgroundsAPI_SessionID=&NewgroundsAPI_UserName=%26lt%3Bdeleted%26gt%3B&NewgroundsAPI_UserID=0&ng_username=%26lt%3Bdeleted%26gt%3B",
-    "img": "/assets/imgs/./g/Parking_Ticket_Mayhem.webp",
+    "img": "/assets/imgs/g/Parking_Ticket_Mayhem.webp",
     "categories": [
       "all"
     ]
@@ -2069,7 +2069,7 @@
   {
     "name": "Sans Last Breath",
     "url": "https://mario1d240.github.io/undertale-last-breath-remake-bad-time-simulator",
-    "img": "/assets/imgs/./g/Sans_Last_Breath.webp",
+    "img": "/assets/imgs/g/Sans_Last_Breath.webp",
     "categories": [
       "all"
     ]
@@ -2077,7 +2077,7 @@
   {
     "name": "Burger & Frights",
     "url": "https://html-classic.itch.zone/html/5033568/index.html",
-    "img": "/assets/imgs/./g/Burger___Frights.webp",
+    "img": "/assets/imgs/g/Burger___Frights.webp",
     "categories": [
       "all"
     ]
@@ -2085,7 +2085,7 @@
   {
     "name": "Falling Art Ragdoll Simulator",
     "url": "https://games.crazygames.com/en_US/falling-art-ragdoll-simulator/index.html",
-    "img": "/assets/imgs/./g/Falling_Art_Ragdoll_Simulator.webp",
+    "img": "/assets/imgs/g/Falling_Art_Ragdoll_Simulator.webp",
     "categories": [
       "all"
     ]
@@ -2093,7 +2093,7 @@
   {
     "name": "Zombie Survival v2",
     "url": "https://f3.silvergames.com/html5/zombie-survival_v2/",
-    "img": "/assets/imgs/./g/Zombie_Survival_v2.webp",
+    "img": "/assets/imgs/g/Zombie_Survival_v2.webp",
     "categories": [
       "all"
     ]
@@ -2101,7 +2101,7 @@
   {
     "name": "Lonewolf",
     "url": "https://f.silvergames.com/ruffle/player.php?id=5668",
-    "img": "/assets/imgs/./g/Lonewolf.webp",
+    "img": "/assets/imgs/g/Lonewolf.webp",
     "categories": [
       "all"
     ]
@@ -2109,7 +2109,7 @@
   {
     "name": "Evo-F4",
     "url": "https://www.gamearter.com/game/evo-f4/",
-    "img": "/assets/imgs/./g/Evo_F4.webp",
+    "img": "/assets/imgs/g/Evo_F4.webp",
     "categories": [
       "all"
     ]
@@ -2117,7 +2117,7 @@
   {
     "name": "Pixel Warfare",
     "url": "https://games.crazygames.com/en_US/pixel-warfare/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Pixel_Warfare.webp",
+    "img": "/assets/imgs/g/Pixel_Warfare.webp",
     "categories": [
       "all"
     ]
@@ -2125,7 +2125,7 @@
   {
     "name": "Mine Shooter - Save your world",
     "url": "https://games.crazygames.com/en_US/mine-shooter---save-your-world/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Mine_Shooter___Save_your_world.webp",
+    "img": "/assets/imgs/g/Mine_Shooter___Save_your_world.webp",
     "categories": [
       "all"
     ]
@@ -2133,7 +2133,7 @@
   {
     "name": "Bodycamera Shooter",
     "url": "https://games.crazygames.com/en_US/bodycamera-shooter/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Bodycamera_Shooter.webp",
+    "img": "/assets/imgs/g/Bodycamera_Shooter.webp",
     "categories": [
       "all"
     ]
@@ -2141,7 +2141,7 @@
   {
     "name": "Bank Robbery 3",
     "url": "https://games.crazygames.com/en_US/bank-robbery-3/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Bank_Robbery_3.webp",
+    "img": "/assets/imgs/g/Bank_Robbery_3.webp",
     "categories": [
       "all"
     ]
@@ -2149,7 +2149,7 @@
   {
     "name": "Sniper Shot - Bullet Time",
     "url": "https://games.crazygames.com/en_US/sniper-shot-bullet-time/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Sniper_Shot___Bullet_Time.webp",
+    "img": "/assets/imgs/g/Sniper_Shot___Bullet_Time.webp",
     "categories": [
       "all"
     ]
@@ -2157,7 +2157,7 @@
   {
     "name": "Spy Highway",
     "url": "https://games.crazygames.com/en_US/shotgun-highway/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Spy_Highway.webp",
+    "img": "/assets/imgs/g/Spy_Highway.webp",
     "categories": [
       "all"
     ]
@@ -2165,7 +2165,7 @@
   {
     "name": "Save the Hostages",
     "url": "https://games.crazygames.com/en_US/save-the-hostages/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Burger___Frights.webp",
+    "img": "/assets/imgs/g/Burger___Frights.webp",
     "categories": [
       "all"
     ]
@@ -2173,7 +2173,7 @@
   {
     "name": "Zombie Shooter: Part 2",
     "url": "https://games.crazygames.com/en_US/zombies-shooter-part-2/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Zombie_Shooter__Part_2.webp",
+    "img": "/assets/imgs/g/Zombie_Shooter__Part_2.webp",
     "categories": [
       "all"
     ]
@@ -2181,7 +2181,7 @@
   {
     "name": "Sandbox City",
     "url": "https://games.crazygames.com/en_US/sandbox-city---cars-zombies-ragdolls/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Sandbox_City.webp",
+    "img": "/assets/imgs/g/Sandbox_City.webp",
     "categories": [
       "all"
     ]
@@ -2189,7 +2189,7 @@
   {
     "name": "Resident Zombies: Horror Shooter",
     "url": "https://games.crazygames.com/en_US/resident-zombies---horror-shooter/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Resident_Zombies__Horror_Shooter.webp",
+    "img": "/assets/imgs/g/Resident_Zombies__Horror_Shooter.webp",
     "categories": [
       "all"
     ]
@@ -2197,7 +2197,7 @@
   {
     "name": "Stickman Zombie Annihilation",
     "url": "https://games.crazygames.com/en_US/stickman-zombie-annihilation/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Stickman_Zombie_Annihilation.webp",
+    "img": "/assets/imgs/g/Stickman_Zombie_Annihilation.webp",
     "categories": [
       "all"
     ]
@@ -2205,7 +2205,7 @@
   {
     "name": "Deadly Red Spikes",
     "url": "https://games.crazygames.com/en_US/deadly-red-spikes/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Deadly_Red_Spikes.webp",
+    "img": "/assets/imgs/g/Deadly_Red_Spikes.webp",
     "categories": [
       "all"
     ]
@@ -2213,7 +2213,7 @@
   {
     "name": "Crazy Stunt Cars Multiplayer",
     "url": "https://games.crazygames.com/en_US/crazy-stunt-cars-multiplayer/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Crazy_Stunt_Cars_Multiplayer.webp",
+    "img": "/assets/imgs/g/Crazy_Stunt_Cars_Multiplayer.webp",
     "categories": [
       "all"
     ]
@@ -2221,7 +2221,7 @@
   {
     "name": "Supreme Bomb Tag",
     "url": "https://games.crazygames.com/en_US/supreme-bomb-tag/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Supreme_Bomb_Tag.webp",
+    "img": "/assets/imgs/g/Supreme_Bomb_Tag.webp",
     "categories": [
       "all"
     ]
@@ -2229,7 +2229,7 @@
   {
     "name": "Mini-Caps: Arena",
     "url": "https://games.crazygames.com/en_US/mini-caps-arena/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Mini_Caps__Arena.webp",
+    "img": "/assets/imgs/g/Mini_Caps__Arena.webp",
     "categories": [
       "all"
     ]
@@ -2237,7 +2237,7 @@
   {
     "name": "Mini-Caps: Bombs",
     "url": "https://games.crazygames.com/en_US/mini-caps-bombs/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Mini_Caps__Bombs.webp",
+    "img": "/assets/imgs/g/Mini_Caps__Bombs.webp",
     "categories": [
       "all"
     ]
@@ -2245,7 +2245,7 @@
   {
     "name": "Stickman Zombie Annihilation 2",
     "url": "https://games.crazygames.com/en_US/stickman-annihilation-2/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Stickman_Zombie_Annihilation_2.webp",
+    "img": "/assets/imgs/g/Stickman_Zombie_Annihilation_2.webp",
     "categories": [
       "all"
     ]
@@ -2253,7 +2253,7 @@
   {
     "name": "Derby Crash 5",
     "url": "https://games.crazygames.com/en_US/derby-crash-5/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Derby_Crash_5.webp",
+    "img": "/assets/imgs/g/Derby_Crash_5.webp",
     "categories": [
       "all"
     ]
@@ -2261,7 +2261,7 @@
   {
     "name": "Night City Racing",
     "url": "https://games.crazygames.com/en_US/night-city-racing/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Night_City_Racing.webp",
+    "img": "/assets/imgs/g/Night_City_Racing.webp",
     "categories": [
       "all"
     ]
@@ -2269,7 +2269,7 @@
   {
     "name": "Crazy for Speed",
     "url": "https://games.crazygames.com/en_US/crazy-for-speed/index.html?v=1.295",
-    "img": "/assets/imgs/./g/Crazy_for_Speed.webp",
+    "img": "/assets/imgs/g/Crazy_for_Speed.webp",
     "categories": [
       "all"
     ]

@@ -964,6 +964,16 @@ span.material-symbols-outlined {
 	fill: #3a3a3a;
 }
 
+.searchEngineIcon {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	object-fit: cover;
+	position: relative;
+	z-index: 9999999;
+	margin-right: -35px;
+}
+
 /* ------------- Blob Styles ------------- */
 .blob {
 	box-shadow: 0 0 150px 100px #8400ff;

@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		window.location.pathname === '/&' &&
 		(localStorage.getItem('smallIcons') === 'true' || !localStorage.getItem('smallIcons'))
 	) {
-		fetch('/json/shortcuts.json')
+		fetch('/json/s.json')
 			.then(response => response.json())
 			.then(data => {
 				const shortcuts = document.querySelector('.shortcuts');
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					shortcutImage.style.objectFit = 'cover';
 					shortcutImage.style.transition = '0.2s';
 
-					document.querySelector('.searchEngine').style.display =
+					document.querySelector('.searchEngineIcon').style.display =
 						'none';
 					document.querySelector(
 						'.gointospaceSearchButton'
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		window.location.pathname === '/&' &&
 		localStorage.getItem('smallIcons') === 'false'
 	) {
-		fetch('/json/shortcutsBig.json')
+		fetch('/json/sb.json')
 			.then(response => response.json())
 			.then(data => {
 				const shortcuts = document.querySelector('.shortcutsbig');

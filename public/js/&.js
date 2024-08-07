@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		Promise.all([
 			fetch('/json/g.json').then(response => response.json()),
 			fetch('/json/a.json').then(response => response.json()),
-			fetch('/json/shortcuts.json').then(response => response.json())
+			fetch('/json/s.json').then(response => response.json())
 		])
 			.then(([gData, aData, shortcutsData]) => {
 				let data = [];
@@ -352,6 +352,43 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	startURLMonitoring();
 	updateButtonStates();
+	if (localStorage.getItem('smallIcons') === 'false') {
+		switch (localStorage.getItem('dropdown-selected-text-searchEngine')) {
+			case 'Duck Duck Go':
+				document.querySelector('.searchEngineIcon').src =
+					'/assets/imgs/b/ddg.webp';
+					document.querySelector(
+						'.searchEngineIcon'
+					).style.transform = 'scale(1.35)';
+				break;
+			case 'Bing':
+				document.querySelector('.searchEngineIcon').src =
+					'/assets/imgs/b/bing.webp';
+					document.querySelector('.searchEngineIcon').style.transform =
+						'scale(1.65)';
+				break;
+			case 'Google (default)':
+				document.querySelector('.searchEngineIcon').src =
+					'/assets/imgs/b/google.webp';
+					document.querySelector(
+						'.searchEngineIcon'
+					).style.transform = 'scale(1.2)';
+				break;
+			case 'Yahoo!':
+				document.querySelector('.searchEngineIcon').src =
+					'/assets/imgs/b/yahoo.webp';
+					document.querySelector(
+						'.searchEngineIcon'
+					).style.transform = 'scale(1.5)';
+				break;
+			default:
+				document.querySelector('.searchEngineIcon').src =
+					'/assets/imgs/b/google.webp';
+					document.querySelector(
+						'.searchEngineIcon'
+					).style.transform = 'scale(1.2)';
+		}
+	}
 });
 
 const iframe = document.getElementById('intospace');

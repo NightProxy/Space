@@ -2,19 +2,19 @@
   {
     "name": "Spotify",
     "url": "https://open.spotify.com/search",
-    "img": "https://th.bing.com/th/id/R.c2b8e187763d3ac771c067b4e63fb5b9?rik=Jhk4Ntj5pMBn6g&riu=http%3A%2F%2Fepic45.com%2Fimg%2Flogos%2Fspotify.png&ehk=4kXW%2B48ysfOIYLzekWxtcz27CW1UjQUCe5s6INkZjuM%3D&risl=&pid=ImgRaw&r=0",
+    "img": "/assets/imgs/s/Spotify.webp",
     "bg": "#1db954"
   },
   {
     "name": "Google",
     "url": "https://google.com/",
-    "img": "/assets/imgs/./s/Google.webp",
+    "img": "/assets/imgs/s/Google.webp",
     "bg": "#fff"
   },
   {
     "name": "Youtube",
     "url": "https://youtube.com",
-    "img": "/assets/imgs/./s/Youtube.webp",
+    "img": "/assets/imgs/s/Youtube.webp",
     "bg": "#ff0000"
   },
   {
@@ -27,51 +27,51 @@
   {
     "name": "ChatGPT",
     "url": "https://chatgpt.com/",
-    "img": "/assets/imgs/./s/ChatGPT.webp",
+    "img": "/assets/imgs/s/ChatGPT.webp",
     "bg": "#fff"
   },
   {
     "name": "Settings",
     "url": "/~/#/proxy",
-    "img": "/assets/imgs/./s/Settings.webp",
+    "img": "/assets/imgs/s/Settings.webp",
     "bg": "#fff"
   },
   {
     "name": "Tiktok",
     "url": "https://tiktok.com/",
-    "img": "/assets/imgs/./s/Tiktok.webp",
+    "img": "/assets/imgs/s/Tiktok.webp",
     "bg": "#fff"
   },
   {
     "name": "Geforce Now",
     "url": "https://play.geforcenow.com/mall/",
-    "img": "/assets/imgs/./s/Geforce_Now.webp",
+    "img": "/assets/imgs/s/Geforce_Now.webp",
     "bg": "#333"
   },
   {
     "name": "GitHub",
     "url": "https://github.com/",
-    "img": "https://codecell-cmpn-vesit.ves.ac.in/assets/github-923585a2.png",
+    "img": "/assets/imgs/s/GitHub.webp",
     "bg": "#000"
   },
   {
     "name": "Now.gg",
     "url": "https://now.gg/",
-    "img": "/assets/imgs/./s/Now_gg.webp",
+    "img": "/assets/imgs/s/Now_gg.webp",
     "style": "width: 45px; height: 45px; padding: 3px",
     "bg": "#fff"
   },
   {
     "name": "Twitch",
     "url": "https://twitch.com/",
-    "img": "/assets/imgs/./s/Twitch.webp",
+    "img": "/assets/imgs/s/Twitch.webp",
     "style": "width: 40px; height: 40px; padding: 5px",
     "bg": "#fff"
   },
   {
     "name": "ESPN",
     "url": "https://www.espn.com/",
-    "img": "/assets/imgs/./s/ESPN.webp",
+    "img": "/assets/imgs/s/ESPN.webp",
     "bg": "#fff"
   }
 ]

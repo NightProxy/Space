@@ -2,7 +2,7 @@
   {
     "name": "Amazon",
     "url": "https://www.amazon.com/",
-    "img": "/assets/imgs/./a/Amazon.webp",
+    "img": "/assets/imgs/a/Amazon.webp",
     "categories": [
       "all",
       "media"
@@ -11,7 +11,7 @@
   {
     "name": "Amazon Luna",
     "url": "https://luna.amazon.com/",
-    "img": "/assets/imgs/./a/Amazon_Luna.webp",
+    "img": "/assets/imgs/a/Amazon_Luna.webp",
     "categories": [
       "all",
       "game"
@@ -20,7 +20,7 @@
   {
     "name": "OpenAI",
     "url": "https://chat.openai.com/",
-    "img": "/assets/imgs/./a/OpenAI.webp",
+    "img": "/assets/imgs/a/OpenAI.webp",
     "categories": [
       "all",
       "media",
@@ -31,7 +31,7 @@
   {
     "name": "Chess.com",
     "url": "https://chess.com/",
-    "img": "/assets/imgs/./a/Chess_com.webp",
+    "img": "/assets/imgs/a/Chess_com.webp",
     "categories": [
       "all",
       "game"
@@ -40,7 +40,7 @@
   {
     "name": "Cool Math Games",
     "url": "https://www.coolmathgames.com/cmg.jpg",
-    "img": "/assets/imgs/./a/Cool_Math_Games.webp",
+    "img": "/assets/imgs/a/Cool_Math_Games.webp",
     "categories": [
       "all",
       "game"
@@ -49,7 +49,7 @@
   {
     "name": "Discord",
     "url": "https://discord.com/",
-    "img": "/assets/imgs/./a/Discord.webp",
+    "img": "/assets/imgs/a/Discord.webp",
     "categories": [
       "all",
       "social",
@@ -60,7 +60,7 @@
   {
     "name": "Discord | Login",
     "url": "https://discord.com/login",
-    "img": "/assets/imgs/./a/Discord.webp",
+    "img": "/assets/imgs/a/Discord.webp",
     "categories": [
       "all",
       "social",
@@ -71,7 +71,7 @@
   {
     "name": "ESPN",
     "url": "https://www.espn.com/",
-    "img": "/assets/imgs/./a/ESPN.webp",
+    "img": "/assets/imgs/a/ESPN.webp",
     "categories": [
       "all",
       "media",
@@ -81,7 +81,7 @@
   {
     "name": "Flix HQ",
     "url": "https://flixhq.bz/",
-    "img": "/assets/imgs/./a/Flix_HQ.webp",
+    "img": "/assets/imgs/a/Flix_HQ.webp",
     "categories": [
       "all",
       "media",
@@ -91,7 +91,7 @@
   {
     "name": "Geforce NOW",
     "url": "https://play.geforcenow.com/",
-    "img": "/assets/imgs/./a/Geforce_NOW.webp",
+    "img": "/assets/imgs/a/Geforce_NOW.webp",
     "categories": [
       "all",
       "game",
@@ -101,7 +101,7 @@
   {
     "name": "GitHub",
     "url": "https://github.com/",
-    "img": "/assets/imgs/./a/GitHub.webp",
+    "img": "/assets/imgs/a/GitHub.webp",
     "categories": [
       "all",
       "social",
@@ -111,7 +111,7 @@
   {
     "name": "HBO MAX",
     "url": "https://www.max.com/",
-    "img": "/assets/imgs/./a/HBO_MAX.webp",
+    "img": "/assets/imgs/a/HBO_MAX.webp",
     "categories": [
       "all",
       "media"
@@ -120,7 +120,7 @@
   {
     "name": "Newgrounds",
     "url": "https://www.newgrounds.com/",
-    "img": "/assets/imgs/./a/Newgrounds.webp",
+    "img": "/assets/imgs/a/Newgrounds.webp",
     "categories": [
       "all",
       "media",
@@ -130,7 +130,7 @@
   {
     "name": "Paramount Plus",
     "url": "https://www.paramountplus.com/",
-    "img": "/assets/imgs/./a/Paramount_Plus.webp",
+    "img": "/assets/imgs/a/Paramount_Plus.webp",
     "categories": [
       "all",
       "media"
@@ -139,7 +139,7 @@
   {
     "name": "Pinterest",
     "url": "https://www.pinterest.com/",
-    "img": "/assets/imgs/./a/Pinterest.webp",
+    "img": "/assets/imgs/a/Pinterest.webp",
     "categories": [
       "all",
       "media",
@@ -158,7 +158,7 @@
   {
     "name": "Poki",
     "url": "https://poki.com/",
-    "img": "/assets/imgs/./a/Poki.webp",
+    "img": "/assets/imgs/a/Poki.webp",
     "categories": [
       "all",
       "game"
@@ -167,7 +167,7 @@
   {
     "name": "Soundcloud",
     "url": "https://soundcloud.com/",
-    "img": "/assets/imgs/./a/Soundcloud.webp",
+    "img": "/assets/imgs/a/Soundcloud.webp",
     "categories": [
       "all",
       "media"
@@ -176,7 +176,7 @@
   {
     "name": "Telegram",
     "url": "https://web.telegram.org/",
-    "img": "/assets/imgs/./a/Telegram.webp",
+    "img": "/assets/imgs/a/Telegram.webp",
     "categories": [
       "all",
       "messaging",
@@ -187,7 +187,7 @@
   {
     "name": "Temu",
     "url": "https://www.temu.com/",
-    "img": "/assets/imgs/./a/Temu.webp",
+    "img": "/assets/imgs/a/Temu.webp",
     "categories": [
       "all",
       "media"
@@ -196,7 +196,7 @@
   {
     "name": "TikTok",
     "url": "https://www.tiktok.com/explore",
-    "img": "/assets/imgs/./a/TikTok.webp",
+    "img": "/assets/imgs/a/TikTok.webp",
     "categories": [
       "all",
       "media",
@@ -206,7 +206,7 @@
   {
     "name": "Tumblr",
     "url": "https://www.tumblr.com/",
-    "img": "/assets/imgs/./a/Tumblr.webp",
+    "img": "/assets/imgs/a/Tumblr.webp",
     "categories": [
       "all",
       "messaging",
@@ -217,7 +217,7 @@
   {
     "name": "Twitch",
     "url": "https://www.twitch.tv/",
-    "img": "/assets/imgs/./a/Twitch.webp",
+    "img": "/assets/imgs/a/Twitch.webp",
     "categories": [
       "all",
       "social",
@@ -228,7 +228,7 @@
   {
     "name": "Twitter X",
     "url": "https://twitter.com/",
-    "img": "/assets/imgs/./a/Twitter_X.webp",
+    "img": "/assets/imgs/a/Twitter_X.webp",
     "categories": [
       "all",
       "media",
@@ -238,7 +238,7 @@
   {
     "name": "VS Code",
     "url": "https://vscode.dev/",
-    "img": "/assets/imgs/./a/VS_Code.webp",
+    "img": "/assets/imgs/a/VS_Code.webp",
     "categories": [
       "all",
       "media"
@@ -247,7 +247,7 @@
   {
     "name": "Y8 Games",
     "url": "https://www.y8.com/",
-    "img": "/assets/imgs/./a/Y8_Games.webp",
+    "img": "/assets/imgs/a/Y8_Games.webp",
     "categories": [
       "all",
       "game"
@@ -256,7 +256,7 @@
   {
     "name": "YouTube",
     "url": "https://www.youtube.com",
-    "img": "/assets/imgs/./a/YouTube.webp",
+    "img": "/assets/imgs/a/YouTube.webp",
     "categories": [
       "all",
       "media",
@@ -266,7 +266,7 @@
   {
     "name": "webretro",
     "url": "https://binbashbanana.github.io/webretro/",
-    "img": "/assets/imgs/./a/webretro.webp",
+    "img": "/assets/imgs/a/webretro.webp",
     "categories": [
       "all",
       "game",
@@ -276,7 +276,7 @@
   {
     "name": "Character.AI",
     "url": "https://beta.character.ai",
-    "img": "/assets/imgs/./a/Character_AI.webp",
+    "img": "/assets/imgs/a/Character_AI.webp",
     "categories": [
       "all",
       "ai",
@@ -286,7 +286,7 @@
   {
     "name": "Snapchat",
     "url": "https://www.snapchat.com",
-    "img": "/assets/imgs/./a/Snapchat.webp",
+    "img": "/assets/imgs/a/Snapchat.webp",
     "categories": [
       "all",
       "media",
@@ -297,7 +297,7 @@
   {
     "name": "Shuttle.lol",
     "url": "https://shuttle.lol",
-    "img": "/assets/imgs/./a/Shuttle_lol.webp",
+    "img": "/assets/imgs/a/Shuttle_lol.webp",
     "categories": [
       "all",
       "game"
@@ -306,7 +306,7 @@
   {
     "name": "Wattpad",
     "url": "https://wattpad.com",
-    "img": "/assets/imgs/./a/Wattpad.webp",
+    "img": "/assets/imgs/a/Wattpad.webp",
     "categories": [
       "all",
       "popular",

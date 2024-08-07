@@ -34,13 +34,33 @@ The json files should follow this format:
 {
     "name": "game/app name",
     "url": "game/app url that will get proxied",
-    "img": "external link to game/app thumbnail",
+    "img": "/assets/imgs/{a or g for apps or games}/image.webp",
     "categories": ["all", "cat1", "cat2"]
 }
 ```
+
+
+When you add a game or app img, add the webp version to the corresponding directory: assets/imgs/a/appThatYouAdded.webp
+
+If you want to use a link instead of a downloaded image or if you added a ton of games and dont want to bother downloading everything, converting downloads, etc., I wrote a script that does it for you. It downloads the images in the json file, converts them to webp, scales them to a lower resolution, and puts them in the right directory in `imgs`. The script is in `public/assets/imgs/download_urls.sh`
+
+The script needs the following deps:
+- jq
+- wget
+- imagemagick
+
+Run cd into imgs, and run `chmod +x ./download_urls.sh` to give the script execution perms, then run the script like this: `/download_urls.sh ../../json/g.json ./g`
+replace g.json with a if you are doing apps, and do the same for the second argument.
+
+There is currently no windows version of the script, because I dont like batch and wrote the script after I hadnt slept for 2 days. Feel free to contribute a windows version or to contribute an updated more polished version of the script
+
+
 > [!NOTE]
 > The all category is required on all additions, however more descriptive ones are optional.
 
 If you are unsure about something or want some clarification on any of these specifications, feel free to join the [discord](https://discord.gointospace.app) where a member of our team will gladly answer your questions!
 
-Thanks for contributing! - crllect
+<h1></h1>
+
+### Thanks for contributing!
+<h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- crllect</h3>
