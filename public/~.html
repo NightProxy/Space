@@ -803,7 +803,7 @@
 						can view the site.
 					</p>
 					<label class="switch">
-						<input class="checkbox" type="checkbox" />
+						<input class="checkbox passwordYesNo" type="checkbox" />
 						<span class="slider round"></span>
 					</label>
 					<p>
@@ -839,8 +839,8 @@
 					</button>
 				</div>
 				<div class="settingsection settingsection9">
-					<h1>Change password</h1>
-					<p>Current Password</p>
+					<h1>Password Keybind</h1>
+					<p>Choose the keybind to</p>
 					<div class="pgroup">
 						<svg
 							stroke="currentColor"
@@ -849,40 +849,39 @@
 							xmlns="http://www.w3.org/2000/svg"
 							class="picon"
 						>
-							<path
-								d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+							<rect
+								x="2"
+								y="2"
+								width="20"
+								height="20"
+								rx="3"
+								ry="3"
+								fill="none"
 								stroke-linejoin="round"
 								stroke-linecap="round"
-							></path>
-						</svg>
-						<input
-							class="password"
-							type="password"
-							placeholder="Password"
-						/>
-					</div>
-					<p>New Password</p>
-					<div style="margin-bottom: 5px" class="pgroup">
-						<svg
-							stroke="currentColor"
-							stroke-width="1.5"
-							viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg"
-							class="picon"
-						>
-							<path
-								d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+							></rect>
+							<line
+								x1="8"
+								y1="16"
+								x2="16"
+								y2="8"
+								stroke="currentColor"
+								stroke-width="1.5"
 								stroke-linejoin="round"
 								stroke-linecap="round"
-							></path>
+							></line>
 						</svg>
 						<input
-							class="password"
-							type="password"
-							placeholder="New Password"
+							class="password passwordHotkeyInput"
+							placeholder="Set a keybind. Left-bracket by default"
 						/>
 					</div>
-					<button class="buttonreg" style="width: 300px">Save</button>
+					<button
+						class="buttonreg pPasswordKeybind"
+						style="width: 300px"
+					>
+						Save
+					</button>
 				</div>
 				<div class="settingsection settingsection9">
 					<h1>Import & Export Data</h1>
@@ -921,6 +920,18 @@
 								class="material-symbols-outlined"
 								>cloud_download</span
 							>
+						</button>
+					</div>
+				</div>
+				<div class="settingsection settingsection9">
+					<h1>Wipe All Settings</h1>
+					<p>
+						Pressing this button will completely wipe all settings,
+						making it as if you never used this site. Its
+						recommended that you export your data before doing this.
+					</p>
+						<button class="splitbutton" id="resetButton">
+							Wipe All Settings...
 						</button>
 					</div>
 				</div>
@@ -1077,13 +1088,14 @@
 		<script src="/js/c.js"></script>
 		<script src="/js/~.js"></script>
 		<script type="text/javascript">
-			document.addEventListener("DOMContentLoaded", function() {
+			document.addEventListener('DOMContentLoaded', function () {
 				let hideAds = localStorage.getItem('hideAds');
 
 				if (hideAds === null || hideAds === 'false') {
 					let script = document.createElement('script');
 					script.type = 'text/javascript';
-					script.src = '//pl23881934.highrevenuenetwork.com/c6/de/c6/c6dec671fa7ab5d0a210b2e6300c91eb.js';
+					script.src =
+						'//pl23881934.highrevenuenetwork.com/c6/de/c6/c6dec671fa7ab5d0a210b2e6300c91eb.js';
 					document.body.appendChild(script);
 				}
 			});

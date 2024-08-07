@@ -664,6 +664,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`.~!@#$%^&*()-_=+[{]}|;:,<.>/?';
 	function panicKeySuccessPopup() {
 		toast = document.querySelector('.toast');
+		toast.style.display = 'block';
 		(closeIcon = document.querySelector('.close')),
 			(progress = document.querySelector('.progress'));
 
@@ -894,8 +895,128 @@ document.addEventListener('DOMContentLoaded', function () {
 	checkboxToggle('particlesYesNo', 'particlesHidden', true);
 	checkboxToggle('smallIconsYesNo', 'smallIcons', false);
 	checkboxToggle('adsYesNo', 'hideAds', true);
+	checkboxToggle('passwordYesNo', 'passwordOff', false);
+
+	const passwordKeyInput = document.querySelector('.passwordHotkeyInput');
+	const saveButton3 = document.querySelector('.pPasswordKeybind');
+
+	if (localStorage.getItem('passwordKeyBind')) {
+		passwordKeyInput.value = localStorage.getItem('passwordKeyBind');
+	}
+
+	saveButton3.addEventListener('click', () => {
+		const keys = passwordKeyInput.value.split(',').map(key => key.trim());
+		let allValid = true;
+
+		for (let key of keys) {
+			if (!validKeys.includes(key) || key.length !== 1) {
+				allValid = false;
+				break;
+			}
+		}
+
+		if (allValid) {
+			localStorage.setItem('passwordKeyBind', keys.join(','));
+
+			if (document.querySelector('.toast.active, .failtoast.active')) {
+				return;
+			} else {
+				panicKeySuccessPopup();
+			}
+		} else if (passwordKeyInput.value.length < 1) {
+			localStorage.setItem('passwordKeyBind', '[');
+
+			if (document.querySelector('.toast.active, .failtoast.active')) {
+				return;
+			} else {
+				panicKeySuccessPopup();
+			}
+		} else {
+			if (document.querySelector('.toast.active, .failtoast.active')) {
+				return;
+			} else {
+				panicKeySuccessPopup();
+			}
+		}
+	});
+
+	function savePassword() {
+		const passwordInput = document.querySelector('.pPasswordInput');
+		const newPassword = passwordInput.value;
+
+		if (newPassword) {
+			const key = 42;
+			const encodedPassword = xorEncode(base64Encode(newPassword), key);
+			localStorage.setItem('pPassword', encodedPassword);
+			panicKeySuccessPopup();
+			passwordInput.value = '';
+		} else {
+			panicKeyFailedPopup();
+		}
+	}
+
+	saveButton2.addEventListener('click', savePassword);
 
 	document.querySelector('.adsYesNo').addEventListener('change', () => {
 		window.location.reload();
 	});
+
+	document
+		.getElementById('resetButton')
+		.addEventListener('click', function () {
+			document.cookie.split(';').forEach(function (c) {
+				document.cookie =
+					c.trim().split('=')[0] +
+					'=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/';
+			});
+
+			localStorage.clear();
+
+			sessionStorage.clear();
+
+			indexedDB.databases().then(databases => {
+				databases.forEach(db => {
+					indexedDB.deleteDatabase(db.name);
+				});
+			});
+
+			if ('caches' in window) {
+				caches.keys().then(keyList => {
+					return Promise.all(
+						keyList.map(key => {
+							return caches.delete(key);
+						})
+					);
+				});
+			}
+
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker
+					.getRegistrations()
+					.then(registrations => {
+						registrations.forEach(registration => {
+							registration.unregister();
+						});
+					});
+			}
+
+			setTimeout(() => {
+				window.location.href = '/';
+			}, 1000);
+		});
 });
+
+// lock scroll cus yea
+function preventScroll(event) {
+	event.preventDefault();
+	event.stopPropagation();
+	return false;
+}
+
+function lockScroll() {
+	window.scrollTo(0, 0);
+}
+
+window.addEventListener('scroll', lockScroll);
+
+lockScroll();

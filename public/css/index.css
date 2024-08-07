@@ -269,6 +269,12 @@ body {
 }
 
 /* ------------- Miscellaneous Styles ------------- */
+#resetButton {
+	background: transparent !important;
+	box-shadow: inset 0px 0px 15px 5px #FF000080, 0px 0px 2px 5px #FF0000a0 !important;
+	backdrop-filter: blur(2px) !important;
+}
+
 .webSecurityIcon {
 	position: absolute !important;
 	top: 19px !important;

@@ -383,6 +383,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	document.addEventListener('keydown', handlePanicKey);
 
+	// Password Protection Keybind
+	if (!localStorage.getItem('passwordKeyBind')) {
+		localStorage.setItem('passwordKeyBind', '[');
+	}
+
+	function handlePasswordKey(event) {
+		const passwordKeyBind = localStorage.getItem('passwordKeyBind');
+		const passwordKeys = passwordKeyBind.split(',');
+
+		if (
+			passwordKeys.includes(event.key) &&
+			event.target.tagName !== 'INPUT' &&
+			event.target.tagName !== 'TEXTAREA' &&
+			localStorage.getItem('passwordOff') === 'false' &&
+			localStorage.getItem('pPassword')
+		) {
+			applyPasswordProtection();
+		}
+	}
+
+	document.addEventListener('keydown', handlePasswordKey);
+	if (!localStorage.getItem('isPasswordScreenOpen')) {
+		localStorage.setItem('isPasswordScreenOpen', 'false');
+	}
+
+	if (localStorage.getItem('isPasswordScreenOpen') !== 'false') {
+		setTimeout(applyPasswordProtection, 500);
+	}
+
 	// Password Protection
 	function base64Encode(str) {
 		return btoa(str);
@@ -403,12 +432,16 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	function applyPasswordProtection() {
-		if (localStorage.getItem('passwordProtected') === 'true') {
+		if (
+			localStorage.getItem('passwordOff') === 'false' &&
+			!document.querySelector('.passwordOverlay')
+		) {
 			document.body.style.pointerEvents = 'none';
 			document.body.style.cursor = 'not-allowed';
 			document.body.style.userSelect = 'none';
 
 			const overlay = document.createElement('div');
+			overlay.className = 'passwordOverlay';
 			overlay.style.width = '100%';
 			overlay.style.height = '100%';
 			overlay.style.backgroundColor = 'transparent';
@@ -465,6 +498,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			input.type = 'password';
 			input.placeholder = 'Password';
 
+			localStorage.setItem('isPasswordScreenOpen', 'true');
+
 			input.addEventListener('input', function () {
 				const storedPassword = localStorage.getItem('pPassword');
 				if (checkPassword(input.value, storedPassword)) {
@@ -472,7 +507,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					document.body.style.pointerEvents = '';
 					document.body.style.cursor = '';
 					document.body.style.userSelect = '';
-					localStorage.setItem('passwordProtected', 'false');
+					localStorage.setItem('isPasswordScreenOpen', 'false');
 					protectionOpen = false;
 				}
 			});
@@ -485,11 +520,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			overlay.appendChild(content);
 			document.body.prepend(overlay);
 		}
-	}
-
-	// add logic here later maybe
-	if (localStorage.getItem('passwordProtected') === 'true') {
-		// applyPasswordProtection();
 	}
 
 	// disabling or enabling particles
