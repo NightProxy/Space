@@ -1,16 +1,6 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="/css/index.css" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-		/>
-		<link
-			href="https://fonts.googleapis.com/icon?family=Material+Icons"
-			rel="stylesheet"
-		/>
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 		<title>Space</title>
 		<link rel="icon" type="icon/x-icon" href="/assets/favicon.ico" />
 		<script src="/baremux/index.js"></script>
@@ -29,7 +19,7 @@
 			name="keywords"
 			content="Proxy, Unblocker, Space Unblocker, Space"
 		/>
-		<meta property="og:image" content="/assets/logo.png" />
+		<meta property="og:image" content="/assets/logo.webp" />
 		<!-- Google Analytics DO NOT REMOVE -->
 		<script
 			async
@@ -44,13 +34,40 @@
 
 			gtag('config', 'G-430HCL8SSW');
 		</script>
+		<link
+			rel="preload"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		/>
+		<link
+			rel="preload"
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+		/>
+		<link rel="stylesheet" href="/css/index.css" />
+		<link rel="stylesheet" href="/css/p.css" />
+		<link
+			rel="preload"
+			as="style"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1"
+			onload="this.onload=null;this.rel='stylesheet'"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
+		<noscript>
+			<link
+				rel="stylesheet"
+				href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1"
+			/>
+		</noscript>
+		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 	</head>
 
 	<body style="overflow: hidden">
 		<ul class="navbar">
 			<li style="margin-left: -1px; margin-top: 2px">
 				<a href="/"
-					><img class="logo" src="/assets/logo.png" alt="Logo"
+					><img class="logo" src="/assets/logo.webp" alt="Logo"
 				/></a>
 			</li>
 			<hr style="margin-top: 5px" />
@@ -255,10 +272,7 @@
 					style="animation: fade-in-top 1s; margin-top: -150px"
 					class="search-header"
 				>
-					<img
-						src=""
-						class="searchEngineIcon"
-					/>
+					<img src="" class="searchEngineIcon" />
 					<form id="formintospace">
 						<input
 							id="gointospace"

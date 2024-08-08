@@ -4,7 +4,9 @@ let encodedUrl = '';
 async function executeSearch(query) {
 	if (localStorage.getItem('dropdown-selected-text-proxy') == 'Dynamic') {
 		encodedUrl =
-			swConfigSettings.prefix + 'route?url=' + encodeURIComponent(search(query));
+			swConfigSettings.prefix +
+			'route?url=' +
+			encodeURIComponent(search(query));
 	} else {
 		encodedUrl =
 			swConfigSettings.prefix + __uv$config.encodeUrl(search(query));
@@ -94,8 +96,7 @@ function startURLMonitoring() {
 }
 
 function updateGointospace2(url) {
-	document.querySelectorAll('.search-header__icon')[0].style.display =
-		'none';
+	document.querySelectorAll('.search-header__icon')[0].style.display = 'none';
 
 	let cleanedUrl = __uv$config.decodeUrl(
 		url.split(swConfigSettings.prefix).pop()
@@ -108,11 +109,10 @@ function updateGointospace2(url) {
 	if (cleanedUrl === 'a`owt8bnalk') {
 		address2.value = 'Loading...';
 	} else if (__uv$config.decodeUrl(cleanedUrl).endsWith('/500')) {
-    	address2.value = 'Internal Server Error! Did you load a broken link?';
+		address2.value = 'Internal Server Error! Did you load a broken link?';
 	} else {
 		address2.value = cleanedUrl;
 	}
-
 
 	let webSecurityIcon = document.querySelector('.webSecurityIcon');
 	if (isSecure) {
@@ -357,36 +357,32 @@ document.addEventListener('DOMContentLoaded', function () {
 			case 'Duck Duck Go':
 				document.querySelector('.searchEngineIcon').src =
 					'/assets/imgs/b/ddg.webp';
-					document.querySelector(
-						'.searchEngineIcon'
-					).style.transform = 'scale(1.35)';
+				document.querySelector('.searchEngineIcon').style.transform =
+					'scale(1.35)';
 				break;
 			case 'Bing':
 				document.querySelector('.searchEngineIcon').src =
 					'/assets/imgs/b/bing.webp';
-					document.querySelector('.searchEngineIcon').style.transform =
-						'scale(1.65)';
+				document.querySelector('.searchEngineIcon').style.transform =
+					'scale(1.65)';
 				break;
 			case 'Google (default)':
 				document.querySelector('.searchEngineIcon').src =
 					'/assets/imgs/b/google.webp';
-					document.querySelector(
-						'.searchEngineIcon'
-					).style.transform = 'scale(1.2)';
+				document.querySelector('.searchEngineIcon').style.transform =
+					'scale(1.2)';
 				break;
 			case 'Yahoo!':
 				document.querySelector('.searchEngineIcon').src =
 					'/assets/imgs/b/yahoo.webp';
-					document.querySelector(
-						'.searchEngineIcon'
-					).style.transform = 'scale(1.5)';
+				document.querySelector('.searchEngineIcon').style.transform =
+					'scale(1.5)';
 				break;
 			default:
 				document.querySelector('.searchEngineIcon').src =
 					'/assets/imgs/b/google.webp';
-					document.querySelector(
-						'.searchEngineIcon'
-					).style.transform = 'scale(1.2)';
+				document.querySelector('.searchEngineIcon').style.transform =
+					'scale(1.2)';
 		}
 	}
 });
