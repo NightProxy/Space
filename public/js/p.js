@@ -9,9 +9,7 @@ const proxySetting =
 	'Ultraviolet (default)'; // Using nullish coalescing operator for default value
 
 const swConfig = {
-	'Ultraviolet (default)': { file: '/@/sw.js', config: __uv$config },
-	Dynamic: { file: '/,/sw.js', config: __dynamic$config },
-	Scramjet: { file: '/$/sw.js', config: $scramjet.config }
+	'Ultraviolet (default)': { file: '/@/sw.js', config: __uv$config }
 };
 
 const { file: swFile, config: swConfigSettings } = swConfig[proxySetting] ?? {

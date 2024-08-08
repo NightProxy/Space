@@ -10,7 +10,6 @@ import { epoxyPath } from '@mercuryworkshop/epoxy-transport';
 import { libcurlPath } from '@mercuryworkshop/libcurl-transport';
 import { bareModulePath } from '@mercuryworkshop/bare-as-module3';
 import { baremuxPath } from '@mercuryworkshop/bare-mux/node';
-import { meteorPath } from 'meteorproxy';
 import wisp from 'wisp-server-node';
 import routes from './src/routes.js';
 
@@ -26,7 +25,6 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/epoxy/', express.static(epoxyPath));
 app.use('/@/', express.static(uvPath));
-app.use('/!/', express.static(meteorPath));
 app.use('/libcurl/', express.static(libcurlPath));
 app.use('/baremod/', express.static(bareModulePath));
 app.use('/baremux/', express.static(baremuxPath));
