@@ -61,6 +61,21 @@
 	);
 	--password-background-color: #252525;
 	--password-hover-background-color: #181818;
+
+	/* Widget */
+    --color-header: '#fff';
+    --accent-color: 'linear-gradient(101deg, #4400ff7e 0%, rgba(242, 0, 255, 0.336) 100%) !important';
+}
+
+#changelogfy-launcher {
+    background: rgba(247, 0, 255, 0.514) !important; 
+    background: linear-gradient(101deg, #4400ff7e 0%, rgba(242, 0, 255, 0.336) 100%) !important;
+    backdrop-filter: blur(7px);
+	opacity: 0.9;
+}
+
+.rounded {
+    border-radius: 100em !important;
 }
 
 body {
