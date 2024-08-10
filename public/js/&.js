@@ -427,22 +427,22 @@ function injectErudaScript(iframeDocument) {
 
 		if (erudaScriptInjecting) {
 			console.warn('Eruda script is already being injected.');
-			resolve(); // Resolve immediately to avoid race conditions.
+			resolve();
 			return;
 		}
 
-		erudaScriptInjecting = true; // Set the injecting flag.
+		erudaScriptInjecting = true;
 
 		const script = iframeDocument.createElement('script');
 		script.type = 'text/javascript';
 		script.src = 'https://cdn.jsdelivr.net/npm/eruda';
 		script.onload = () => {
 			erudaScriptLoaded = true;
-			erudaScriptInjecting = false; // Reset the injecting flag.
+			erudaScriptInjecting = false;
 			resolve();
 		};
 		script.onerror = event => {
-			erudaScriptInjecting = false; // Reset the injecting flag.
+			erudaScriptInjecting = false;
 			reject(new Error('Failed to load Eruda script:', event));
 		};
 		iframeDocument.body.appendChild(script);
