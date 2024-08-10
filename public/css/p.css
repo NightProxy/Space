@@ -1,250 +1,250 @@
 #utilityactive {
-    background-color: var(--header-active-background-color);
-    border-radius: 7px;
+	background-color: var(--header-active-background-color);
+	border-radius: 7px;
 }
 
 .utility .utilityIcon:hover {
-    background-color: var(--header-hover-background-color);
-    border-radius: 7px;
-    transition: 0.2s all ease-in-out;
+	background-color: var(--header-hover-background-color);
+	border-radius: 7px;
+	transition: 0.2s all ease-in-out;
 }
 
 .utility span {
-    transition: 0.2s all ease-in-out;
-    padding: 100px;
+	transition: 0.2s all ease-in-out;
+	padding: 100px;
 }
 
 .utility .search-header__input {
-    font-family: 'DM Sans';
-    font-size: 16px;
-    background-color: var(--input-background-color);
-    border: solid 0.5px var(--border-color);
-    color: var(--text-color);
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    min-width: 240px;
-    height: 20px;
-    transition: all ease-in-out 0.5s;
-    margin-right: -2rem;
-    opacity: 1;
-    text-align: left;
+	font-family: 'DM Sans';
+	font-size: 16px;
+	background-color: var(--input-background-color);
+	border: solid 0.5px var(--border-color);
+	color: var(--text-color);
+	padding: 0.5rem 1rem;
+	border-radius: 25px;
+	min-width: 240px;
+	height: 20px;
+	transition: all ease-in-out 0.5s;
+	margin-right: -2rem;
+	opacity: 1;
+	text-align: left;
 }
 
 .utility .search-header__input:hover,
 .utility .search-header__input:focus {
-    box-shadow: none;
-    padding: 0.5rem 1rem;
+	box-shadow: none;
+	padding: 0.5rem 1rem;
 }
 
 .utility span.material-symbols-outlined {
-    font-size: 20px;
-    margin: 0;
-    padding: 8px;
-    color: var(--text-color);
+	font-size: 20px;
+	margin: 0;
+	padding: 8px;
+	color: var(--text-color);
 }
 
 .utility {
-    list-style-type: none;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 0;
-    direction: ltr;
-    width: calc(100% - 2.5rem - 9px);
-    height: 3.633em;
-    background-color: var(--utility-background-color);
-    position: fixed;
-    text-align: center;
-    box-shadow: 1.5px 1px 1px 0 var(--utility-shadow-color);
-    z-index: 2147483641;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    left: calc(2.5rem + 9px);
+	list-style-type: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: 0;
+	direction: ltr;
+	width: calc(100% - 2.5rem - 9px);
+	height: 3.633em;
+	background-color: var(--utility-background-color);
+	position: fixed;
+	text-align: center;
+	box-shadow: 1.5px 1px 1px 0 var(--utility-shadow-color);
+	z-index: 2147483641;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	left: calc(2.5rem + 9px);
 }
 
 .utility li {
-    display: inline-block;
-    margin-left: 2px;
-    margin-right: 2px;
-    transition: 0.2s all ease-in-out;
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 2px;
+	transition: 0.2s all ease-in-out;
 }
 
 .utility li:first-child {
-    margin-left: 0;
+	margin-left: 0;
 }
 
 .utility hr {
-    width: 1px;
-    height: 35px;
-    background: var(--hr-background);
-    border: none;
-    margin-left: 10px;
-    margin-right: 10px;
+	width: 1px;
+	height: 35px;
+	background: var(--hr-background);
+	border: none;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 #gointospace2 {
-    font-family: 'DM Sans';
-    font-size: 16px;
-    transition: color ease-in-out 0.5s;
-    color: var(--page-text-color);
-    text-overflow: ellipsis;
-    padding-right: 32px;
-    padding-left: 40px;
+	font-family: 'DM Sans';
+	font-size: 16px;
+	transition: color ease-in-out 0.5s;
+	color: var(--page-text-color);
+	text-overflow: ellipsis;
+	padding-right: 32px;
+	padding-left: 40px;
 }
 
 #gointospace {
-    padding-right: 38px;
-    padding-left: 38px;
-    text-overflow: ellipsis;
+	padding-right: 38px;
+	padding-left: 38px;
+	text-overflow: ellipsis;
 }
 
 #gointospace2:hover {
-    color: var(--hover-text-color);
+	color: var(--hover-text-color);
 }
 
 #gointospace2:active,
 #gointospace2:focus,
 #gointospace2:focus-visible {
-    color: var(--active-text-color);
+	color: var(--active-text-color);
 }
 
 .refreshButton {
-    transition: transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out;
 }
 
 .backButton,
 .forwardButton {
-    transition: transform 0.2s ease-in-out;
-    opacity: 0.5;
+	transition: transform 0.2s ease-in-out;
+	opacity: 0.5;
 }
 
 .refreshButton:hover {
-    animation: rotateReload 0.3s forwards;
-    animation-fill-mode: forwards;
-    animation-direction: alternate;
+	animation: rotateReload 0.3s forwards;
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
 }
 
 @keyframes rotateReload {
-    0% {
-        transform: rotate(0deg);
-    }
+	0% {
+		transform: rotate(0deg);
+	}
 
-    100% {
-        transform: rotate(360deg);
-    }
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .webSecurityIcon {
-    position: absolute !important;
-    top: 19px !important;
-    left: 165px !important;
-    color: var(--hover-text-color);
-    height: 16px !important;
-    width: 16px !important;
-    font-size: 16px !important;
+	position: absolute !important;
+	top: 19px !important;
+	left: 165px !important;
+	color: var(--hover-text-color);
+	height: 16px !important;
+	width: 16px !important;
+	font-size: 16px !important;
 }
 
 .shortcutsbig {
-    width: 1000px;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    gap: 20px;
-    justify-content: center;
-    margin-top: -3.5em;
-    left: 50vw;
-    transform: translateX(-50%);
+	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	gap: 20px;
+	justify-content: center;
+	margin-top: -3.5em;
+	left: 50vw;
+	transform: translateX(-50%);
 }
 
 .shortcutbig {
-    background: none;
-    align-content: center;
-    justify-content: center;
-    transition: 0.2s ease-in-out;
-    opacity: 1;
-    border-radius: 30px;
+	background: none;
+	align-content: center;
+	justify-content: center;
+	transition: 0.2s ease-in-out;
+	opacity: 1;
+	border-radius: 30px;
 }
 
 .shortcutbigimg {
-    animation: fade-in-bottom 1s;
-    opacity: 0;
+	animation: fade-in-bottom 1s;
+	opacity: 0;
 }
 
 .shortcutbig img {
-    width: 170px;
-    height: 90px;
-    border-radius: 20px;
-    transition: 0.2s ease-in-out !important;
+	width: 170px;
+	height: 90px;
+	border-radius: 20px;
+	transition: 0.2s ease-in-out !important;
 }
 
 .shortcutbig img:hover {
-    transform: scale(1.1);
-    border-radius: 20px;
-    transition: 0.12s ease;
-    cursor: pointer;
-    transition: 0.2s ease-in-out !important;
+	transform: scale(1.1);
+	border-radius: 20px;
+	transition: 0.12s ease;
+	cursor: pointer;
+	transition: 0.2s ease-in-out !important;
 }
 
 .shortcuts {
-    width: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    gap: 29px;
-    justify-content: center;
-    margin-top: 4.5em;
-    left: 50%;
-    transform: translateX(-50%);
+	width: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	gap: 29px;
+	justify-content: center;
+	margin-top: 4.5em;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .shortcut {
-    width: 50px;
-    height: 50px;
-    border-radius: 23%;
-    background-color: var(--shortcut-background-color);
-    align-content: center;
-    justify-content: center;
-    transition: 0.2s ease-in-out !important;
-    animation: fade-in-bottom 1s;
-    opacity: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 23%;
+	background-color: var(--shortcut-background-color);
+	align-content: center;
+	justify-content: center;
+	transition: 0.2s ease-in-out !important;
+	animation: fade-in-bottom 1s;
+	opacity: 0;
 }
 
 .shortcut:hover {
-    transform: scale(1.05);
-    transition: 0.2s ease-in-out !important;
-    cursor: pointer;
-    box-shadow: var(--shortcut-box-shadow);
+	transform: scale(1.05);
+	transition: 0.2s ease-in-out !important;
+	cursor: pointer;
+	box-shadow: var(--shortcut-box-shadow);
 }
 
 .shortcut img {
-    width: 28px;
-    height: 28px;
-    padding: 11px;
-    object-fit: cover;
-    transition: 0.2s ease-in-out !important;
+	width: 28px;
+	height: 28px;
+	padding: 11px;
+	object-fit: cover;
+	transition: 0.2s ease-in-out !important;
 }
 
 .spinner {
-    background-image: linear-gradient(rgb(186, 66, 255) 35%, rgb(76, 0, 255));
-    width: 100px;
-    height: 100px;
-    animation: spinning 1.7s linear infinite;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    position: relative;
-    border-radius: 50px;
-    filter: blur(1px);
-    box-shadow:
-        0px -5px 20px 0px rgb(186, 66, 255),
-        0px 5px 20px 0px rgb(76, 0, 255);
+	background-image: linear-gradient(rgb(186, 66, 255) 35%, rgb(76, 0, 255));
+	width: 100px;
+	height: 100px;
+	animation: spinning 1.7s linear infinite;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	position: relative;
+	border-radius: 50px;
+	filter: blur(1px);
+	box-shadow:
+		0px -5px 20px 0px rgb(186, 66, 255),
+		0px 5px 20px 0px rgb(76, 0, 255);
 }
 
 .spinner1 {
-    background-color: rgb(36, 36, 36);
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    filter: blur(10px);
+	background-color: rgb(36, 36, 36);
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	filter: blur(10px);
 }

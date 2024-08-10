@@ -629,9 +629,11 @@ span.material-symbols-outlined {
 	height: 45vh;
 	width: 75vw;
 	opacity: 0.15;
-	background-image: radial-gradient(farthest-corner at 50% 50%,
-			#ffffff,
-			#ff00d4);
+	background-image: radial-gradient(
+		farthest-corner at 50% 50%,
+		#ffffff,
+		#ff00d4
+	);
 	background-blend-mode: multiply;
 	filter: blur(50px) contrast(1.1);
 	position: fixed;

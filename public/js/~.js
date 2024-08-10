@@ -12,6 +12,7 @@ shapePositions = {
 	account: '317px',
 	news: '377px'
 };
+
 document.addEventListener('click', function (event) {
 	const dropdowns = document.querySelectorAll('.dropdown');
 
@@ -813,6 +814,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (dropdownMenu) {
 			function updateStyles() {
 				const items = dropdownMenu.querySelectorAll('li');
+
 				if (items.length >= 2) {
 					const lastItem = items[items.length - 1];
 					const firstItem = items[0];
@@ -842,6 +844,16 @@ document.addEventListener('DOMContentLoaded', function () {
 							);
 						}
 					}
+				}
+
+				if (items.length <= 2) {
+					items.forEach(item => {
+						item.classList.add('onlyConditional');
+					});
+				} else {
+					items.forEach(item => {
+						item.classList.remove('onlyConditional');
+					});
 				}
 			}
 

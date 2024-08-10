@@ -1,48 +1,48 @@
 [
-  {
-    "name": "Google",
-    "url": "https://google.com",
-    "img": "/assets/imgs/sb/Google.webp",
-    "bg": "#fff"
-  },
-  {
-    "name": "YouTube",
-    "url": "https://google.com/",
-    "img": "/assets/imgs/sb/YouTube.webp"
-  },
-  {
-    "name": "Spotify",
-    "url": "https://open.spotify.com",
-    "img": "/assets/imgs/sb/Spotify.webp"
-  },
-  {
-    "name": "Discord",
-    "url": "https://discord.com/login",
-    "img": "/assets/imgs/sb/Discord.webp"
-  },
-  {
-    "name": "ChatGPT",
-    "url": "https://chatgpt.com/",
-    "img": "/assets/imgs/sb/ChatGPT.webp"
-  },
-  {
-    "name": "Geforce Now",
-    "url": "https://play.geforcenow.com/mall/",
-    "img": "/assets/imgs/sb/Geforce_Now.webp"
-  },
-  {
-    "name": "GitHub",
-    "url": "https://github.com/",
-    "img": "/assets/imgs/sb/GitHub.webp"
-  },
-  {
-    "name": "Twitch",
-    "url": "https://twitch.com/",
-    "img": "/assets/imgs/sb/Twitch.webp"
-  },
-  {
-    "name": "ESPN",
-    "url": "https://www.espn.com/",
-    "img": "/assets/imgs/sb/ESPN.webp"
-  }
+	{
+		"name": "Google",
+		"url": "https://google.com",
+		"img": "/assets/imgs/sb/Google.webp",
+		"bg": "#fff"
+	},
+	{
+		"name": "YouTube",
+		"url": "https://google.com/",
+		"img": "/assets/imgs/sb/YouTube.webp"
+	},
+	{
+		"name": "Spotify",
+		"url": "https://open.spotify.com",
+		"img": "/assets/imgs/sb/Spotify.webp"
+	},
+	{
+		"name": "Discord",
+		"url": "https://discord.com/login",
+		"img": "/assets/imgs/sb/Discord.webp"
+	},
+	{
+		"name": "ChatGPT",
+		"url": "https://chatgpt.com/",
+		"img": "/assets/imgs/sb/ChatGPT.webp"
+	},
+	{
+		"name": "Geforce Now",
+		"url": "https://play.geforcenow.com/mall/",
+		"img": "/assets/imgs/sb/Geforce_Now.webp"
+	},
+	{
+		"name": "GitHub",
+		"url": "https://github.com/",
+		"img": "/assets/imgs/sb/GitHub.webp"
+	},
+	{
+		"name": "Twitch",
+		"url": "https://twitch.com/",
+		"img": "/assets/imgs/sb/Twitch.webp"
+	},
+	{
+		"name": "ESPN",
+		"url": "https://www.espn.com/",
+		"img": "/assets/imgs/sb/ESPN.webp"
+	}
 ]

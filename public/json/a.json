@@ -1,316 +1,194 @@
 [
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.com/",
-    "img": "/assets/imgs/a/Amazon.webp",
-    "categories": [
-      "all",
-      "media"
-    ]
-  },
-  {
-    "name": "Amazon Luna",
-    "url": "https://luna.amazon.com/",
-    "img": "/assets/imgs/a/Amazon_Luna.webp",
-    "categories": [
-      "all",
-      "game"
-    ]
-  },
-  {
-    "name": "OpenAI",
-    "url": "https://chat.openai.com/",
-    "img": "/assets/imgs/a/OpenAI.webp",
-    "categories": [
-      "all",
-      "media",
-      "popular",
-      "ai"
-    ]
-  },
-  {
-    "name": "Chess.com",
-    "url": "https://chess.com/",
-    "img": "/assets/imgs/a/Chess_com.webp",
-    "categories": [
-      "all",
-      "game"
-    ]
-  },
-  {
-    "name": "Cool Math Games",
-    "url": "https://www.coolmathgames.com/cmg.jpg",
-    "img": "/assets/imgs/a/Cool_Math_Games.webp",
-    "categories": [
-      "all",
-      "game"
-    ]
-  },
-  {
-    "name": "Discord",
-    "url": "https://discord.com/",
-    "img": "/assets/imgs/a/Discord.webp",
-    "categories": [
-      "all",
-      "social",
-      "messaging",
-      "media"
-    ]
-  },
-  {
-    "name": "Discord | Login",
-    "url": "https://discord.com/login",
-    "img": "/assets/imgs/a/Discord.webp",
-    "categories": [
-      "all",
-      "social",
-      "messaging",
-      "media"
-    ]
-  },
-  {
-    "name": "ESPN",
-    "url": "https://www.espn.com/",
-    "img": "/assets/imgs/a/ESPN.webp",
-    "categories": [
-      "all",
-      "media",
-      "popular"
-    ]
-  },
-  {
-    "name": "Flix HQ",
-    "url": "https://flixhq.bz/",
-    "img": "/assets/imgs/a/Flix_HQ.webp",
-    "categories": [
-      "all",
-      "media",
-      "popular"
-    ]
-  },
-  {
-    "name": "Geforce NOW",
-    "url": "https://play.geforcenow.com/",
-    "img": "/assets/imgs/a/Geforce_NOW.webp",
-    "categories": [
-      "all",
-      "game",
-      "popular"
-    ]
-  },
-  {
-    "name": "GitHub",
-    "url": "https://github.com/",
-    "img": "/assets/imgs/a/GitHub.webp",
-    "categories": [
-      "all",
-      "social",
-      "ai"
-    ]
-  },
-  {
-    "name": "HBO MAX",
-    "url": "https://www.max.com/",
-    "img": "/assets/imgs/a/HBO_MAX.webp",
-    "categories": [
-      "all",
-      "media"
-    ]
-  },
-  {
-    "name": "Newgrounds",
-    "url": "https://www.newgrounds.com/",
-    "img": "/assets/imgs/a/Newgrounds.webp",
-    "categories": [
-      "all",
-      "media",
-      "social"
-    ]
-  },
-  {
-    "name": "Paramount Plus",
-    "url": "https://www.paramountplus.com/",
-    "img": "/assets/imgs/a/Paramount_Plus.webp",
-    "categories": [
-      "all",
-      "media"
-    ]
-  },
-  {
-    "name": "Pinterest",
-    "url": "https://www.pinterest.com/",
-    "img": "/assets/imgs/a/Pinterest.webp",
-    "categories": [
-      "all",
-      "media",
-      "social"
-    ]
-  },
-  {
-    "name": "Pixlr",
-    "url": "https://pixlr.com/",
-    "img": "/assets/imgs/a/Pixlr.webp",
-    "categories": [
-      "all",
-      "media"
-    ]
-  },
-  {
-    "name": "Poki",
-    "url": "https://poki.com/",
-    "img": "/assets/imgs/a/Poki.webp",
-    "categories": [
-      "all",
-      "game"
-    ]
-  },
-  {
-    "name": "Soundcloud",
-    "url": "https://soundcloud.com/",
-    "img": "/assets/imgs/a/Soundcloud.webp",
-    "categories": [
-      "all",
-      "media"
-    ]
-  },
-  {
-    "name": "Telegram",
-    "url": "https://web.telegram.org/",
-    "img": "/assets/imgs/a/Telegram.webp",
-    "categories": [
-      "all",
-      "messaging",
-      "media",
-      "social"
-    ]
-  },
-  {
-    "name": "Temu",
-    "url": "https://www.temu.com/",
-    "img": "/assets/imgs/a/Temu.webp",
-    "categories": [
-      "all",
-      "media"
-    ]
-  },
-  {
-    "name": "TikTok",
-    "url": "https://www.tiktok.com/explore",
-    "img": "/assets/imgs/a/TikTok.webp",
-    "categories": [
-      "all",
-      "media",
-      "social"
-    ]
-  },
-  {
-    "name": "Tumblr",
-    "url": "https://www.tumblr.com/",
-    "img": "/assets/imgs/a/Tumblr.webp",
-    "categories": [
-      "all",
-      "messaging",
-      "social",
-      "media"
-    ]
-  },
-  {
-    "name": "Twitch",
-    "url": "https://www.twitch.tv/",
-    "img": "/assets/imgs/a/Twitch.webp",
-    "categories": [
-      "all",
-      "social",
-      "media",
-      "game"
-    ]
-  },
-  {
-    "name": "Twitter X",
-    "url": "https://twitter.com/",
-    "img": "/assets/imgs/a/Twitter_X.webp",
-    "categories": [
-      "all",
-      "media",
-      "messaging"
-    ]
-  },
-  {
-    "name": "VS Code",
-    "url": "https://vscode.dev/",
-    "img": "/assets/imgs/a/VS_Code.webp",
-    "categories": [
-      "all",
-      "media"
-    ]
-  },
-  {
-    "name": "Y8 Games",
-    "url": "https://www.y8.com/",
-    "img": "/assets/imgs/a/Y8_Games.webp",
-    "categories": [
-      "all",
-      "game"
-    ]
-  },
-  {
-    "name": "YouTube",
-    "url": "https://www.youtube.com",
-    "img": "/assets/imgs/a/YouTube.webp",
-    "categories": [
-      "all",
-      "media",
-      "popular"
-    ]
-  },
-  {
-    "name": "webretro",
-    "url": "https://binbashbanana.github.io/webretro/",
-    "img": "/assets/imgs/a/webretro.webp",
-    "categories": [
-      "all",
-      "game",
-      "popular"
-    ]
-  },
-  {
-    "name": "Character.AI",
-    "url": "https://beta.character.ai",
-    "img": "/assets/imgs/a/Character_AI.webp",
-    "categories": [
-      "all",
-      "ai",
-      "popular"
-    ]
-  },
-  {
-    "name": "Snapchat",
-    "url": "https://www.snapchat.com",
-    "img": "/assets/imgs/a/Snapchat.webp",
-    "categories": [
-      "all",
-      "media",
-      "messaging",
-      "popular"
-    ]
-  },
-  {
-    "name": "Shuttle.lol",
-    "url": "https://shuttle.lol",
-    "img": "/assets/imgs/a/Shuttle_lol.webp",
-    "categories": [
-      "all",
-      "game"
-    ]
-  },
-  {
-    "name": "Wattpad",
-    "url": "https://wattpad.com",
-    "img": "/assets/imgs/a/Wattpad.webp",
-    "categories": [
-      "all",
-      "popular",
-      "media"
-    ]
-  }
+	{
+		"name": "Amazon",
+		"url": "https://www.amazon.com/",
+		"img": "/assets/imgs/a/Amazon.webp",
+		"categories": ["all", "media"]
+	},
+	{
+		"name": "Amazon Luna",
+		"url": "https://luna.amazon.com/",
+		"img": "/assets/imgs/a/Amazon_Luna.webp",
+		"categories": ["all", "game"]
+	},
+	{
+		"name": "OpenAI",
+		"url": "https://chat.openai.com/",
+		"img": "/assets/imgs/a/OpenAI.webp",
+		"categories": ["all", "media", "popular", "ai"]
+	},
+	{
+		"name": "Chess.com",
+		"url": "https://chess.com/",
+		"img": "/assets/imgs/a/Chess_com.webp",
+		"categories": ["all", "game"]
+	},
+	{
+		"name": "Cool Math Games",
+		"url": "https://www.coolmathgames.com/cmg.jpg",
+		"img": "/assets/imgs/a/Cool_Math_Games.webp",
+		"categories": ["all", "game"]
+	},
+	{
+		"name": "Discord",
+		"url": "https://discord.com/",
+		"img": "/assets/imgs/a/Discord.webp",
+		"categories": ["all", "social", "messaging", "media"]
+	},
+	{
+		"name": "Discord | Login",
+		"url": "https://discord.com/login",
+		"img": "/assets/imgs/a/Discord.webp",
+		"categories": ["all", "social", "messaging", "media"]
+	},
+	{
+		"name": "ESPN",
+		"url": "https://www.espn.com/",
+		"img": "/assets/imgs/a/ESPN.webp",
+		"categories": ["all", "media", "popular"]
+	},
+	{
+		"name": "Flix HQ",
+		"url": "https://flixhq.bz/",
+		"img": "/assets/imgs/a/Flix_HQ.webp",
+		"categories": ["all", "media", "popular"]
+	},
+	{
+		"name": "Geforce NOW",
+		"url": "https://play.geforcenow.com/",
+		"img": "/assets/imgs/a/Geforce_NOW.webp",
+		"categories": ["all", "game", "popular"]
+	},
+	{
+		"name": "GitHub",
+		"url": "https://github.com/",
+		"img": "/assets/imgs/a/GitHub.webp",
+		"categories": ["all", "social", "ai"]
+	},
+	{
+		"name": "HBO MAX",
+		"url": "https://www.max.com/",
+		"img": "/assets/imgs/a/HBO_MAX.webp",
+		"categories": ["all", "media"]
+	},
+	{
+		"name": "Newgrounds",
+		"url": "https://www.newgrounds.com/",
+		"img": "/assets/imgs/a/Newgrounds.webp",
+		"categories": ["all", "media", "social"]
+	},
+	{
+		"name": "Paramount Plus",
+		"url": "https://www.paramountplus.com/",
+		"img": "/assets/imgs/a/Paramount_Plus.webp",
+		"categories": ["all", "media"]
+	},
+	{
+		"name": "Pinterest",
+		"url": "https://www.pinterest.com/",
+		"img": "/assets/imgs/a/Pinterest.webp",
+		"categories": ["all", "media", "social"]
+	},
+	{
+		"name": "Pixlr",
+		"url": "https://pixlr.com/",
+		"img": "/assets/imgs/a/Pixlr.webp",
+		"categories": ["all", "media"]
+	},
+	{
+		"name": "Poki",
+		"url": "https://poki.com/",
+		"img": "/assets/imgs/a/Poki.webp",
+		"categories": ["all", "game"]
+	},
+	{
+		"name": "Soundcloud",
+		"url": "https://soundcloud.com/",
+		"img": "/assets/imgs/a/Soundcloud.webp",
+		"categories": ["all", "media"]
+	},
+	{
+		"name": "Telegram",
+		"url": "https://web.telegram.org/",
+		"img": "/assets/imgs/a/Telegram.webp",
+		"categories": ["all", "messaging", "media", "social"]
+	},
+	{
+		"name": "Temu",
+		"url": "https://www.temu.com/",
+		"img": "/assets/imgs/a/Temu.webp",
+		"categories": ["all", "media"]
+	},
+	{
+		"name": "TikTok",
+		"url": "https://www.tiktok.com/explore",
+		"img": "/assets/imgs/a/TikTok.webp",
+		"categories": ["all", "media", "social"]
+	},
+	{
+		"name": "Tumblr",
+		"url": "https://www.tumblr.com/",
+		"img": "/assets/imgs/a/Tumblr.webp",
+		"categories": ["all", "messaging", "social", "media"]
+	},
+	{
+		"name": "Twitch",
+		"url": "https://www.twitch.tv/",
+		"img": "/assets/imgs/a/Twitch.webp",
+		"categories": ["all", "social", "media", "game"]
+	},
+	{
+		"name": "Twitter X",
+		"url": "https://twitter.com/",
+		"img": "/assets/imgs/a/Twitter_X.webp",
+		"categories": ["all", "media", "messaging"]
+	},
+	{
+		"name": "VS Code",
+		"url": "https://vscode.dev/",
+		"img": "/assets/imgs/a/VS_Code.webp",
+		"categories": ["all", "media"]
+	},
+	{
+		"name": "Y8 Games",
+		"url": "https://www.y8.com/",
+		"img": "/assets/imgs/a/Y8_Games.webp",
+		"categories": ["all", "game"]
+	},
+	{
+		"name": "YouTube",
+		"url": "https://www.youtube.com",
+		"img": "/assets/imgs/a/YouTube.webp",
+		"categories": ["all", "media", "popular"]
+	},
+	{
+		"name": "webretro",
+		"url": "https://binbashbanana.github.io/webretro/",
+		"img": "/assets/imgs/a/webretro.webp",
+		"categories": ["all", "game", "popular"]
+	},
+	{
+		"name": "Character.AI",
+		"url": "https://beta.character.ai",
+		"img": "/assets/imgs/a/Character_AI.webp",
+		"categories": ["all", "ai", "popular"]
+	},
+	{
+		"name": "Snapchat",
+		"url": "https://www.snapchat.com",
+		"img": "/assets/imgs/a/Snapchat.webp",
+		"categories": ["all", "media", "messaging", "popular"]
+	},
+	{
+		"name": "Shuttle.lol",
+		"url": "https://shuttle.lol",
+		"img": "/assets/imgs/a/Shuttle_lol.webp",
+		"categories": ["all", "game"]
+	},
+	{
+		"name": "Wattpad",
+		"url": "https://wattpad.com",
+		"img": "/assets/imgs/a/Wattpad.webp",
+		"categories": ["all", "popular", "media"]
+	}
 ]
