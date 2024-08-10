@@ -44,5 +44,10 @@
 		"name": "ESPN",
 		"url": "https://www.espn.com/",
 		"img": "/assets/imgs/sb/ESPN.webp"
+	},
+	{
+		"name": "TikTok",
+		"url": "https://tiktok.com/",
+		"img": "/assets/imgs/sb/TikTok.webp"
 	}
 ]
