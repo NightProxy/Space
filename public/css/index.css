@@ -175,13 +175,13 @@ body {
 	border-radius: 7px;
 }
 
-.navbar span:hover {
+.navbar span:hover, .navbar div:hover {
 	background-color: var(--header-hover-background-color);
 	border-radius: 7px;
 	transition: 0.12s all ease-in-out;
 }
 
-.navbar span {
+.navbar span, .navbar div {
 	transition: 0.12s;
 }
 
@@ -207,7 +207,7 @@ body {
 	background: var(--hr-background);
 	border: none;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .no-animation {

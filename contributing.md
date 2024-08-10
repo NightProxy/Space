@@ -7,16 +7,28 @@ First of all, thanks for taking interest in the project!
 
 ## Frontend Contributions
 All frontend contributions should use the provided files, and should avoid creating new ones. There are of course exceptions, but try to fit and organize your changes across the files. Heres a guide for the purpose of the frontend files:
-- index.css is the only css file
-  - If there is a new element added, you should add a new section and comment it similarly to the other sections
 
-- All js changes should be split into the following files:
-  - index.js for all homepage related changes
-  - &.js for all proxy related changes
-  - ~.js for all settings related changes
-  - json-loader.js for all game frontend changes
-  - c.js for all general configs that will be applied to every page
+### HTML:
+- index.html is the homepage
+- err.html is the 404 page, and the generic error page
+- 500.html is for internal server errors in the proxy
+- ~.html is for the settings page
+- a.html is for the apps page
+- g.html is for the games page
+- &.html is for the proxy page
 
+### CSS:
+- index.css for all general and global changes
+- ~.css for all settings changes
+- ag.css for all apps and games changes
+- &.css for all proxy related settings
+
+### JS:
+- index.js for all homepage related changes
+- &.js for all proxy related changes
+- ~.js for all settings related changes
+- json-loader.js for all game frontend changes
+- c.js for all general configs that will be applied to every page
 
 ## Backend Contributions
 All backend changes should be reviewed by at least one or two team members to ensure compatibility and stability. If you create extra files for your changes without reason (adding a new proxy would be a good reason for extra files), then your changes will likely get rejected
@@ -49,7 +61,7 @@ The script needs the following deps:
 - wget
 - imagemagick
 
-Run cd into imgs, and run `chmod +x ./download_urls.sh` to give the script execution perms, then run the script like this: `/download_urls.sh ../../json/g.json ./g`
+cd into imgs, and run `chmod +x ./download_urls.sh` to give the script execution perms, then run the script like this: `/download_urls.sh ../../json/g.json ./g`
 replace g.json with a if you are doing apps, and do the same for the second argument.
 
 There is currently no windows version of the script, because I dont like batch and wrote the script after I hadnt slept for 2 days. Feel free to contribute a windows version or to contribute an updated more polished version of the script
