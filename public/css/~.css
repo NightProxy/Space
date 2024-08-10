@@ -1,8 +1,6 @@
 #resetButton {
 	background: transparent !important;
-	box-shadow:
-		inset 0px 0px 15px 5px #ff000080,
-		0px 0px 2px 5px #ff0000a0 !important;
+	box-shadow: 1px 1px 5px 0 var(--slider-background-color) inset;
 	backdrop-filter: blur(2px) !important;
 }
 
@@ -514,48 +512,8 @@ li {
 	}
 }
 
-.pgroup {
-	display: flex;
-	line-height: 30px;
-	align-items: center;
-	position: relative;
-	max-width: 300px;
-}
-
-.password {
-	width: 100%;
-	height: 45px;
-	line-height: 30px;
-	padding: 0 1rem;
-	padding-left: 3rem;
-	border: 2px solid transparent;
-	border-radius: 10px;
-	outline: none;
-	background-color: var(--password-background-color);
-	color: #818181;
-}
-
-.password::placeholder {
-	color: #8d8d8d;
-}
-
-.password:focus,
-input:hover {
-	outline: none;
-	background-color: var(--password-hover-background-color);
-}
-
 ::-ms-reveal {
 	filter: invert(100%);
-}
-
-.picon {
-	position: absolute;
-	left: 1rem;
-	fill: none;
-	width: 1rem;
-	height: 1rem;
-	color: #fff;
 }
 
 .dropdown-button {
@@ -651,23 +609,11 @@ input:hover {
 	transform: rotate(-90deg);
 }
 
-/* ------------- Panic Key Styles ------------- */
 .panicKeySuccessful {
 	transition: all 0.2s ease-in-out;
 	box-shadow: 0px 0px 20px -5px #07f05d;
 	background-color: var(--panic-key-successful-color) !important;
 	z-index: 999999999;
-}
-
-.panicKeyFailed {
-	transition: all 0.2s ease-in-out;
-	box-shadow: 0px 0px 30px -5px #e20b41;
-	background-color: var(--panic-key-failed-color) !important;
-	z-index: 999999999;
-}
-
-.panicKey {
-	background-color: rgba(37, 37, 37, 0.5);
 }
 
 .hidden {
@@ -681,206 +627,6 @@ input:hover {
 .sideSnav li {
 	transform: perspective(500px) rotateX(90deg);
 	transition: transform 0.2s ease-out;
-}
-
-/* Failure Notification */
-
-.failtoast {
-	position: absolute;
-	top: 25px;
-	right: 30px;
-	border-radius: 12px;
-	background: var(--failtoast-background);
-	background: var(--failtoast-gradient);
-	backdrop-filter: blur(20px);
-	padding: 20px 25px 20px 35px;
-	box-shadow: 0 6px 20px -5px rgba(255, 255, 255, 0.1);
-	overflow: hidden;
-	transform: translateX(calc(100vw + 30px));
-	transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
-}
-
-.failtoast.active {
-	transform: translateX(0%);
-}
-
-.failtoast .failtoast-content {
-	display: flex;
-	align-items: center;
-}
-
-.failtoast-content .fail {
-	display: flex;
-	height: 35px;
-	min-width: 35px;
-	color: red;
-	font-size: 30px;
-	border-radius: 50%;
-}
-
-.failtoast-content .failmessage {
-	display: flex;
-	flex-direction: column;
-	margin: 0 20px;
-}
-
-.failmessage .failtext {
-	font-size: 16px;
-	font-weight: 400;
-	color: rgba(255, 255, 255, 0.48);
-}
-
-.failmessage .failtext.text-1 {
-	font-weight: 600;
-	color: rgba(255, 255, 255, 0.48);
-	margin: 0 !important;
-}
-
-.failtoast .failclose {
-	position: absolute;
-	top: 10px;
-	right: 15px;
-	padding: 5px;
-	cursor: pointer;
-	opacity: 0.7;
-	color: #fff;
-}
-
-.failtoast .failclose:hover {
-	opacity: 1;
-}
-
-.failtoast .failprogress {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 3px;
-	width: 100%;
-}
-
-.failtoast .failprogress:before {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	background-color: #b70000;
-}
-
-.failprogress.active:before {
-	animation: progress 5s linear forwards;
-}
-
-.failtoast.active ~ button {
-	pointer-events: none;
-}
-
-@keyframes failprogress {
-	100% {
-		right: 100%;
-	}
-}
-
-/* Save Notification */
-
-.toast {
-	position: absolute;
-	top: 25px;
-	right: 30px;
-	border-radius: 12px;
-	background: var(--toast-background);
-	background: var(--toast-gradient);
-	backdrop-filter: blur(20px);
-	padding: 20px 35px 20px 25px;
-	box-shadow: 0 6px 20px -5px rgba(255, 255, 255, 0.1);
-	overflow: hidden;
-	transform: translateX(calc(100vw + 30px));
-	transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
-}
-
-.toast.active {
-	transform: translateX(0%);
-}
-
-.toast .toast-content {
-	display: flex;
-	align-items: center;
-}
-
-.toast-content .check {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 35px;
-	min-width: 35px;
-	background-color: #00b709;
-	color: #fff;
-	font-size: 20px;
-	border-radius: 50%;
-}
-
-.toast-content .message {
-	display: flex;
-	flex-direction: column;
-	margin: 0 20px;
-}
-
-.message .text {
-	font-size: 16px;
-	font-weight: 400;
-	color: rgba(255, 255, 255, 0.48);
-}
-
-.message .text.text-1 {
-	font-weight: 600;
-	color: rgba(255, 255, 255, 0.48);
-}
-
-.toast .close {
-	position: absolute;
-	top: 10px;
-	right: 15px;
-	padding: 5px;
-	cursor: pointer;
-	opacity: 0.7;
-	color: #fff;
-}
-
-.toast .close:hover {
-	opacity: 1;
-}
-
-.toast .progress {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 3px;
-	width: 100%;
-}
-
-.toast .progress:before {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	background-color: #00b709;
-}
-
-.progress.active:before {
-	animation: progress 5s linear forwards;
-}
-
-@keyframes progress {
-	100% {
-		right: 100%;
-	}
-}
-
-.toast.active ~ button {
-	pointer-events: none;
 }
 
 .onlyConditional {

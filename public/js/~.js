@@ -8,8 +8,8 @@ shapePositions = {
 	themes: '142px',
 	proxy: '180.8px',
 	ads: '219px',
-	about: '278.5px',
-	account: '317px',
+	account: '278.5px',
+	about: '317px',
 	news: '377px'
 };
 
@@ -87,8 +87,8 @@ function showPageFromHash() {
 				themes: '142px',
 				proxy: '180.8px',
 				ads: '219px',
-				about: '278.5px',
-				account: '317px',
+				account: '278.5px',
+				about: '317px',
 				news: '377px'
 			};
 
@@ -905,7 +905,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	checkboxToggle('utilBarYesNo', 'utilBarHidden', true);
 	checkboxToggle('particlesYesNo', 'particlesHidden', true);
-	checkboxToggle('smallIconsYesNo', 'smallIcons', false);
+	checkboxToggle('smallIconsYesNo', 'smallIcons', true);
 	checkboxToggle('adsYesNo', 'hideAds', true);
 	checkboxToggle('passwordYesNo', 'passwordOff', false);
 
@@ -936,7 +936,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				panicKeySuccessPopup();
 			}
 		} else if (passwordKeyInput.value.length < 1) {
-			localStorage.setItem('passwordKeyBind', '[');
+			localStorage.setItem('passwordKeyBind', '~');
 
 			if (document.querySelector('.toast.active, .failtoast.active')) {
 				return;

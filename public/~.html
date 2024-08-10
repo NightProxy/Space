@@ -65,8 +65,8 @@
 			<div class="failtoast-content">
 				<i class="fa fa-solid fa-circle-exclamation fail"></i>
 				<div class="failmessage">
-					<span class="failtext text-1">Failed to save</span>
-					<span class="failtext text-2"
+					<span class="failtext text-1" id="text-1">Failed</span>
+					<span class="failtext text-2" id="text-2"
 						>Something went wrong. Please try again.</span
 					>
 				</div>
@@ -227,17 +227,17 @@
 					</li>
 				</a>
 				<hr style="margin-bottom: 20px" />
-				<a href="/~/#/about">
-					<li class="settingItem" data-id="about">
-						<span class="material-symbols-outlined">help</span>About
-						& Statistics
-					</li>
-				</a>
 				<a href="/~/#/account">
 					<li class="settingItem" data-id="account">
 						<span class="material-symbols-outlined"
 							>account_circle</span
 						>Account
+					</li>
+				</a>
+				<a href="/~/#/about">
+					<li class="settingItem" data-id="about">
+						<span class="material-symbols-outlined">help</span>About
+						& Statistics
 					</li>
 				</a>
 				<hr style="margin-bottom: 20px" />
@@ -397,7 +397,7 @@
 						</svg>
 						<input
 							class="password panicKey"
-							placeholder="Set a keybind. Backtick by Default"
+							placeholder="Set a keybind. Backtick by default"
 						/>
 					</div>
 					<button style="width: 300px" class="buttonreg panicKeySave">
@@ -693,6 +693,176 @@
 				</div>
 			-->
 			</div>
+
+			<div class="scontent" id="account">
+				<h1 style="animation: fade-in-left 1s">Account Settings</h1>
+				<!--
+				<div class="settingsection settingsection9">
+					<h1>Two-Factor Authentication</h1>
+					<p>Add another layer of security to your account.</p>
+					<label class="switch">
+						<input class="checkbox" type="checkbox" />
+						<span class="slider round"></span>
+					</label>
+				</div>
+			-->
+				<div class="settingsection settingsection9">
+					<h1>Password Protection</h1>
+					<p>
+						Protect your account with a password that way only you
+						can view the site.
+					</p>
+					<label class="switch">
+						<input class="checkbox passwordYesNo" type="checkbox" />
+						<span class="slider round"></span>
+					</label>
+					<p>
+						Please remember that when setting your password, set it
+						to something only you can remember, that way you do not
+						get locked out of your account.
+					</p>
+					<div style="margin-bottom: 5px" class="pgroup">
+						<svg
+							stroke="currentColor"
+							stroke-width="1.5"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+							class="picon"
+						>
+							<path
+								d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+								stroke-linejoin="round"
+								stroke-linecap="round"
+							></path>
+						</svg>
+						<input
+							class="password pPasswordInput"
+							type="password"
+							placeholder="Set Password"
+						/>
+					</div>
+					<button
+						class="buttonreg pPasswordSave"
+						style="width: 300px"
+					>
+						Save
+					</button>
+				</div>
+				<div class="settingsection settingsection9">
+					<h1>Password Keybind</h1>
+					<p>
+						Set the keybind to toggle the password appearing on
+						screen. By default you will need to hold shift an then
+						press
+						<span
+							style="
+								padding: 0 7px 0 7px;
+								background-color: #ffffff27;
+								border-radius: 8px;
+								font-weight: 700;
+							"
+						>
+							`</span
+						>
+						(left of the 1 key).
+					</p>
+					<div class="pgroup">
+						<svg
+							stroke="currentColor"
+							stroke-width="1.5"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+							class="picon"
+						>
+							<rect
+								x="2"
+								y="2"
+								width="20"
+								height="20"
+								rx="3"
+								ry="3"
+								fill="none"
+								stroke-linejoin="round"
+								stroke-linecap="round"
+							></rect>
+							<line
+								x1="8"
+								y1="16"
+								x2="16"
+								y2="8"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linejoin="round"
+								stroke-linecap="round"
+							></line>
+						</svg>
+						<input
+							class="password passwordHotkeyInput"
+							placeholder="Set a keybind. Tilda by default"
+						/>
+					</div>
+					<button
+						class="buttonreg pPasswordKeybind"
+						style="width: 300px"
+					>
+						Save
+					</button>
+				</div>
+				<div class="settingsection settingsection9">
+					<h1>Import & Export Data</h1>
+					<p>
+						Import simply loads your current userData and boots most
+						of your user settings and data from the last site.
+						Exporting downloads a save file that allows you to load
+						your userData onto another URL to save settings and
+						whatnot.
+					</p>
+					<input
+						type="file"
+						id="dataInput"
+						style="display: none"
+						onchange="importData();"
+					/>
+					<div style="display: flex">
+						<button class="splitbutton" id="exportData">
+							Export Data
+							<span
+								style="
+									position: absolute;
+									transform: translateY(-22px);
+								"
+								class="material-symbols-outlined"
+								>cloud_upload</span
+							>
+						</button>
+						<button class="splitbutton" id="importData">
+							Import Data
+							<span
+								style="
+									position: absolute;
+									transform: translateY(-22px);
+								"
+								class="material-symbols-outlined"
+								>cloud_download</span
+							>
+						</button>
+					</div>
+				</div>
+				<div class="settingsection settingsection9">
+					<h1>Wipe all Data</h1>
+					<p>
+						Pressing this button will completely wipe all data,
+						making it as if you never used this site. Its
+						recommended that you export your data before doing this.
+					</p>
+					<p>
+						<b>Warning: This is a destructive action</b>
+					</p>
+					<button class="splitbutton" id="resetButton">
+						Wipe all Data
+					</button>
+				</div>
+			</div>
 			<div class="scontent" id="about">
 				<h1 style="animation: fade-in-left 1s">About & Statistics</h1>
 				<div class="settingsection settingsection8">
@@ -800,158 +970,6 @@
 							>Patreon</a
 						>.
 					</p>
-				</div>
-			</div>
-
-			<div class="scontent" id="account">
-				<h1 style="animation: fade-in-left 1s">Account Settings</h1>
-				<!--
-				<div class="settingsection settingsection9">
-					<h1>Two-Factor Authentication</h1>
-					<p>Add another layer of security to your account.</p>
-					<label class="switch">
-						<input class="checkbox" type="checkbox" />
-						<span class="slider round"></span>
-					</label>
-				</div>
-			-->
-				<div class="settingsection settingsection9">
-					<h1>Password Protection</h1>
-					<p>
-						Protect your account with a password that way only you
-						can view the site.
-					</p>
-					<label class="switch">
-						<input class="checkbox passwordYesNo" type="checkbox" />
-						<span class="slider round"></span>
-					</label>
-					<p>
-						Please remember that when setting your password, set it
-						to something only you can remember, that way you do not
-						get locked out of your account.
-					</p>
-					<div style="margin-bottom: 5px" class="pgroup">
-						<svg
-							stroke="currentColor"
-							stroke-width="1.5"
-							viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg"
-							class="picon"
-						>
-							<path
-								d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-								stroke-linejoin="round"
-								stroke-linecap="round"
-							></path>
-						</svg>
-						<input
-							class="password pPasswordInput"
-							type="password"
-							placeholder="Set Password"
-						/>
-					</div>
-					<button
-						class="buttonreg pPasswordSave"
-						style="width: 300px"
-					>
-						Save
-					</button>
-				</div>
-				<div class="settingsection settingsection9">
-					<h1>Password Keybind</h1>
-					<p>Choose the keybind to</p>
-					<div class="pgroup">
-						<svg
-							stroke="currentColor"
-							stroke-width="1.5"
-							viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg"
-							class="picon"
-						>
-							<rect
-								x="2"
-								y="2"
-								width="20"
-								height="20"
-								rx="3"
-								ry="3"
-								fill="none"
-								stroke-linejoin="round"
-								stroke-linecap="round"
-							></rect>
-							<line
-								x1="8"
-								y1="16"
-								x2="16"
-								y2="8"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-linejoin="round"
-								stroke-linecap="round"
-							></line>
-						</svg>
-						<input
-							class="password passwordHotkeyInput"
-							placeholder="Set a keybind. Left-bracket by default"
-						/>
-					</div>
-					<button
-						class="buttonreg pPasswordKeybind"
-						style="width: 300px"
-					>
-						Save
-					</button>
-				</div>
-				<div class="settingsection settingsection9">
-					<h1>Import & Export Data</h1>
-					<p>
-						Import simply loads your current userData and boots most
-						of your user settings and data from the last site.
-						Exporting downloads a save file that allows you to load
-						your userData onto another URL to save settings and
-						whatnot.
-					</p>
-					<input
-						type="file"
-						id="dataInput"
-						style="display: none"
-						onchange="importData();"
-					/>
-					<div style="display: flex">
-						<button class="splitbutton" id="exportData">
-							Export Data
-							<span
-								style="
-									position: absolute;
-									transform: translateY(-22px);
-								"
-								class="material-symbols-outlined"
-								>cloud_upload</span
-							>
-						</button>
-						<button class="splitbutton" id="importData">
-							Import Data
-							<span
-								style="
-									position: absolute;
-									transform: translateY(-22px);
-								"
-								class="material-symbols-outlined"
-								>cloud_download</span
-							>
-						</button>
-					</div>
-				</div>
-				<div class="settingsection settingsection9">
-					<h1>Wipe All Settings</h1>
-					<p>
-						Pressing this button will completely wipe all settings,
-						making it as if you never used this site. Its
-						recommended that you export your data before doing this.
-					</p>
-					<button class="splitbutton" id="resetButton">
-						Wipe All Settings...
-					</button>
 				</div>
 			</div>
 

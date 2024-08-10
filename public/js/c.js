@@ -385,7 +385,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Password Protection Keybind
 	if (!localStorage.getItem('passwordKeyBind')) {
-		localStorage.setItem('passwordKeyBind', '[');
+		localStorage.setItem('passwordKeyBind', '~');
 	}
 
 	function handlePasswordKey(event) {
@@ -444,6 +444,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			overlay.className = 'passwordOverlay';
 			overlay.style.width = '100%';
 			overlay.style.height = '100%';
+			overlay.style.animation = 'fade-in-top 0.3s ease';
+			overlay.style.transition = 'all 0.3s ease';
 			overlay.style.backgroundColor = 'transparent';
 			overlay.style.backdropFilter = 'blur(6px)';
 			overlay.style.position = 'absolute';
@@ -500,15 +502,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			localStorage.setItem('isPasswordScreenOpen', 'true');
 
-			input.addEventListener('input', function () {
+			input.addEventListener('keydown', function (e) {
 				const storedPassword = localStorage.getItem('pPassword');
-				if (checkPassword(input.value, storedPassword)) {
-					overlay.remove();
-					document.body.style.pointerEvents = '';
-					document.body.style.cursor = '';
-					document.body.style.userSelect = '';
-					localStorage.setItem('isPasswordScreenOpen', 'false');
-					protectionOpen = false;
+				if (e.key === 'Enter') {
+					if (checkPassword(input.value, storedPassword)) {
+						overlay.style.animation = 'fade-out-bottom 0.3s';
+						setTimeout(() => {
+							overlay.remove();
+						}, 300);
+						document.body.style.pointerEvents = '';
+						document.body.style.cursor = '';
+						document.body.style.userSelect = '';
+						localStorage.setItem('isPasswordScreenOpen', 'false');
+						protectionOpen = false;
+						document.getElementById('text-1').textContent =
+							'Failed';
+						document.getElementById('text-2').textContent =
+							'Something went wrong. Please try again.';
+					} else {
+						document.getElementById('text-1').textContent =
+							'Password is wrong';
+						document.getElementById('text-2').textContent =
+							'Incorrect password. Please try again.';
+						incorrectPassword();
+					}
 				}
 			});
 
@@ -520,6 +537,37 @@ document.addEventListener('DOMContentLoaded', function () {
 			overlay.appendChild(content);
 			document.body.prepend(overlay);
 		}
+	}
+
+	function incorrectPassword() {
+		toast = document.querySelector('.failtoast');
+		(closeIcon = document.querySelector('.failclose')),
+			(progress = document.querySelector('.failprogress'));
+
+		let timer1, timer2;
+		toast.classList.add('active');
+		progress.classList.add('active');
+
+		timer1 = setTimeout(() => {
+			toast.classList.remove('active');
+		}, 5000);
+
+		timer2 = setTimeout(() => {
+			progress.classList.remove('active');
+		}, 5300);
+
+		closeIcon.addEventListener('click', () => {
+			toast.classList.remove('active');
+
+			setTimeout(() => {
+				progress.classList.remove('active');
+			}, 300);
+
+			clearTimeout(timer1);
+			clearTimeout(timer2);
+		});
+
+		panicKeyInput.value = localStorage.getItem('panicKeyBind');
 	}
 
 	// disabling or enabling particles
