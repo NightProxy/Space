@@ -16,12 +16,13 @@ repository.
 
 The current version of Space is **v1.0.0**
 
-> [!IMPORTANT] If you do not have the current version of Space please update
+> [!IMPORTANT]
+> If you do not have the current version of Space please update
 > your repository or things may not function correctly.
 
 # Support
 
 If you are having issues with your repository and/or its versions, you can
-submit a discussion or open a report in our
+submit a discussion or open a ticket in our
 [Discord](https://discord.gointospace.app) and we will try to reach you ASAP.
 Thank you for using Space.

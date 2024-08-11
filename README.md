@@ -1,6 +1,8 @@
 <div align="center">
-<h1>Space</h1>
-<p style="color: #00FF7F">Launch into Space, the next gen proxy.</p>
+    <a href="gointospace.app">
+        <img src="public/assets/SpaceLogo.png" style="width: 300px; border-radius: 10px;"/>
+    </a>
+    <h2 style="color: #00FF7F">Launch into Space, the next gen proxy.</h2>
 </div>
 
 ![inpreview](https://i.imgur.com/DGnFipl.jpeg)
@@ -49,20 +51,20 @@ git pull --force --allow-unrelated-histories
 
 > [!NOTE]
 > If you'd like to get links, support, or other deployment methods join
-> our [Discord Server](https://discord.gg/7SCnPUM5S6) or open a discussion.
+> our [Discord Server](https://discord.gointospace.app) or open a discussion.
 
 ## Contribution
 
-To contribute to Light, clone the repo locally and submit your code in a pull
+To contribute to Space, clone the repo locally and submit your code in a pull
 request. If you are making large changes, please make sure you test your code
-before submitting a pull request.
+before submitting a pull request. Please check [contributing.md](https://github.com/NightProxy/Space/blob/main/contributing.md) for a more in-depth explanation.
 
 ## Contributors
 
-Thank you to the following people for contributing to Light.
+Thank you to the following people for contributing to Space.
 
 [![Contributors](https://contrib.rocks/image?repo=NightProxy/Space)](https://github.com/NightProxy/Space/graphs/contributors)
 
 ## Discord
 
-[![Discord](https://invidget.switchblade.xyz/QmWUfvm4bn?theme=dark)](https://discord.gg/QmWUfvm4bn)
+[![Discord](https://invidget.switchblade.xyz/QmWUfvm4bn?theme=dark)](https://discord.gointospace.app)

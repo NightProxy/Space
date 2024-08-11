@@ -19,6 +19,10 @@
 	"author": "xnoctra <x.noctra@outlook.com>; crllect <crllect@proton.me>",
 	"license": "ISC",
 	"description": "",
+	"engines": {
+		"node": ">=20.0.0 <21.0.0",
+		"pnpm": ">=9.0.0"
+	},
 	"dependencies": {
 		"@mercuryworkshop/bare-as-module3": "^2.2.2",
 		"@mercuryworkshop/bare-mux": "^2.0.2",

@@ -63,27 +63,39 @@
 	--password-hover-background-color: #181818;
 
 	/* Widget */
-    --color-header: '#fff';
-    --accent-color: linear-gradient(101deg, #4400ff7e 0%, rgba(242, 0, 255, 0.336) 100%) !important;
+	--color-header: '#fff';
+	--accent-color: linear-gradient(
+		101deg,
+		#4400ff7e 0%,
+		rgba(242, 0, 255, 0.336) 100%
+	) !important;
 	--color-header: #ff0000 !important;
 }
 
 #changelogfy-launcher {
-    background: rgba(247, 0, 255, 0.514) !important;
-    background: linear-gradient(101deg, #4400ff7e 0%, rgba(242, 0, 255, 0.336) 100%) !important;
-    backdrop-filter: blur(7px);
+	background: rgba(247, 0, 255, 0.514) !important;
+	background: linear-gradient(
+		101deg,
+		#4400ff7e 0%,
+		rgba(242, 0, 255, 0.336) 100%
+	) !important;
+	backdrop-filter: blur(7px);
 	opacity: 0.9;
 }
 
 .flex.flex-1.justify-between.relative.z-10.px-5.py-5.sm\:px-8 {
 	background: rgba(247, 0, 255, 0.514) !important;
-	background: linear-gradient(101deg, #4400ff7e 0%, rgba(242, 0, 255, 0.336) 100%) !important;
+	background: linear-gradient(
+		101deg,
+		#4400ff7e 0%,
+		rgba(242, 0, 255, 0.336) 100%
+	) !important;
 	backdrop-filter: blur(7px) !important;
 	opacity: 0.9 !important;
 }
 
 .rounded {
-    border-radius: 100em !important;
+	border-radius: 100em !important;
 }
 
 body {
@@ -199,7 +211,7 @@ body {
 }
 
 .navbar span:hover,
-.navbar div:hover {
+.navbar div:not(.navHover):hover {
 	background-color: var(--header-hover-background-color);
 	border-radius: 7px;
 	transition: 0.12s all ease-in-out;
