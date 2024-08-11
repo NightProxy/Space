@@ -209,7 +209,7 @@ ol {
 
 .settingsection:hover {
 	transition: 0.3s !important;
-	background-color: var(--settingsection-background-color-hover);
+	background-color: #101010;
 }
 
 .settingItem {
