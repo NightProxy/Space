@@ -1,8 +1,8 @@
 <div align="center">
     <a href="gointospace.app">
-        <img src="assets/SpaceLogo.png" style="width: 300px; border-radius: 10px;"/>
+        <img src="assets/spacebanner.png" style="width: 300px; border-radius: 10px;"/>
     </a>
-    <h2 style="color: #00FF7F">Launch into Space, the next gen proxy.</h2>
+    <h2>Launch into Space, the next gen proxy.</h2>
 </div>
 
 ![inpreview](https://i.imgur.com/VhNNgOs.jpeg)
