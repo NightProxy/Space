@@ -198,6 +198,12 @@ h3 {
 	position: relative;
 	animation: fade-in-left 1s;
 	opacity: 0;
+	transition: 0.3s ease !important;
+}
+
+.settingsection:hover {
+	transition: 0.3s !important;
+	transform: translateY(-5px);
 }
 
 .settingItem {

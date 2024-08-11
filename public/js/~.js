@@ -82,14 +82,15 @@ function showPageFromHash() {
 		if (item.dataset.id === hash) {
 			shapePositions = {
 				blank: '26.5px',
-				plugins: '65.27px',
+				plugins: '66px',
 				performance: '103.5px',
 				themes: '142px',
-				proxy: '180.8px',
-				ads: '219px',
-				account: '278.5px',
-				about: '317px',
-				news: '377px'
+				proxy: '180px',
+				ads: '217px',
+				account: '277px',
+				about: '315px',
+				news: '375px',
+				faq: '411px',
 			};
 
 			console.log(item.dataset.id);
