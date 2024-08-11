@@ -20,12 +20,12 @@
 	object-fit: cover;
 	border-radius: 14px;
 	cursor: pointer;
-	transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out !important;
 }
 
 .appsContainer img:hover {
 	transform: scale(1.05);
-	transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out !important;
 }
 
 .appsContainer img:active {
@@ -59,12 +59,12 @@
 	object-fit: cover;
 	border-radius: 14px;
 	cursor: pointer;
-	transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out !important;
 }
 
 .gameContain img:hover {
 	transform: scale(1.05);
-	transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out !important;
 }
 
 .gameContain img:active {
@@ -92,6 +92,7 @@
 
 .scrolltop span.material-symbols-outlined {
 	justify-content: center;
+	transform: translateY(-10px);
 	font-size: 30px;
 }
 
