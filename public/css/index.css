@@ -64,14 +64,22 @@
 
 	/* Widget */
     --color-header: '#fff';
-    --accent-color: 'linear-gradient(101deg, #4400ff7e 0%, rgba(242, 0, 255, 0.336) 100%) !important';
+    --accent-color: linear-gradient(101deg, #4400ff7e 0%, rgba(242, 0, 255, 0.336) 100%) !important;
+	--color-header: #ff0000 !important;
 }
 
 #changelogfy-launcher {
-    background: rgba(247, 0, 255, 0.514) !important; 
+    background: rgba(247, 0, 255, 0.514) !important;
     background: linear-gradient(101deg, #4400ff7e 0%, rgba(242, 0, 255, 0.336) 100%) !important;
     backdrop-filter: blur(7px);
 	opacity: 0.9;
+}
+
+.flex.flex-1.justify-between.relative.z-10.px-5.py-5.sm\:px-8 {
+	background: rgba(247, 0, 255, 0.514) !important;
+	background: linear-gradient(101deg, #4400ff7e 0%, rgba(242, 0, 255, 0.336) 100%) !important;
+	backdrop-filter: blur(7px) !important;
+	opacity: 0.9 !important;
 }
 
 .rounded {
@@ -195,6 +203,7 @@ body {
 	background-color: var(--header-hover-background-color);
 	border-radius: 7px;
 	transition: 0.12s all ease-in-out;
+	cursor: pointer;
 }
 
 .navbar span,
@@ -377,6 +386,32 @@ body img {
 	}
 
 	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in-bottom-announcement {
+	0% {
+		-webkit-transform: translateX(-50%) translateY(50px);
+		transform: translateX(-50%) translateY(50px);
+		opacity: 0;
+	}
+
+	100% {
+		-webkit-transform: translateX(-50%) translateY(0);
+		transform: translateX(-50%) translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in-bottom-announcement-close {
+	0% {
+		transform: translateX(calc(-50% + 289px)) translateY(calc(50px - 20%));
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(calc(-50% + 289px)) translateY(-20%);
 		opacity: 1;
 	}
 }
@@ -1020,4 +1055,27 @@ input:hover {
 
 .toast.active ~ button {
 	pointer-events: none;
+}
+
+p {
+	color: rgba(255, 255, 255, 0.48);
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+p a {
+	background: #7400ff;
+	background: linear-gradient(to top left, #7400ff 0%, #ff00cf 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-decoration: underline;
+	transition: color 0.2s ease;
+}
+
+p a:hover {
+	text-decoration-color: var(--link-hover-color);
+	text-underline-offset: 2px;
+	transition: color 0.2s ease;
 }

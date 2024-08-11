@@ -90,7 +90,7 @@ function showPageFromHash() {
 				account: '277px',
 				about: '315px',
 				news: '375px',
-				faq: '411px',
+				faq: '411px'
 			};
 
 			console.log(item.dataset.id);
@@ -1017,6 +1017,10 @@ document.addEventListener('DOMContentLoaded', function () {
 				window.location.href = '/';
 			}, 1000);
 		});
+
+	document.getElementById('bannerClose').addEventListener('click', () => {
+		document.getElementById('banner').remove();
+	});
 });
 
 // lock scroll cus yea

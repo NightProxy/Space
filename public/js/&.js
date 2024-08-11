@@ -29,6 +29,7 @@ async function executeSearch(query) {
 
 	if (iframe.src) {
 		document.querySelector('.shortcuts').style.display = 'none';
+		document.querySelector('.shortcutsBig').style.display = 'none';
 	}
 
 	document.querySelectorAll('input').forEach(input => input.blur());
@@ -83,6 +84,11 @@ function startURLMonitoring() {
 					currentIndex++;
 					saveHistory();
 				}
+
+				devToggle = false;
+				erudaScriptLoaded = false;
+				erudaScriptInjecting = false;
+				console.log('Iframe navigation detected, Eruda toggle reset.');
 
 				updateGointospace2(currentUrl);
 				updateButtonStates();

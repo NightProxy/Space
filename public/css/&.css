@@ -144,7 +144,7 @@
 	font-size: 16px !important;
 }
 
-.shortcutsbig {
+.shortcutsBig {
 	width: 1000px;
 	display: flex;
 	flex-wrap: wrap;
@@ -156,7 +156,7 @@
 	transform: translateX(-50%);
 }
 
-.shortcutbig {
+.shortcutBig {
 	background: none;
 	align-content: center;
 	justify-content: center;
@@ -165,19 +165,19 @@
 	border-radius: 30px;
 }
 
-.shortcutbigimg {
+.shortcutBigimg {
 	animation: fade-in-bottom 1s;
 	opacity: 0;
 }
 
-.shortcutbig img {
+.shortcutBig img {
 	width: 170px;
 	height: 90px;
 	border-radius: 20px;
 	transition: 0.2s ease-in-out !important;
 }
 
-.shortcutbig img:hover {
+.shortcutBig img:hover {
 	transform: scale(1.1);
 	border-radius: 20px;
 	transition: 0.12s ease;

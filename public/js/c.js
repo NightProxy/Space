@@ -90,7 +90,7 @@ if (pathname.includes('~')) {
 	setupObserver('.appImage');
 } else if (pathname === '/&') {
 	setupObserver('.shortcut');
-	setupObserver('.shortcutbigimg');
+	setupObserver('.shortcutBigimg');
 }
 
 function isInLocalStorage(key) {

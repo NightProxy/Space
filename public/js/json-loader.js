@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		fetch('/json/sb.json')
 			.then(response => response.json())
 			.then(data => {
-				const shortcuts = document.querySelector('.shortcutsbig');
+				const shortcuts = document.querySelector('.shortcutsBig');
 
 				data.forEach(shortcut => {
 					const shortcutLink = document.createElement('a');
@@ -186,8 +186,8 @@ document.addEventListener('DOMContentLoaded', () => {
 					shortcutImage.src = shortcut.img;
 					shortcutImage.alt = shortcut.name;
 					shortcutImage.title = shortcut.name;
-					shortcutLink.classList.add('shortcutbig');
-					shortcutImage.classList.add('shortcutbigimg');
+					shortcutLink.classList.add('shortcutBig');
+					shortcutImage.classList.add('shortcutBigimg');
 
 					shortcutImage.style.width = '170px';
 					shortcutImage.style.height = '90px';

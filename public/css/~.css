@@ -210,29 +210,6 @@ h3 {
 	display: block;
 }
 
-.settingsection p {
-	color: rgba(255, 255, 255, 0.48);
-	font-size: 14px;
-	line-height: 20px;
-	font-weight: 300;
-	letter-spacing: 1px;
-}
-
-.settingsection p a {
-	background: #7400ff;
-	background: linear-gradient(to top left, #7400ff 0%, #ff00cf 100%);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-decoration: underline;
-	transition: color 0.2s ease;
-}
-
-.settingsection p a:hover {
-	text-decoration-color: var(--link-hover-color);
-	text-underline-offset: 2px;
-	transition: color 0.2s ease;
-}
-
 @keyframes link {
 	0% {
 		background: linear-gradient(to top left, #7400ff 0%, #ff00cf 100%);
