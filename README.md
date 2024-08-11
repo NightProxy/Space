@@ -1,5 +1,5 @@
 <div align="center">
-        <img src="assets/spacebanner.png" style="width: 300px; border-radius: 10px;"/>
+        <img src="https://i.imgur.com/OMo4cMz.png" style="width: 1200px"/>
     <h2>Launch into Space, the next gen proxy.</h2>
 </div>
 
