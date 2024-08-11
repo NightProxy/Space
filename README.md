@@ -5,7 +5,7 @@
     <h2 style="color: #00FF7F">Launch into Space, the next gen proxy.</h2>
 </div>
 
-![inpreview](https://i.imgur.com/DGnFipl.jpeg)
+![inpreview](https://i.imgur.com/VhNNgOs.jpeg)
 
 > [!IMPORTANT]
 > If you fork this repo please consider giving the original repo a
