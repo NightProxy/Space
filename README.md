@@ -1,7 +1,5 @@
 <div align="center">
-    <a href="gointospace.app">
         <img src="assets/spacebanner.png" style="width: 300px; border-radius: 10px;"/>
-    </a>
     <h2>Launch into Space, the next gen proxy.</h2>
 </div>
 
