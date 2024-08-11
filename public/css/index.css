@@ -30,6 +30,7 @@
 	--random-btn-hover-background-color: rgb(25, 25, 25);
 	--random-btn-active-background-color: rgb(15, 15, 15);
 	--settingsection-background-color: #0c0c0c;
+	--settingsection-background-color-hover: #101010;
 	--link-hover-color: #7d2ae8;
 	--settingsection-hr-background: rgba(255, 255, 255, 0.22);
 	--button-reg-background-color: rgb(22, 22, 22);
@@ -1093,27 +1094,4 @@ input:hover {
 
 .toast.active ~ button {
 	pointer-events: none;
-}
-
-p {
-	color: rgba(255, 255, 255, 0.48);
-	font-size: 14px;
-	line-height: 20px;
-	font-weight: 300;
-	letter-spacing: 1px;
-}
-
-p a {
-	background: #7400ff;
-	background: linear-gradient(to top left, #7400ff 0%, #ff00cf 100%);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-decoration: underline;
-	transition: color 0.2s ease;
-}
-
-p a:hover {
-	text-decoration-color: var(--link-hover-color);
-	text-underline-offset: 2px;
-	transition: color 0.2s ease;
 }

@@ -150,9 +150,7 @@
 			"
 		>
 			<ul class="sideSnav">
-				<li>
-					<h1>Settings</h1>
-				</li>
+				<h1>Settings</h1>
 				<div id="settingsShape" class="settingsShape"></div>
 				<a href="/~/#/blank">
 					<li class="settingItem" data-id="blank">
@@ -1072,69 +1070,141 @@
 						community.
 					</p>
 				</div>
+				<div class="settingsection settingsection11">
+					<h1>
+						How can I make links? (BYOD)
+						<span
+							class="changelog"
+							style="background-color: #9500ff"
+							>Popular FAQ</span
+						>
+					</h1>
+					<p>
+						To make links you will need to have a personal PC or
+						device.
+					</p>
+					<ol style="list-style-type: decimal">
+						<li>
+							First open
+							<a
+								target="_blank"
+								href="https://freedns.afraid.org/signup/?plan=starter"
+								>FreeDNS</a
+							>.
+						</li>
+						<li>
+							Next head to
+							<a target="_blank" href="https://temp-mail.org/"
+								>Tempmail</a
+							>
+							and open a temporary email.
+						</li>
+						<ul>
+							<li>
+								Type in a random name or text string for the
+								First & Last name
+							</li>
+							<li>
+								Create a random password then use the
+								<b>Tempmail</b> email for the email section.
+							</li>
+							<li>
+								Once these have been filled, complete the
+								captcha and accept the Privacy and TOS
+								agreement.
+							</li>
+						</ul>
+						<li>
+							Then go to the subdomains (<a
+								target="_blank"
+								href="https://freedns.afraid.org/subdomain/"
+								>freedns.afraid.org/subdomain)</a
+							>
+							and click add.
+						</li>
+						<li>Fill in the blanks as instructed below:</li>
+						<ul>
+							<li>Type: <b>A</b></li>
+							<li>
+								Subdomain:
+								<b
+									>Anything (This is the name of the site you
+									want)</b
+								>
+							</li>
+							<li>
+								Domain: Click it, then click
+								<b><u>Many many more available.</u></b> Then
+								click shared domain Registry. Choose any public
+								domain you like. (Usually within 10-40's of the
+								pages)
+							</li>
+							<li>
+								Destination: <b>45.134.142.230</b> (If you don't
+								put this correctly the link will
+								<b
+									><i><u>NOT</u></i></b
+								>
+								work.)
+							</li>
+						</ul>
+						<li style="margin-top: 10px">
+							Once the following has been filled in, complete the
+							captcha below then click save.
+						</li>
+						<li>And you are done 🎉</li>
+					</ol>
+					<p>
+						<b>Note:</b> You will need to wait 8m at most for the
+						site to fully boot up.
+					</p>
+					<p>
+						If you have any issues while doing a BYOD, please open a
+						support ticket on our
+						<a href="https://discord.gointospace.app">Discord</a>
+						and our team will gladly help you.
+					</p>
+				</div>
+				<div class="settingsection settingsection11">
+					<h1>I found a bug, what now?</h1>
+					<p>
+						If you've found an issue while using Space, you can do
+						any of the following methods of reporting:
+					</p>
+					<ul>
+						<li>
+							Open an issue on our
+							<a
+								target="_blank"
+								href="https://github.com/nightproxy/space"
+								>GitHub</a
+							>.
+						</li>
+						<li>
+							Open a ticket on our
+							<a
+								target="_blank"
+								href="https://discord.gointospace.app"
+								>Discord</a
+							>.
+						</li>
+						<li>
+							Report a bug within our widget on the
+							<a href="/">Home page</a>.
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div
 				id="banner"
 				style="display: block; position: absolute; bottom: 0"
 			>
-				<p
-					style="
-						--initial-translateY: display: flex;
-						align-items: center;
-						position: absolute;
-						bottom: calc(652px / 2 - 50vh + 20px);
-						left: 50%;
-						transform: translateX(-50%);
-						width: 600px;
-						height: 20px;
-						margin: 0;
-						background-color: var(--button-reg-background-color);
-						color: var(--text-color);
-						border-radius: 10px;
-						border: 0;
-						text-align: center;
-						outline: #ffffff17 1px solid;
-						padding: 4px;
-						padding-left: 10px;
-						background-color: rgb(22, 22, 22);
-						box-shadow:
-							10px 5px 40px -10px #ae00ff,
-							-14px -4px 40px -10px #4400ff,
-							0 0 15px -10px #fff;
-						font-size: 14px;
-						backdrop-filter: blur(8px);
-						z-index: 999;
-						animation: fade-in-bottom-announcement 1s;
-					"
-				>
+				<p class="banner">
 					Hosted by&nbsp;<a href="https://discord.gg/bcjat78AP6"
 						>AnyVM</a
 					>!
 				</p>
-				<button
-					id="bannerClose"
-					style="
-						animation: fade-in-bottom-announcement-close 1s;
-						display: flex;
-						align-items: center;
-						position: absolute;
-						bottom: calc(652px / 2 - 50vh + 20px);
-						left: 50%;
-						transform: translateX(calc(-50% + 289px))
-							translateY(-20%);
-						width: 20px;
-						height: 20px;
-						margin: 0;
-						border-radius: 7px;
-						border: none;
-						padding: 4px;
-						padding-left: 10px;
-						background-color: transparent;
-						font-size: 14px;
-						z-index: 9999;
-						cursor: pointer;
-					"
-				>
+				<button id="bannerClose">
 					<i class="fa-solid fa-xmark" style="color: #525252"></i>
 				</button>
 			</div>
