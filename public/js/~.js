@@ -1019,7 +1019,13 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 
 	document.getElementById('bannerClose').addEventListener('click', () => {
-		document.getElementById('banner').remove();
+		document.getElementById('banner').style.animation =
+			'fade-out-top-announcement 1s';
+		document.getElementById('bannerClose').style.animation =
+			'fade-out-top-announcement-close 1s';
+		setTimeout(() => {
+			document.getElementById('banner').remove();
+		}, 1000);
 	});
 });
 

@@ -429,6 +429,32 @@ body img {
 	}
 }
 
+@keyframes fade-out-top-announcement {
+	100% {
+		-webkit-transform: translateX(-50%) translateY(-50px);
+		transform: translateX(-50%) translateY(-50px);
+		opacity: 0;
+	}
+
+	0% {
+		-webkit-transform: translateX(-50%) translateY(0);
+		transform: translateX(-50%) translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out-top-announcement-close {
+	100% {
+		transform: translateX(calc(-50% + 289px)) translateY(calc(- 20%));
+		opacity: 0;
+	}
+
+	0% {
+		transform: translateX(calc(-50% + 289px)) translateY(-20%);
+		opacity: 1;
+	}
+}
+
 @keyframes tilt {
 	0% {
 		-webkit-transform: rotateY(20deg) rotateX(35deg)

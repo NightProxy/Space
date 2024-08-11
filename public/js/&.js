@@ -507,7 +507,7 @@ function inspectelement() {
 
 	if (iframe.contentWindow.document.readyState == 'loading') {
 		console.warn(
-			'Iframe has not finished loading, skipping Eruda injection. Be patient jesus fuck.'
+			'Iframe has not finished loading, skipping Eruda injection. Be patient, jesus fuck.'
 		);
 		return;
 	}

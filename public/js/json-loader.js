@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 							);
 							visibleGameAnchors[randomIndex].click();
 						} else {
-							console.log('No visible games to select.');
+							// console.log('No visible games to select.');
 						}
 					});
 			})
