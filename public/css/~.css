@@ -203,10 +203,6 @@ ol {
 	transition: all 0.3s ease-in-out !important;
 }
 
-.settingsection:not(.dropdown):hover {
-	z-index: 9;
-}
-
 .settingsection:hover {
 	transition: 0.3s !important;
 	background-color: #101010 !important;

@@ -1030,6 +1030,26 @@ document.addEventListener('DOMContentLoaded', function () {
 			document.getElementById('banner').remove();
 		}, 1000);
 	});
+
+	async function fetchLastCommitDate() {
+		try {
+			const response = await fetch(
+				'https://api.github.com/repos/nightproxy/space/commits'
+			);
+			const commits = await response.json();
+			const lastCommitDate = new Date(commits[0].commit.committer.date);
+			const formattedDate = lastCommitDate.toLocaleDateString('en-US', {
+				year: 'numeric',
+				month: 'long',
+				day: 'numeric'
+			});
+			document.getElementById('last-updated').textContent = formattedDate;
+		} catch (error) {
+			console.error('Error fetching the last commit date:', error);
+		}
+	}
+
+	fetchLastCommitDate();
 });
 
 // lock scroll cus yea
