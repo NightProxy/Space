@@ -3,7 +3,7 @@
 First of all, thanks for taking interest in the project!
 
 > [!IMPORTANT]
-> Please use prettier with our provided config to all your changes, failure to do so will result in your changes getting rejected. Simply run `npm run format` to format the code with our config
+> Please use prettier with our provided config to all your changes, failure to do so will result in your changes getting rejected. Simply run `pnpm format` to format the code with our config
 
 ## Frontend Contributions
 All frontend contributions should use the provided files, and should avoid creating new ones. There are of course exceptions, but try to fit and organize your changes across the files. Heres a guide for the purpose of the frontend files:
