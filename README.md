@@ -30,14 +30,13 @@ Please run the following commands to host a server:
 ```
 git clone https://github.com/NightProxy/space.git
 cd Space
-npm install
-npm start
+pnpm i
+pnpm start
 ```
 
 ### Updating
 
 ```
-cd Space
 git pull --force --allow-unrelated-histories
 ```
 
@@ -61,8 +60,7 @@ before submitting a pull request. Please check [contributing.md](https://github.
 
 Thank you to the following people for contributing to Space.
 
-
-[![Contributors](https://contrib.rocks/image?repo=NightProxy/Space)](https://github.com/NightProxy/Space/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=nightproxy/space)](https://github.com/NightProxy/Space/graphs/contributors)
 
 ## Discord
 
