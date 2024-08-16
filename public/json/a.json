@@ -116,7 +116,7 @@
 	{
 		"name": "Telegram",
 		"url": "https://web.telegram.org/",
-		"img": "/assets/imgs/a/Telegram.webp",
+		"img": "/assets/imgs/a/Telegram.svg",
 		"categories": ["all", "messaging", "media", "social"]
 	},
 	{
@@ -128,7 +128,7 @@
 	{
 		"name": "TikTok",
 		"url": "https://www.tiktok.com/explore",
-		"img": "/assets/imgs/a/TikTok.webp",
+		"img": "/assets/imgs/a/TikTok.svg",
 		"categories": ["all", "media", "social"]
 	},
 	{
@@ -182,7 +182,7 @@
 	{
 		"name": "Snapchat",
 		"url": "https://www.snapchat.com",
-		"img": "/assets/imgs/a/Snapchat.webp",
+		"img": "/assets/imgs/a/Snapchat.svg",
 		"categories": ["all", "media", "messaging", "popular"]
 	},
 	{
