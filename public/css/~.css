@@ -751,12 +751,14 @@ p a {
 	background: #7400ff;
 	background: linear-gradient(to top left, #7400ff 0%, #ff00cf 100%);
 	background-clip: text;
+	color: #7f049b;
 	-webkit-text-fill-color: transparent;
-	text-decoration: underline;
+	text-decoration: none;
 	transition: color 0.2s ease;
 }
 
 p a:hover {
+	text-decoration: underline;
 	text-decoration-color: var(--link-hover-color);
 	text-underline-offset: 2px;
 	transition: color 0.2s ease;
