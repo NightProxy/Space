@@ -116,6 +116,10 @@ body {
 	z-index: 10;
 }
 
+.header > h1 {
+	white-space: nowrap;
+}
+
 .header > h1 p {
 	font-size: 20px;
 	margin: 10px 0px 1px;
@@ -866,6 +870,10 @@ span.material-symbols-outlined {
 input:hover {
 	outline: none;
 	background-color: var(--password-hover-background-color);
+}
+
+input {
+	font: inherit;
 }
 
 .picon {
