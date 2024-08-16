@@ -18,7 +18,7 @@
 	{
 		"name": "Discord",
 		"url": "https://discord.com/login",
-		"img": "/assets/imgs/sb/Discord.webp"
+		"img": "/assets/imgs/sb/Discord.svg"
 	},
 	{
 		"name": "ChatGPT",
@@ -38,7 +38,7 @@
 	{
 		"name": "Twitch",
 		"url": "https://twitch.com/",
-		"img": "/assets/imgs/sb/Twitch.webp"
+		"img": "/assets/imgs/sb/Twitch.svg"
 	},
 	{
 		"name": "ESPN",

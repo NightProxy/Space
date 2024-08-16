@@ -38,13 +38,13 @@
 	{
 		"name": "Discord",
 		"url": "https://discord.com/",
-		"img": "/assets/imgs/a/Discord.webp",
+		"img": "/assets/imgs/a/Discord.svg",
 		"categories": ["all", "social", "messaging", "media"]
 	},
 	{
 		"name": "Discord | Login",
 		"url": "https://discord.com/login",
-		"img": "/assets/imgs/a/Discord.webp",
+		"img": "/assets/imgs/a/Discord_Login.svg",
 		"categories": ["all", "social", "messaging", "media"]
 	},
 	{
@@ -140,7 +140,7 @@
 	{
 		"name": "Twitch",
 		"url": "https://www.twitch.tv/",
-		"img": "/assets/imgs/a/Twitch.webp",
+		"img": "/assets/imgs/a/Twitch.svg",
 		"categories": ["all", "social", "media", "game"]
 	},
 	{
@@ -152,7 +152,7 @@
 	{
 		"name": "VS Code",
 		"url": "https://vscode.dev/",
-		"img": "/assets/imgs/a/VS_Code.webp",
+		"img": "/assets/imgs/a/VS_Code.svg",
 		"categories": ["all", "media"]
 	},
 	{
@@ -176,7 +176,7 @@
 	{
 		"name": "Character.AI",
 		"url": "https://beta.character.ai",
-		"img": "/assets/imgs/a/Character_AI.webp",
+		"img": "/assets/imgs/a/Character_AI.svg",
 		"categories": ["all", "ai", "popular"]
 	},
 	{

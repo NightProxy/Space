@@ -64,7 +64,7 @@
 	{
 		"name": "Twitch",
 		"url": "https://twitch.com/",
-		"img": "/assets/imgs/s/Twitch.webp",
+		"img": "/assets/imgs/s/Twitch.svg",
 		"style": "width: 40px; height: 40px; padding: 5px",
 		"bg": "#fff"
 	},
