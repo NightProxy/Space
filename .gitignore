@@ -390,3 +390,6 @@ out
 
 # SvelteKit build / generate output
 .svelte-kit
+
+
+package-lock.json
