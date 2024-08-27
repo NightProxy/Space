@@ -191,7 +191,24 @@ function handleCheckboxChange() {
 							</head>
 							<body>
 								<iframe src="${currentSiteUrl}"></iframe>
-							</body>
+							<script>
+    let CLF_config = {
+        app_id: "163a312a-7cde-41ab-a80c-cb4cf281efdf",
+        data: {
+            user_id: '123456', // required
+            user_email: 'user@email.com', // required
+            user_name: 'User Name', // optional
+            custom_data: {
+                'JobRole': 'CEO', // optional
+                'Plan': 'Pro', // optional
+                'teamMates': '4', // optional
+                'MonthlySpend': '50 USD' // optional
+            }
+        }
+    };
+</script>
+<script async src="https://widget.changelogfy.com/index.js"></script>
+</body>
 						</html>
 					`;
 
@@ -373,7 +390,24 @@ function launchBlob() {
 			</head>
 			<body>
 				<iframe src="${currentSiteUrl}"></iframe>
-			</body>
+			<script>
+    let CLF_config = {
+        app_id: "163a312a-7cde-41ab-a80c-cb4cf281efdf",
+        data: {
+            user_id: '123456', // required
+            user_email: 'user@email.com', // required
+            user_name: 'User Name', // optional
+            custom_data: {
+                'JobRole': 'CEO', // optional
+                'Plan': 'Pro', // optional
+                'teamMates': '4', // optional
+                'MonthlySpend': '50 USD' // optional
+            }
+        }
+    };
+</script>
+<script async src="https://widget.changelogfy.com/index.js"></script>
+</body>
 		</html>
 	`;
 

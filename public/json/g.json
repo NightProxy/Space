@@ -1,10 +1,9 @@
 [
 	{
 		"name": "! Request an app",
-		"url" : "https://docs.google.com/forms/d/e/1FAIpQLSeZcPMt3toVL8EtKLfHMbKpx4lZzqAAr5ifvZJRwoXqsLSf-A/viewform?usp=pp_url",
-		"img" : "/assets/requestGame.jpg",
+		"url": "https://docs.google.com/forms/d/e/1FAIpQLSeZcPMt3toVL8EtKLfHMbKpx4lZzqAAr5ifvZJRwoXqsLSf-A/viewform?usp=pp_url",
+		"img": "/assets/requestGame.jpg",
 		"categories": ["all"]
-
 	},
 	{
 		"name": "1v1.LOL",

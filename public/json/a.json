@@ -1,8 +1,8 @@
 [
 	{
 		"name": "! Request a game",
-		"url" : "https://docs.google.com/forms/d/e/1FAIpQLSeZcPMt3toVL8EtKLfHMbKpx4lZzqAAr5ifvZJRwoXqsLSf-A/viewform?usp=pp_url",
-		"img" : "/assets/requestApp.jpg",
+		"url": "https://docs.google.com/forms/d/e/1FAIpQLSeZcPMt3toVL8EtKLfHMbKpx4lZzqAAr5ifvZJRwoXqsLSf-A/viewform?usp=pp_url",
+		"img": "/assets/requestApp.jpg",
 		"categories": ["all"]
 	},
 	{

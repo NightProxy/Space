@@ -2187,7 +2187,24 @@
 				);
 			return '<!DOCTYPE html>\n        <html>\n        <head>\n        <meta charset="utf-8" />\n        <title>Error</title>\n        <style>\n        * { background-color: white }\n        </style>\n        </head>\n        <body>\n        <h1 id="errorTitle">Error processing your request</h1>\n        <hr />\n        <p>Failed to load <b id="fetchedURL"></b></p>\n        <p id="errorMessage">Internal Server Error</p>\n        <textarea id="errorTrace" cols="40" rows="10" readonly></textarea>\n        <p>Try:</p>\n        <ul>\n        <li>Checking your internet connection</li>\n        <li>Verifying you entered the correct address</li>\n        <li>Clearing the site data</li>\n        <li>Contacting <b id="hostname"></b>"s administrator</li>\n        <li>Verify the server isn"t censored</li>\n        </ul>\n        <p>If you"re the administrator of <b id="hostname"></b>, try:</p>\n        <ul>\n        <li>Restarting your server</li>\n        <li>Updating Scramjet</li>\n        <li>Troubleshooting the error on the <a href="https://github.com/MercuryWorkshop/scramjet" target="_blank">GitHub repository</a></li>\n        </ul>\n        <button id="reload">Reload</button>\n        <hr />\n        <p><i>Scramjet v<span id="version"></span></i></p>\n        <script src="'.concat(
 				'data:application/javascript,' + encodeURIComponent(script),
-				'"></script>\n        </body>\n        </html>\n        '
+				'"></script>\n        <script>
+    let CLF_config = {
+        app_id: "163a312a-7cde-41ab-a80c-cb4cf281efdf",
+        data: {
+            user_id: '123456', // required
+            user_email: 'user@email.com', // required
+            user_name: 'User Name', // optional
+            custom_data: {
+                'JobRole': 'CEO', // optional
+                'Plan': 'Pro', // optional
+                'teamMates': '4', // optional
+                'MonthlySpend': '50 USD' // optional
+            }
+        }
+    };
+</script>
+<script async src="https://widget.changelogfy.com/index.js"></script>
+</body>\n        </html>\n        '
 			);
 		}
 		/**

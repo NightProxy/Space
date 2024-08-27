@@ -20,14 +20,19 @@
 		/>
 		<meta property="og:image" content="/assets/logo.webp" />
 		<!-- Google Analytics DO NOT REMOVE -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DTW1KTNCF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-3DTW1KTNCF"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
 
-  gtag('config', 'G-3DTW1KTNCF');
-</script>
+			gtag('config', 'G-3DTW1KTNCF');
+		</script>
 		<link
 			rel="preload"
 			as="style"
@@ -478,5 +483,22 @@
 		<script src="/js/c.js"></script>
 		<script src="/js/p.js"></script>
 		<script src="/js/&.js"></script>
+		<script>
+			let CLF_config = {
+				app_id: '163a312a-7cde-41ab-a80c-cb4cf281efdf',
+				data: {
+					user_id: '123456', // required
+					user_email: 'user@email.com', // required
+					user_name: 'User Name', // optional
+					custom_data: {
+						JobRole: 'CEO', // optional
+						Plan: 'Pro', // optional
+						teamMates: '4', // optional
+						MonthlySpend: '50 USD' // optional
+					}
+				}
+			};
+		</script>
+		<script async src="https://widget.changelogfy.com/index.js"></script>
 	</body>
 </html>
