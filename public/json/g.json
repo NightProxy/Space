@@ -48,6 +48,12 @@
 		"categories": ["all"]
 	},
 	{
+		"name": "Ball Dodge",
+		"url": "https://3kh0-assets.silvereen.net/3kh0-assets/ball-dodge",
+		"img": "/assets/imgs/g/balldodge.png",
+		"categories": ["all"]
+	},
+	{
 		"name": "Happy Wheels",
 		"url": "https://totaljerkface.com",
 		"img": "/assets/imgs/g/Happy_Wheels.webp",
