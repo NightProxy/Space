@@ -24,6 +24,12 @@
 		"categories": ["all"]
 	},
 	{
+		"name": "Ball Dodge",
+		"url": "https://3kh0-assets.silvereen.net/3kh0-assets/ball-dodge",
+		"img": "/assets/imgs/g/balldodge.png",
+		"categories": ["all"]
+	},
+	{
 		"name": "3D Dino Game",
 		"url": "https://lagged.com/api/play2/t-rex-3d2/",
 		"img": "/assets/imgs/g/3D_Dino_Game.webp",
@@ -45,12 +51,6 @@
 		"name": "Age of War",
 		"url": "https://age-of-war.game-files.crazygames.com/ruffle/ageofwar.html",
 		"img": "/assets/imgs/g/Age_of_War.webp",
-		"categories": ["all"]
-	},
-	{
-		"name": "Ball Dodge",
-		"url": "https://3kh0-assets.silvereen.net/3kh0-assets/ball-dodge",
-		"img": "/assets/imgs/g/balldodge.png",
 		"categories": ["all"]
 	},
 	{
