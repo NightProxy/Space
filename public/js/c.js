@@ -102,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Cloaking
 	if (
 		currentLocation !== 'about:blank' ||
+		window.parent.location.href !== 'about:blank' ||
 		!currentLocation.includes('blob:')
 	) {
 		const launchType = localStorage.getItem('launchType');
