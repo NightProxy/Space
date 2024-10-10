@@ -109,8 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	if (
 		window.location.pathname === '/&' &&
-		(localStorage.getItem('smallIcons') === 'true' ||
-			!localStorage.getItem('smallIcons'))
+		localStorage.getItem('smallIcons') === 'true'
 	) {
 		fetch('/json/s.json')
 			.then(response => response.json())
@@ -166,7 +165,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			.catch(error => console.error('Error loading shortcut :( ', error));
 	} else if (
 		window.location.pathname === '/&' &&
-		localStorage.getItem('smallIcons') === 'false'
+		(localStorage.getItem('smallIcons') === 'false' ||
+		!localStorage.getItem('smallIcons'))
 	) {
 		fetch('/json/sb.json')
 			.then(response => response.json())
