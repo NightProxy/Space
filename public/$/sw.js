@@ -1,13 +1,14 @@
 importScripts(
-	'/$/scramjet.codecs.js',
-	'/$/scramjet.config.js',
-	'/$/scramjet.shared.js',
-	'/$/scramjet.worker.js'
+	"/$/scramjet.wasm.js",
+	"/$/scramjet.codecs.js",
+	"/$/scramjet.shared.js",
+	"/$/scramjet.worker.js"
 );
 
 const scramjet = new ScramjetServiceWorker();
 
 async function handleRequest(event) {
+	await scramjet.loadConfig();
 	if (scramjet.route(event)) {
 		return scramjet.fetch(event);
 	}
@@ -15,6 +16,6 @@ async function handleRequest(event) {
 	return fetch(event.request);
 }
 
-self.addEventListener('fetch', event => {
+self.addEventListener("fetch", (event) => {
 	event.respondWith(handleRequest(event));
 });

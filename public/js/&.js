@@ -2,11 +2,15 @@
 
 let encodedUrl = '';
 async function executeSearch(query) {
-	if (localStorage.getItem('dropdown-selected-text-proxy') == 'Dynamic') {
+	if (localStorage.getItem('dropdown-selected-text-proxy') == 'Scramjet') {
+		const scramjet = new ScramjetController(__scramjet$config);
+		
+		scramjet.init("/$/sw.js").then(async () => {
+			await setTransports();
+		});
+
 		encodedUrl =
-			swConfigSettings.prefix +
-			'route?url=' +
-			encodeURIComponent(search(query));
+			__scramjet$config.prefix + __uv$config.encodeUrl(search(query));
 	} else {
 		encodedUrl =
 			swConfigSettings.prefix + __uv$config.encodeUrl(search(query));
