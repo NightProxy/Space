@@ -108,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		const launchType = localStorage.getItem('launchType');
 
 		if (launchType === 'blob') {
-			setTimeout(() => {
 				if (window === window.top) {
 				const currentSiteUrl = currentLocation + '?redirect=true';
 
@@ -205,9 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					}
 				}
 				}
-			}, 500);
 		} else if (launchType === 'aboutBlank') {
-			setTimeout(() => {
 				  if (window === window.top) {
 				const win = window.open();
 				const url = currentLocation;
@@ -245,7 +242,6 @@ document.addEventListener('DOMContentLoaded', function () {
 					window.location.href = redirectTo;
 				}
 				  }
-			}, 500);
 		}
 	}
 

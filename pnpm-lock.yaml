@@ -527,7 +527,7 @@ packages:
     '@types/node@22.2.0':
         resolution:
             {
-                integrity: sha512-bm6EG6/pCpkxDf/0gDNDdtDILMOHgaQBVOJGdwsqClnxA3xL6jtMv76rLBc006RVMWbmaf0xbmom4Z/5o2nRkQ==
+                integrity: sha512-bm6EG6/pCpkxDf/0gDNDTDGILMOHgaQBVOJGdwsqClnxA3xL6jtMv76rLBc006RVMWbmaf0xbmom4Z/5o2nRkQ==
             }
 
     '@types/resolve@0.0.8':

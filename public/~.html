@@ -1,146 +1,97 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<title>Space</title>
-		<link rel="icon" type="icon/x-icon" href="/assets/favicon.ico" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Launch into Space, the next gen proxy."
-		/>
-		<meta
-			name="keywords"
-			content="Proxy, Unblocker, Space Unblocker, Space"
-		/>
-		<meta property="og:image" content="/assets/logo.webp" />
-		<!-- Google Analytics DO NOT REMOVE -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-3DTW1KTNCF"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
 
-			gtag('config', 'G-3DTW1KTNCF');
-		</script>
-		<link
-			rel="preload"
-			as="style"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-		/>
-		<link
-			rel="preload"
-			as="style"
-			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-		/>
-		<link rel="stylesheet" href="/css/index.css" />
-		<link rel="stylesheet" href="/css/themes.css" />
-		<link rel="stylesheet" href="/css/~.css" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1"
-		/>
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-	</head>
+<head>
+	<title>Space</title>
+	<link rel="icon" type="icon/x-icon" href="/assets/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Launch into Space, the next gen proxy." />
+	<meta name="keywords" content="Proxy, Unblocker, Space Unblocker, Space" />
+	<meta property="og:image" content="/assets/logo.webp" />
+	<!-- Google Analytics DO NOT REMOVE -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DTW1KTNCF"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
-	<body style="overflow: hidden">
-		<div class="toast">
-			<div class="toast-content">
-				<i class="fas fa-solid fa-check check"></i>
-				<div class="message">
-					<span class="text text-1">Success</span>
-					<span class="text text-2"
-						>Your changes has been saved.</span
-					>
-				</div>
+		gtag('config', 'G-3DTW1KTNCF');
+	</script>
+	<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+	<link rel="preload" as="style"
+		href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" />
+	<link rel="stylesheet" href="/css/index.css" />
+	<link rel="stylesheet" href="/css/themes.css" />
+	<link rel="stylesheet" href="/css/~.css" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..400,0..1" />
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+
+<body style="overflow: hidden">
+	<div class="toast">
+		<div class="toast-content">
+			<i class="fas fa-solid fa-check check"></i>
+			<div class="message">
+				<span class="text text-1">Success</span>
+				<span class="text text-2">Your changes has been saved.</span>
 			</div>
-			<i class="fa-solid fa-xmark close"></i>
-			<div class="progress"></div>
 		</div>
+		<i class="fa-solid fa-xmark close"></i>
+		<div class="progress"></div>
+	</div>
 
-		<div class="failtoast">
-			<div class="failtoast-content">
-				<i class="fa fa-solid fa-circle-exclamation fail"></i>
-				<div class="failmessage">
-					<span class="failtext text-1" id="text-1">Failed</span>
-					<span class="failtext text-2" id="text-2"
-						>Something went wrong. Please try again.</span
-					>
-				</div>
+	<div class="failtoast">
+		<div class="failtoast-content">
+			<i class="fa fa-solid fa-circle-exclamation fail"></i>
+			<div class="failmessage">
+				<span class="failtext text-1" id="text-1">Failed</span>
+				<span class="failtext text-2" id="text-2">Something went wrong. Please try again.</span>
 			</div>
-			<i class="fa-solid fa-xmark failclose"></i>
-			<div class="failprogress"></div>
 		</div>
+		<i class="fa-solid fa-xmark failclose"></i>
+		<div class="failprogress"></div>
+	</div>
 
-		<ul class="navbar">
-			<li style="margin-left: -1px; margin-top: 2px">
-				<a href="/"
-					><img class="logo" src="/assets/logo.webp" alt="Logo"
-				/></a>
-			</li>
-			<hr style="margin-top: 5px" />
-			<li>
-				<a href="/"
-					><span
-						style="margin-top: 0px"
-						class="material-symbols-outlined"
-						>cottage</span
-					></a
-				>
-			</li>
-			<li>
-				<a href="/g"
-					><span class="material-symbols-outlined">joystick</span></a
-				>
-			</li>
-			<li>
-				<a href="/a"
-					><span class="material-symbols-outlined">apps</span></a
-				>
-			</li>
-			<li>
-				<a href="/&"
-					><span class="material-symbols-outlined">public</span></a
-				>
-			</li>
+	<ul class="navbar">
+		<li style="margin-left: -1px; margin-top: 2px">
+			<a href="/"><img class="logo" src="/assets/logo.webp" alt="Logo" /></a>
+		</li>
+		<hr style="margin-top: 5px" />
+		<li>
+			<a href="/"><span style="margin-top: 0px" class="material-symbols-outlined">cottage</span></a>
+		</li>
+		<li>
+			<a href="/g"><span class="material-symbols-outlined">joystick</span></a>
+		</li>
+		<li>
+			<a href="/a"><span class="material-symbols-outlined">apps</span></a>
+		</li>
+		<li>
+			<a href="/&"><span class="material-symbols-outlined">public</span></a>
+		</li>
 
-			<hr />
-			<li>
-				<a href="/~"
-					><span
-						id="navactive"
-						style="margin-top: 0"
-						class="material-symbols-outlined"
-						>tune</span
-					></a
-				>
-			</li>
-			<li>
-				<a target="_blank" href="https://discord.gointospace.app">
-					<div
-						style="
+		<hr />
+		<li>
+			<a href="/~"><span id="navactive" style="margin-top: 0" class="material-symbols-outlined">tune</span></a>
+		</li>
+		<li>
+			<a target="_blank" href="https://discord.gointospace.app">
+				<div style="
 							height: 40px !important;
 							width: 40px !important;
 							margin-top: 10px;
 							margin-bottom: -6px;
-						"
-					>
-						<i
-							class="fa-brands fa-discord"
-							style="transform: translateY(-6px)"
-						></i>
-					</div>
-				</a>
-			</li>
-		</ul>
+						">
+					<i class="fa-brands fa-discord" style="transform: translateY(-6px)"></i>
+				</div>
+			</a>
+		</li>
+	</ul>
 
-		<div
-			class="header"
-			style="
+	<div class="header" style="
 				display: inline-flex;
 				width: 900px;
 				backdrop-filter: blur(8px);
@@ -148,24 +99,19 @@
 				z-index: -1;
 				box-shadow: 0 0 15px -10px #fff;
 				border-radius: 27px;
-			"
-		>
-			<ul class="sideSnav">
-				<h1>Settings</h1>
-				<div id="settingsShape" class="settingsShape"></div>
-				<a href="/~/#/blank">
-					<li class="settingItem" data-id="blank">
-						<span class="material-symbols-outlined"
-							>ad_group_off</span
-						>Cloaking
-					</li>
-				</a>
-				<a href="/~/#/plugins">
-					<li class="settingItem" data-id="plugins">
-						<span class="material-symbols-outlined">crossword</span
-						>Plugins
-						<span
-							style="
+			">
+		<ul class="sideSnav">
+			<h1>Settings</h1>
+			<div id="settingsShape" class="settingsShape"></div>
+			<a href="/~/#/blank">
+				<li class="settingItem" data-id="blank">
+					<span class="material-symbols-outlined">ad_group_off</span>Cloaking
+				</li>
+			</a>
+			<a href="/~/#/plugins">
+				<li class="settingItem" data-id="plugins">
+					<span class="material-symbols-outlined">crossword</span>Plugins
+					<span style="
 								background-color: #6b6b6b63;
 								color: rgba(255, 255, 255, 0.48);
 								border-radius: 30px;
@@ -173,12 +119,10 @@
 								font-size: 12px;
 								margin-left: 4px;
 								transform: translateY(1px);
-							"
-							>Coming Soon</span
-						>
-					</li>
-				</a>
-				<!--
+							">Coming Soon</span>
+				</li>
+			</a>
+			<!--
 				<a href="/~/#/customkey">
 					<li class="settingItem" data-id="customkey">
 						<span class="material-symbols-outlined"
@@ -187,430 +131,351 @@
 					</li>
 				</a>
 			-->
-				<a href="/~/#/performance">
-					<!-- Bindable, programmable, set-able?-->
-					<li class="settingItem" data-id="performance">
-						<span class="material-symbols-outlined">speed</span
-						>Performance
-					</li>
-				</a>
-				<a href="/~/#/themes">
-					<li class="settingItem" data-id="themes">
-						<span class="material-symbols-outlined">palette</span
-						>Themes
-						<span
-							style="
-								background-color: #6b6b6b63;
-								color: rgba(255, 255, 255, 0.48);
-								border-radius: 30px;
-								padding: 1px 7px;
-								font-size: 12px;
-								margin-left: 4px;
-								transform: translateY(1px);
-								text-wrap: nowrap;
-							"
-							>Coming Soon</span
-						>
-					</li>
-				</a>
-				<a href="/~/#/proxy">
-					<li class="settingItem" data-id="proxy">
-						<span class="material-symbols-outlined">public</span
-						>Proxy & Browser
-					</li>
-				</a>
-				<a href="/~/#/ads">
-					<li class="settingItem" data-id="ads">
-						<span class="material-symbols-outlined">ads_click</span
-						>Advertising
-					</li>
-				</a>
-				<hr style="margin-bottom: 20px" />
-				<a href="/~/#/account">
-					<li class="settingItem" data-id="account">
-						<span class="material-symbols-outlined"
-							>account_circle</span
-						>Account
-					</li>
-				</a>
-				<a href="/~/#/about">
-					<li class="settingItem" data-id="about">
-						<span class="material-symbols-outlined">help</span>About
-						& Statistics
-					</li>
-				</a>
-				<hr style="margin-bottom: 20px" />
-				<a href="/~/#/news">
-					<li class="settingItem" data-id="news">
-						<span class="material-symbols-outlined"
-							>rocket_launch</span
-						>News & Updates
-					</li>
-				</a>
-				<a href="/~/#/faq">
-					<li class="settingItem" data-id="faq">
-						<span class="material-symbols-outlined"
-							>contact_support</span
-						>FAQ
-					</li>
-				</a>
-			</ul>
-			<div
-				class="scontent"
-				id="loading"
-				style="display: block; animation: none !important"
-			>
+			<a href="/~/#/performance">
+				<!-- Bindable, programmable, set-able?-->
+				<li class="settingItem" data-id="performance">
+					<span class="material-symbols-outlined">speed</span>Performance
+				</li>
+			</a>
+			<a href="/~/#/themes">
+				<li class="settingItem" data-id="themes">
+					<span class="material-symbols-outlined">palette</span>Themes
+				</li>
+			</a>
+			<a href="/~/#/proxy">
+				<li class="settingItem" data-id="proxy">
+					<span class="material-symbols-outlined">public</span>Proxy & Browser
+				</li>
+			</a>
+			<a href="/~/#/ads">
+				<li class="settingItem" data-id="ads">
+					<span class="material-symbols-outlined">ads_click</span>Advertising
+				</li>
+			</a>
+			<hr style="margin-bottom: 20px" />
+			<a href="/~/#/account">
+				<li class="settingItem" data-id="account">
+					<span class="material-symbols-outlined">account_circle</span>Account
+				</li>
+			</a>
+			<a href="/~/#/about">
+				<li class="settingItem" data-id="about">
+					<span class="material-symbols-outlined">help</span>About
+					& Statistics
+				</li>
+			</a>
+			<hr style="margin-bottom: 20px" />
+			<a href="/~/#/news">
+				<li class="settingItem" data-id="news">
+					<span class="material-symbols-outlined">rocket_launch</span>News & Updates
+				</li>
+			</a>
+			<a href="/~/#/faq">
+				<li class="settingItem" data-id="faq">
+					<span class="material-symbols-outlined">contact_support</span>FAQ
+				</li>
+			</a>
+		</ul>
+		<div class="scontent" id="loading" style="display: block; animation: none !important">
+			<h1>Loading...</h1>
+			<div class="settingsection" style="animation: none !important; opacity: 1 !important">
 				<h1>Loading...</h1>
-				<div
-					class="settingsection"
-					style="animation: none !important; opacity: 1 !important"
-				>
-					<h1>Loading...</h1>
-					<p>
-						Loading settings. While you wait, you can join our
-						<a href="https://discord.gointospace.app">Discord</a>
-						for updates. If you have had this loading for long
-						enough to read this, please refresh the page. Or check
-						your internet connection. If your internet connection is
-						stable, and you have reloaded the site. Make an issue on
-						our
-						<a href="https://github.com/nightproxy/space/issues"
-							>GitHub</a
-						>
-						or our
-						<a href="https://discord.gointospace.app">Discord</a>.
-					</p>
-				</div>
+				<p>
+					Loading settings. While you wait, you can join our
+					<a href="https://discord.gointospace.app">Discord</a>
+					for updates. If you have had this loading for long
+					enough to read this, please refresh the page. Or check
+					your internet connection. If your internet connection is
+					stable, and you have reloaded the site. Make an issue on
+					our
+					<a href="https://github.com/nightproxy/space/issues">GitHub</a>
+					or our
+					<a href="https://discord.gointospace.app">Discord</a>.
+				</p>
 			</div>
-			<div class="scontent" id="blank">
-				<h1 style="animation: fade-in-left 1s" class="settingsection1">
-					Cloaking
-				</h1>
-				<div class="settingsection settingsection1">
-					<h1>About:Blank & Blob Cloaking</h1>
-					<p>
-						About:Blank allows you to hide your tab history, and
-						blockers such as GoGuardian by appearing that you are on
-						a blank tab. If About:Blank doesn't work, then you can
-						try using the blob cloaking which uses temporary data.
-					</p>
-					<div
-						style="
+		</div>
+		<div class="scontent" id="blank">
+			<h1 style="animation: fade-in-left 1s" class="settingsection1">
+				Cloaking
+			</h1>
+			<div class="settingsection settingsection1">
+				<h1>About:Blank & Blob Cloaking</h1>
+				<p>
+					About:Blank allows you to hide your tab history, and
+					blockers such as GoGuardian by appearing that you are on
+					a blank tab. If About:Blank doesn't work, then you can
+					try using the blob cloaking which uses temporary data.
+				</p>
+				<div style="
 							width: 100%;
 							display: flex;
 							justify-content: space-between;
-						"
-					>
-						<button
-							class="splitbutton"
-							onclick="launchAboutBlank()"
-						>
-							Launch About:Blank
-						</button>
-						<button class="splitbutton" onclick="launchBlob()">
-							Launch Blob
-						</button>
-					</div>
-				</div>
-				<div class="settingsection settingsection1">
-					<h1>Automatic cloaking</h1>
-					<p>
-						This toggles automatic cloaking when the site first
-						loads which hides the site from entering your history.
-					</p>
-					<p>
-						<b
-							>Note: Only one automatic cloaking toggle is allowed
-							at a time.</b
-						>
-					</p>
-					<hr />
-					<p>Auto-Launch About:Blank</p>
-					<label class="switch">
-						<input
-							class="checkbox checkbox-blob-aboutBlank autoLaunchAboutBlank"
-							type="checkbox"
-						/>
-						<span class="slider round"></span>
-					</label>
-					<p>Auto-Launch Blob</p>
-					<label class="switch">
-						<input
-							class="checkbox checkbox-blob-aboutBlank autoLaunchBlob"
-							type="checkbox"
-						/>
-						<span class="slider round"></span>
-					</label>
-				</div>
-
-				<div class="settingsection settingsection1">
-					<h1>Tab Cloaking</h1>
-					<p>
-						Tab Cloaking cloaks the name of the tab & icon, so your
-						tab stays hidden from sight. Select a cloak down below
-						to activate it.
-					</p>
-					<div class="dropdown dropdown-memory" id="tabCloak">
-						<button class="dropdown-button dropdown-toggle">
-							<span class="dropdown-selected"
-								>None (default)</span
-							>
-							<span id="arrow" class="material-symbols-outlined"
-								>chevron_right</span
-							>
-						</button>
-						<ul class="dropdown-menu">
-							<li class="hidden">None (Default)</li>
-							<li>Desmos</li>
-							<li>Google Classroom</li>
-							<li>Google Drive</li>
-							<li>Khan Academy</li>
-							<li>Quizlet</li>
-							<li>Schoology</li>
-						</ul>
-					</div>
-				</div>
-				<div
-					style="z-index: 998"
-					class="settingsection settingsection1"
-				>
-					<h1 style="animation: fade-in-left 1s">Panic Key</h1>
-					<p>
-						Press the selected keybind to go to another site
-						quickly. You can set multiple keybinds by seperating
-						them with a comma.
-					</p>
-					<div class="pgroup">
-						<svg
-							stroke="currentColor"
-							stroke-width="1.5"
-							viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg"
-							class="picon"
-						>
-							<rect
-								x="2"
-								y="2"
-								width="20"
-								height="20"
-								rx="3"
-								ry="3"
-								fill="none"
-								stroke-linejoin="round"
-								stroke-linecap="round"
-							></rect>
-							<line
-								x1="8"
-								y1="16"
-								x2="16"
-								y2="8"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-linejoin="round"
-								stroke-linecap="round"
-							></line>
-						</svg>
-						<input
-							class="password panicKey"
-							placeholder="Set a keybind. Backtick by default"
-						/>
-					</div>
-					<button style="width: 300px" class="buttonreg panicKeySave">
-						Save
+						">
+					<button class="splitbutton" onclick="launchAboutBlank()">
+						Launch About:Blank
+					</button>
+					<button class="splitbutton" onclick="launchBlob()">
+						Launch Blob
 					</button>
 				</div>
 			</div>
-			<div class="scontent" id="plugins">
-				<h1 style="animation: fade-in-left 1s" class="settingsection2">
-					Plugins
-				</h1>
-				<div class="settingsection settingsection2">
-					<h1>Coming Soon</h1>
-					<p>
-						Plugins will be added soon to Space. While you wait, you
-						can join our
-						<a href="https://discord.gointospace.app">Discord</a>
-						for updates of when it may release.
-					</p>
-				</div>
+			<div class="settingsection settingsection1">
+				<h1>Automatic cloaking</h1>
+				<p>
+					This toggles automatic cloaking when the site first
+					loads which hides the site from entering your history.
+				</p>
+				<p>
+					<b>Note: Only one automatic cloaking toggle is allowed
+						at a time.</b>
+				</p>
+				<hr />
+				<p>Auto-Launch About:Blank</p>
+				<label class="switch">
+					<input class="checkbox checkbox-blob-aboutBlank autoLaunchAboutBlank" type="checkbox" />
+					<span class="slider round"></span>
+				</label>
+				<p>Auto-Launch Blob</p>
+				<label class="switch">
+					<input class="checkbox checkbox-blob-aboutBlank autoLaunchBlob" type="checkbox" />
+					<span class="slider round"></span>
+				</label>
 			</div>
-			<div class="scontent" id="customkey">
-				<h1 style="animation: fade-in-left 1s" class="settingsection3">
-					Programmable Keybind
-				</h1>
-				<div class="settingsection settingsection3">
-					<h1>Bindable Keybind</h1>
-					<p>Description</p>
-				</div>
-			</div>
-			<div class="scontent" id="performance">
-				<h1 style="animation: fade-in-left 1s" class="settingsection4">
-					Performance
-				</h1>
-				<div class="settingsection settingsection4">
-					<h1>Background Particles</h1>
-					<p>
-						This enables the background star particle effects, this
-						is on by default.
-						<strong>Performance Impact</strong>: High on low-end
-						devices
-					</p>
 
-					<label class="switch">
-						<input
-							class="checkbox particlesYesNo"
-							type="checkbox"
-						/>
-						<span class="slider round"></span>
-					</label>
+			<div class="settingsection settingsection1">
+				<h1>Tab Cloaking</h1>
+				<p>
+					Tab Cloaking cloaks the name of the tab & icon, so your
+					tab stays hidden from sight. Select a cloak down below
+					to activate it.
+				</p>
+				<div class="dropdown dropdown-memory" id="tabCloak">
+					<button class="dropdown-button dropdown-toggle">
+						<span class="dropdown-selected">None (default)</span>
+						<span id="arrow" class="material-symbols-outlined">chevron_right</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li class="hidden">None (Default)</li>
+						<li>Desmos</li>
+						<li>Google Classroom</li>
+						<li>Google Drive</li>
+						<li>Khan Academy</li>
+						<li>Quizlet</li>
+						<li>Schoology</li>
+					</ul>
 				</div>
 			</div>
-			<div class="scontent" id="themes">
-				<h1 style="animation: fade-in-left 1s" class="settingsection5">
-					Themes
-				</h1>
-				<div class="settingsection settingsection5">
-					<h1>Coming Soon</h1>
-					<p>
-						Themes will be added soon to Space. While you wait, you
-						can join our
-						<a href="https://discord.gointospace.app">Discord</a>
-						for updates of when it may release.
-					</p>
+		<div style="z-index: 998" class="settingsection settingsection1">
+			<h1 style="animation: fade-in-left 1s">Panic Key</h1>
+			<p>
+				Press the selected keybind to go to another site
+				quickly. You can set multiple keybinds by seperating
+				them with a comma.
+			</p>
+			<div class="pgroup">
+				<svg stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+					class="picon">
+					<rect x="2" y="2" width="20" height="20" rx="3" ry="3" fill="none" stroke-linejoin="round"
+						stroke-linecap="round"></rect>
+					<line x1="8" y1="16" x2="16" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"
+						stroke-linecap="round"></line>
+				</svg>
+				<input class="password panicKey" placeholder="Set a keybind. Backtick by default" />
+			</div>
+			<button style="width: 300px" class="buttonreg panicKeySave">
+				Save
+			</button>
+		</div>
+	</div>
+	<div class="scontent" id="plugins">
+		<h1 style="animation: fade-in-left 1s" class="settingsection2">
+			Plugins
+		</h1>
+		<div class="settingsection settingsection2">
+			<h1>Coming Soon</h1>
+			<p>
+				Plugins will be added soon to Space. While you wait, you
+				can join our
+				<a href="https://discord.gointospace.app">Discord</a>
+				for updates of when it may release.
+			</p>
+		</div>
+	</div>
+	<div class="scontent" id="customkey">
+		<h1 style="animation: fade-in-left 1s" class="settingsection3">
+			Programmable Keybind
+		</h1>
+		<div class="settingsection settingsection3">
+			<h1>Bindable Keybind</h1>
+			<p>Description</p>
+		</div>
+	</div>
+	<div class="scontent" id="performance">
+		<h1 style="animation: fade-in-left 1s" class="settingsection4">
+			Performance
+		</h1>
+		<div class="settingsection settingsection4">
+			<h1>Background Particles</h1>
+			<p>
+				This enables the background star particle effects, this
+				is on by default.
+				<strong>Performance Impact</strong>: High on low-end
+				devices
+			</p>
+
+			<label class="switch">
+				<input class="checkbox particlesYesNo" type="checkbox" />
+				<span class="slider round"></span>
+			</label>
+		</div>
+	</div>
+	<div class="scontent" id="themes">
+		<h1 style="animation: fade-in-left 1s" class="settingsection5">
+			Themes
+		</h1>
+		<div class="settingsection settingsection5">
+			<h1>Default Themes</h1>
+			<p>
+				Here's some themes for you to choose from. You can also join our
+				<a href="https://discord.gointospace.app">Discord</a>
+				for theme submissions, under suggestions.
+			</p>
+			<div class="dropdown dropdown-memory" id="themes">
+				<button class="dropdown-button dropdown-toggle">
+					<span class="dropdown-selected">Default</span>
+					<span id="arrow" class="material-symbols-outlined">chevron_right</span>
+				</button>
+				<ul class="dropdown-menu">
+					<li class="hidden">Default</li>
+					<li>Halloween</li>
+					<li>Aurora</li>
+					<li>Nightmare</li>
+					<li>Midnight</li>
+					<li>Supernova</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	
+		<div class="scontent" id="proxy">
+			<h1 style="animation: fade-in-left 1s" class="settingsection6">
+				Proxy & Browser
+			</h1>
+			<div class="settingsection settingsection6">
+				<h1>Proxy</h1>
+				<p>
+					Proxies are what run the unblocking backend for you to
+					enjoy the games and apps that we display.
+				</p>
+				<p>
+					Changing the proxy may make some games perform better,
+					run sites faster, and may make your overall experience
+					better. For more information, join our
+					<a href="https://discord.gointospace.app/">Discord</a>.
+				</p>
+				<div class="dropdown dropdown-memory" id="proxy">
+					<button class="dropdown-button dropdown-toggle">
+						<span class="dropdown-selected">Ultraviolet (default)</span>
+						<span id="arrow" class="material-symbols-outlined">chevron_right</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li class="hidden">Ultraviolet (default)</li>
+						<li>Scramjet</li>
+					</ul>
 				</div>
 			</div>
-			<div class="scontent" id="proxy">
-				<h1 style="animation: fade-in-left 1s" class="settingsection6">
-					Proxy & Browser
-				</h1>
-				<div class="settingsection settingsection6">
-					<h1>Proxy</h1>
-					<p>
-						Proxies are what run the unblocking backend for you to
-						enjoy the games and apps that we display.
-					</p>
-					<p>
-						Changing the proxy may make some games perform better,
-						run sites faster, and may make your overall experience
-						better. For more information, join our
-						<a href="https://discord.gointospace.app/">Discord</a>.
-					</p>
-					<div class="dropdown dropdown-memory" id="proxy">
-						<button class="dropdown-button dropdown-toggle">
-							<span class="dropdown-selected"
-								>Ultraviolet (default)</span
-							>
-							<span id="arrow" class="material-symbols-outlined"
-								>chevron_right</span
-							>
-						</button>
-						<ul class="dropdown-menu">
-							<li class="hidden">Ultraviolet (default)</li>
-							<li>Scramjet</li>
-						</ul>
-					</div>
-				</div>
-				<div class="settingsection settingsection6">
-					<h1>Transport</h1>
-					<p>
-						Transport is the method of how the proxy will transport
-						information
-					</p>
-					<p>
-						Changing the transport may make some proxies perform
-						better, but may also cause issues for others. Transport
-						switching is an advanced feature, not recommended if you
-						dont know what your doing.
-					</p>
-					<div class="dropdown dropdown-memory" id="transport">
-						<button class="dropdown-button dropdown-toggle">
-							<span class="dropdown-selected">Epoxy</span>
-							<span id="arrow" class="material-symbols-outlined"
-								>chevron_right</span
-							>
-						</button>
-						<ul class="dropdown-menu">
-							<li class="hidden">Epoxy</li>
-							<li>Baremod</li>
-							<li>Libcurl</li>
-						</ul>
-					</div>
-				</div>
-				<div class="settingsection settingsection6">
-					<h1>Browser</h1>
-					<p>
-						This allows you to change settings about the browser and
-						the elements within it. You can change the search engine
-						or add/remove the utility bar.
-					</p>
-					<hr />
-					<p>Search Engine</p>
-					<div class="dropdown dropdown-memory" id="searchEngine">
-						<button class="dropdown-button dropdown-toggle">
-							<span class="dropdown-selected"
-								>Google (Default)</span
-							>
-							<span id="arrow" class="material-symbols-outlined"
-								>chevron_right</span
-							>
-						</button>
-						<ul class="dropdown-menu">
-							<li class="hidden">Google (Default)</li>
-							<li>Bing</li>
-							<li>Duck Duck Go</li>
-							<li>Yahoo!</li>
-						</ul>
-					</div>
-					<p>Enable Utility Bar</p>
-					<p>
-						This enables the basic top bar that you see when using
-						the proxy. (Recomended)
-					</p>
-					<label class="switch">
-						<input class="checkbox utilBarYesNo" type="checkbox" />
-						<span class="slider round"></span>
-					</label>
-				</div>
-				<div class="settingsection settingsection6">
-					<h1>Modern Page</h1>
-					<p>Display bigger icons and a different style.</p>
-					<p>
-						Enable bigger shortcut icons and a more modern look to
-						the proxy page.
-					</p>
-					<label class="switch">
-						<input
-							class="checkbox smallIconsYesNo"
-							type="checkbox"
-						/>
-						<span class="slider round"></span>
-					</label>
+			<div class="settingsection settingsection6">
+				<h1>Transport</h1>
+				<p>
+					Transport is the method of how the proxy will transport
+					information
+				</p>
+				<p>
+					Changing the transport may make some proxies perform
+					better, but may also cause issues for others. Transport
+					switching is an advanced feature, not recommended if you
+					dont know what your doing.
+				</p>
+				<div class="dropdown dropdown-memory" id="transport">
+					<button class="dropdown-button dropdown-toggle">
+						<span class="dropdown-selected">Epoxy</span>
+						<span id="arrow" class="material-symbols-outlined">chevron_right</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li class="hidden">Epoxy</li>
+						<li>Baremod</li>
+						<li>Libcurl</li>
+					</ul>
 				</div>
 			</div>
-			<div class="scontent" id="ads">
-				<h1 style="animation: fade-in-left 1s" class="settingsection7">
-					Advertising
-				</h1>
-				<div class="settingsection settingsection7">
-					<h1>Enable Advertising</h1>
-					<p>
-						Toggle advertising on and off with the switch below. If
-						you have ads off this makes us not get revenue and
-						prevents us from upgrading servers, buying domains, etc.
-					</p>
-					<p>
-						If you do keep ads enabled, we thank you. This helps us
-						a lot and contributes financially to our projects and
-						services.
-					</p>
-					<hr />
-					<p>Toggle Advertising</p>
-					<label class="switch">
-						<input class="checkbox adsYesNo" type="checkbox" />
-						<span class="slider round"></span>
-					</label>
+			<div class="settingsection settingsection6">
+				<h1>Browser</h1>
+				<p>
+					This allows you to change settings about the browser and
+					the elements within it. You can change the search engine
+					or add/remove the utility bar.
+				</p>
+				<hr />
+				<p>Search Engine</p>
+				<div class="dropdown dropdown-memory" id="searchEngine">
+					<button class="dropdown-button dropdown-toggle">
+						<span class="dropdown-selected">Google (Default)</span>
+						<span id="arrow" class="material-symbols-outlined">chevron_right</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li class="hidden">Google (Default)</li>
+						<li>Bing</li>
+						<li>Duck Duck Go</li>
+						<li>Yahoo!</li>
+					</ul>
 				</div>
-				<!--
+				<p>Enable Utility Bar</p>
+				<p>
+					This enables the basic top bar that you see when using
+					the proxy. (Recomended)
+				</p>
+				<label class="switch">
+					<input class="checkbox utilBarYesNo" type="checkbox" />
+					<span class="slider round"></span>
+				</label>
+			</div>
+			<div class="settingsection settingsection6">
+				<h1>Modern Page</h1>
+				<p>Display bigger icons and a different style.</p>
+				<p>
+					Enable bigger shortcut icons and a more modern look to
+					the proxy page.
+				</p>
+				<label class="switch">
+					<input class="checkbox smallIconsYesNo" type="checkbox" />
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+		<div class="scontent" id="ads">
+			<h1 style="animation: fade-in-left 1s" class="settingsection7">
+				Advertising
+			</h1>
+			<div class="settingsection settingsection7">
+				<h1>Enable Advertising</h1>
+				<p>
+					Toggle advertising on and off with the switch below. If
+					you have ads off this makes us not get revenue and
+					prevents us from upgrading servers, buying domains, etc.
+				</p>
+				<p>
+					If you do keep ads enabled, we thank you. This helps us
+					a lot and contributes financially to our projects and
+					services.
+				</p>
+				<hr />
+				<p>Toggle Advertising</p>
+				<label class="switch">
+					<input class="checkbox adsYesNo" type="checkbox" />
+					<span class="slider round"></span>
+				</label>
+			</div>
+			<!--
 				<div
 					class="settingsection settingsection7"
 					style="transition: all 0.2s ease-in-out !important"
@@ -719,13 +584,13 @@
 					</div>
 				</div>
 			-->
-			</div>
+		</div>
 
-			<div class="scontent" id="account">
-				<h1 style="animation: fade-in-left 1s" class="settingsection9">
-					Account Settings
-				</h1>
-				<!--
+		<div class="scontent" id="account">
+			<h1 style="animation: fade-in-left 1s" class="settingsection9">
+				Account Settings
+			</h1>
+			<!--
 				<div class="settingsection settingsection9">
 					<h1>Two-Factor Authentication</h1>
 					<p>Add another layer of security to your account.</p>
@@ -735,633 +600,518 @@
 					</label>
 				</div>
 			-->
-				<div class="settingsection settingsection9">
-					<h1>Password Protection</h1>
-					<p>
-						Protect your account with a password that way only you
-						can view the site.
-					</p>
-					<label class="switch">
-						<input class="checkbox passwordYesNo" type="checkbox" />
-						<span class="slider round"></span>
-					</label>
-					<p>
-						Please remember that when setting your password, set it
-						to something only you can remember, that way you do not
-						get locked out of your account.
-					</p>
-					<div style="margin-bottom: 5px" class="pgroup">
-						<svg
-							stroke="currentColor"
-							stroke-width="1.5"
-							viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg"
-							class="picon"
-						>
-							<path
-								d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-								stroke-linejoin="round"
-								stroke-linecap="round"
-							></path>
-						</svg>
-						<input
-							class="password pPasswordInput"
-							type="password"
-							placeholder="Set Password"
-						/>
-					</div>
-					<button
-						class="buttonreg pPasswordSave"
-						style="width: 300px"
-					>
-						Save
-					</button>
+			<div class="settingsection settingsection9">
+				<h1>Password Protection</h1>
+				<p>
+					Protect your account with a password that way only you
+					can view the site.
+				</p>
+				<label class="switch">
+					<input class="checkbox passwordYesNo" type="checkbox" />
+					<span class="slider round"></span>
+				</label>
+				<p>
+					Please remember that when setting your password, set it
+					to something only you can remember, that way you do not
+					get locked out of your account.
+				</p>
+				<div style="margin-bottom: 5px" class="pgroup">
+					<svg stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+						class="picon">
+						<path
+							d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+							stroke-linejoin="round" stroke-linecap="round"></path>
+					</svg>
+					<input class="password pPasswordInput" type="password" placeholder="Set Password" />
 				</div>
-				<div class="settingsection settingsection9">
-					<h1>Password Keybind</h1>
-					<p>
-						Set the keybind to toggle the password appearing on
-						screen. By default you will need to hold shift an then
-						press
-						<span
-							style="
+				<button class="buttonreg pPasswordSave" style="width: 300px">
+					Save
+				</button>
+			</div>
+			<div class="settingsection settingsection9">
+				<h1>Password Keybind</h1>
+				<p>
+					Set the keybind to toggle the password appearing on
+					screen. By default you will need to hold shift an then
+					press
+					<span style="
 								padding: 0 7px 0 7px;
 								background-color: #ffffff27;
 								border-radius: 8px;
 								font-weight: 700;
-							"
-						>
-							`</span
-						>
-						(left of the 1 key).
-					</p>
-					<div class="pgroup">
-						<svg
-							stroke="currentColor"
-							stroke-width="1.5"
-							viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg"
-							class="picon"
-						>
-							<rect
-								x="2"
-								y="2"
-								width="20"
-								height="20"
-								rx="3"
-								ry="3"
-								fill="none"
-								stroke-linejoin="round"
-								stroke-linecap="round"
-							></rect>
-							<line
-								x1="8"
-								y1="16"
-								x2="16"
-								y2="8"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-linejoin="round"
-								stroke-linecap="round"
-							></line>
-						</svg>
-						<input
-							class="password passwordHotkeyInput"
-							placeholder="Set a keybind. Tilda by default"
-						/>
-					</div>
-					<button
-						class="buttonreg pPasswordKeybind"
-						style="width: 300px"
-					>
-						Save
-					</button>
-				</div>
-				<div class="settingsection settingsection9">
-					<h1>Import & Export Data</h1>
-					<p>
-						Import simply loads your current userData and boots most
-						of your user settings and data from the last site.
-						Exporting downloads a save file that allows you to load
-						your userData onto another URL to save settings and
-						whatnot.
-					</p>
-					<input
-						type="file"
-						id="dataInput"
-						style="display: none"
-						onchange="importData();"
-					/>
-					<div style="display: flex">
-						<button class="splitbutton" id="exportData">
-							Export Data
-							<span
-								style="
-									position: absolute;
-									transform: translateY(-22px);
-								"
-								class="material-symbols-outlined"
-								>cloud_upload</span
-							>
-						</button>
-						<button class="splitbutton" id="importData">
-							Import Data
-							<span
-								style="
-									position: absolute;
-									transform: translateY(-22px);
-								"
-								class="material-symbols-outlined"
-								>cloud_download</span
-							>
-						</button>
-					</div>
-				</div>
-				<div class="settingsection settingsection9">
-					<h1>Wipe all Data</h1>
-					<p>
-						Pressing this button will completely wipe all data,
-						making it as if you never used this site. Its
-						recommended that you export your data before doing this.
-					</p>
-					<p>
-						<b>Warning: This is a destructive action</b>
-					</p>
-					<button class="splitbutton" id="resetButton">
-						Wipe all Data
-					</button>
-				</div>
-			</div>
-			<div class="scontent" id="about">
-				<h1 style="animation: fade-in-left 1s" class="settingsection8">
-					About & Statistics
-				</h1>
-				<div class="settingsection settingsection8">
-					<h1>Development Team</h1>
-					<p>
-						Space is completely open-source and is owned,
-						maintained, and managed by the Dusk till Dawn Team (DTD)
-						at Night Network all of the source code is available on
-						<a href="https://github.com/nightproxy/space">GitHub</a
-						>. Thank you for choosing Space!
-					</p>
-					<p>
-						To join our Discord for updates, uptimes, and links,
-						click
-						<a
-							target="_blank"
-							href="https://discord.gointospace.app"
-							>here</a
-						>.
-					</p>
-				</div>
-				<div class="settingsection settingsection8">
-					<h1>Version & Analytics</h1>
-					<p>
-						You are currently on:
-						<span
-							style="
-								background-color: #6b6b6b63;
-								border-radius: 30px;
-								padding: 1px 7px;
-							"
-							>v1.0.0</span
-						>
-					</p>
-					<p>
-						Last Updated:
-						<span
-							id="last-updated"
-							style="
-								background-color: #6b6b6b63;
-								border-radius: 30px;
-								padding: 1px 7px;
-							"
-							>Month DD, YYYY</span
-						>
-					</p>
-					<p>
-						Server Status:
-						<span
-							style="
-								background-color: #15ff0063;
-								border-radius: 30px;
-								padding: 1px 8px;
-							"
-							>Running</span
-						>
-					</p>
-					<p>
-						Load Times:
-						<span
-							style="
-								background-color: #c300ff63;
-								border-radius: 30px;
-								padding: 1px 8px;
-							"
-							>Fast</span
-						>
-					</p>
-					<p>
-						To see current uptimes and upcoming maintenance
-						<a href="https://uptime.gointospace.app/"
-							>uptime.gointospace.app</a
-						>.
-					</p>
-				</div>
-				<div class="settingsection settingsection8">
-					<h1>Contributions</h1>
-					<p>
-						Contributions are welcome on our
-						<a href="https://github.com/nightproxy/space">GitHub</a
-						>. Please follow the proper format when contributing
-						[can be found in contributing.md].
-					</p>
-					<p>
-						If you want to join the DTD Team, please open a ticket
-						in our
-						<a href="https://discord.gointospace.app/">Discord</a>.
-					</p>
-				</div>
-				<div class="settingsection settingsection8">
-					<h1>Support</h1>
-					<p>
-						If you have any issues while using Space please report
-						them on our
-						<a href="https://github.com/nightproxy/space/issues"
-							>GitHub</a
-						>. We will try to fix them asap.
-					</p>
-					<p>
-						If you have any suggestions you can post them in our
-						<a href="https://discord.gointospace.app/">Discord</a>.
-					</p>
-					<p>
-						If you would like to donate, please visit our
-						<a href="https://www.patreon.com/nightNetwork"
-							>Patreon</a
-						>.
-					</p>
-				</div>
-			</div>
-
-			<div class="scontent" id="news">
-				<h1 style="animation: fade-in-left 1s" class="settingsection10">
-					News & Updates
-				</h1>
-				<div class="settingsection settingsection10">
-					<h1>
-						Space has released!<span class="changelog"
-							>Version release [v.1.0.0]</span
-						>
-					</h1>
-					<p>
-						Enjoy using all of the fun and exciting features we have
-						packed into this site! Join our
-						<a href="https://discord.gointospace.app/">Discord</a>
-						to get more updates and changes.
-					</p>
-					<hr />
-					<h1>Features</h1>
-					<ul>
-						<li>Out of this world UI</li>
-						<li>Games</li>
-						<li>Apps</li>
-						<li>Proxy</li>
-						<li>Settings</li>
-						<li>Cloaking [Blob & About:Blank]</li>
-						<li>Tab Cloaking [Presets]</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="scontent" id="faq">
-				<h1 style="animation: fade-in-left 1s" class="settingsection11">
-					Frequently asked questions
-				</h1>
-				<div
-					style="animation: fade-in-left 1s"
-					class="settingsection settingsection11"
-				>
-					<h1>Where can I find links?</h1>
-					<p>
-						You can find links by joining our
-						<a href="https://discord.gointospace.com/">Discord</a>.
-						We have a community links channel, a link bot for
-						dispensing links, and weekly links.
-					</p>
-				</div>
-				<div class="settingsection settingsection11">
-					<h1>Why do some sites not load/work</h1>
-					<p>
-						There can be a number of reason a site doesnt load but
-						some of the common ones are listed below.
-					</p>
-					<ul>
-						<li>Proxy Service doesnt support the site(s)</li>
-						<li>
-							Our servers are either down or experiencing high
-							loads
-						</li>
-						<li>Issue with the actual site you are visiting</li>
-						<li>Security Flagged</li>
-					</ul>
-					<p>
-						More than half of the reasons listed are not within our
-						control and are fixed seemingly at random by the proxy
-						community.
-					</p>
-				</div>
-				<div class="settingsection settingsection11">
-					<h1>
-						How can I make links? (BYOD)
-						<span
-							class="changelog"
-							style="background-color: #9500ff"
-							>Popular FAQ</span
-						>
-					</h1>
-					<p>
-						To make links you will need to have a personal PC or
-						device.
-					</p>
-					<ol style="list-style-type: decimal">
-						<li>
-							First open
-							<a
-								target="_blank"
-								href="https://freedns.afraid.org/signup/?plan=starter"
-								>FreeDNS</a
-							>.
-						</li>
-						<li>
-							Next head to
-							<a target="_blank" href="https://temp-mail.org/"
-								>Tempmail</a
-							>
-							and open a temporary email.
-						</li>
-						<ul>
-							<li>
-								Type in a random name or text string for the
-								First & Last name
-							</li>
-							<li>
-								Create a random password then use the
-								<b>Tempmail</b> email for the email section.
-							</li>
-							<li>
-								Once these have been filled, complete the
-								captcha and accept the Privacy and TOS
-								agreement.
-							</li>
-						</ul>
-						<li>
-							Then go to the subdomains (<a
-								target="_blank"
-								href="https://freedns.afraid.org/subdomain/"
-								>freedns.afraid.org/subdomain)</a
-							>
-							and click add.
-						</li>
-						<li>Fill in the blanks as instructed below:</li>
-						<ul>
-							<li>Type: <b>A</b></li>
-							<li>
-								Subdomain:
-								<b
-									>Anything (This is the name of the site you
-									want)</b
-								>
-							</li>
-							<li>
-								Domain: Click it, then click
-								<b><u>Many many more available.</u></b> Then
-								click shared domain Registry. Choose any public
-								domain you like. (Usually within 10-40's of the
-								pages)
-							</li>
-							<li>
-								Destination: <b>45.134.142.230</b> (If you don't
-								put this correctly the link will
-								<b
-									><i><u>NOT</u></i></b
-								>
-								work.)
-							</li>
-						</ul>
-						<li style="margin-top: 10px">
-							Once the following has been filled in, complete the
-							captcha below then click save.
-						</li>
-						<li>And you are done 🎉</li>
-					</ol>
-					<p>
-						<b>Note:</b> You will need to wait 8m at most for the
-						site to fully boot up.
-					</p>
-					<p>
-						If you have any issues while doing a BYOD, please open a
-						support ticket on our
-						<a href="https://discord.gointospace.app">Discord</a>
-						and our team will gladly help you.
-					</p>
-				</div>
-				<div class="settingsection settingsection11">
-					<h1>I found a bug, what now?</h1>
-					<p>
-						If you've found an issue while using Space, you can do
-						any of the following methods of reporting:
-					</p>
-					<ul>
-						<li>
-							Open an issue on our
-							<a
-								target="_blank"
-								href="https://github.com/nightproxy/space"
-								>GitHub</a
-							>.
-						</li>
-						<li>
-							Open a ticket on our
-							<a
-								target="_blank"
-								href="https://discord.gointospace.app"
-								>Discord</a
-							>.
-						</li>
-						<li>
-							Report a bug within our widget on the
-							<a href="/">Home page</a>.
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div
-				id="banner"
-				style="display: block; position: absolute; bottom: 0"
-			>
-				<p class="banner">
-					Hosted by&nbsp;<a href="https://billigerhost.com/"
-						>Billiger</a
-					>
+							">
+						`</span>
+					(left of the 1 key).
 				</p>
-				<button id="bannerClose">
-					<i class="fa-solid fa-xmark" style="color: #525252"></i>
+				<div class="pgroup">
+					<svg stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+						class="picon">
+						<rect x="2" y="2" width="20" height="20" rx="3" ry="3" fill="none" stroke-linejoin="round"
+							stroke-linecap="round"></rect>
+						<line x1="8" y1="16" x2="16" y2="8" stroke="currentColor" stroke-width="1.5"
+							stroke-linejoin="round" stroke-linecap="round"></line>
+					</svg>
+					<input class="password passwordHotkeyInput" placeholder="Set a keybind. Tilda by default" />
+				</div>
+				<button class="buttonreg pPasswordKeybind" style="width: 300px">
+					Save
+				</button>
+			</div>
+			<div class="settingsection settingsection9">
+				<h1>Import & Export Data</h1>
+				<p>
+					Import simply loads your current userData and boots most
+					of your user settings and data from the last site.
+					Exporting downloads a save file that allows you to load
+					your userData onto another URL to save settings and
+					whatnot.
+				</p>
+				<input type="file" id="dataInput" style="display: none" onchange="importData();" />
+				<div style="display: flex">
+					<button class="splitbutton" id="exportData">
+						Export Data
+						<span style="
+									position: absolute;
+									transform: translateY(-22px);
+								" class="material-symbols-outlined">cloud_upload</span>
+					</button>
+					<button class="splitbutton" id="importData">
+						Import Data
+						<span style="
+									position: absolute;
+									transform: translateY(-22px);
+								" class="material-symbols-outlined">cloud_download</span>
+					</button>
+				</div>
+			</div>
+			<div class="settingsection settingsection9">
+				<h1>Wipe all Data</h1>
+				<p>
+					Pressing this button will completely wipe all data,
+					making it as if you never used this site. Its
+					recommended that you export your data before doing this.
+				</p>
+				<p>
+					<b>Warning: This is a destructive action</b>
+				</p>
+				<button class="splitbutton" id="resetButton">
+					Wipe all Data
 				</button>
 			</div>
 		</div>
-		<div style="z-index: -998">
-			<div style="z-index: -998; position: fixed" class="blob"></div>
-			<div style="z-index: -998; position: fixed" class="blobbig"></div>
-			<div style="z-index: -998; position: fixed" class="blobsmall"></div>
-			<div style="z-index: -998; position: fixed" class="blobtop"></div>
-			<div style="z-index: -999" id="particles-js" class=""></div>
+		<div class="scontent" id="about">
+			<h1 style="animation: fade-in-left 1s" class="settingsection8">
+				About & Statistics
+			</h1>
+			<div class="settingsection settingsection8">
+				<h1>Development Team</h1>
+				<p>
+					Space is completely open-source and is owned,
+					maintained, and managed by the Twilight Development Group (TDG)
+					at Night Network all of the source code is available on
+					<a href="https://github.com/nightproxy/space">GitHub</a>. Thank you for choosing Space!
+				</p>
+				<p>
+					To join our Discord for updates, uptimes, and links,
+					click
+					<a target="_blank" href="https://discord.gointospace.app">here</a>.
+				</p>
+			</div>
+			<div class="settingsection settingsection8">
+				<h1>Version & Analytics</h1>
+				<p>
+					You are currently on:
+					<span style="
+								background-color: #6b6b6b63;
+								border-radius: 30px;
+								padding: 1px 7px;
+							">v1.0.0</span>
+				</p>
+				<p>
+					Last Updated:
+					<span id="last-updated" style="
+								background-color: #6b6b6b63;
+								border-radius: 30px;
+								padding: 1px 7px;
+							">Month DD, YYYY</span>
+				</p>
+				<p>
+					Server Status:
+					<span style="
+								background-color: #15ff0063;
+								border-radius: 30px;
+								padding: 1px 8px;
+							">Running</span>
+				</p>
+				<p>
+					Load Times:
+					<span style="
+								background-color: #c300ff63;
+								border-radius: 30px;
+								padding: 1px 8px;
+							">Fast</span>
+				</p>
+				<p>
+					To see current uptimes and upcoming maintenance
+					<a href="https://uptime.gointospace.app/">uptime.gointospace.app</a>.
+				</p>
+			</div>
+			<div class="settingsection settingsection8">
+				<h1>Contributions</h1>
+				<p>
+					Contributions are welcome on our
+					<a href="https://github.com/nightproxy/space">GitHub</a>. Please follow the proper format when
+					contributing
+					[can be found in contributing.md].
+				</p>
+				<p>
+					If you want to join the TDG Team, please open a ticket
+					in our
+					<a href="https://discord.gointospace.app/">Discord</a>.
+				</p>
+			</div>
+			<div class="settingsection settingsection8">
+				<h1>Support</h1>
+				<p>
+					If you have any issues while using Space please report
+					them on our
+					<a href="https://github.com/nightproxy/space/issues">GitHub</a>. We will try to fix them asap.
+				</p>
+				<p>
+					If you have any suggestions you can post them in our
+					<a href="https://discord.gointospace.app/">Discord</a>.
+				</p>
+				<p>
+					If you would like to donate, please visit our
+					<a href="https://www.patreon.com/nightNetwork">Patreon</a>.
+				</p>
+			</div>
 		</div>
-		<script>
-			particlesJS('particles-js', {
-				particles: {
-					number: {
-						value: 86,
-						density: {
-							enable: true,
-							value_area: 800
-						}
-					},
-					color: {
-						value: '#ffffff'
-					},
-					shape: {
-						type: 'circle',
-						stroke: {
-							width: 0,
-							color: '#000000'
-						},
-						polygon: {
-							nb_sides: 5
-						},
-						image: {
-							src: '',
-							width: 100,
-							height: 100
-						}
-					},
-					opacity: {
-						value: 1,
-						random: true,
-						anim: {
-							enable: false,
-							speed: 1,
-							opacity_min: 0.1,
-							sync: false
-						}
-					},
-					size: {
-						value: 2,
-						random: true,
-						anim: {
-							enable: false,
-							speed: 40,
-							size_min: 0.1,
-							sync: false
-						}
-					},
-					line_linked: {
-						enable: false,
-						distance: 150,
-						color: '#ffffff',
-						opacity: 0.4,
-						width: 1
-					},
-					move: {
-						enable: true,
-						speed: 0.5,
-						direction: 'top',
-						random: false,
-						straight: false,
-						out_mode: 'out',
-						bounce: false,
-						attract: {
-							enable: false,
-							rotateX: 318.0130544358847,
-							rotateY: 556.5228452627983
-						}
-					}
-				},
-				interactivity: {
-					detect_on: 'window',
-					events: {
-						onhover: {
-							enable: false,
-							mode: 'repulse'
-						},
-						onclick: {
-							enable: true,
-							mode: 'push'
-						},
-						resize: true
-					},
-					modes: {
-						grab: {
-							distance: 400,
-							line_linked: {
-								opacity: 1
-							}
-						},
-						bubble: {
-							distance: 400,
-							size: 40,
-							duration: 2,
-							opacity: 8,
-							speed: 3
-						},
-						repulse: {
-							distance: 200,
-							duration: 0.4
-						},
-						push: {
-							particles_nb: 10
-						},
-						remove: {
-							particles_nb: 10
-						}
-					}
-				},
-				retina_detect: true
-			});
-		</script>
-		<script src="/js/localforage.min.js"></script>
-		<script src="/js/c.js"></script>
-		<script src="/js/~.js"></script>
-		<script type="text/javascript">
-			document.addEventListener('DOMContentLoaded', function () {
-				let hideAds = localStorage.getItem('hideAds');
 
-				if (hideAds === null || hideAds === 'false') {
-					let script = document.createElement('script');
-					script.type = 'text/javascript';
-					script.src =
-						'//pl24637794.cpmrevenuegate.com/ae/04/6d/ae046d56314bf19124f3c8fb4709f391.js';
-					document.body.appendChild(script);
-				}
-			});
-		</script>
-		<script>
-			let CLF_config = {
-				app_id: '163a312a-7cde-41ab-a80c-cb4cf281efdf',
-				data: {
-					user_id: '123456', // required
-					user_email: 'user@email.com', // required
-					user_name: 'User Name', // optional
-					custom_data: {
-						JobRole: 'CEO', // optional
-						Plan: 'Pro', // optional
-						teamMates: '4', // optional
-						MonthlySpend: '50 USD' // optional
+		<div class="scontent" id="news">
+			<h1 style="animation: fade-in-left 1s" class="settingsection10">
+				News & Updates
+			</h1>
+			<div class="settingsection settingsection10">
+				<h1>
+					Space has released!<span class="changelog">Version release [v.1.0.0]</span>
+				</h1>
+				<p>
+					Enjoy using all of the fun and exciting features we have
+					packed into this site! Join our
+					<a href="https://discord.gointospace.app/">Discord</a>
+					to get more updates and changes.
+				</p>
+				<hr />
+				<h1>Features</h1>
+				<ul>
+					<li>Out of this world UI</li>
+					<li>Games</li>
+					<li>Apps</li>
+					<li>Proxy</li>
+					<li>Settings</li>
+					<li>Cloaking [Blob & About:Blank]</li>
+					<li>Tab Cloaking [Presets]</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="scontent" id="faq">
+			<h1 style="animation: fade-in-left 1s" class="settingsection11">
+				Frequently asked questions
+			</h1>
+			<div style="animation: fade-in-left 1s" class="settingsection settingsection11">
+				<h1>Where can I find links?</h1>
+				<p>
+					You can find links by joining our
+					<a href="https://discord.gointospace.com/">Discord</a>.
+					We have a community links channel, a link bot for
+					dispensing links, and weekly links.
+				</p>
+			</div>
+			<div class="settingsection settingsection11">
+				<h1>Why do some sites not load/work</h1>
+				<p>
+					There can be a number of reason a site doesnt load but
+					some of the common ones are listed below.
+				</p>
+				<ul>
+					<li>Proxy Service doesnt support the site(s)</li>
+					<li>
+						Our servers are either down or experiencing high
+						loads
+					</li>
+					<li>Issue with the actual site you are visiting</li>
+					<li>Security Flagged</li>
+				</ul>
+				<p>
+					More than half of the reasons listed are not within our
+					control and are fixed seemingly at random by the proxy
+					community.
+				</p>
+			</div>
+			<div class="settingsection settingsection11">
+				<h1>
+					How can I make links? (BYOD)
+					<span class="changelog" style="background-color: #9500ff">Popular FAQ</span>
+				</h1>
+				<p>
+					To make links you will need to have a personal PC or
+					device.
+				</p>
+				<ol style="list-style-type: decimal">
+					<li>
+						First open
+						<a target="_blank" href="https://freedns.afraid.org/signup/?plan=starter">FreeDNS</a>.
+					</li>
+					<li>
+						Next head to
+						<a target="_blank" href="https://temp-mail.org/">Tempmail</a>
+						and open a temporary email.
+					</li>
+					<ul>
+						<li>
+							Type in a random name or text string for the
+							First & Last name
+						</li>
+						<li>
+							Create a random password then use the
+							<b>Tempmail</b> email for the email section.
+						</li>
+						<li>
+							Once these have been filled, complete the
+							captcha and accept the Privacy and TOS
+							agreement.
+						</li>
+					</ul>
+					<li>
+						Then go to the subdomains (<a target="_blank"
+							href="https://freedns.afraid.org/subdomain/">freedns.afraid.org/subdomain)</a>
+						and click add.
+					</li>
+					<li>Fill in the blanks as instructed below:</li>
+					<ul>
+						<li>Type: <b>A</b></li>
+						<li>
+							Subdomain:
+							<b>Anything (This is the name of the site you
+								want)</b>
+						</li>
+						<li>
+							Domain: Click it, then click
+							<b><u>Many many more available.</u></b> Then
+							click shared domain Registry. Choose any public
+							domain you like. (Usually within 10-40's of the
+							pages)
+						</li>
+						<li>
+							Destination: <b>45.134.142.230</b> (If you don't
+							put this correctly the link will
+							<b><i><u>NOT</u></i></b>
+							work.)
+						</li>
+					</ul>
+					<li style="margin-top: 10px">
+						Once the following has been filled in, complete the
+						captcha below then click save.
+					</li>
+					<li>And you are done 🎉</li>
+				</ol>
+				<p>
+					<b>Note:</b> You will need to wait 8m at most for the
+					site to fully boot up.
+				</p>
+				<p>
+					If you have any issues while doing a BYOD, please open a
+					support ticket on our
+					<a href="https://discord.gointospace.app">Discord</a>
+					and our team will gladly help you.
+				</p>
+			</div>
+			<div class="settingsection settingsection11">
+				<h1>I found a bug, what now?</h1>
+				<p>
+					If you've found an issue while using Space, you can do
+					any of the following methods of reporting:
+				</p>
+				<ul>
+					<li>
+						Open an issue on our
+						<a target="_blank" href="https://github.com/nightproxy/space">GitHub</a>.
+					</li>
+					<li>
+						Open a ticket on our
+						<a target="_blank" href="https://discord.gointospace.app">Discord</a>.
+					</li>
+					<li>
+						Report a bug within our widget on the
+						<a href="/">Home page</a>.
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="banner" style="display: block; position: absolute; bottom: 0">
+			<p class="banner">
+				Hosted by&nbsp;<a href="https://billigerhost.com/">Billiger</a>
+			</p>
+			<button id="bannerClose">
+				<i class="fa-solid fa-xmark" style="color: #525252"></i>
+			</button>
+		</div>
+	</div>
+	<div style="z-index: -998">
+		<div style="z-index: -998; position: fixed" class="blob"></div>
+		<div style="z-index: -998; position: fixed" class="blobbig"></div>
+		<div style="z-index: -998; position: fixed" class="blobsmall"></div>
+		<div style="z-index: -998; position: fixed" class="blobtop"></div>
+		<div style="z-index: -999" id="particles-js" class=""></div>
+	</div>
+	<script>
+		particlesJS('particles-js', {
+			particles: {
+				number: {
+					value: 86,
+					density: {
+						enable: true,
+						value_area: 800
+					}
+				},
+				color: {
+					value: '#ffffff'
+				},
+				shape: {
+					type: 'circle',
+					stroke: {
+						width: 0,
+						color: '#000000'
+					},
+					polygon: {
+						nb_sides: 5
+					},
+					image: {
+						src: '',
+						width: 100,
+						height: 100
+					}
+				},
+				opacity: {
+					value: 1,
+					random: true,
+					anim: {
+						enable: false,
+						speed: 1,
+						opacity_min: 0.1,
+						sync: false
+					}
+				},
+				size: {
+					value: 2,
+					random: true,
+					anim: {
+						enable: false,
+						speed: 40,
+						size_min: 0.1,
+						sync: false
+					}
+				},
+				line_linked: {
+					enable: false,
+					distance: 150,
+					color: '#ffffff',
+					opacity: 0.4,
+					width: 1
+				},
+				move: {
+					enable: true,
+					speed: 0.5,
+					direction: 'top',
+					random: false,
+					straight: false,
+					out_mode: 'out',
+					bounce: false,
+					attract: {
+						enable: false,
+						rotateX: 318.0130544358847,
+						rotateY: 556.5228452627983
 					}
 				}
-			};
-		</script>
-		<script async src="https://widget.changelogfy.com/index.js"></script>
-	</body>
+			},
+			interactivity: {
+				detect_on: 'window',
+				events: {
+					onhover: {
+						enable: false,
+						mode: 'repulse'
+					},
+					onclick: {
+						enable: true,
+						mode: 'push'
+					},
+					resize: true
+				},
+				modes: {
+					grab: {
+						distance: 400,
+						line_linked: {
+							opacity: 1
+						}
+					},
+					bubble: {
+						distance: 400,
+						size: 40,
+						duration: 2,
+						opacity: 8,
+						speed: 3
+					},
+					repulse: {
+						distance: 200,
+						duration: 0.4
+					},
+					push: {
+						particles_nb: 10
+					},
+					remove: {
+						particles_nb: 10
+					}
+				}
+			},
+			retina_detect: true
+		});
+	</script>
+	<script src="/js/localforage.min.js"></script>
+	<script src="/js/c.js"></script>
+	<script src="/js/~.js"></script>
+	<script src="/js/themes.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function () {
+			let hideAds = localStorage.getItem('hideAds');
+
+			if (hideAds === null || hideAds === 'false') {
+				let script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.src =
+					'//pl24637794.cpmrevenuegate.com/ae/04/6d/ae046d56314bf19124f3c8fb4709f391.js';
+				document.body.appendChild(script);
+			}
+		});
+	</script>
+	<script>
+		let CLF_config = {
+			app_id: '163a312a-7cde-41ab-a80c-cb4cf281efdf',
+			data: {
+				user_id: '123456', // required
+				user_email: 'user@email.com', // required
+				user_name: 'User Name', // optional
+				custom_data: {
+					JobRole: 'CEO', // optional
+					Plan: 'Pro', // optional
+					teamMates: '4', // optional
+					MonthlySpend: '50 USD' // optional
+				}
+			}
+		};
+	</script>
+	<script async src="https://widget.changelogfy.com/index.js"></script>
+</body>
+
 </html>
