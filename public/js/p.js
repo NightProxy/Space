@@ -31,13 +31,7 @@ var defWisp =
 	'://' +
 	location.host +
 	'/wisp/';
-var defBare =
-	(location.protocol === 'https:' ? 'wss' : 'ws') +
-	'://' +
-	location.host +
-	'/bare/';
 var wispUrl = localStorage.getItem('wisp') || defWisp;
-var bareUrl = localStorage.getItem('bare') || defBare;
 
 async function setTransports() {
 	const transports =

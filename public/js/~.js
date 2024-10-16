@@ -294,7 +294,7 @@ function handleCheckboxChange() {
 
 					window.close();
 					switch (
-						localStorage.getItem('dropdown-selected-text-tabCloak')
+					localStorage.getItem('dropdown-selected-text-tabCloak')
 					) {
 						case 'Google Classroom':
 							window.location.href =
@@ -1104,6 +1104,11 @@ lockScroll();
 let wispVal = document.querySelector('.input.wisp')
 let wispSave = document.querySelector('.buttonreg.wispSave')
 let wispReset = document.querySelector('.buttonreg.wispReset')
+
+wispVal.value = localStorage.getItem('wisp') || (location.protocol === 'https:' ? 'wss' : 'ws') +
+	'://' +
+	location.host +
+	'/wisp/';
 
 wispSave.addEventListener('click', () => {
 	localStorage.setItem('wisp', wispVal.value);
