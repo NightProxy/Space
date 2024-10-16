@@ -1100,3 +1100,21 @@ function lockScroll() {
 window.addEventListener('scroll', lockScroll);
 
 lockScroll();
+
+let wispVal = document.querySelector('.input.wisp')
+let wispSave = document.querySelector('.buttonreg.wispSave')
+let wispReset = document.querySelector('.buttonreg.wispReset')
+
+wispSave.addEventListener('click', () => {
+	localStorage.setItem('wisp', wispVal.value);
+});
+
+wispReset.addEventListener('click', () => {
+	localStorage.removeItem('wisp');
+});
+
+wispVal.addEventListener('keydown', (e) => {
+	if (e.key = "Enter") {
+		localStorage.setItem('wisp', wispVal.value)
+	}
+});

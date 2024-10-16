@@ -1,12 +1,18 @@
-// Proxy specific code, so registering service workers, updating urls, checking search engines, etc. P, for proxy
-
 const address1 = document.getElementById('gointospace');
 const address2 = document.getElementById('gointospace2');
-const connection = new BareMux.BareMuxConnection('/baremux/worker.js');
+const urlPattern = new RegExp(
+	'^(https?:\\/\\/)?' +
+		'((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' +
+		'((\\d{1,3}\\.){3}\\d{1,3}))' +
+		'(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' +
+		'(\\?[;&a-z\\d%_.~+=-]*)?' +
+		'(\\#[-a-z\\d_]*)?$',
+	'i'
+);
 
 const proxySetting =
 	localStorage.getItem('dropdown-selected-text-proxy') ??
-	'Ultraviolet (default)'; // Using nullish coalescing operator for default value
+	'Ultraviolet (default)';
 
 const swConfig = {
 	'Ultraviolet (default)': { file: '/@/sw.js', config: __uv$config },
@@ -18,15 +24,7 @@ const { file: swFile, config: swConfigSettings } = swConfig[proxySetting] ?? {
 	config: __uv$config
 };
 
-const urlPattern = new RegExp(
-	'^(https?:\\/\\/)?' +
-		'((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' +
-		'((\\d{1,3}\\.){3}\\d{1,3}))' +
-		'(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' +
-		'(\\?[;&a-z\\d%_.~+=-]*)?' +
-		'(\\#[-a-z\\d_]*)?$',
-	'i'
-);
+const connection = new BareMux.BareMuxConnection('/baremux/worker.js');
 
 var defWisp =
 	(location.protocol === 'https:' ? 'wss' : 'ws') +
@@ -43,18 +41,17 @@ var bareUrl = localStorage.getItem('bare') || defBare;
 
 async function setTransports() {
 	const transports =
-		localStorage.getItem('dropdown-selected-text-transport') || 'Epoxy';
-	if (transports === 'Epoxy') {
-		await connection.setTransport('/epoxy/index.mjs', [{ wisp: wispUrl }]);
-	} else if (transports === 'Libcurl') {
+		localStorage.getItem('dropdown-selected-text-transport') || 'Libcurl';
+	 if (transports === 'Libcurl') {
 		await connection.setTransport('/libcurl/index.mjs', [
 			{ wisp: wispUrl }
 		]);
-	} else if (transports === 'Baremod') {
-		await connection.setTransport('/baremod/index.mjs', [bareUrl]);
-	} else {
+	} else if (transports === 'Epoxy') {
 		await connection.setTransport('/epoxy/index.mjs', [{ wisp: wispUrl }]);
-	}
+	} else {
+		await connection.setTransport('/libcurl/index.mjs', [
+			{ wisp: wispUrl }
+		]);	}
 }
 
 function search(input) {

@@ -1,6 +1,5 @@
 importScripts(
 	"/$/scramjet.wasm.js",
-	"/$/scramjet.codecs.js",
 	"/$/scramjet.shared.js",
 	"/$/scramjet.worker.js"
 );
