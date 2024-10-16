@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	} else if (
 		window.location.pathname === '/&' &&
 		(localStorage.getItem('smallIcons') === 'false' ||
-		!localStorage.getItem('smallIcons'))
+			!localStorage.getItem('smallIcons'))
 	) {
 		fetch('/json/sb.json')
 			.then(response => response.json())

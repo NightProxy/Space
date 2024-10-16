@@ -74,7 +74,7 @@
 	--dshadow4: #8400ff;
 }
 
-:root .halloween{
+:root .halloween {
 	--background-color: #000;
 	--header-active-background-color: rgba(255, 153, 0, 0.55);
 	--header-hover-background-color: rgba(255, 166, 0, 0.13);
@@ -150,7 +150,7 @@
 	--dshadow4: #ff6600;
 }
 
-:root .aurora{
+:root .aurora {
 	--background-color: #000;
 	--header-active-background-color: rgba(0, 255, 115, 0.55);
 	--header-hover-background-color: rgba(0, 255, 85, 0.13);
@@ -226,7 +226,7 @@
 	--dshadow4: #0abb59;
 }
 
-:root .nightmare{
+:root .nightmare {
 	--background-color: #000;
 	--header-active-background-color: rgba(255, 8, 0, 0.55);
 	--header-hover-background-color: rgba(255, 51, 0, 0.13);
@@ -302,7 +302,7 @@
 	--dshadow4: #f7453f;
 }
 
-:root .midnight{
+:root .midnight {
 	--background-color: #000;
 	--header-active-background-color: rgba(216, 216, 216, 0.55);
 	--header-hover-background-color: rgba(177, 177, 177, 0.13);
@@ -378,7 +378,7 @@
 	--dshadow4: #5a5a5a;
 }
 
-:root .supernova{
+:root .supernova {
 	--background-color: #000;
 	--header-active-background-color: rgba(140, 175, 252, 0.55);
 	--header-hover-background-color: rgba(137, 188, 255, 0.13);

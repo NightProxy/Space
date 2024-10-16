@@ -106,7 +106,7 @@
 .typewrite {
 	color: var(--link-hover-color);
 	filter: drop-shadow(0 0 2px var(--image-outline-color))
-								drop-shadow(0 0 20px var(--image-outline-color));
+		drop-shadow(0 0 20px var(--image-outline-color));
 }
 
 body {
@@ -172,11 +172,25 @@ body {
 
 .btn:hover:before {
 	top: -70%;
-	background-image: radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
-		radial-gradient(circle, transparent 20%, var(--link-hover-color) 20%, transparent 30%),
+	background-image: radial-gradient(
+			circle,
+			var(--link-hover-color) 20%,
+			transparent 20%
+		),
+		radial-gradient(
+			circle,
+			transparent 20%,
+			var(--link-hover-color) 20%,
+			transparent 30%
+		),
 		radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
 		radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
-		radial-gradient(circle, transparent 10%, var(--link-hover-color) 15%, transparent 20%),
+		radial-gradient(
+			circle,
+			transparent 10%,
+			var(--link-hover-color) 15%,
+			transparent 20%
+		),
 		radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
 		radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
 		radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
@@ -197,13 +211,22 @@ body {
 
 .btn:hover::after {
 	bottom: -70%;
-	background-image: radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+	background-image: radial-gradient(
+			circle,
+			var(--link-hover-color) 20%,
+			transparent 20%
+		),
 		radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
-		radial-gradient(circle, transparent 10%, var(--link-hover-color) 15%, transparent 20%),
+		radial-gradient(
+			circle,
+			transparent 10%,
+			var(--link-hover-color) 15%,
+			transparent 20%
+		),
 		radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
 		radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
 		radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
-		radial-gradient(circle,  var(--link-hover-color) 20%, transparent 20%);
+		radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%);
 	background-size:
 		15% 15%,
 		20% 20%,

@@ -88,11 +88,11 @@
 	}
 
 	25% {
-		background: var(--dshadow3)
+		background: var(--dshadow3);
 	}
 
 	50% {
-		background: var(--dshadow4)
+		background: var(--dshadow4);
 	}
 
 	75% {
@@ -100,7 +100,7 @@
 	}
 
 	100% {
-		background: var(--dshadow4)
+		background: var(--dshadow4);
 	}
 }
 
@@ -215,15 +215,27 @@ ol {
 
 @keyframes link {
 	0% {
-		background: linear-gradient(to top left, var(--dshadow4) 0%, var(--dshadow3) 100%);
+		background: linear-gradient(
+			to top left,
+			var(--dshadow4) 0%,
+			var(--dshadow3) 100%
+		);
 	}
 
 	50% {
-		background: linear-gradient(to top left, var(--dshadow3) 0%, var(--dshadow4) 100%);
+		background: linear-gradient(
+			to top left,
+			var(--dshadow3) 0%,
+			var(--dshadow4) 100%
+		);
 	}
 
 	100% {
-		background: linear-gradient(to top left, var(--dshadow4) 0%, var(--dshadow3) 100%);
+		background: linear-gradient(
+			to top left,
+			var(--dshadow4) 0%,
+			var(--dshadow3) 100%
+		);
 	}
 }
 
@@ -744,7 +756,11 @@ p {
 
 p a {
 	background: #7400ff;
-	background: linear-gradient(to top left, var(--dshadow4) 0%, var(--dshadow3) 100%);
+	background: linear-gradient(
+		to top left,
+		var(--dshadow4) 0%,
+		var(--dshadow3) 100%
+	);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-decoration: underline;
@@ -759,7 +775,11 @@ p a:hover {
 
 .settingsection li a {
 	background: #7400ff;
-	background: linear-gradient(to top left, var(--dshadow4) 0%, var(--dshadow3) 100%);
+	background: linear-gradient(
+		to top left,
+		var(--dshadow4) 0%,
+		var(--dshadow3) 100%
+	);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-decoration: underline;
@@ -771,7 +791,6 @@ p a:hover {
 	text-underline-offset: 2px;
 	transition: color 0.2s ease;
 }
-
 
 .input {
 	width: 100%;

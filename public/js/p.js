@@ -16,7 +16,7 @@ const proxySetting =
 
 const swConfig = {
 	'Ultraviolet (default)': { file: '/@/sw.js', config: __uv$config },
-	'Scramjet': { file: '/$/sw.js', config: __scramjet$config }
+	Scramjet: { file: '/$/sw.js', config: __scramjet$config }
 };
 
 const { file: swFile, config: swConfigSettings } = swConfig[proxySetting] ?? {
@@ -36,7 +36,7 @@ var wispUrl = localStorage.getItem('wisp') || defWisp;
 async function setTransports() {
 	const transports =
 		localStorage.getItem('dropdown-selected-text-transport') || 'Libcurl';
-	 if (transports === 'Libcurl') {
+	if (transports === 'Libcurl') {
 		await connection.setTransport('/libcurl/index.mjs', [
 			{ wisp: wispUrl }
 		]);
@@ -45,7 +45,8 @@ async function setTransports() {
 	} else {
 		await connection.setTransport('/libcurl/index.mjs', [
 			{ wisp: wispUrl }
-		]);	}
+		]);
+	}
 }
 
 function search(input) {

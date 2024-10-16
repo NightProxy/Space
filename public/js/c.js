@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		const launchType = localStorage.getItem('launchType');
 
 		if (launchType === 'blob') {
-				if (window === window.top) {
+			if (window === window.top) {
 				const currentSiteUrl = currentLocation + '?redirect=true';
 
 				const htmlContent = `
@@ -203,9 +203,9 @@ document.addEventListener('DOMContentLoaded', function () {
 							break;
 					}
 				}
-				}
+			}
 		} else if (launchType === 'aboutBlank') {
-				  if (window === window.top) {
+			if (window === window.top) {
 				const win = window.open();
 				const url = currentLocation;
 				const iframe = win.document.createElement('iframe');
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				} else {
 					window.location.href = redirectTo;
 				}
-				  }
+			}
 		}
 	}
 

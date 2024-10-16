@@ -5,8 +5,8 @@ async function executeSearch(query) {
 	if (localStorage.getItem('dropdown-selected-text-proxy') == 'Scramjet') {
 		const scramjet = new ScramjetController(__scramjet$config);
 		scramjet.modifyConfig(__scramjet$config);
-		
-		scramjet.init("/$/sw.js").then(async () => {
+
+		scramjet.init('/$/sw.js').then(async () => {
 			await setTransports();
 		});
 

@@ -294,7 +294,7 @@ function handleCheckboxChange() {
 
 					window.close();
 					switch (
-					localStorage.getItem('dropdown-selected-text-tabCloak')
+						localStorage.getItem('dropdown-selected-text-tabCloak')
 					) {
 						case 'Google Classroom':
 							window.location.href =
@@ -1101,14 +1101,16 @@ window.addEventListener('scroll', lockScroll);
 
 lockScroll();
 
-let wispVal = document.querySelector('.input.wisp')
-let wispSave = document.querySelector('.buttonreg.wispSave')
-let wispReset = document.querySelector('.buttonreg.wispReset')
+let wispVal = document.querySelector('.input.wisp');
+let wispSave = document.querySelector('.buttonreg.wispSave');
+let wispReset = document.querySelector('.buttonreg.wispReset');
 
-wispVal.value = localStorage.getItem('wisp') || (location.protocol === 'https:' ? 'wss' : 'ws') +
-	'://' +
-	location.host +
-	'/wisp/';
+wispVal.value =
+	localStorage.getItem('wisp') ||
+	(location.protocol === 'https:' ? 'wss' : 'ws') +
+		'://' +
+		location.host +
+		'/wisp/';
 
 wispSave.addEventListener('click', () => {
 	localStorage.setItem('wisp', wispVal.value);
@@ -1118,8 +1120,8 @@ wispReset.addEventListener('click', () => {
 	localStorage.removeItem('wisp');
 });
 
-wispVal.addEventListener('keydown', (e) => {
-	if (e.key = "Enter") {
-		localStorage.setItem('wisp', wispVal.value)
+wispVal.addEventListener('keydown', e => {
+	if ((e.key = 'Enter')) {
+		localStorage.setItem('wisp', wispVal.value);
 	}
 });

@@ -1,4 +1,5 @@
-let selectedTheme = localStorage.getItem('dropdown-selected-text-themes') || 'Default';
+let selectedTheme =
+	localStorage.getItem('dropdown-selected-text-themes') || 'Default';
 selectedTheme = selectedTheme.replace(/ /g, '');
 selectedTheme = selectedTheme.replace(/-/g, '');
 selectedTheme = selectedTheme.toLowerCase();
