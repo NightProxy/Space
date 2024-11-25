@@ -2,15 +2,7 @@
 
 let encodedUrl = '';
 async function executeSearch(query) {
-	if (localStorage.getItem('dropdown-selected-text-proxy') == 'Dynamic') {
-		encodedUrl =
-			swConfigSettings.prefix +
-			'route?url=' +
-			encodeURIComponent(search(query));
-	} else {
-		encodedUrl =
-			swConfigSettings.prefix + __uv$config.encodeUrl(search(query));
-	}
+	encodedUrl = swConfigSettings.prefix + __uv$config.encodeUrl(search(query));
 	localStorage.setItem('input', query);
 	localStorage.setItem('output', encodedUrl);
 	document.querySelectorAll('.spinnerParent')[0].style.display = 'block';

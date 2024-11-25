@@ -1,0 +1,531 @@
+:root.default {
+	--background-color: #000;
+	--header-active-background-color: rgba(140, 0, 255, 0.55);
+	--header-hover-background-color: rgba(140, 0, 255, 0.13);
+	--input-background-color: #0a0a0a;
+	--border-color: #525252;
+	--text-color: #ffffff;
+	--hover-text-color: rgba(255, 255, 255, 0.49);
+	--active-text-color: rgba(255, 255, 255, 0.81);
+	--utility-background-color: rgb(22, 22, 22);
+	--utility-shadow-color: rgba(66, 66, 66, 0.86);
+	--hr-background: rgba(160, 160, 160, 0.274);
+	--navbar-background-color: rgb(22, 22, 22);
+	--page-text-color: rgba(82, 82, 82, 0.97);
+	--shortcut-background-color: #fff;
+	--shortcut-box-shadow: 0 0 20px 1px #fff;
+	--image-outline-color: #4400ff;
+	--button-background-color: #4400ff;
+	--button-gradient-color: linear-gradient(
+		304deg,
+		rgb(204, 0, 245) 0%,
+		#4400ff 100%
+	);
+	--scrolltop-background-color: rgba(32, 32, 32, 0.37);
+	--scrolltop-backdrop-filter: blur(10px);
+	--random-btn-background-color: #0a0a0a;
+	--random-btn-hover-background-color: rgb(25, 25, 25);
+	--random-btn-active-background-color: rgb(15, 15, 15);
+	--settingsection-background-color: #0c0c0c;
+	--settingsection-background-color-hover: #101010;
+	--link-hover-color: #7d2ae8;
+	--settingsection-hr-background: rgba(255, 255, 255, 0.22);
+	--button-reg-background-color: rgb(22, 22, 22);
+	--button-reg-hover-background-color: rgb(25, 25, 25);
+	--button-reg-active-background-color: rgb(15, 15, 15);
+	--dropdown-background-color: rgb(22, 22, 22);
+	--dropdown-hover-background-color: rgb(25, 25, 25);
+	--panic-key-successful-color: #24b95b;
+	--panic-key-failed-color: #e20b41;
+	--failtoast-background: rgb(255, 0, 0);
+	--failtoast-gradient: linear-gradient(
+		165deg,
+		rgba(255, 0, 0, 0.15) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--toast-background: rgb(43, 255, 0);
+	--toast-gradient: linear-gradient(
+		165deg,
+		rgba(0, 255, 0, 0.145) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--slider-background-color: #d84f68;
+	--slider-box-shadow: inset 1px 1px 2px 0px #ff7ca7;
+	--checkbox-background-color: rgb(255, 169, 250);
+	--checkbox-gradient: linear-gradient(
+		126deg,
+		rgba(255, 169, 250, 1) 0%,
+		rgba(73, 24, 255, 1) 100%
+	);
+	--password-background-color: #252525;
+	--password-hover-background-color: #181818;
+
+	/* Widget */
+	--color-header: '#fff';
+	--accent-color: linear-gradient(
+		101deg,
+		#4400ff7e 0%,
+		rgba(242, 0, 255, 0.336) 100%
+	) !important;
+	--color-header: #ff0000 !important;
+	--dshadow1: #ae00ff;
+	--dshadow2: #4400ff;
+	--dshadow3: #ff00d4;
+	--dshadow4: #8400ff;
+}
+
+/*:root .halloween {
+	--background-color: #000;
+	--header-active-background-color: rgba(255, 153, 0, 0.55);
+	--header-hover-background-color: rgba(255, 166, 0, 0.13);
+	--input-background-color: #0a0a0a;
+	--border-color: #525252;
+	--text-color: #ffffff;
+	--hover-text-color: rgba(255, 255, 255, 0.49);
+	--active-text-color: rgba(255, 255, 255, 0.81);
+	--utility-background-color: rgb(22, 22, 22);
+	--utility-shadow-color: rgba(66, 66, 66, 0.86);
+	--hr-background: rgba(160, 160, 160, 0.274);
+	--navbar-background-color: rgb(22, 22, 22);
+	--page-text-color: rgba(82, 82, 82, 0.97);
+	--shortcut-background-color: #fff;
+	--shortcut-box-shadow: 0 0 20px 1px #fff;
+	--image-outline-color: #ff9100;
+	--button-background-color: #ffbb00;
+	--button-gradient-color: linear-gradient(
+		304deg,
+		rgb(245, 110, 0) 0%,
+		#ffae00 100%
+	);
+	--scrolltop-background-color: rgba(32, 32, 32, 0.37);
+	--scrolltop-backdrop-filter: blur(10px);
+	--random-btn-background-color: #0a0a0a;
+	--random-btn-hover-background-color: rgb(25, 25, 25);
+	--random-btn-active-background-color: rgb(15, 15, 15);
+	--settingsection-background-color: #0c0c0c;
+	--settingsection-background-color-hover: #101010;
+	--link-hover-color: #e8962a;
+	--settingsection-hr-background: rgba(255, 255, 255, 0.22);
+	--button-reg-background-color: rgb(22, 22, 22);
+	--button-reg-hover-background-color: rgb(25, 25, 25);
+	--button-reg-active-background-color: rgb(15, 15, 15);
+	--dropdown-background-color: rgb(22, 22, 22);
+	--dropdown-hover-background-color: rgb(25, 25, 25);
+	--panic-key-successful-color: #24b95b;
+	--panic-key-failed-color: #e20b41;
+	--failtoast-background: rgb(255, 0, 0);
+	--failtoast-gradient: linear-gradient(
+		165deg,
+		rgba(255, 0, 0, 0.15) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--toast-background: rgb(43, 255, 0);
+	--toast-gradient: linear-gradient(
+		165deg,
+		rgba(0, 255, 0, 0.145) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--slider-background-color: #d84f68;
+	--slider-box-shadow: inset 1px 1px 2px 0px #e97cff;
+	--checkbox-background-color: rgb(211, 127, 245);
+	--checkbox-gradient: linear-gradient(
+		126deg,
+		rgb(221, 169, 255) 0%,
+		rgb(255, 24, 236) 100%
+	);
+	--password-background-color: #252525;
+	--password-hover-background-color: #181818;
+
+	--color-header: '#fff';
+	--accent-color: linear-gradient(
+		101deg,
+		#8400ff7e 0%,
+		rgba(255, 153, 0, 0.336) 100%
+	) !important;
+	--color-header: #ff0000 !important;
+	--dshadow1: #ff7300;
+	--dshadow2: #ff9100;
+	--dshadow3: #8400ff;
+	--dshadow4: #ff6600;
+}*/
+
+:root .aurora {
+	--background-color: #000;
+	--header-active-background-color: rgba(0, 255, 115, 0.55);
+	--header-hover-background-color: rgba(0, 255, 85, 0.13);
+	--input-background-color: #0a0a0a;
+	--border-color: #525252;
+	--text-color: #ffffff;
+	--hover-text-color: rgba(255, 255, 255, 0.49);
+	--active-text-color: rgba(255, 255, 255, 0.81);
+	--utility-background-color: rgb(22, 22, 22);
+	--utility-shadow-color: rgba(66, 66, 66, 0.86);
+	--hr-background: rgba(160, 160, 160, 0.274);
+	--navbar-background-color: rgb(22, 22, 22);
+	--page-text-color: rgba(82, 82, 82, 0.97);
+	--shortcut-background-color: #fff;
+	--shortcut-box-shadow: 0 0 20px 1px #fff;
+	--image-outline-color: #00ff88;
+	--button-background-color: #00ff95;
+	--button-gradient-color: linear-gradient(
+		304deg,
+		rgb(25, 157, 233) 0%,
+		#00ff73 100%
+	);
+	--scrolltop-background-color: rgba(32, 32, 32, 0.37);
+	--scrolltop-backdrop-filter: blur(10px);
+	--random-btn-background-color: #0a0a0a;
+	--random-btn-hover-background-color: rgb(25, 25, 25);
+	--random-btn-active-background-color: rgb(15, 15, 15);
+	--settingsection-background-color: #0c0c0c;
+	--settingsection-background-color-hover: #101010;
+	--link-hover-color: #0cc6e7;
+	--settingsection-hr-background: rgba(255, 255, 255, 0.22);
+	--button-reg-background-color: rgb(22, 22, 22);
+	--button-reg-hover-background-color: rgb(25, 25, 25);
+	--button-reg-active-background-color: rgb(15, 15, 15);
+	--dropdown-background-color: rgb(22, 22, 22);
+	--dropdown-hover-background-color: rgb(25, 25, 25);
+	--panic-key-successful-color: #24b95b;
+	--panic-key-failed-color: #e20b41;
+	--failtoast-background: rgb(255, 0, 0);
+	--failtoast-gradient: linear-gradient(
+		165deg,
+		rgba(255, 0, 0, 0.15) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--toast-background: rgb(43, 255, 0);
+	--toast-gradient: linear-gradient(
+		165deg,
+		rgba(0, 255, 0, 0.145) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--slider-background-color: #d84f68;
+	--slider-box-shadow: inset 1px 1px 2px 0px #e97cff;
+	--checkbox-background-color: rgb(211, 127, 245);
+	--checkbox-gradient: linear-gradient(
+		126deg,
+		rgb(221, 169, 255) 0%,
+		rgb(255, 24, 236) 100%
+	);
+	--password-background-color: #252525;
+	--password-hover-background-color: #181818;
+
+	/* Widget */
+	--color-header: '#fff';
+	--accent-color: linear-gradient(
+		101deg,
+		#8400ff7e 0%,
+		rgba(255, 153, 0, 0.336) 100%
+	) !important;
+	--color-header: #ff0000 !important;
+	--dshadow1: #058f61;
+	--dshadow2: #00ff95;
+	--dshadow3: #006eff;
+	--dshadow4: #0abb59;
+}
+
+:root .nightmare {
+	--background-color: #000;
+	--header-active-background-color: rgba(255, 8, 0, 0.55);
+	--header-hover-background-color: rgba(255, 51, 0, 0.13);
+	--input-background-color: #0a0a0a;
+	--border-color: #525252;
+	--text-color: #ffffff;
+	--hover-text-color: rgba(255, 255, 255, 0.49);
+	--active-text-color: rgba(255, 255, 255, 0.81);
+	--utility-background-color: rgb(22, 22, 22);
+	--utility-shadow-color: rgba(66, 66, 66, 0.86);
+	--hr-background: rgba(160, 160, 160, 0.274);
+	--navbar-background-color: rgb(22, 22, 22);
+	--page-text-color: rgba(82, 82, 82, 0.97);
+	--shortcut-background-color: #fff;
+	--shortcut-box-shadow: 0 0 20px 1px #fff;
+	--image-outline-color: #ff0000;
+	--button-background-color: #ff0800;
+	--button-gradient-color: linear-gradient(
+		304deg,
+		rgb(245, 8, 0) 0%,
+		#ff0000 100%
+	);
+	--scrolltop-background-color: rgba(32, 32, 32, 0.37);
+	--scrolltop-backdrop-filter: blur(10px);
+	--random-btn-background-color: #0a0a0a;
+	--random-btn-hover-background-color: rgb(25, 25, 25);
+	--random-btn-active-background-color: rgb(15, 15, 15);
+	--settingsection-background-color: #0c0c0c;
+	--settingsection-background-color-hover: #101010;
+	--link-hover-color: #e8302a;
+	--settingsection-hr-background: rgba(255, 255, 255, 0.22);
+	--button-reg-background-color: rgb(22, 22, 22);
+	--button-reg-hover-background-color: rgb(25, 25, 25);
+	--button-reg-active-background-color: rgb(15, 15, 15);
+	--dropdown-background-color: rgb(22, 22, 22);
+	--dropdown-hover-background-color: rgb(25, 25, 25);
+	--panic-key-successful-color: #24b95b;
+	--panic-key-failed-color: #e20b41;
+	--failtoast-background: rgb(255, 0, 0);
+	--failtoast-gradient: linear-gradient(
+		165deg,
+		rgba(255, 0, 0, 0.15) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--toast-background: rgb(43, 255, 0);
+	--toast-gradient: linear-gradient(
+		165deg,
+		rgba(0, 255, 0, 0.145) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--slider-background-color: #d84f68;
+	--slider-box-shadow: inset 1px 1px 2px 0px #e97cff;
+	--checkbox-background-color: rgb(211, 127, 245);
+	--checkbox-gradient: linear-gradient(
+		126deg,
+		rgb(221, 169, 255) 0%,
+		rgb(255, 24, 236) 100%
+	);
+	--password-background-color: #252525;
+	--password-hover-background-color: #181818;
+
+	/* Widget */
+	--color-header: '#fff';
+	--accent-color: linear-gradient(
+		101deg,
+		#8400ff7e 0%,
+		rgba(255, 153, 0, 0.336) 100%
+	) !important;
+	--color-header: #ff0000 !important;
+	--dshadow1: #c70e08;
+	--dshadow2: #ff0000;
+	--dshadow3: #a144f8;
+	--dshadow4: #f7453f;
+}
+
+:root .midnight {
+	--background-color: #000;
+	--header-active-background-color: rgba(216, 216, 216, 0.55);
+	--header-hover-background-color: rgba(177, 177, 177, 0.13);
+	--input-background-color: #0a0a0a;
+	--border-color: #525252;
+	--text-color: #ffffff;
+	--hover-text-color: rgba(255, 255, 255, 0.49);
+	--active-text-color: rgba(255, 255, 255, 0.81);
+	--utility-background-color: rgb(22, 22, 22);
+	--utility-shadow-color: rgba(66, 66, 66, 0.86);
+	--hr-background: rgba(160, 160, 160, 0.274);
+	--navbar-background-color: rgb(22, 22, 22);
+	--page-text-color: rgba(82, 82, 82, 0.97);
+	--shortcut-background-color: #fff;
+	--shortcut-box-shadow: 0 0 20px 1px #fff;
+	--image-outline-color: #b3b3b3;
+	--button-background-color: #acacac;
+	--button-gradient-color: linear-gradient(
+		304deg,
+		rgb(129, 129, 129) 0%,
+		#bebebe 100%
+	);
+	--scrolltop-background-color: rgba(32, 32, 32, 0.37);
+	--scrolltop-backdrop-filter: blur(10px);
+	--random-btn-background-color: #0a0a0a;
+	--random-btn-hover-background-color: rgb(25, 25, 25);
+	--random-btn-active-background-color: rgb(15, 15, 15);
+	--settingsection-background-color: #0c0c0c;
+	--settingsection-background-color-hover: #101010;
+	--link-hover-color: #c7c7c7;
+	--settingsection-hr-background: rgba(255, 255, 255, 0.22);
+	--button-reg-background-color: rgb(22, 22, 22);
+	--button-reg-hover-background-color: rgb(25, 25, 25);
+	--button-reg-active-background-color: rgb(15, 15, 15);
+	--dropdown-background-color: rgb(22, 22, 22);
+	--dropdown-hover-background-color: rgb(25, 25, 25);
+	--panic-key-successful-color: #24b95b;
+	--panic-key-failed-color: #e20b41;
+	--failtoast-background: rgb(255, 0, 0);
+	--failtoast-gradient: linear-gradient(
+		165deg,
+		rgba(255, 0, 0, 0.15) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--toast-background: rgb(43, 255, 0);
+	--toast-gradient: linear-gradient(
+		165deg,
+		rgba(0, 255, 0, 0.145) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--slider-background-color: #d84f68;
+	--slider-box-shadow: inset 1px 1px 2px 0px #e97cff;
+	--checkbox-background-color: rgb(211, 127, 245);
+	--checkbox-gradient: linear-gradient(
+		126deg,
+		rgb(221, 169, 255) 0%,
+		rgb(255, 24, 236) 100%
+	);
+	--password-background-color: #252525;
+	--password-hover-background-color: #181818;
+
+	/* Widget */
+	--color-header: '#fff';
+	--accent-color: linear-gradient(
+		101deg,
+		#8400ff7e 0%,
+		rgba(255, 153, 0, 0.336) 100%
+	) !important;
+	--color-header: #ff0000 !important;
+	--dshadow1: #6e6e6e;
+	--dshadow2: #b6b6b6;
+	--dshadow3: #ffffff;
+	--dshadow4: #5a5a5a;
+}
+
+:root .supernova {
+	--background-color: #000;
+	--header-active-background-color: rgba(140, 175, 252, 0.55);
+	--header-hover-background-color: rgba(137, 188, 255, 0.13);
+	--input-background-color: #0a0a0a;
+	--border-color: #525252;
+	--text-color: #ffffff;
+	--hover-text-color: rgba(255, 255, 255, 0.49);
+	--active-text-color: rgba(255, 255, 255, 0.81);
+	--utility-background-color: rgb(22, 22, 22);
+	--utility-shadow-color: rgba(66, 66, 66, 0.86);
+	--hr-background: rgba(160, 160, 160, 0.274);
+	--navbar-background-color: rgb(22, 22, 22);
+	--page-text-color: rgba(82, 82, 82, 0.97);
+	--shortcut-background-color: #fff;
+	--shortcut-box-shadow: 0 0 20px 1px #fff;
+	--image-outline-color: #809bf3;
+	--button-background-color: #97adf4;
+	--button-gradient-color: linear-gradient(
+		304deg,
+		rgb(123, 166, 247) 0%,
+		#97adf4 100%
+	);
+	--scrolltop-background-color: rgba(32, 32, 32, 0.37);
+	--scrolltop-backdrop-filter: blur(10px);
+	--random-btn-background-color: #0a0a0a;
+	--random-btn-hover-background-color: rgb(25, 25, 25);
+	--random-btn-active-background-color: rgb(15, 15, 15);
+	--settingsection-background-color: #0c0c0c;
+	--settingsection-background-color-hover: #101010;
+	--link-hover-color: #97adf4;
+	--settingsection-hr-background: rgba(255, 255, 255, 0.22);
+	--button-reg-background-color: rgb(22, 22, 22);
+	--button-reg-hover-background-color: rgb(25, 25, 25);
+	--button-reg-active-background-color: rgb(15, 15, 15);
+	--dropdown-background-color: rgb(22, 22, 22);
+	--dropdown-hover-background-color: rgb(25, 25, 25);
+	--panic-key-successful-color: #24b95b;
+	--panic-key-failed-color: #e20b41;
+	--failtoast-background: rgb(255, 0, 0);
+	--failtoast-gradient: linear-gradient(
+		165deg,
+		rgba(255, 0, 0, 0.15) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--toast-background: rgb(43, 255, 0);
+	--toast-gradient: linear-gradient(
+		165deg,
+		rgba(0, 255, 0, 0.145) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--slider-background-color: #d84f68;
+	--slider-box-shadow: inset 1px 1px 2px 0px #e97cff;
+	--checkbox-background-color: rgb(211, 127, 245);
+	--checkbox-gradient: linear-gradient(
+		126deg,
+		rgb(221, 169, 255) 0%,
+		rgb(255, 24, 236) 100%
+	);
+	--password-background-color: #252525;
+	--password-hover-background-color: #181818;
+
+	/* Widget */
+	--color-header: '#fff';
+	--accent-color: linear-gradient(
+		101deg,
+		#8400ff7e 0%,
+		rgba(255, 153, 0, 0.336) 100%
+	) !important;
+	--color-header: #ff0000 !important;
+	--dshadow1: #6b85d8;
+	--dshadow2: #97adf4;
+	--dshadow3: #ffffff;
+	--dshadow4: #849df0;
+}
+
+:root .daydream {
+	--background-color: #000;
+	--header-active-background-color: rgba(140, 0, 255, 0.55);
+	--header-hover-background-color: rgba(140, 0, 255, 0.13);
+	--input-background-color: #0a0a0a;
+	--link-hover-color: #7d2ae8;
+	--border-color: #525252;
+	--text-color: #ffffff;
+	--hover-text-color: rgba(255, 255, 255, 0.49);
+	--active-text-color: rgba(255, 255, 255, 0.81);
+	--utility-background-color: rgb(22, 22, 22);
+	--hr-background: rgba(171, 0, 250, 0.274);
+	--utility-shadow-color: rgba(171, 0, 250, 0.86);
+	--navbar-background-color: rgb(22, 22, 22);
+	--page-text-color: rgba(82, 82, 82, 0.97);
+	--shortcut-background-color: #fff;
+	--shortcut-box-shadow: 0 0 20px 1px #fff;
+	--image-outline-color: #4400ff;
+	--button-background-color: #4400ff;
+	--button-gradient-color: linear-gradient(
+		304deg,
+		rgb(135, 0, 245) 0%,
+		#b700ff 100%
+	);
+	--scrolltop-background-color: rgba(32, 32, 32, 0.37);
+	--scrolltop-backdrop-filter: blur(10px);
+	--random-btn-background-color: #0a0a0a;
+	--random-btn-hover-background-color: rgb(25, 25, 25);
+	--random-btn-active-background-color: rgb(15, 15, 15);
+	--settingsection-background-color: #0c0c0c;
+	--settingsection-background-color-hover: #101010;
+	--link-hover-color: #7d2ae8;
+	--settingsection-hr-background: rgba(255, 255, 255, 0.22);
+	--button-reg-background-color: rgb(22, 22, 22);
+	--button-reg-hover-background-color: rgb(25, 25, 25);
+	--button-reg-active-background-color: rgb(15, 15, 15);
+	--dropdown-background-color: rgb(22, 22, 22);
+	--dropdown-hover-background-color: rgb(25, 25, 25);
+	--panic-key-successful-color: #24b95b;
+	--panic-key-failed-color: #e20b41;
+	--failtoast-background: rgb(255, 0, 0);
+	--failtoast-gradient: linear-gradient(
+		165deg,
+		rgba(255, 0, 0, 0.15) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--toast-background: rgb(43, 255, 0);
+	--toast-gradient: linear-gradient(
+		165deg,
+		rgba(0, 255, 0, 0.145) 0%,
+		rgba(255, 255, 255, 0) 45%
+	);
+	--slider-background-color: #d84f68;
+	--slider-box-shadow: inset 1px 1px 2px 0px #ff7ca7;
+	--checkbox-background-color: rgb(255, 169, 250);
+	--checkbox-gradient: linear-gradient(
+		126deg,
+		rgba(255, 169, 250, 1) 0%,
+		rgba(73, 24, 255, 1) 100%
+	);
+	--password-background-color: #252525;
+	--password-hover-background-color: #181818;
+
+	/* Widget */
+	--color-header: '#fff';
+	--accent-color: linear-gradient(
+		101deg,
+		#4400ff7e 0%,
+		rgba(242, 0, 255, 0.336) 100%
+	) !important;
+	--color-header: #ff0000 !important;
+	--dshadow1: #ae00ff;
+	--dshadow2: #8c00ff;
+	--dshadow3: #b700ff;
+	--dshadow4: #8400ff;
+}

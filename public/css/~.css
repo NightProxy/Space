@@ -84,23 +84,23 @@
 
 @keyframes baractiveani {
 	0% {
-		background: hsl(270, 100%, 50%);
+		background: var(--dshadow4);
 	}
 
 	25% {
-		background: hsl(300, 100%, 50%);
+		background: var(--dshadow3);
 	}
 
 	50% {
-		background: hsl(270, 100%, 50%);
+		background: var(--dshadow4);
 	}
 
 	75% {
-		background: hsl(300, 100%, 50%);
+		background: var(--dshadow3);
 	}
 
 	100% {
-		background: hsl(270, 100%, 50%);
+		background: var(--dshadow4);
 	}
 }
 
@@ -108,7 +108,7 @@
 .sideActive > span.material-symbols-outlined,
 .sideActive:before {
 	animation: activeani 2s linear infinite;
-	color: #ae00ff;
+	color: var(--dshadow1);
 }
 
 .settingsShape {
@@ -127,15 +127,15 @@
 
 @keyframes activeani {
 	0% {
-		color: #ae00ff;
+		color: var(--dshadow1);
 	}
 
 	50% {
-		color: #7400ff;
+		color: var(--dshadow4);
 	}
 
 	100% {
-		color: #ae00ff;
+		color: var(--dshadow1);
 	}
 }
 
@@ -215,15 +215,27 @@ ol {
 
 @keyframes link {
 	0% {
-		background: linear-gradient(to top left, #7400ff 0%, #ff00cf 100%);
+		background: linear-gradient(
+			to top left,
+			var(--dshadow4) 0%,
+			var(--dshadow3) 100%
+		);
 	}
 
 	50% {
-		background: linear-gradient(to top left, #ff00cf 0%, #7400ff 100%);
+		background: linear-gradient(
+			to top left,
+			var(--dshadow3) 0%,
+			var(--dshadow4) 100%
+		);
 	}
 
 	100% {
-		background: linear-gradient(to top left, #7400ff 0%, #ff00cf 100%);
+		background: linear-gradient(
+			to top left,
+			var(--dshadow4) 0%,
+			var(--dshadow3) 100%
+		);
 	}
 }
 
@@ -652,8 +664,8 @@ li {
 		padding-left: 10px;
 		background-color: rgb(22, 22, 22);
 		box-shadow:
-			10px 5px 40px -10px #ae00ff,
-			-14px -4px 40px -10px #4400ff,
+			10px 5px 40px -10px var(--dshadow1),
+			-14px -4px 40px -10px var(--dshadow2),
 			0 0 15px -10px #fff;
 		font-size: 14px;
 		backdrop-filter: blur(8px);
@@ -704,8 +716,8 @@ li {
 		padding-left: 10px;
 		background-color: rgb(22, 22, 22);
 		box-shadow:
-			10px 5px 40px -10px #ae00ff,
-			-14px -4px 40px -10px #4400ff,
+			10px 5px 40px -10px var(--dshadow1),
+			-14px -4px 40px -10px var(--dshadow2),
 			0 0 15px -10px #fff;
 		font-size: 14px;
 		backdrop-filter: blur(8px);
@@ -744,7 +756,11 @@ p {
 
 p a {
 	background: #7400ff;
-	background: linear-gradient(to top left, #7400ff 0%, #ff00cf 100%);
+	background: linear-gradient(
+		to top left,
+		var(--dshadow4) 0%,
+		var(--dshadow3) 100%
+	);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-decoration: underline;
@@ -759,7 +775,11 @@ p a:hover {
 
 .settingsection li a {
 	background: #7400ff;
-	background: linear-gradient(to top left, #7400ff 0%, #ff00cf 100%);
+	background: linear-gradient(
+		to top left,
+		var(--dshadow4) 0%,
+		var(--dshadow3) 100%
+	);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-decoration: underline;
@@ -770,4 +790,44 @@ p a:hover {
 	text-decoration-color: var(--link-hover-color);
 	text-underline-offset: 2px;
 	transition: color 0.2s ease;
+}
+
+.input {
+	width: 100%;
+	height: 45px;
+	line-height: 30px;
+	padding: 0 1rem;
+	padding-left: 3rem;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	outline: none;
+	background-color: var(--password-background-color);
+	color: #818181;
+}
+
+.input::placeholder {
+	color: #8d8d8d;
+}
+
+.input:focus,
+input:hover {
+	outline: none;
+	background-color: var(--password-hover-background-color);
+}
+
+.picon {
+	position: absolute;
+	left: 1rem;
+	fill: none;
+	width: 1rem;
+	height: 1rem;
+	color: #fff;
+}
+
+.pgroup {
+	display: flex;
+	line-height: 30px;
+	align-items: center;
+	position: relative;
+	max-width: 300px;
 }

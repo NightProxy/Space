@@ -1,4 +1,3 @@
-import { createBareServer } from '@tomphttp/bare-server-node';
 import express from 'express';
 import cors from 'cors';
 import http from 'node:http';
@@ -8,16 +7,14 @@ import chalk from 'chalk';
 import { uvPath } from '@titaniumnetwork-dev/ultraviolet';
 import { epoxyPath } from '@mercuryworkshop/epoxy-transport';
 import { libcurlPath } from '@mercuryworkshop/libcurl-transport';
-import { bareModulePath } from '@mercuryworkshop/bare-as-module3';
 import { baremuxPath } from '@mercuryworkshop/bare-mux/node';
-import wisp from 'wisp-server-node';
+import { server as wisp } from '@mercuryworkshop/wisp-js/server';
 import routes from './src/routes.js';
 
 const server = http.createServer();
 const app = express();
 const __dirname = process.cwd();
-const bare = createBareServer('/bare/');
-const PORT = 6060;
+const PORT = process.env.PORT || 6060;
 
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
@@ -26,23 +23,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/epoxy/', express.static(epoxyPath));
 app.use('/@/', express.static(uvPath));
 app.use('/libcurl/', express.static(libcurlPath));
-app.use('/baremod/', express.static(bareModulePath));
 app.use('/baremux/', express.static(baremuxPath));
 
 app.use('/', routes);
 
 server.on('request', (req, res) => {
-	if (bare.shouldRoute(req)) {
-		bare.routeRequest(req, res);
-	} else {
-		app(req, res);
-	}
+	app(req, res);
 });
 
 server.on('upgrade', (req, socket, head) => {
-	if (bare.shouldRoute(req)) {
-		bare.routeUpgrade(req, socket, head);
-	} else if (req.url.endsWith('/wisp/')) {
+	if (req.url.endsWith('/wisp/')) {
 		wisp.routeRequest(req, socket, head);
 	} else {
 		socket.end();

@@ -14,7 +14,8 @@
 		/>
 		<meta property="og:image" content="/assets/logo.webp" />
 		<!-- Google Analytics DO NOT REMOVE -->
-		<meta name="google-adsense-account" content="ca-pub-3747175608041884">
+
+		<meta name="google-adsense-account" content="ca-pub-3747175608041884" />
 		<script
 			async
 			src="https://www.googletagmanager.com/gtag/js?id=G-3DTW1KTNCF"
@@ -39,6 +40,7 @@
 			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
 		/>
 		<link rel="stylesheet" href="/css/index.css" />
+		<link rel="stylesheet" href="/css/themes.css" />
 		<link rel="stylesheet" href="/css/~.css" />
 		<link
 			rel="stylesheet"
@@ -198,19 +200,6 @@
 					<li class="settingItem" data-id="themes">
 						<span class="material-symbols-outlined">palette</span
 						>Themes
-						<span
-							style="
-								background-color: #6b6b6b63;
-								color: rgba(255, 255, 255, 0.48);
-								border-radius: 30px;
-								padding: 1px 7px;
-								font-size: 12px;
-								margin-left: 4px;
-								transform: translateY(1px);
-								text-wrap: nowrap;
-							"
-							>Coming Soon</span
-						>
 					</li>
 				</a>
 				<a href="/~/#/proxy">
@@ -470,15 +459,31 @@
 					Themes
 				</h1>
 				<div class="settingsection settingsection5">
-					<h1>Coming Soon</h1>
+					<h1>Default Themes</h1>
 					<p>
-						Themes will be added soon to Space. While you wait, you
-						can join our
+						Here's some themes for you to choose from. You can also
+						join our
 						<a href="https://discord.gointospace.app">Discord</a>
-						for updates of when it may release.
+						for theme submissions, under suggestions.
 					</p>
+					<div class="dropdown dropdown-memory" id="themes">
+						<button class="dropdown-button dropdown-toggle">
+							<span class="dropdown-selected">Default</span>
+							<span id="arrow" class="material-symbols-outlined"
+								>chevron_right</span
+							>
+						</button>
+						<ul class="dropdown-menu">
+							<li class="hidden">Default</li>
+							<li>Aurora</li>
+							<li>Nightmare</li>
+							<li>Midnight</li>
+							<li>Supernova</li>
+						</ul>
+					</div>
 				</div>
 			</div>
+
 			<div class="scontent" id="proxy">
 				<h1 style="animation: fade-in-left 1s" class="settingsection6">
 					Proxy & Browser
@@ -506,7 +511,6 @@
 						</button>
 						<ul class="dropdown-menu">
 							<li class="hidden">Ultraviolet (default)</li>
-							<li>Scramjet</li>
 						</ul>
 					</div>
 				</div>
@@ -524,16 +528,72 @@
 					</p>
 					<div class="dropdown dropdown-memory" id="transport">
 						<button class="dropdown-button dropdown-toggle">
-							<span class="dropdown-selected">Epoxy</span>
+							<span class="dropdown-selected">Libcurl</span>
 							<span id="arrow" class="material-symbols-outlined"
 								>chevron_right</span
 							>
 						</button>
 						<ul class="dropdown-menu">
-							<li class="hidden">Epoxy</li>
-							<li>Baremod</li>
-							<li>Libcurl</li>
+							<li class="hidden">Libcurl</li>
+							<li>Epoxy</li>
 						</ul>
+					</div>
+				</div>
+				<div class="settingsection settingsection6">
+					<h1>Wisp Server</h1>
+					<p>
+						Enter an Alternative Wisp Server to connect to. This url
+						must start with a ws(s):// and end with a /
+					</p>
+					<div class="pgroup">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							class="picon"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="lucide lucide-server"
+						>
+							<rect
+								width="20"
+								height="8"
+								x="2"
+								y="2"
+								rx="2"
+								ry="2"
+							/>
+							<rect
+								width="20"
+								height="8"
+								x="2"
+								y="14"
+								rx="2"
+								ry="2"
+							/>
+							<line x1="6" x2="6.01" y1="6" y2="6" />
+							<line x1="6" x2="6.01" y1="18" y2="18" />
+						</svg>
+
+						<input
+							class="input wisp"
+							placeholder="Enter a wisp server"
+						/>
+					</div>
+					<div style="display: flex; align-items: center; gap: 4px">
+						<button style="width: 300px" class="buttonreg wispSave">
+							Save
+						</button>
+						<button
+							style="width: 300px"
+							class="buttonreg wispReset"
+						>
+							Reset
+						</button>
 					</div>
 				</div>
 				<div class="settingsection settingsection6">
@@ -900,8 +960,9 @@
 					<h1>Development Team</h1>
 					<p>
 						Space is completely open-source and is owned,
-						maintained, and managed by the Dusk till Dawn Team (DTD)
-						at Night Network all of the source code is available on
+						maintained, and managed by the Twilight Development
+						Group (TDG) at Night Network all of the source code is
+						available on
 						<a href="https://github.com/nightproxy/space">GitHub</a
 						>. Thank you for choosing Space!
 					</p>
@@ -925,7 +986,7 @@
 								border-radius: 30px;
 								padding: 1px 7px;
 							"
-							>v1.0.0</span
+							>v1.1.0</span
 						>
 					</p>
 					<p>
@@ -955,11 +1016,11 @@
 						Load Times:
 						<span
 							style="
-								background-color: #c300ff63;
+								background-color: #15ff0063;
 								border-radius: 30px;
 								padding: 1px 8px;
 							"
-							>Fast</span
+							>Medium</span
 						>
 					</p>
 					<p>
@@ -978,7 +1039,7 @@
 						[can be found in contributing.md].
 					</p>
 					<p>
-						If you want to join the DTD Team, please open a ticket
+						If you want to join the TDG Team, please open a ticket
 						in our
 						<a href="https://discord.gointospace.app/">Discord</a>.
 					</p>
@@ -998,7 +1059,7 @@
 					</p>
 					<p>
 						If you would like to donate, please visit our
-						<a href="https://www.patreon.com/nightNetwork"
+						<a href="https://www.patreon.com/NightNetworkX"
 							>Patreon</a
 						>.
 					</p>
@@ -1009,6 +1070,25 @@
 				<h1 style="animation: fade-in-left 1s" class="settingsection10">
 					News & Updates
 				</h1>
+				<div class="settingsection settingsection10">
+					<h1>
+						Space has Updated!<span class="changelog"
+							>Version release [v.1.1.0]</span
+						>
+					</h1>
+					<p>
+						Added more Fixes! Join our
+						<a href="https://discord.gointospace.app/">Discord</a>
+						to get more updates and changes.
+					</p>
+					<hr />
+					<h1>Updates</h1>
+					<ul>
+						<li>Themes</li>
+						<li>Dropped support for Bare</li>
+						<li>Fixed Cloaking [Blob & About:Blank]</li>
+					</ul>
+				</div>
 				<div class="settingsection settingsection10">
 					<h1>
 						Space has released!<span class="changelog"
@@ -1142,7 +1222,7 @@
 								pages)
 							</li>
 							<li>
-								Destination: <b>45.134.142.230</b> (If you don't
+								Destination: <b>104.243.38.145</b> (If you don't
 								put this correctly the link will
 								<b
 									><i><u>NOT</u></i></b
@@ -1333,6 +1413,7 @@
 		<script src="/js/localforage.min.js"></script>
 		<script src="/js/c.js"></script>
 		<script src="/js/~.js"></script>
+		<script src="/js/themes.js"></script>
 		<script type="text/javascript">
 			document.addEventListener('DOMContentLoaded', function () {
 				let hideAds = localStorage.getItem('hideAds');
