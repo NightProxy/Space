@@ -15,8 +15,7 @@ const proxySetting =
 	'Ultraviolet (default)';
 
 const swConfig = {
-	'Ultraviolet (default)': { file: '/@/sw.js', config: __uv$config },
-	Scramjet: { file: '/$/sw.js', config: __scramjet$config }
+	'Ultraviolet (default)': { file: '/@/sw.js', config: __uv$config }
 };
 
 const { file: swFile, config: swConfigSettings } = swConfig[proxySetting] ?? {

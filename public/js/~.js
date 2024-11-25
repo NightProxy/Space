@@ -43,6 +43,7 @@ document.addEventListener('click', function (event) {
 						`dropdown-selected-text-${dropdownId}`,
 						newText
 					);
+					location.reload();
 				}
 			}
 		} else {
