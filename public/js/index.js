@@ -58,6 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	// INJECT CSS
 	const css = document.createElement('style');
 	css.type = 'text/css';
-	css.innerHTML = '.typewrite > .wrap { border-right: 0.06em solid #a04cff}';
+	css.innerHTML = '.typewrite > .wrap { border-right: 0.06em solid var(--header-active-background-color)}';
 	document.body.appendChild(css);
 });
