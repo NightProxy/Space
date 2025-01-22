@@ -698,7 +698,7 @@ rgb(194 0 255 / 40%) 100%
 	--page-text-color: rgba(82, 82, 82, 0.97);
 	--shortcut-background-color: #fff;
 	--shortcut-box-shadow: 0 0 20px 1px #fff;
-	--image-outline-color: #0333c1;
+	--image-outline-color: #054fb1;
 	--button-background-color: #0040ff;
 	--button-gradient-color: linear-gradient(
 		304deg,
@@ -712,7 +712,7 @@ rgb(194 0 255 / 40%) 100%
 	--random-btn-active-background-color: rgb(15, 15, 15);
 	--settingsection-background-color: #0c0c0c;
 	--settingsection-background-color-hover: #101010;
-	--link-hover-color: #003cff;
+	--link-hover-color: #165eff;
 	--settingsection-hr-background: rgba(255, 255, 255, 0.22);
 	--button-reg-background-color: rgb(22, 22, 22);
 	--button-reg-hover-background-color: rgb(25, 25, 25);
