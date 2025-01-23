@@ -684,12 +684,12 @@ rgb(194 0 255 / 40%) 100%
 
 :root .ocean {
 	--background-color: #000;
-	--header-active-background-color: rgb(12 94 236 / 92%);
-	--header-hover-background-color: rgb(0 91 255 / 13%);
+	--header-active-background-color: rgb(0 93 255 / 92%);
+	--header-hover-background-color: rgba(140, 0, 255, 0.13);
 	--input-background-color: #0a0a0a;
 	--border-color: #525252;
 	--text-color: #ffffff;
-	--hover-text-color: rgb(255 255 255 / 49%);
+	--hover-text-color: rgba(255, 255, 255, 0.49);
 	--active-text-color: rgba(255, 255, 255, 0.81);
 	--utility-background-color: rgb(22, 22, 22);
 	--utility-shadow-color: rgba(66, 66, 66, 0.86);
@@ -698,8 +698,8 @@ rgb(194 0 255 / 40%) 100%
 	--page-text-color: rgba(82, 82, 82, 0.97);
 	--shortcut-background-color: #fff;
 	--shortcut-box-shadow: 0 0 20px 1px #fff;
-	--image-outline-color: #054fb1;
-	--button-background-color: #0040ff;
+	--image-outline-color: #0040ff;
+	--button-background-color: #006eff94;
 	--button-gradient-color: linear-gradient(
 		304deg,
 		rgb(0 21 245) 0%,
@@ -708,11 +708,11 @@ rgb(194 0 255 / 40%) 100%
 	--scrolltop-background-color: rgba(32, 32, 32, 0.37);
 	--scrolltop-backdrop-filter: blur(10px);
 	--random-btn-background-color: #0a0a0a;
-	--random-btn-hover-background-color: rgb(25 25 25);
+	--random-btn-hover-background-color: rgb(25, 25, 25);
 	--random-btn-active-background-color: rgb(15, 15, 15);
 	--settingsection-background-color: #0c0c0c;
 	--settingsection-background-color-hover: #101010;
-	--link-hover-color: #165eff;
+	--link-hover-color: #006bff;
 	--settingsection-hr-background: rgba(255, 255, 255, 0.22);
 	--button-reg-background-color: rgb(22, 22, 22);
 	--button-reg-hover-background-color: rgb(25, 25, 25);
@@ -724,7 +724,7 @@ rgb(194 0 255 / 40%) 100%
 	--failtoast-background: rgb(255, 0, 0);
 	--failtoast-gradient: linear-gradient(
 		165deg,
-		rgb(0 21 245) 0%,
+		rgb(0 76 245) 0%,
 		#0045ff 45%
 	);
 	--toast-background: rgb(43, 255, 0);
@@ -738,7 +738,7 @@ rgb(194 0 255 / 40%) 100%
 	--checkbox-background-color: rgb(255, 169, 250);
 	--checkbox-gradient: linear-gradient(
 		126deg,
-		rgb(0 21 245) 0%,
+		rgb(0 76 245) 0%,
 		#0045ff 100%
 	);
 	--password-background-color: #252525;
@@ -752,8 +752,8 @@ rgb(194 0 255 / 40%) 100%
 		rgba(0, 81, 255, 0.401) 100%
 	) !important;
 	--color-header: #ff0000 !important;
-	--dshadow1: #002fff;
-	--dshadow2: #006bff;
-	--dshadow3: #00ffcd;
-	--dshadow4: #0061ff;
+	--dshadow1: #0078ff;
+	--dshadow2: #0058ff;
+	--dshadow3: #009dff;
+	--dshadow4: #006bff;
 }
