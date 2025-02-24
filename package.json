@@ -32,7 +32,8 @@
 		"chalk": "^5.2.0",
 		"cors": "^2.8.5",
 		"express": "^4.19.2",
-		"lucide-static": "^0.424.0"
+		"lucide-static": "^0.424.0",
+		"express-rate-limit": "^7.5.0"
 	},
 	"devDependencies": {
 		"autoprefixer": "^10.4.19",
