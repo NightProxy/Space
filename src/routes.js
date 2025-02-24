@@ -5,13 +5,12 @@ const router = express.Router();
 
 let __dirname = process.cwd();
 
-// set up rate limiter: maximum of 100 requests per 15 minutes
+
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // limit each IP to 100 requests per windowMs
+  max: 25000, 
 });
 
-// apply rate limiter to all requests
 router.use(limiter);
 
 router.get('/', (req, res) => {
