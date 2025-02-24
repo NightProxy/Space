@@ -1,5 +1,18 @@
 // ~ is the settings page, so ~.js is settings specific js that wont get loaded globally
 
+const crypto = require('crypto');
+const password = 'your-encryption-password'; // Replace with a secure password
+
+function encrypt(text) {
+    const cipher = crypto.createCipher('aes-256-ctr', password);
+    return cipher.update(text, 'utf8', 'hex') + cipher.final('hex');
+}
+
+function decrypt(text) {
+    const decipher = crypto.createDecipher('aes-256-ctr', password);
+    return decipher.update(text, 'hex', 'utf8') + decipher.final('utf8');
+}
+
 localforage.setItem('e', 'e');
 shapePositions = {
 	blank: '26.5px',
@@ -949,7 +962,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const saveButton3 = document.querySelector('.pPasswordKeybind');
 
 	if (localStorage.getItem('passwordKeyBind')) {
-		passwordKeyInput.value = localStorage.getItem('passwordKeyBind');
+		passwordKeyInput.value = decrypt(localStorage.getItem('passwordKeyBind'));
 	}
 
 	saveButton3.addEventListener('click', () => {
@@ -964,7 +977,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 		if (allValid) {
-			localStorage.setItem('passwordKeyBind', keys.join(','));
+			localStorage.setItem('passwordKeyBind', encrypt(keys.join(',')));
 
 			if (document.querySelector('.toast.active, .failtoast.active')) {
 				return;
@@ -972,7 +985,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				panicKeySuccessPopup();
 			}
 		} else if (passwordKeyInput.value.length < 1) {
-			localStorage.setItem('passwordKeyBind', '~');
+			localStorage.setItem('passwordKeyBind', encrypt('~'));
 
 			if (document.querySelector('.toast.active, .failtoast.active')) {
 				return;
