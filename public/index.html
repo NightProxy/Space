@@ -354,5 +354,80 @@
 			};
 		</script>
 		<script async src="https://widget.changelogfy.com/index.js"></script>
+		<script>
+			const ads = [
+			  { img: '/assets/ad/BH-Banner.png', link: 'https://billigerhost.com/' },
+			  { img: '/assets/ad/FMH-Banner.png', link: 'https://freeminecrafthost.com/' }];
+		  
+			let lastIndex = -1;
+		  
+			function getRandomAdIndex() {
+			  let newIndex;
+			  do {
+				newIndex = Math.floor(Math.random() * ads.length);
+			  } while (ads.length > 1 && newIndex === lastIndex);
+			  lastIndex = newIndex;
+			  return newIndex;
+			}
+		  
+			function createAdContainer() {
+			  const container = document.createElement('div');
+			  container.id = 'ad-container';
+			  Object.assign(container.style, {
+				position: 'fixed',
+				bottom: '20px',
+				right: '20px',
+				width: '300px',
+				height: '250px',
+				borderRadius: '12px',
+				boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
+				overflow: 'hidden',
+				zIndex: 9999,
+				backgroundColor: '#fff',
+				transition: 'opacity 0.3s ease-in-out'
+			  });
+		  
+			  const link = document.createElement('a');
+			  link.id = 'ad-link';
+			  link.target = '_blank';
+			  link.style.display = 'block';
+			  link.style.width = '100%';
+			  link.style.height = '100%';
+		  
+			  const img = document.createElement('img');
+			  img.id = 'ad-image';
+			  Object.assign(img.style, {
+				width: '100%',
+				height: '100%',
+				objectFit: 'cover',
+				borderRadius: '12px'
+			  });
+		  
+			  link.appendChild(img);
+			  container.appendChild(link);
+			  document.body.appendChild(container);
+			}
+		  
+			function updateAd() {
+			  const index = getRandomAdIndex();
+			  const ad = ads[index];
+			  const img = document.getElementById('ad-image');
+			  const link = document.getElementById('ad-link');
+		  
+			  // Fade out -> switch -> fade in
+			  const container = document.getElementById('ad-container');
+			  container.style.opacity = '0';
+			  setTimeout(() => {
+				img.src = ad.img;
+				link.href = ad.link;
+				container.style.opacity = '1';
+			  }, 300);
+			}
+		  
+			// Initialize
+			createAdContainer();
+			updateAd();
+			setInterval(updateAd, 15000);
+		  </script>
 	</body>
 </html>
