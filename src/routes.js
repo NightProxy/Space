@@ -1,17 +1,8 @@
 import express from 'express';
 import path from 'path';
-import rateLimit from 'express-rate-limit';
 const router = express.Router();
 
 let __dirname = process.cwd();
-
-
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 25000, 
-});
-
-router.use(limiter);
 
 router.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, 'public/index.html'));
