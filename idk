@@ -1,0 +1,4 @@
+git clone https://github.com/NightProxy/space.git
+cd Space
+pnpm i
+pnpm start
