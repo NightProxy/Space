@@ -1654,5 +1654,11 @@
 		"url": "https://games.crazygames.com/en_US/crazy-for-speed/index.html?v=1.295",
 		"img": "/assets/imgs/g/Crazy_for_Speed.webp",
 		"categories": ["all"]
+	},
+		{
+		"name": "Roblox",
+		"url": "https://now.gg/apps/a/19900/b.html",
+		"img": "https://th.bing.com/th/id/OIP.YpUWqwMu822ARQxlUvP7mgHaHa?rs=1&pid=ImgDetMain",
+		"categories": ["all", "popular", "multiplayer"]
 	}
 ]
