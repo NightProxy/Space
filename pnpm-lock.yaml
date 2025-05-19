@@ -32,6 +32,9 @@ importers:
       express:
         specifier: ^4.19.2
         version: 4.20.0
+      express-rate-limit:
+        specifier: ^7.5.0
+        version: 7.5.0(express@4.20.0)
       lucide-static:
         specifier: ^0.424.0
         version: 0.424.0
@@ -272,6 +275,12 @@ packages:
   events@3.3.0:
     resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
     engines: {node: '>=0.8.x'}
+
+  express-rate-limit@7.5.0:
+    resolution: {integrity: sha512-eB5zbQh5h+VenMPM3fh+nw1YExi5nMr6HUCR62ELSP11huvxm/Uir1H1QEyTkk5QX6A58pX6NmaTMceKZ0Eodg==}
+    engines: {node: '>= 16'}
+    peerDependencies:
+      express: ^4.11 || 5 || ^5.0.0-beta.1
 
   express@4.20.0:
     resolution: {integrity: sha512-pLdae7I6QqShF5PnNTCVn4hI91Dx0Grkn2+IAsMTgMIKuQVte2dN9PeGSSAME2FR8anOhVA62QDIUaWVfEXVLw==}
@@ -867,6 +876,10 @@ snapshots:
   etag@1.8.1: {}
 
   events@3.3.0: {}
+
+  express-rate-limit@7.5.0(express@4.20.0):
+    dependencies:
+      express: 4.20.0
 
   express@4.20.0:
     dependencies:
